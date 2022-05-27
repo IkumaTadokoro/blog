@@ -11,9 +11,11 @@ date: '2022-05-27'
 
 if [ -e ~/blog/_posts/$1.md ]; then
     vim ~/blog/_posts/$1.md
+    cd ~/blog
     git add ~/blog/_posts/$1.md
     git commit -m "feat: update post"
     git push
+    cd -
 else
     cp ~/bin/template.md ~/blog/_posts/$1.md
     mkdir ~/blog/public/assets/$1
