@@ -11,7 +11,7 @@ date: '2022-05-27'
 if [ -e ~/blog/_posts/$1.md ]; then
     vim ~/blog/_posts/$1.md
 else
-    cp ~/blog/_posts/template ~/blog/_posts/$1.md
+    cp ~/bin/template.md ~/blog/_posts/$1.md
     mkdir ~/blog/public/assets/$1
 fi
 ```
