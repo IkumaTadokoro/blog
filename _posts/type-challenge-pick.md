@@ -7,7 +7,7 @@ date: '2022-05-28 18:06:00'
 
 [type\-challenges/README\.ja\.md at main · type\-challenges/type\-challenges](https://github.com/type-challenges/type-challenges/blob/main/questions/00004-easy-pick/README.ja.md)
 
-- `Pick<T, K>`：Utility Typesの一つ。既に存在する`T`型の中から`K`で選択した一部のプロパティのみを含んだ新たな方を構築する。
+- `Pick<T, K>`：Utility Typesの一つ。既に存在する`T`型の中から`K`で選択した一部のプロパティのみを含んだ新たな型を構築する。
 - これを独自に実装すると次のような形式になる
 
 ```typescript
