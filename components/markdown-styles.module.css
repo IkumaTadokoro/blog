@@ -60,3 +60,7 @@
 .markdown pre[class*="language-"] {
   @apply text-sm;
 }
+
+.markdown code[class*="language-"] {
+  @apply text-sm py-1 px-2 mx-1;
+}
