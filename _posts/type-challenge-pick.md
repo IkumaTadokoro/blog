@@ -1,5 +1,5 @@
 ---
-title: 'type-challenges 1日目'
+title: 'type-challenges 1日目: 4-Pick'
 date: '2022-05-28 18:06:00'
 ---
 
