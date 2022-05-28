@@ -7,14 +7,14 @@ date: '2022-05-28'
 
 ## 正規表現に対するメソッド体系
 
-| 用途 | Ruby | JavaScript |
-| --- | --- | --- |
-| 正規表現のパターンにマッチした最初の部分を文字列に置換する | String#sub | String.prototype.replace |
-| 正規表現のパターンにマッチしたすべての部分を文字列に置換する | String#gsub | String.prototype.replaceAll |
-| 正規表現のパターンにマッチする文字のインデックスを返す | String#=~ | String.prototype.search |
-| 正規表現のパターンにマッチする文字列を返す | String#match or Regexp#match | String.prototype.match |
-| 正規表現のパターンにマッチするかどうかをbooleanで返す | String#match? or Regexp#match? | RegExp.prototype.test | 
-| 正規表現のパターンにマッチする文字列すべてを返す | String#scan | String.prototype.matchAll |
+| 用途                             | Ruby                           | JavaScript                  |
+|--------------------------------|--------------------------------|-----------------------------|
+| 正規表現のパターンにマッチした最初の部分を文字列に置換する  | String#sub                     | String.prototype.replace    |
+| 正規表現のパターンにマッチしたすべての部分を文字列に置換する | String#gsub                    | String.prototype.replaceAll |
+| 正規表現のパターンにマッチする文字のインデックスを返す    | String#=~                      | String.prototype.search     |
+| 正規表現のパターンにマッチする文字列を返す          | String#match or Regexp#match   | String.prototype.match      |
+| 正規表現のパターンにマッチするかどうかをbooleanで返す | String#match? or Regexp#match? | RegExp.prototype.test       | 
+| 正規表現のパターンにマッチする文字列すべてを返す       | String#scan                    | String.prototype.matchAll   |
 
 ## ちょっと試してみた
 ### 正規表現のパターンにマッチした最初の部分を文字列に置換する
