@@ -2,38 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-pre[class*="language-"] {
-  @apply text-sm;
-}
 
-blockquote {
-  @apply border-l-2 border-gray-200;
-}
-
-blockquote > p {
-  @apply ml-4 text-sm text-gray-500;
-}
-
-a {
-  @apply text-blue-600 hover:underline visited:text-purple-900
-}
-
-table {
-  @apply w-full text-sm text-left text-gray-500 overflow-x-auto shadow-md sm:rounded-lg;
-}
-
-thead {
-  @apply text-sm text-gray-700 bg-gray-50;
-}
-
-th {
-  @apply px-6 py-3;
-}
-
-tr {
-  @apply border-b;
-}
-
-td {
-  @apply px-6 py-3;
-}

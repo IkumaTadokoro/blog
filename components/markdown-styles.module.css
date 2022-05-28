@@ -24,3 +24,39 @@
 .markdown h3 {
   @apply text-xl mt-8 mb-4 leading-snug font-bold;
 }
+
+.markdown table {
+  @apply w-full text-sm text-left text-gray-500 overflow-x-auto shadow-md sm:rounded-lg;
+}
+
+.markdown thead {
+  @apply text-sm text-gray-700 bg-gray-50;
+}
+
+.markdown th {
+  @apply px-6 py-3;
+}
+
+.markdown tr {
+  @apply border-b;
+}
+
+.markdown td {
+  @apply px-6 py-3;
+}
+
+.markdown blockquote {
+  @apply border-l-2 border-gray-200;
+}
+
+.markdown blockquote > p {
+  @apply ml-4 text-sm text-gray-500;
+}
+
+.markdown a {
+  @apply text-blue-600 hover:underline visited:text-purple-900
+}
+
+.markdown pre[class*="language-"] {
+  @apply text-sm;
+}
