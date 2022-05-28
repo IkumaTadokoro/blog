@@ -7,10 +7,10 @@ const Footer = () => {
       <Container>
         <div className="px-24 py-6 flex flex-col lg:flex-row w-full">
             <a
-              href={`/`}
+              href={`/about`}
               className="mx-3 text-sm hover:underline flex-1 text-center"
             >
-              About（工事中）
+              About
             </a>
             <a
               href={`https://twitter.com/ikumatdkr`}
