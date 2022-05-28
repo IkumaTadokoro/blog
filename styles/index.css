@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+pre[class*="language-"] {
+  @apply text-sm;
+}
