@@ -15,7 +15,7 @@ blockquote > p {
 }
 
 a {
-  @apply text-blue-600 hover:underline
+  @apply text-blue-600 hover:underline visited:text-purple-900
 }
 
 table {
