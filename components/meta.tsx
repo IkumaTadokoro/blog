@@ -36,7 +36,10 @@ const Meta = () => {
         name="description"
         content={`ikuma-tのプログラミングや日々の生活に関する記録です`}
       />
+      <meta property="og:type" content="website" />
       <meta property="og:image" content="https://ikuma-t.work/assets/ogimage.png" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@ikumatdkr" />
     </Head>
   )
 }
