@@ -36,7 +36,7 @@ const Meta = () => {
         name="description"
         content={`ikuma-tのプログラミングや日々の生活に関する記録です`}
       />
-      <meta property="og:image" content={HOME_OG_IMAGE_URL} />
+      <meta property="og:image" content="https://ikuma-t.work/assets/ogimage.png" />
     </Head>
   )
 }
