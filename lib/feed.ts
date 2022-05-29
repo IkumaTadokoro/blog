@@ -32,6 +32,7 @@ export default async function generateRssFeed() {
   const posts = getAllPosts([
     'slug',
     'title',
+    'content',
     'date',
   ])
 
@@ -44,6 +45,7 @@ export default async function generateRssFeed() {
       date: new Date(post.date),
       id: url,
       link: url,
+      description: content,
       content: content,
     })
   }
