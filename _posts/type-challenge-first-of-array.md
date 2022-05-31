@@ -5,7 +5,7 @@ date: '2022-05-31'
 
 ## 問題 & 解答
 
-[type\-challenges/README\.md at main · type\-challenges/type\-challenges](https://github.com/type-challenges/type-challenges/blob/main/questions/00014-easy-first/README.md)[type\-challenges/README\.md at main · type\-challenges/type\-challenges](https://github.com/type-challenges/type-challenges/blob/main/questions/00014-easy-first/README.md)
+[type\-challenges/README\.md at main · type\-challenges/type\-challenges](https://github.com/type-challenges/type-challenges/blob/main/questions/00014-easy-first/README.md)
 
 配列`T`を受け取って、その配列の最初の要素の型をとるようなジェネリクス`First<T>`を実装する。
 
