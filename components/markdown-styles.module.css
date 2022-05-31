@@ -61,6 +61,6 @@
   @apply text-sm;
 }
 
-.markdown code[class*="language-"] {
+.markdown code[class*="language-unknown"] {
   @apply text-sm py-1 px-2 mx-1;
 }
