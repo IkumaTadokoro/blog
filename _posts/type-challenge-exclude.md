@@ -1,5 +1,5 @@
 ---
-title: 'type-challenges 5日目:43-Exclude '
+title: 'type-challenges 5日目: 43-Exclude'
 date: '2022-06-01'
 ---
 
