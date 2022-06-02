@@ -1,5 +1,5 @@
 ---
-title: 'type^challenges 6日目: 189-Awaited'
+title: 'type-challenges 6日目: 189-Awaited'
 date: '2022-06-02'
 ---
 
