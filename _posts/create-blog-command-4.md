@@ -29,6 +29,10 @@ Third PartyにはcliffyというCLI用のフレームワークを使用してい
 
 https://cliffy.io/
 
+:::alert
+追記: 嘘をつきました。[frontmatter@v0\.1\.4 \| Deno](https://deno.land/x/frontmatter@v0.1.4/mod.ts)も使っていました。
+:::
+
 ## 機能一覧
 
 ```bash
