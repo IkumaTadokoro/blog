@@ -125,6 +125,25 @@ source <(blog completions zsh)
 
 と書いてあげることで、自動的に補完が使用できるようになります。
 
+### ブログを開く： `open`
+
+```bash
+❯ blog open -h
+
+  Usage:   blog open
+  Version: 0.1.0
+
+  Description:
+
+    Open blog in browser
+
+  Options:
+
+    -h, --help  - Show this help.
+```
+
+ブラウザでブログを開きます。
+
 ### 一覧: `list`
 
 ```bash
