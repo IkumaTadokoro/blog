@@ -1,7 +1,12 @@
 import Head from 'next/head'
-import { CMS_NAME, HOME_OG_IMAGE_URL } from '../lib/constants'
+import {HOME_OG_IMAGE_URL, HOME_OG_TITLE} from "../lib/constants";
 
-const Meta = () => {
+type Meta = {
+    ogTitle?: string,
+    ogImagePath?: string
+}
+
+const Meta = ({ ogTitle, ogImagePath }: Meta) => {
   return (
     <Head>
       <link
@@ -37,7 +42,8 @@ const Meta = () => {
         content={`ikuma-tのプログラミングや日々の生活に関する記録です`}
       />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content="https://ikuma-t.work/assets/ogimage.png" />
+      <meta property="og:title" content={ogTitle ? ogTitle : HOME_OG_TITLE } />
+      <meta property="og:image" content={ogImagePath ? ogImagePath : HOME_OG_IMAGE_URL} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@ikumatdkr" />
     </Head>

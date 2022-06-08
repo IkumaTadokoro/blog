@@ -2,14 +2,15 @@ import Footer from './footer'
 import Meta from './meta'
 
 type Props = {
-  preview?: boolean
   children: React.ReactNode
+  title?: string
+  ogImagePath?: string
 }
 
-const Layout = ({ children }: Props) => {
+const Layout = ({ children, title, ogImagePath }: Props) => {
   return (
     <>
-      <Meta />
+      <Meta ogTitle={title} ogImagePath={ogImagePath} />
       <div className="min-h-screen flex flex-col">
         <main className="flex-1">{children}</main>
         <Footer />

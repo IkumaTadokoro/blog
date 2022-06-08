@@ -11,20 +11,20 @@ import Head from 'next/head'
 import 'zenn-content-css'
 import markdownToHtml from 'zenn-markdown-html'
 import PostType from '../../types/post'
+import {POST_OG_IMAGE_URL} from "../../lib/constants";
 
 type Props = {
   post: PostType
   morePosts: PostType[]
-  preview?: boolean
 }
 
-const Post = ({ post, morePosts, preview }: Props) => {
+const Post = ({ post, morePosts }: Props) => {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
   return (
-    <Layout preview={preview}>
+    <Layout title={post.title} ogImagePath={post.ogImage ? post.ogImage : POST_OG_IMAGE_URL}>
       <Container>
         <Header />
         {router.isFallback ? (
