@@ -26,12 +26,11 @@ const Post = ({ post, morePosts }: Props) => {
   return (
     <Layout title={post.title} ogImagePath={post.ogImage ? post.ogImage : POST_OG_IMAGE_URL}>
       <Container>
-        <Header />
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
-            <article className="mb-32 znc">
+            <article className="znc">
               <Head>
                 <title>
                   {post.title} | ikuma-t
