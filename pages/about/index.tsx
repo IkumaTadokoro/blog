@@ -14,7 +14,7 @@ const Index = () => {
           <section>
             <h2 className="text-2xl mb-4 font-bold">作者について</h2>
             <p className="mb-4">ikuma-tという名前で活動しています。本当はtはつけたくなかったんですけど、取れなかったのでこうなっています。なので、サービスによってまれに「ikuma」である場合があります。読み方は「いくま」でも「いくまてぃー」でもどちらでも大丈夫です。</p>
-            <p className="mb-4">SIerでコンサルとして働いたのちに、<a href="https://bootcamp.fjord.jp/">FJORD BOOT CAMP</a>で学習し、エンジニアになりかけです。</p>
+            <p className="mb-4">SIerでコンサルとして働いたのちに、<a href="https://bootcamp.fjord.jp/">FJORD BOOT CAMP</a>で学習したのち、Fintech企業でアプリケーションエンジニアとして働いています。</p>
           </section>
         </Container>
       </Layout>

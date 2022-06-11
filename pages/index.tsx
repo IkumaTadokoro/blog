@@ -31,7 +31,7 @@ const Index = ({ allPosts }: Props) => {
 export default Index
 
 export const getStaticProps = async () => {
-  // await generateRssFeed()
+  await generateRssFeed()
 
   const allPosts = getAllPosts([
     'title',
