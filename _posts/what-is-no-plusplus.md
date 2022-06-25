@@ -24,11 +24,20 @@ https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/Increme
 
 今回のポイントは「前にも後ろにも置ける」ということです。
 
+
+## ESLintのドキュメントをみてみる
+
+https://eslint.org/docs/latest/rules/no-plusplus
+
+> Because the unary ++ and -- operators are subject to automatic semicolon insertion, differences in whitespace can change semantics of source code.
+
+単項演算子`++`と`--`は、セミコロンの自動挿入の対象になるので、ソースコードの意味が空白の違いで変わってしまうとあります。
+
 ## Automatic Semicolon Insertion
 
 ここでいうセミコロンの自動挿入はASIと呼ばれるものです。
 
-ASIは「Automatic Semicolon Insertion」の略称で、その名の通り自動セミコロン挿入です。
+ASIは「Automatic Semicolon Insertion」の略称です。
 JavaScriptはセミコロンを書いても書かなくてもOKな言語ですが、内部的にはセミコロンを自動で挿入して文を区切っています。
 
 https://262.ecma-international.org/13.0/#sec-automatic-semicolon-insertion
@@ -54,7 +63,7 @@ jj
 
 https://eslint.org/docs/latest/rules/no-plusplus
 
-上記のような事態を抑制するのが`no-plusplus`ルールです。
+再びドキュメントに戻りまして、上記のような事態を抑制するのが`no-plusplus`ルールです。
 
 ```json
 module.exports = {
