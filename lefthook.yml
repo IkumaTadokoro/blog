@@ -1,0 +1,7 @@
+pre-commit:
+  parallel: true
+  commands:
+    check:astro:
+      run: pnpm check:astro
+    check:biome:
+      run: pnpm check:biome

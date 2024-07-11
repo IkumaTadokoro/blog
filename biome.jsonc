@@ -1,0 +1,79 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+	"files": {
+		"include": ["./**/*.astro", "./**/*.ts", "./**/*.tsx", "./**/*.json"],
+		"ignore": [
+			".astro/",
+			"dist/",
+			"node_modules/",
+			"package-lock.json",
+			"pnpm-lock.yaml",
+			"package.json",
+			".vscode/",
+			"tsconfig.json"
+		]
+	},
+	"formatter": {
+		"enabled": true,
+		"attributePosition": "multiline",
+		"indentStyle": "tab",
+		"indentWidth": 2,
+		"lineEnding": "lf",
+		"lineWidth": 90
+	},
+	"javascript": {
+		"formatter": {
+			"enabled": true,
+			"arrowParentheses": "always",
+			"attributePosition": "multiline",
+			"bracketSameLine": true,
+			"bracketSpacing": true,
+			"jsxQuoteStyle": "single",
+			"quoteStyle": "single",
+			"semicolons": "always",
+			"trailingCommas": "all"
+		},
+		"globals": ["Astro"]
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"a11y": { "all": true },
+			"complexity": { "all": true },
+			"correctness": {},
+			"nursery": {
+				"all": true,
+				"noUndeclaredDependencies": "off"
+			},
+			"performance": { "all": true },
+			"security": { "all": true },
+			"style": {
+				"all": true,
+				"noDefaultExport": "off",
+				"useBlockStatements": "off",
+				"useConsistentArrayType": {
+					"level": "warn",
+					"options": {
+						"syntax": "generic"
+					}
+				},
+				"useFilenamingConvention": "off",
+				"useNamingConvention": "off",
+				"useShorthandArrayType": "off"
+			},
+			"suspicious": {
+				"all": true,
+				"noArrayIndexKey": "off"
+			}
+		}
+	},
+	"organizeImports": {
+		"enabled": true
+	},
+	"vcs": {
+		"clientKind": "git",
+		"defaultBranch": "main",
+		"enabled": true
+	}
+}
