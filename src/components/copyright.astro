@@ -1,0 +1,9 @@
+---
+import { SITE } from '../config';
+
+const { publishedYear, author } = SITE;
+const today = new Date();
+const currentYear = today.getFullYear().toString();
+---
+
+<p class="font-semibold text-xs">© {publishedYear >= currentYear ? publishedYear : `${publishedYear}-${currentYear}`} {author}</p>
