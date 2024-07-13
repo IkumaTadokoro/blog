@@ -19,8 +19,6 @@ export function Meteors({ number }: MeteorsProps) {
 
 	useEffect(() => {
 		function handler() {
-			// Note: Because of the angle of the meteors, we need to offset the min / max
-			// start positions to be off-screen.
 			setOffset({
 				min: -(window.innerWidth / 8),
 				max: window.innerWidth - window.innerWidth / 8,
@@ -47,8 +45,8 @@ export function Meteors({ number }: MeteorsProps) {
 						'before:-translate-y-[50%] before:absolute before:top-1/2 before:h-0.5 before:w-14 before:transform before:rounded-full before:bg-gradient-to-r before:from-gray-300 before:to-transparent before:content-[""] dark:before:from-gray-600',
 					)}
 					style={{
-						top: `${Math.floor(Math.random() * (0 - -400) + -400)}px`,
-						left: `${Math.floor(Math.random() * offset.max + offset.min)}px`,
+						top: `${Math.floor(Math.random() * 400 - 400)}px`,
+						left: `${Math.floor(Math.random() * (offset.max - offset.min) + offset.min)}px`,
 						animationDelay: `${Math.random() * (0.8 - 0.2) + 0.2}s`,
 						animationDuration: `${Math.floor(Math.random() * (10 - 2) + 2)}s`,
 					}}
