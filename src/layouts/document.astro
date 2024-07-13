@@ -1,0 +1,23 @@
+---
+import '@fontsource-variable/lexend';
+import Footer from '../components/footer.astro';
+import Header from '../components/header.astro';
+---
+
+<!doctype html>
+<html lang='ja'>
+	<head>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body class="min-h-screen grid grid-rows-[auto_1fr_auto]">
+        <Header />
+        <main>
+            <div class="max-w-screen-lg mx-auto px-4">
+                <slot />
+            </div>
+        </main>
+        <Footer />
+	</body>
+</html

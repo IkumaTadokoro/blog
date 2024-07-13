@@ -44,7 +44,10 @@
 			"correctness": {},
 			"nursery": {
 				"all": true,
-				"noUndeclaredDependencies": "off"
+				"noUndeclaredDependencies": "off",
+				"useImportExtensions": "off",
+				"noReactSpecificProps": "off",
+				"useImportRestrictions": "off"
 			},
 			"performance": { "all": true },
 			"security": { "all": true },
