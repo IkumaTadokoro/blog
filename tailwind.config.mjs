@@ -65,7 +65,8 @@ export default {
 				},
 			},
 			fontFamily: {
-				sans: ['Lexend', ...defaultTheme.fontFamily.sans],
+				sans: ['Lexend Variable', ...defaultTheme.fontFamily.sans],
+				montserrat: ['Montserrat Variable', ...defaultTheme.fontFamily.sans],
 			},
 		},
 	},
