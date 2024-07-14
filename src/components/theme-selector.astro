@@ -1,0 +1,86 @@
+<theme-toggle class="relative h-6 w-6">
+  <button
+    id="toggle-theme"
+    class="group hover:opacity-70"
+    aria-label="Toggle Theme"
+  >
+    <span
+      class="absolute left-0 right-0 top-0 opacity-0 group-aria-pressed:opacity-100 text-primary"
+    >
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        ><g
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          ><circle cx="12" cy="12" r="4"></circle><path
+            d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
+          ></path></g
+        ></svg
+      >
+    </span>
+
+    <span
+      class="absolute left-0 right-0 top-0 opacity-0 group-aria-[pressed=false]:opacity-100 text-blue-900"
+    >
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        ><path
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M12 3a6 6 0 0 0 9 9a9 9 0 1 1-9-9"></path></svg
+      >
+    </span>
+  </button>
+</theme-toggle>
+
+<script>
+  class themeToggle extends HTMLElement {
+    constructor() {
+      super();
+      const button = this.querySelector("button") as HTMLButtonElement;
+
+      if (button) {
+        button.addEventListener("click", (e) => {
+          if (e.currentTarget instanceof HTMLButtonElement) {
+            const isPressed =
+              e.currentTarget.getAttribute("aria-pressed") === "true";
+            const themeChangeEvent = new CustomEvent("theme-change", {
+              detail: {
+                theme: isPressed ? "light" : "dark",
+              },
+            });
+            // dispatch event -> ThemeProvider.astro
+            document.dispatchEvent(themeChangeEvent);
+            button.setAttribute("aria-pressed", String(!isPressed));
+          }
+        });
+      }
+    }
+  }
+
+  if ("customElements" in window) {
+    customElements.define("theme-toggle", themeToggle);
+  }
+</script>
+
+<script is:inline>
+  const button = document.getElementById("toggle-theme");
+
+  function setButtonPresssed() {
+    const bodyThemeIsDark = document.documentElement.dataset.theme === "dark";
+    button.setAttribute("aria-pressed", String(bodyThemeIsDark));
+  }
+  setButtonPresssed();
+</script>
