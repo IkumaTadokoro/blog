@@ -4,16 +4,18 @@ import RssIcon from './rss-icon.astro';
 import SocialIcon from './social-icon/social-icon.astro';
 ---
 
-<footer class="bg-black">
-    <div class="max-w-screen-lg mx-auto px-4 py-3 text-white flex justify-between items-center">
-        <Copyright />
-        <div class="flex gap-3">
-            <SocialIcon icon="Github" />
-            <SocialIcon icon="X" />
-            <SocialIcon icon="Zenn" />
-            <SocialIcon icon="SpeakerDeck" />
-            <SocialIcon icon="SizuMe" />
-            <RssIcon />
-        </div>
+<footer class="bg-background border-t border-muted">
+  <div
+    class="max-w-screen-lg mx-auto px-4 py-3 text-foreground flex justify-between items-center"
+  >
+    <Copyright />
+    <div class="flex gap-3">
+      <SocialIcon icon="Github" />
+      <SocialIcon icon="X" />
+      <SocialIcon icon="Zenn" />
+      <SocialIcon icon="SpeakerDeck" />
+      <SocialIcon icon="SizuMe" />
+      <RssIcon />
     </div>
+  </div>
 </footer>

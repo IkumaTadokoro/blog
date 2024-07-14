@@ -1,11 +1,15 @@
 ---
 import { Meteors } from './Meteors';
 import SiteLogo from './site-logo/site-logo.astro';
+import ThemeSelector from './theme-selector.astro';
 ---
 
 <header>
-	<div class="max-w-screen-lg mx-auto my-12 px-4">
-		<Meteors client:only="react" number={20} />
-		<SiteLogo />
-	</div>
+  <div class="max-w-screen-lg mx-auto my-12 px-4">
+    <Meteors client:only="react" number={20} />
+    <div class="flex justify-between items-center">
+      <SiteLogo />
+      <ThemeSelector />
+    </div>
+  </div>
 </header>
