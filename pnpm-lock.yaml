@@ -12,10 +12,10 @@ importers:
         specifier: 0.7.0
         version: 0.7.0(typescript@5.4.5)
       '@astrojs/react':
-        specifier: ^3.6.0
+        specifier: 3.6.0
         version: 3.6.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.2.13)
       '@astrojs/tailwind':
-        specifier: ^5.1.0
+        specifier: 5.1.0
         version: 5.1.0(astro@4.10.2(typescript@5.4.5))(tailwindcss@3.4.4)
       '@fontsource-variable/lexend':
         specifier: 5.0.20
@@ -33,16 +33,16 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       react:
-        specifier: ^18.3.1
+        specifier: 18.3.1
         version: 18.3.1
       react-dom:
-        specifier: ^18.3.1
+        specifier: 18.3.1
         version: 18.3.1(react@18.3.1)
       tailwind-merge:
         specifier: 2.4.0
         version: 2.4.0
       tailwindcss:
-        specifier: ^3.4.4
+        specifier: 3.4.4
         version: 3.4.4
       typescript:
         specifier: 5.4.5
