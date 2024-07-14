@@ -15,6 +15,7 @@
 	},
 	"formatter": {
 		"enabled": true,
+		"ignore": ["./**/*.astro"],
 		"attributePosition": "multiline",
 		"indentStyle": "tab",
 		"indentWidth": 2,
