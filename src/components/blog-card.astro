@@ -1,0 +1,40 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Link from "./link.astro";
+import MiniPost from "./mini-post.astro";
+import Time from "./time.astro";
+
+type Props = {
+  blog: CollectionEntry<"blog">;
+};
+
+const { blog } = Astro.props;
+---
+
+<article
+  class="grid gap-y-3 gap-x-6 grid-flow-row sm:grid-flow-col sm:grid-cols-[1fr_4fr] items-center"
+>
+  <div
+    class="relative rounded-xl bg-muted hover:opacity-70 cursor-pointer py-6 sm:py-3"
+  >
+    <MiniPost blog={blog} />
+    <Link to={blog.slug} className="absolute inset-0">
+      <span class="sr-only">{blog.data.title}</span>
+    </Link>
+  </div>
+  <section class="grid gap-y-1">
+    <h3>
+      <Link
+        className="leading-relaxed line-clamp-3 text-md sm:text-lg font-semibold text-foreground"
+        to={blog.slug}
+      >
+        {blog.data.title}
+      </Link>
+    </h3>
+    <div
+      class={"flex items-center gap-1 text-muted-foreground text-xs sm:text-sm"}
+    >
+      公開日: <Time date={blog.data.publishDate} />
+    </div>
+  </section>
+</article>
