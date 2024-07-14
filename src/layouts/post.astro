@@ -1,0 +1,26 @@
+---
+import { cn } from "../utils/cn";
+
+type PostLayoutProps = {
+  title: string;
+  type?: "normal" | "mini";
+};
+
+const { title, type = "normal" } = Astro.props as PostLayoutProps;
+---
+
+<div class={cn("p-14", type === "mini" && "w-[492px]")}>
+  <div class="text-lg">
+    {title}
+  </div>
+  <div
+    class={cn(
+      "mt-8 break-words",
+      type === "mini" && "text-[10px]",
+      "data-[theme='light']:prose",
+      "data-[theme='dark']:prose-invert"
+    )}
+  >
+    <slot />
+  </div>
+</div>

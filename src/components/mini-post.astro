@@ -1,0 +1,27 @@
+---
+import { type CollectionEntry, getEntry } from "astro:content";
+import Post from "../layouts/post.astro";
+
+type Props = {
+  blog: CollectionEntry<"blog">;
+};
+
+const { blog } = Astro.props;
+
+const entry = await getEntry("blog", blog.slug);
+const { Content } = await entry.render();
+---
+
+<aside
+  aria-hidden="true"
+  class="mx-auto overflow-hidden bg-background shadow-md w-[88px] h-[109.12px] rounded-sm"
+>
+  <div
+    class="pointer-events-none origin-top-left select-none"
+    style="transform: scale(0.179, 0.179);"
+  >
+    <Post title={blog.data.title} type="mini">
+      <Content />
+    </Post>
+  </div>
+</aside>
