@@ -1,5 +1,6 @@
 ---
 import Author from "../../components/author.astro";
+import BackButton from "../../components/back-button.astro";
 import TocButton from "../../components/toc-button.astro";
 import Document from "../../layouts/document.astro";
 import Post from "../../layouts/post.astro";
@@ -18,6 +19,9 @@ const { Content, headings } = await entry.render();
 ---
 
 <Document>
+  <div class="mb-8">
+    <BackButton />
+  </div>
   <div
     class="fixed z-10 inline-flex rounded-full shadow-xl bg-background/50 backdrop-blur-md h-14 bottom-10 right-5 sm:bottom-20 sm:right-10 lg:right-[20%] border border-border"
   >
