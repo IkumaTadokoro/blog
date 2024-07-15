@@ -1,0 +1,186 @@
+---
+title: "[Node/Deno]ちょっとしたCLIで使えるスピナー"
+description: "手作りスピナー、つまりハンドスピナー"
+pubDate: "2023-06-03T07:04:22"
+category: "CLI"
+tags: [Node.js, Deno]
+draft: false
+---
+
+import Tweet from "@components/Tweet.vue";
+import Youtube from "@components/Youtube.vue";
+
+## はじめに
+
+ちょっとした CLI を作っている時に、ある程度長い処理（最近だと OpenAI の API 呼び出しとか）を実行している際に、ローディング時間が気になります。
+
+そんなときにスピナーを表示して、実行中であることを視覚的にわかるようにしたいのですが、これをやるためだけにライブラリを追加するのもやや微妙です。
+
+そのため、Node.js/Deno でちょっとしたスピナーを作ってみました。
+
+## 実装
+
+いずれの場合も基本形は同じで、それぞれのランタイム固有の API に置き換えているくらいです。
+
+### Node.js
+
+```ts
+const FRAMES = ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"];
+
+export class Spinner {
+  constructor(
+    private intervalId: NodeJS.Timer | undefined = undefined,
+    private currentCharIndex = 0
+  ) {}
+
+  start(message?: string) {
+    this.intervalId = setInterval(() => {
+      const spinner = FRAMES[this.currentCharIndex++];
+      const spinnerMessage = message ? `  ${message}` : "";
+      process.stderr.write(`\r${spinner}${spinnerMessage}`);
+      this.currentCharIndex %= FRAMES.length;
+    }, 100);
+  }
+
+  stop(message?: string) {
+    clearInterval(this.intervalId);
+    process.stderr.write(`\r${message ?? ""}`);
+  }
+}
+```
+
+### Deno 実装
+
+```ts
+const FRAMES = ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"];
+
+export class Spinner {
+  constructor(
+    private intervalId: number | undefined = undefined,
+    private currentCharIndex = 0
+  ) {}
+
+  start(message?: string) {
+    this.intervalId = setInterval(() => {
+      const spinner = FRAMES[this.currentCharIndex++];
+      const spinnerMessage = message ? `  ${message}` : "";
+      Deno.stdout.write(
+        new TextEncoder().encode(`\r${spinner}${spinnerMessage}`)
+      );
+      this.currentCharIndex %= FRAMES.length;
+    }, 100);
+  }
+
+  stop(message?: string) {
+    clearInterval(this.intervalId);
+    Deno.stdout.write(new TextEncoder().encode(`\r${message ?? ""}`));
+  }
+}
+```
+
+## 使い方
+
+```ts
+// 使い方（Node.js）
+import timers from "node:timers/promises";
+
+(async () => {
+  const spinner = new Spinner();
+  spinner.start("ロード中...");
+  await timers.setTimeout(3000);
+  spinner.stop();
+})();
+
+// Deno
+import { sleep } from "https://deno.land/x/sleep/mod.ts";
+
+const spinner = new Spinner();
+spinner.start("ロード中...");
+await sleep(3); // sleepはミリ秒ではなく、秒を渡すインターフェース
+spinner.stop();
+```
+
+spinner 自体には実行時間等の役割は持たせず、あくまで表示のみを行うようにしています。
+そのため、何かしら長い処理の前後に `spinner.start()` と `spinner.stop()` を挟む形で使うことになります。
+
+このインターフェースは大きめの CLI になるとやや微妙かな？と思ったりしましたが、今回はささっと使える Spinner を用意するのが目的だったのでこれでよしとしています。
+
+## 解説
+
+### NodeJS.Timer
+
+https://nodejs.org/api/timers.html#timers
+
+window.setInterval の場合や Deno の場合も、setInterval の戻り値は number なのですが、Node.js ではイベントループを管理するためのオブジェクトとして NodeJS.Timer という型が用意されています。
+
+Node.js においては、setInterval の戻り値が[Timeout クラス](https://nodejs.org/docs/latest-v18.x/api/timers.html#class-timeout)であり、このクラスの型が NodeJS.Timer です。
+
+実際の型定義は以下の通りです。
+
+```ts
+declare module "timers" {
+  // ...
+  let setInterval: typeof global.setInterval;
+
+  // ...
+  global {
+    namespace NodeJS {
+      interface Timer extends RefCounted {
+        hasRef(): boolean;
+        refresh(): this;
+        [Symbol.toPrimitive](): number;
+      }
+
+      // ...
+    }
+  }
+}
+```
+
+https://github.com/DefinitelyTyped/DefinitelyTyped/blob/3197efc097d522c4bf02b94e1a0766d007d6cdeb/types/node/timers.d.ts#L31-L35
+
+```ts
+interface RefCounted {
+  ref(): this;
+  unref(): this;
+}
+```
+
+https://github.com/DefinitelyTyped/DefinitelyTyped/blob/3197efc097d522c4bf02b94e1a0766d007d6cdeb/types/node/globals.d.ts#L234-L237
+
+ドキュメントを読む限りでは、以下のような感じでした。
+
+- デフォルトでは Timer はイベントループが有効な間は生存する
+- このデフォルトの挙動をカスタマイズできるように、ref() と unref() が用意されている
+- Timer#refresh() は Timer オブジェクトをリフレッシュする（タイマーがリセットされる）
+- Timer#Symbol.toPrimitive() は Timer オブジェクトを数値で返す。これによって、ブラウザでの setInterval との実装の互換性を実現できる。
+
+今回のように、ブラウザの setInterval と同じような感覚で使用している場合にはあまり効果はないですが、イベントループを意識した処理を書く際にはこれらのインターフェースが役に立つのかも？
+
+### キャリッジリターン
+
+`\r`のことですが、単純に`console.log()`してしまうと、改行が発生してスピナーのフレームが変わるたびに 1 行ずつ表示されてしまいます。
+
+そのため、それぞれのランタイムの出力を利用して出力し、さらにキャリッジリターンを使って、カーソルを行の先頭に戻すようにしています。
+これでその位置に留まり続けるスピナーの完成です。
+
+## カスタマイズ
+
+### ローディングに表示されるアイコンを変える
+
+FRAMES に好きなアイコンを定義すれば、その通りに表示されます。
+
+今回表示している点字は https://github.com/sindresorhus/cli-spinners を参考にさせてもらいましたが、これ以外にも適当な絵文字（🍣 とか 🍺 とか）を使っても良いかもしれません。
+
+### 標準出力にまぎれないようにする
+
+こういったことをしたいユースケースとしては、「ターミナル上ではローディングを見せたいけど、処理結果を pipe 等で後続処理に渡したいので、標準出力には出力したくない」というケースかと思います。
+これは現時点での暫定解なのですが、標準出力ではなく標準エラー出力に出力すればとりあえず解決します。
+
+解決は解決なんですが、本来エラーのために用意されている箇所を、こういったハックのために使うのはいかがなものかという気もしますね...。
+
+## おわりに
+
+今回 intervalId を持っていて欲しかったので、イメージしやすくクラスとして作りましたが、関数型でやるとどうなるのかは気になるところ。気が向いたらやってみようと思います。
+
+...こういっていて気が向いたことはないので、多分やりません。どなたか実装されたら教えてください。
