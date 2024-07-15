@@ -12,9 +12,9 @@ type PostLayoutProps = {
 const { title, publishDate, type = "normal" } = Astro.props as PostLayoutProps;
 ---
 
-<div class={cn("sm:space-y-16", type === "mini" && "p-14 w-[492px]")}>
+<div class={cn("space-y-8 sm:space-y-16", type === "mini" && "p-14 w-[492px]")}>
   <hgroup class="space-y-4">
-    <h2 class="text-lg sm:text-3xl font-semibold break-words">
+    <h2 class="text-lg sm:text-3xl font-semibold break-all">
       {title}
     </h2>
     <div
@@ -24,7 +24,7 @@ const { title, publishDate, type = "normal" } = Astro.props as PostLayoutProps;
       <p>に公開</p>
     </div>
   </hgroup>
-  <article class={cn("break-words prose", type === "mini" && "text-[10px]")}>
+  <article class={cn("break-all prose", type === "mini" && "text-[10px]")}>
     <slot />
   </article>
 </div>

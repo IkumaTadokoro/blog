@@ -17,6 +17,7 @@ import type { Options as RehypeExternalLinksOptions } from 'rehype-external-link
 const expressiveCodeOptions = {
 	defaultProps: {
 		wrap: true,
+		showLineNumbers: false,
 	},
 	themes: ['github-light', 'github-dark-dimmed'],
 	themeCssSelector: (theme) => {
