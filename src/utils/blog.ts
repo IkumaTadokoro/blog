@@ -15,3 +15,7 @@ export function sortByDate(collections: Collections) {
 			new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime(),
 	);
 }
+
+export function buildUrl(slug: string) {
+	return `/blog/${slug}`;
+}
