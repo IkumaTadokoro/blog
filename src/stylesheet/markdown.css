@@ -1,0 +1,40 @@
+.prose {
+    @apply sm:!max-w-full;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  @apply text-foreground;
+}
+
+.prose h2 {
+    @apply text-base sm:text-2xl sm:mt-20;
+}
+
+.prose h3 {
+    @apply text-sm sm:text-xl sm:mt-12;
+}
+
+.prose p,
+.prose ol,
+.prose ul,
+.prose blockquote,
+.prose table,
+.prose th,
+.prose td,
+.prose code {
+  @apply text-foreground/75 text-sm sm:text-base;
+}
+
+
+.prose a {
+  @apply text-muted-foreground;
+}
+
+.prose a:hover {
+  @apply text-foreground;
+}

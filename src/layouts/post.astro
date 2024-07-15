@@ -1,26 +1,30 @@
 ---
+import Time from "../components/time.astro";
+import "../stylesheet/markdown.css";
 import { cn } from "../utils/cn";
 
 type PostLayoutProps = {
   title: string;
+  publishDate: Date;
   type?: "normal" | "mini";
 };
 
-const { title, type = "normal" } = Astro.props as PostLayoutProps;
+const { title, publishDate, type = "normal" } = Astro.props as PostLayoutProps;
 ---
 
-<div class={cn("p-14", type === "mini" && "w-[492px]")}>
-  <div class="text-lg">
-    {title}
-  </div>
-  <div
-    class={cn(
-      "mt-8 break-words",
-      type === "mini" && "text-[10px]",
-      "data-[theme='light']:prose",
-      "data-[theme='dark']:prose-invert"
-    )}
-  >
+<div class={cn("sm:space-y-16", type === "mini" && "p-14 w-[492px]")}>
+  <hgroup class="space-y-4">
+    <h2 class="text-lg sm:text-3xl font-semibold break-words">
+      {title}
+    </h2>
+    <div
+      class="flex items-center justify-end gap-2 text-sm text-muted-foreground"
+    >
+      <Time date={publishDate} />
+      <p>に公開</p>
+    </div>
+  </hgroup>
+  <article class={cn("break-words prose", type === "mini" && "text-[10px]")}>
     <slot />
-  </div>
+  </article>
 </div>
