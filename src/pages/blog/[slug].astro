@@ -1,4 +1,5 @@
 ---
+import TocButton from "../../components/toc-button.astro";
 import Document from "../../layouts/document.astro";
 import Post from "../../layouts/post.astro";
 import { getBlogs } from "../../utils/blog";
@@ -12,10 +13,15 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content, headings } = await entry.render();
 ---
 
 <Document>
+  <div
+    class="fixed z-10 inline-flex rounded-full shadow-xl bg-background/50 backdrop-blur-md h-14 bottom-10 right-5 sm:bottom-20 sm:right-10 lg:right-[20%] border border-border"
+  >
+    <TocButton title={entry.data.title} headings={headings} />
+  </div>
   <Post title={entry.data.title} publishDate={entry.data.publishDate}>
     <Content />
   </Post>

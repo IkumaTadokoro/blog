@@ -43,6 +43,7 @@ export default {
 			},
 			animation: {
 				'meteor-effect': 'meteor 5s linear infinite',
+				"slide-top": "slideTop 0.25s ease both"
 			},
 			borderRadius: {
 				lg: "var(--radius)",
@@ -63,6 +64,14 @@ export default {
 						opacity: '0',
 					},
 				},
+				slideTop: {
+                    "0%": {
+                        transform: "translateY(25px)"
+                    },
+                    "100%": {
+                        transform: "translateY(0)"
+                    }
+                }
 			},
 			fontFamily: {
 				sans: ['Lexend Variable', ...defaultTheme.fontFamily.sans],
