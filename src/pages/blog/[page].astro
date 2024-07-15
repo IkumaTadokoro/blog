@@ -1,0 +1,31 @@
+---
+import type { CollectionEntry } from "astro:content";
+import type { GetStaticPathsOptions, Page } from "astro";
+import BlogCard from "../../components/blog-card.astro";
+import Pagination from "../../components/pagination/pagination.astro";
+
+import Document from "../../layouts/document.astro";
+import { getBlogs } from "../../utils/blog";
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+  return paginate(await getBlogs(), { pageSize: 10 });
+}
+
+const { page } = Astro.props as {
+  page: Page<CollectionEntry<"blog">>;
+};
+---
+
+<Document>
+  <section class="grid gap-8">
+    <h2 class="text-3xl font-bold text-foreground tracking-wider">BLOG</h2>
+    <div class="grid items-center">
+      <div class="justify-self-end">
+        <Pagination page={page} collectionKey="blog" />
+      </div>
+    </div>
+    <div class="grid gap-y-8 sm:gap-y-4">
+      {page.data.map((blog) => <BlogCard blog={blog} />)}
+    </div>
+  </section>
+</Document>
