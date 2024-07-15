@@ -1,0 +1,62 @@
+---
+import type { Page } from "astro";
+import { Icon } from "astro-icon/components";
+import Link from "../link.astro";
+
+type Props = Pick<Page, "url">;
+
+const { url } = Astro.props as Props;
+---
+
+<ul class="flex items-center gap-1 sm:gap-2">
+  <li>
+    {
+      url.prev ? (
+        <Link
+          to={url.prev}
+          className="cursor-pointer hover:opacity-70"
+          aria-label="前のページへ"
+        >
+          <Icon
+            size={28}
+            name="lucide:arrow-left"
+            title="前のページへ"
+            class="text-foreground rounded-full border border-border aspect-square p-1 bg-background"
+          />
+        </Link>
+      ) : (
+        <Icon
+          size={28}
+          title="これ以上前のページはありません"
+          name="lucide:arrow-left"
+          class="cursor-not-allowed text-border rounded-full border border-border aspect-square p-1 bg-background"
+        />
+      )
+    }
+  </li>
+  <li>
+    {
+      url.next ? (
+        <Link
+          to={url.next}
+          className="cursor-pointer hover:opacity-70"
+          aria-label="次のページへ"
+        >
+          <Icon
+            size={28}
+            name="lucide:arrow-right"
+            title="次のページへ"
+            class="text-foreground rounded-full border border-border aspect-square p-1 bg-background"
+          />
+        </Link>
+      ) : (
+        <Icon
+          size={28}
+          title="これ以上次のページはありません"
+          name="lucide:arrow-right"
+          class="cursor-not-allowed text-border rounded-full border border-border aspect-square p-1 bg-background"
+        />
+      )
+    }
+  </li>
+</ul>
