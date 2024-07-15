@@ -13,15 +13,13 @@ tags:
 このサイトは Astro で実装されており、一部コンポーネントに React を使用しています。
 ある日を境に、開発サーバの起動ログに以下のような警告が出るようになりました。
 
-```
+```bash
 Warning: ReactDOMServer.renderToStaticNodeStream() is deprecated. Use ReactDOMServer.renderToPipeableStream() and wait to `pipe` until the `onAllReady` callback has been called instead.
 ```
 
 メッセージで検索してみると、同様の Issue が GitHub に起票されており、対応の Pull Request もマージされていました。
 
 https://github.com/withastro/astro/issues/10899
-
-<br />
 
 https://github.com/withastro/astro/pull/10893
 
