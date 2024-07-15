@@ -47,7 +47,6 @@
   @apply text-foreground/75 text-sm sm:text-base;
 }
 
-
 .prose a {
   @apply text-muted-foreground;
 }
