@@ -1,4 +1,5 @@
 ---
+import Author from "../components/author.astro";
 import BlogCard from "../components/blog-card.astro";
 import Link from "../components/link.astro";
 import Document from "../layouts/document.astro";
@@ -9,7 +10,9 @@ const blogs = allBlogs.slice(0, 5);
 ---
 
 <Document>
-  <section class="grid grid-cols-2 gap-8">
+  <section
+    class="grid grid-cols-2 grid-rows-[max-content_1fr_max-content] h-full gap-8"
+  >
     <h2 class="text-3xl font-bold text-foreground tracking-wider">BLOG</h2>
     <Link
       to="/blog/1"
@@ -17,8 +20,11 @@ const blogs = allBlogs.slice(0, 5);
     >
       ほかの記事も見る
     </Link>
-    <div class="col-span-2 grid gap-y-8 sm:gap-y-4">
+    <div class="col-span-2 grid place-self-start gap-y-8">
       {blogs.map((blog) => <BlogCard blog={blog} />)}
+    </div>
+    <div class="col-span-2">
+      <Author />
     </div>
   </section>
 </Document>

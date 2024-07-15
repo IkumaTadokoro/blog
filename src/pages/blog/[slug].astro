@@ -1,4 +1,5 @@
 ---
+import Author from "../../components/author.astro";
 import TocButton from "../../components/toc-button.astro";
 import Document from "../../layouts/document.astro";
 import Post from "../../layouts/post.astro";
@@ -25,4 +26,7 @@ const { Content, headings } = await entry.render();
   <Post title={entry.data.title} publishDate={entry.data.publishDate}>
     <Content />
   </Post>
+  <div class="mt-16">
+    <Author />
+  </div>
 </Document>
