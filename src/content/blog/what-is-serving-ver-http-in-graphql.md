@@ -32,7 +32,7 @@ GraphQL サーバは GET と POST の 2 種類の HTTP リクエストをハン�
 
 GET リクエストでは、GraphQL Query が `query` というクエリパラメータにマッピングされます。
 
-```graphql
+```graphql title="hero.graphql"
 query HeroQuery($id: ID!) {
   hero(id: $id) {
     name
@@ -42,7 +42,7 @@ query HeroQuery($id: ID!) {
 
 このクエリは、次のようにエンコードされます。
 
-```
+```bash wrap
 http://myapi.com/graphql?query=query($id: ID!){hero($id: ID!){name}}&operationName=HeroQuery&variables={"id":"avagfads732"}
 ```
 
@@ -50,7 +50,7 @@ http://myapi.com/graphql?query=query($id: ID!){hero($id: ID!){name}}&operationNa
 
 POST リクエストでは、`application/json` でリクエストを送信する。次の形式の JSON をボディとして送信されます。
 
-```json
+```json wrap
 {
   "query": "...",
   "variables": "updateHeroName",
@@ -62,7 +62,7 @@ POST リクエストでは、`application/json` でリクエストを送信す�
 
 レスポンスは JSON 形式で返される。GraphQL の仕様に則り、`data`フィールドか`errors`フィールドが含まれます。
 
-```json
+```json wrap
 {
   "data": {
     "hero": {
@@ -72,7 +72,9 @@ POST リクエストでは、`application/json` でリクエストを送信す�
 }
 ```
 
-```json
+---
+
+```json wrap
 {
   "errors": [
     {

@@ -1,0 +1,57 @@
+.prose {
+    @apply !max-w-full;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  @apply text-foreground;
+}
+
+.prose h1 > a,
+.prose h2 > a,
+.prose h3 > a,
+.prose h4 > a,
+.prose h5 > a,
+.prose h6 > a {
+  @apply float-left -ml-5 border-none opacity-0 hover:opacity-100 no-underline rounded-md;
+
+  @apply transition duration-300 ease-in-out;
+
+  @apply !text-foreground;
+
+  .icon-link:before {
+    content: "#";
+  }
+}
+
+.prose h2 {
+    @apply text-base sm:text-2xl sm:mt-16;
+}
+
+.prose h3 {
+    @apply text-sm sm:text-xl sm:mt-12;
+}
+
+.prose p,
+.prose ol,
+.prose ul,
+.prose blockquote,
+.prose table,
+.prose th,
+.prose td,
+.prose code {
+  @apply text-foreground/75 text-sm sm:text-base;
+}
+
+
+.prose a {
+  @apply text-muted-foreground;
+}
+
+.prose a:hover {
+  @apply text-foreground;
+}

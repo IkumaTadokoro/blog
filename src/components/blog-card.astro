@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import { buildUrl } from "../utils/blog";
 import Link from "./link.astro";
 import MiniPost from "./mini-post.astro";
 import Time from "./time.astro";
@@ -18,7 +19,7 @@ const { blog } = Astro.props;
     class="relative rounded-xl bg-muted hover:opacity-70 cursor-pointer py-6 sm:py-3"
   >
     <MiniPost blog={blog} />
-    <Link to={blog.slug} className="absolute inset-0">
+    <Link to={buildUrl(blog.slug)} className="absolute inset-0">
       <span class="sr-only">{blog.data.title}</span>
     </Link>
   </div>
@@ -26,7 +27,7 @@ const { blog } = Astro.props;
     <h3>
       <Link
         className="leading-relaxed break-all line-clamp-3 text-md sm:text-lg font-medium text-foreground"
-        to={blog.slug}
+        to={buildUrl(blog.slug)}
       >
         {blog.data.title}
       </Link>
