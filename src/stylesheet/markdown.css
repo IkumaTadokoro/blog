@@ -11,6 +11,23 @@
   @apply text-foreground;
 }
 
+.prose h1 > a,
+.prose h2 > a,
+.prose h3 > a,
+.prose h4 > a,
+.prose h5 > a,
+.prose h6 > a {
+  @apply float-left -ml-5 border-none opacity-0 hover:opacity-100 no-underline rounded-md;
+
+  @apply transition duration-300 ease-in-out;
+
+  @apply !text-foreground;
+
+  .icon-link:before {
+    content: "#";
+  }
+}
+
 .prose h2 {
     @apply text-base sm:text-2xl sm:mt-20;
 }
