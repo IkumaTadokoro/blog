@@ -1,0 +1,18 @@
+---
+import type { CollectionKey } from "astro:content";
+import type { Page } from "astro";
+import PageSelector from "./page-selector.astro";
+import PageTurner from "./page-turner.astro";
+
+type Props = {
+  page: Page;
+  collectionKey: CollectionKey;
+};
+
+const { page, collectionKey } = Astro.props as Props;
+---
+
+<nav aria-label="pagination" class="grid grid-cols-[1fr_auto] gap-2 sm:gap-4">
+  <PageSelector page={page} collectionKey={collectionKey} />
+  <PageTurner url={page.url} />
+</nav>
