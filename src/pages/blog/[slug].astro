@@ -18,7 +18,7 @@ const { entry } = Astro.props;
 const { Content, headings } = await entry.render();
 ---
 
-<Document>
+<Document title={entry.data.title}>
   <div class="mb-8">
     <BackButton />
   </div>
