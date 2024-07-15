@@ -1,5 +1,7 @@
 ---
+import { Icon } from "astro-icon/components";
 import { Meteors } from "./Meteors";
+import Link from "./link.astro";
 import SiteLogo from "./site-logo/site-logo.astro";
 import ThemeSelector from "./theme-selector.astro";
 ---
@@ -7,8 +9,13 @@ import ThemeSelector from "./theme-selector.astro";
 <header>
   <div class="max-w-screen-md mx-auto my-12 px-4">
     <Meteors client:only="react" number={20} />
-    <div class="flex justify-between items-center">
+    <div
+      class="grid grid-cols-[1fr_auto_auto] gap-4 justify-between items-center"
+    >
       <SiteLogo />
+      <Link to="/search">
+        <Icon size={28} title="検索" name="lucide:text-search" />
+      </Link>
       <ThemeSelector />
     </div>
   </div>
