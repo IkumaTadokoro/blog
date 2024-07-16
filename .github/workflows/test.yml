@@ -1,0 +1,22 @@
+name: test
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "package.json"
+      - "src/**"
+      - ".github/workflows/test.yml"
+  push:
+    branches: [main]
+    paths:
+      - "package.json"
+      - "src/**"
+      - ".github/workflows/test.yml"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-node
+      - run: pnpm test

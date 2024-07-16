@@ -1,10 +1,16 @@
-import { getCollection } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
+import type { RSSFeedItem } from '@astrojs/rss';
+import { experimental_AstroContainer } from 'astro/container';
+import sanitizeHtml from 'sanitize-html';
+import { SITE } from '../config';
 
 export type Collections = Array<CollectionEntry<'blog'>>;
 
 export async function getBlogs() {
-	const posts = await getCollection('blog');
+	const posts = await getCollection('blog', ({ data }) => {
+		return import.meta.env.PROD ? data.draft !== true : true;
+	});
 
 	return sortByDate(posts);
 }
@@ -18,4 +24,45 @@ export function sortByDate(collections: Collections) {
 
 export function buildUrl(slug: string) {
 	return `/blog/${slug}`;
+}
+
+export async function buildRssItem(post: CollectionEntry<'blog'>): Promise<RSSFeedItem> {
+	const container = await experimental_AstroContainer.create();
+	const content = await container.renderToString((await post.render()).Content);
+	const sanitizedContent = sanitizeHtml(content, {
+		allowedTags: [...sanitizeHtml.defaults.allowedTags, 'img'],
+	});
+	const rawText = sanitizedContent.replace(/<\/?[^>]+(>|$)/g, '');
+	const plainText = rawText.replace(/\s+/g, '').trim();
+	const summary = plainText.slice(0, 100);
+
+	const rssItem: RSSFeedItem = {
+		title: post.data.title,
+		description: summary,
+		link: buildUrl(post.slug),
+		pubDate: post.data.publishDate,
+		content: sanitizedContent,
+		author: SITE.author,
+	};
+
+	return rssItem;
+}
+
+if (import.meta.vitest) {
+	describe('buildRssItem', async () => {
+		const post = await getEntry('blog', 'test');
+		it('should return a valid RSS item', async () => {
+			const rssItem = await buildRssItem(post);
+
+			expect(rssItem.title).eq('テスト用のサンプル記事');
+			expect(rssItem.description).toContain(
+				'この記事はテスト用に作成した物です。削除しないでください。見出し1',
+			);
+			expect(rssItem.link).eq('/blog/test');
+			expect(rssItem.pubDate).toEqual(new Date('2024-01-01T00:00:00.000Z'));
+			expect(rssItem.content).toContain(
+				'<p>この記事はテスト用に作成した物です。削除しないでください。</p>',
+			);
+		});
+	});
 }
