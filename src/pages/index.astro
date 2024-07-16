@@ -6,7 +6,7 @@ import Document from "../layouts/document.astro";
 import { getBlogs } from "../utils/blog";
 
 const allBlogs = await getBlogs();
-const blogs = allBlogs.slice(0, 5);
+const blogs = allBlogs.slice(0, 3);
 ---
 
 <Document>
