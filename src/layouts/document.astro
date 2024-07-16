@@ -2,17 +2,46 @@
 import "@fontsource-variable/lexend";
 import "../stylesheet/globalStyles.css";
 import { ViewTransitions } from "astro:transitions";
+import ogImage from "../assets/ogp.png";
 import Footer from "../components/footer.astro";
 import Header from "../components/header.astro";
 import ThemeProvider from "../components/theme-provider.astro";
+import { SITE } from "../config";
+
+type Props = {
+  title?: string;
+  description?: string;
+};
+
+const { title, description } = Astro.props as Props;
+
+const pageTitle = title ?? Astro.url.pathname.replace(/^\/|\/$/g, "");
+const pageDescription = description ?? SITE.description;
+const pageTitlePrefixed = pageTitle
+  ? `${pageTitle} | ${SITE.title}`
+  : SITE.title;
+
+const url = new URL(Astro.url.pathname, Astro.site);
+const ogp = new URL(ogImage.src, Astro.site?.origin as string);
 ---
 
 <!doctype html>
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={pageDescription} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE.title} />
+    <meta property="og:url" content={url} />
+    <meta property="og:title" content={pageTitlePrefixed} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:image" content={ogp} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@ikumatdkr" />
+    <title>{pageTitlePrefixed}</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="canonical" href={url} />
     <ViewTransitions />
     <ThemeProvider />
   </head>

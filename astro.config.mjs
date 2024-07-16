@@ -3,10 +3,16 @@ import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
 import icon from "astro-icon";
 import { expressiveCodePlugin, rehypePlugins } from './src/utils/markdown';
+import pagefind from "astro-pagefind";
+import { SITE } from './src/config';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), react(), icon(), expressiveCodePlugin],
+  site: SITE.siteUrl,
+  build: {
+    format: "file",
+  },
+  integrations: [tailwind(), react(), icon(), expressiveCodePlugin, pagefind()],
   markdown: {
     rehypePlugins,
   },

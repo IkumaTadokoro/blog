@@ -24,7 +24,10 @@ const { title, publishDate, type = "normal" } = Astro.props as PostLayoutProps;
       <p>に公開</p>
     </div>
   </hgroup>
-  <article class={cn("break-all prose", type === "mini" && "text-[10px]")}>
+  <article
+    class={cn("break-all prose", type === "mini" && "text-[10px]")}
+    data-pagefind-body
+  >
     <slot />
   </article>
 </div>
