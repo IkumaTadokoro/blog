@@ -1,4 +1,5 @@
 ---
+import { Icon } from "astro-icon/components";
 import Author from "../../components/author.astro";
 import BackButton from "../../components/back-button.astro";
 import TocButton from "../../components/toc-button.astro";
@@ -28,6 +29,14 @@ const { Content, headings } = await entry.render();
     <TocButton title={entry.data.title} headings={headings} />
   </div>
   <Post title={entry.data.title} publishDate={entry.data.publishDate}>
+    {
+      entry.data.draft && (
+        <div class="mb-8 flex items-center gap-2 border border-border rounded-md p-4 text-foreground bg-background font-semibold">
+          <Icon name="lucide:alert-circle" class="w-4 h-4" />
+          <small>この記事は下書きです。本番環境では表示されません。</small>
+        </div>
+      )
+    }
     <Content />
   </Post>
   <div class="mt-16">
