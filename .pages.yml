@@ -12,7 +12,7 @@ content:
       search: [title, category]
       default: { sort: publishDate, order: desc }
     fields:
-      - { name: publishDate, label: Date, type: date }
+      - { name: publishDate, label: PublishDate, type: date }
       - { name: category, label: Category, type: select, options: { values: [tech, idea, life] } }
       - { name: title, label: Title, type: string, required: true }
       - { name: draft, label: Draft, type: boolean }
