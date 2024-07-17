@@ -1,0 +1,18 @@
+media:
+  input: src/assets/images
+  output: /_assets
+content:
+  - name: blog
+    label: Blog
+    type: collection
+    path: src/content/blog
+    view:
+      fields: [ title, draft, publishDate, category, tags ]
+    fields:
+      - { name: publishDate, label: Date, type: date }
+      - { name: category, label: Category, type: string }
+      - { name: title, label: Title, type: string, required: true }
+      - { name: slug, label: Slug, type: string }
+      - { name: draft, label: Draft, type: boolean }
+      - { name: tags, label: Tags, type: string, list: true }
+      - { name: body, label: Body, type: rich-text }
