@@ -8,8 +8,9 @@ content:
     path: src/content/blog
     view:
       fields: [ title, draft, publishDate, category, tags ]
-      sort: [date]
+      sort: [publishDate]
       search: [title, category]
+      default: { sort: publishDate, order: desc }
     fields:
       - { name: publishDate, label: Date, type: date }
       - { name: category, label: Category, type: select, options: { values: [tech, idea, life] } }
