@@ -9,7 +9,9 @@
     "start": "astro dev",
     "build": "astro check && astro build && pnpm build:pagefind",
     "build:pagefind": "pagefind --site dist",
-    "preview": "astro preview",
+    "deploy": "pnpm build && wrangler pages deploy dist",
+    "preview": "wrangler pages dev ./dist",
+    "preview:local": "astro preview",
     "check": "pnpm check:astro && pnpm check:biome",
     "check:astro": "astro check",
     "check:biome": "biome check .",
@@ -52,6 +54,7 @@
     "@types/node": "20.14.11",
     "@types/sanitize-html": "2.11.0",
     "lefthook": "1.7.2",
-    "vitest": "2.0.3"
+    "vitest": "2.0.3",
+    "wrangler": "3.65.0"
   }
 }
