@@ -7,4 +7,4 @@ draft: false
 ---
 スマホから投稿
 
-![](/_assets/try-pages-cms/PXL_20240715_110836926.jpg)
+![](../../assets/images/try-pages-cms/PXL_20240715_110836926.jpg)
