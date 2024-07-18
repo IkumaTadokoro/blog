@@ -150,7 +150,7 @@ $ yarn add gatsby-plugin-react-helmet react-helmet
 
 それを`gatsby-config.js`で宣言しておく必要があるのです。
 
-```javascript:title=gatsby-config.js
+```javascript:title
 plugins: [`gatsby-plugin-react-helmet`]
 ```
 
