@@ -38,7 +38,7 @@ RubyMineを使っていると、Git操作はGUIで完結してしまい、ちょ
 
 - `git commit -a -m "Message"`：git addとcommitを同時に実行する。
 
-```bash:file=bash
+```bash
 $ git commit --help
 #
 -a, --all
@@ -56,7 +56,7 @@ aオプションはallオプションのショートハンドで、変更があ�
 - `git rm <ファイル名>`：ステージングエリアからファイルを削除する。作業ツリーに対して削除を実施した場合、それをステージングエリアに反映する必要があるが、このコマンドの場合、直接ステージングエリアのファイルを削除できる。
 - `git add -p`：部分的なステージングを実行する。コマンドを実行すると、ステージング対象のハンク（一塊）が、順番に表示される。それぞれに対して、以下のいずれかを指定する。
 
-```bash:file=bash
+```bash
 Stage this hunk [y,n,q,a,d,K,g,/,e,?]? ?
 y - stage this hunk
 n - do not stage this hunk
