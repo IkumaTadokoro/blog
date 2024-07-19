@@ -64,7 +64,7 @@ tags:
 
 Twitter特有のmetaとしては、`twitter:site`がもっとも怪しそうなので、まずはこちらを追加してみます。
 
-```javascript:title=seo.js
+```javascript
 {
     name: `twitter:card`,
     content: `summary_large_image`,
@@ -79,7 +79,7 @@ Twitter特有のmetaとしては、`twitter:site`がもっとも怪しそうな�
 
 なおも失敗してしまったので、`og:url`を追加してみます。
 
-```javascript:title=seo.js
+```javascript
 {
     property: `og:url`,
     content: `https://ikuma-t.work/`,
@@ -92,7 +92,7 @@ Twitter特有のmetaとしては、`twitter:site`がもっとも怪しそうな�
 
 最後に、まだ不足している`og:image`を追加します。
 
-```javascript:title=seo.js
+```javascript
 {
     property: `og:image`,
     content: `https://ikuma-t.work/static/logo.png`,
@@ -130,7 +130,7 @@ Twitter特有のmetaとしては、`twitter:site`がもっとも怪しそうな�
 
 つまり、以下のような実際にmetaタグを定義するコンポーネントだけではNGで
 
-```javascript:title=seo.js
+```javascript
 import { Helmet } from "react-helmet"
 
 const Seo = () => {
@@ -150,7 +150,7 @@ $ yarn add gatsby-plugin-react-helmet react-helmet
 
 それを`gatsby-config.js`で宣言しておく必要があるのです。
 
-```javascript:title=gatsby-config.js
+```javascript
 plugins: [`gatsby-plugin-react-helmet`]
 ```
 
