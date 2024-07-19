@@ -1,17 +1,17 @@
-name: lint
+name: ci
 on:
   pull_request:
     branches: [main]
     paths:
       - "package.json"
       - "src/**"
-      - ".github/workflows/lint.yml"
+      - ".github/workflows/ci.yml"
   push:
     branches: [main]
     paths:
       - "package.json"
       - "src/**"
-      - ".github/workflows/lint.yml"
+      - ".github/workflows/ci.yml"
 
 jobs:
   lint:
