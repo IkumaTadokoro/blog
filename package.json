@@ -55,6 +55,6 @@
     "@types/sanitize-html": "2.11.0",
     "lefthook": "1.7.4",
     "vitest": "2.0.3",
-    "wrangler": "3.65.0"
+    "wrangler": "3.65.1"
   }
 }
