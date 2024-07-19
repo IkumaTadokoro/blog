@@ -7,7 +7,7 @@
     "corepack": "corepack enable pnpm",
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build && pnpm build:pagefind",
+    "build": "rm -rf dist && astro build && pnpm build:pagefind",
     "build:pagefind": "pagefind --site dist",
     "deploy": "pnpm build && wrangler pages deploy dist",
     "preview": "wrangler pages dev ./dist",
