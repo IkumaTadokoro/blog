@@ -1,0 +1,25 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+    contents: read
+    deployments: write
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: ./.github/actions/setup-node
+            - run: pnpm build
+            - uses: cloudflare/pages-action@1
+              with:
+                apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+                accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+                projectName: blog
+                directory: ./dist
+                gitHubToken: ${{ secrets.GITHUB_TOKEN }}
