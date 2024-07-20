@@ -2,7 +2,7 @@
 title: O'REILLYのLearning PlatformにLLMを使った質問機能が追加されていた（Beta）
 draft: false
 publishDate: 2023-10-14
-category: idea
+
 tags:
   - O'REILLY
   - Learning Platform

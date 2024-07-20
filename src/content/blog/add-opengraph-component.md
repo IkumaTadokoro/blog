@@ -1,0 +1,111 @@
+---
+title: "TwitterとYoutube展開用のコンポーネント（Vue.js）を導入した"
+description: "ぶんぶんはろー いーろんちゃんねる"
+publishDate: 2023-02-11
+
+tags: [blog, Vue.js, Astro]
+draft: false
+---
+
+import Tweet from "@components/Tweet.vue";
+import Youtube from "@components/Youtube.vue";
+
+## 何をやったのか
+
+Youtube、Twitter をいい感じにブログで表示できるようにしました。
+
+Twitter はこういう感じ。
+
+```jsx
+<Tweet id="1624179076792721412" client:only />
+```
+
+<Tweet id="1624179076792721412" client:only />
+
+Youtube はこういう感じ。
+
+```jsx
+<Youtube id="-kp-GKDA0Fs" />
+```
+
+<Youtube id="-kp-GKDA0Fs" />
+
+## 実装メモ
+
+実装も何も、どちらのコンポーネントも [slidevjs/slidev: Presentation Slides for Developers](https://github.com/slidevjs/slidev) のリポジトリにある内容を基本的には真似させてもらっているのであれなんですが、、微妙に変えているところがあるのでメモっておきます。
+
+### window オブジェクトは Astro の SSR 時に参照できない。
+
+もともとの Slidev のコンポーネントでは、Tweet コンポーネントが描画のための Twitter 用のタグの埋め込みと、該当ツイートの描画の 2 つを責務として持っていました。
+
+前者については、実際のコードだとこんな感じで表されています。
+
+```ts
+// @ts-expect-error global
+if (window?.twttr?.widgets) {
+  onMounted(create);
+} else {
+  useScriptTag(
+    "https://platform.twitter.com/widgets.js",
+    () => {
+      if (vm.isMounted) create();
+      else onMounted(create, vm);
+    },
+    { async: true }
+  );
+}
+```
+
+これをそのまま利用すると、Astro のビルド時にはこの window が参照できないために、ビルドが失敗します。
+
+これを回避するために、Tweet コンポーネントは呼び出し時に`client:only`を指定しています。
+
+### iframe の比率
+
+```vue
+<script setup lang="ts">
+defineProps<{
+  id: string;
+  width?: number;
+  height?: number;
+}>();
+</script>
+
+<template>
+  <div class="youtube-wrapper">
+    <iframe
+      class="absolute top-0 left-0 w-full h-full"
+      :src="`https://www.youtube.com/embed/${id}`"
+      title="YouTube"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen />
+  </div>
+</template>
+
+<style scoped>
+.youtube-wrapper {
+  @apply relative w-full;
+  padding-top: 56.25%;
+}
+</style>
+```
+
+Youtube の方は単純に iframe を使っているだけですが、比率をいい感じにするために、よく使われる padding-top による Hack を使いました。これ初めて知った...。
+
+- 16:9 = 56.25%
+- 4:3 = 75%
+- 3:2 = 66.6666%
+
+って感じで、調整したい比率分だけ padding-top で箱を作ってやることで、iframe をいい感じに調整できるんですね。
+
+### MD→MDX に変更
+
+これらのコンポーネントを埋め込むために、MD 形式で管理していたファイルを MDX に変えました。
+
+ただ、MDX 上は LangServer がうまく走らず（vscode のプラグインはあったが、起動に失敗しているようだった）、今後の課題です。
+
+## おわりに
+
+本当は SNS ごとに作るのではなく、一つ Embed コンポーネントみたいなのを作って、URL を渡すとよしなにやってくれるのがいいんですよね〜。
+そもそも普通のリンクの OG 展開もやっていないので、今後やっていきたいところです。

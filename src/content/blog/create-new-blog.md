@@ -2,7 +2,7 @@
 title: "ブログをNext.jsで作りました"
 description: "過去ブログからの移行記事"
 publishDate: 2022-05-26
-category: ""
+
 tags: []
 draft: false
 ---

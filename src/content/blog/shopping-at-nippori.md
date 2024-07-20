@@ -2,7 +2,7 @@
 title: 日暮里で散策
 draft: false
 publishDate: 2021-08-01
-category: life
+
 tags:
   - 雑記
   - 日暮里

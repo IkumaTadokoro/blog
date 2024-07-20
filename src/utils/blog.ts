@@ -4,17 +4,14 @@ import type { RSSFeedItem } from '@astrojs/rss';
 import { experimental_AstroContainer } from 'astro/container';
 import sanitizeHtml from 'sanitize-html';
 import { SITE } from '../config';
-import { cache } from './cache';
 
 export type Collections = Array<CollectionEntry<'blog'>>;
 
 export async function getBlogs() {
-	return cache('blogs', async () => {
-		const posts = await getCollection('blog', ({ data }) => {
-			return import.meta.env.PROD ? data.draft !== true : true;
-		});
-		return sortByDate(posts);
+	const posts = await getCollection('blog', ({ data }) => {
+		return import.meta.env.PROD ? data.draft !== true : true;
 	});
+	return sortByDate(posts);
 }
 
 export function sortByDate(collections: Collections) {

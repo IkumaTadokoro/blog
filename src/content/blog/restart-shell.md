@@ -1,0 +1,64 @@
+---
+title: "zshrcが吹き飛んだので、修復ついでについでに色々整理する"
+description: "けしてぇ〜！リライトしてぇ〜！"
+publishDate: 2023-04-15
+
+tags: [zsh, dotfiles]
+draft: false
+---
+
+import Tweet from "@components/Tweet.vue";
+import Youtube from "@components/Youtube.vue";
+
+## 雑に作業しすぎて zshrc は吹っ飛んだし、雑に管理してたので復帰できなかった
+
+昨日 GitHub Copilot for CLI の順番待ちがようやくまわってきたので設定を.zshrc に追加したんですが、雑にやりすぎて完全に上書きしていました（シェルの再起動をしていなかったので、事態を把握するまでに少し時間がかかった）。
+
+幸い吹っ飛んだのは.zshrc だけで、エイリアス等を書いている別の config は無事だったため、そこまで被害は出なかったのですが、これを機にちゃんと dotfiles もコミットしておこう& ついでに色々シェルを整理しようと思ったので、やったことをまとめておきます。
+
+## chezmoi への反映を簡易化する
+
+もともと dotfiles の管理には[chezmoi](https://www.chezmoi.io/)を使っていたのですが、.zshrc を直接更新した際に、これをどう chezmoi 側のコピーに反映するかがよくわからず、ほったらかしにしていました。
+
+直接更新してしまった場合は、`chezmoi add`で現在のファイルの内容をそのまま chezmoi 管理下に追加するか、`chezmoi merge`で chezmoi 管理下のファイルと現在のファイルをマージするかを選ぶことができます。
+
+```bash
+chezmoi add ~/.zshrc
+# or
+chezmoi merge ~/.zshrc # デフォルトではvimdiffが開く
+```
+
+上記は直接編集してしまった場合ですが、基本的には chezmoi 管理下のファイルを更新して apply するのが正しいので、以下手順で反映させます。
+
+```bash
+chezmoi edit ~/.zshrc
+chezmoi apply ~/.zshrc
+source ~/.zshrc
+```
+
+ただ毎度これをやるのは面倒臭いので、シェルスクリプト化しておきます。
+
+```bash
+# moi ~/.zshrc のように呼び出すことで、対象のファイルをchezmoi管理下に追加してapplyし、現在のシェルにも反映する
+moi() {
+  local target_file=$1
+  chezmoi edit $target_file && chezmoi apply $target_file && source $target_file
+}
+```
+
+chezmoi には変更を自動でコミット、push する機能もありますが、一応公開リポジトリとしているので自動ではなく手動で管理する方針にしました。
+
+## Rust 製の CLI ツールを追加でいくつか入れる
+
+もともと[zoxide](https://github.com/ajeetdsouza/zoxide)は入れていたんですが、せっかくなので、いくつかの Rust 製の CLI ツールを入れてみました。
+
+- [fd](https://github.com/sharkdp/fd): find コマンドの代替
+- [lsd](https://github.com/lsd-rs/lsd): ls コマンドの代替
+  - `ls`を割り当てました。アイコンが表示されるので見やすいです。
+- [delta](https://github.com/dandavison/delta): git diff を見やすくする
+  - side-by-side で表示されるので、見やすいです。
+
+## おわり
+
+あれ、意外と整理することなかったな？と思いつつ、今回はここまでです。
+chezmoi の作成するファイルが結局どういう体系になっているかがよくわからないので、またわかったら追記します。
