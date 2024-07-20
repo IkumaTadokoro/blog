@@ -30,7 +30,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup-node
       - name: lint
-        run: pnpm check:biome
+        run: pnpm check
       - name: unit-test
         run: pnpm test
   build:
@@ -38,7 +38,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup-node
-      - run: pnpm check:astro && pnpm build
+      - run: pnpm build
       - uses: actions/upload-artifact@v4
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
