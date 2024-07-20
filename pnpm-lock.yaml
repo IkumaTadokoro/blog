@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@astrojs/check':
         specifier: 0.8.2
-        version: 0.8.2(typescript@5.4.5)
+        version: 0.8.2(typescript@5.5.3)
       '@astrojs/react':
         specifier: 3.6.0
         version: 3.6.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.3.4(@types/node@20.14.11))
@@ -19,7 +19,7 @@ importers:
         version: 4.0.7
       '@astrojs/tailwind':
         specifier: 5.1.0
-        version: 5.1.0(astro@4.12.2(@types/node@20.14.11)(typescript@5.4.5))(tailwindcss@3.4.6)
+        version: 5.1.0(astro@4.12.2(@types/node@20.14.11)(typescript@5.5.3))(tailwindcss@3.4.6)
       '@expressive-code/plugin-line-numbers':
         specifier: 0.35.3
         version: 0.35.3
@@ -40,16 +40,16 @@ importers:
         version: 18.3.0
       astro:
         specifier: 4.12.2
-        version: 4.12.2(@types/node@20.14.11)(typescript@5.4.5)
+        version: 4.12.2(@types/node@20.14.11)(typescript@5.5.3)
       astro-expressive-code:
         specifier: 0.35.3
-        version: 0.35.3(astro@4.12.2(@types/node@20.14.11)(typescript@5.4.5))
+        version: 0.35.3(astro@4.12.2(@types/node@20.14.11)(typescript@5.5.3))
       astro-icon:
         specifier: 1.1.0
         version: 1.1.0
       astro-pagefind:
         specifier: 1.5.0
-        version: 1.5.0(astro@4.12.2(@types/node@20.14.11)(typescript@5.4.5))
+        version: 1.5.0(astro@4.12.2(@types/node@20.14.11)(typescript@5.5.3))
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -81,8 +81,8 @@ importers:
         specifier: 3.4.6
         version: 3.4.6
       typescript:
-        specifier: 5.4.5
-        version: 5.4.5
+        specifier: 5.5.3
+        version: 5.5.3
     devDependencies:
       '@biomejs/biome':
         specifier: 1.8.3
@@ -3026,8 +3026,8 @@ packages:
   typescript-auto-import-cache@0.3.3:
     resolution: {integrity: sha512-ojEC7+Ci1ij9eE6hp8Jl9VUNnsEKzztktP5gtYNRMrTmfXVwA1PITYYAkpxCvvupdSYa/Re51B6KMcv1CTZEUA==}
 
-  typescript@5.4.5:
-    resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
+  typescript@5.5.3:
+    resolution: {integrity: sha512-/hreyEujaB0w76zKo6717l3L0o/qEUtRgdvUBvlkhoWeOVMjMuHNHk0BRBzikzuGDqNmPQbg5ifMEqsHLiIUcQ==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -3411,13 +3411,13 @@ snapshots:
 
   '@antfu/utils@0.7.10': {}
 
-  '@astrojs/check@0.8.2(typescript@5.4.5)':
+  '@astrojs/check@0.8.2(typescript@5.5.3)':
     dependencies:
-      '@astrojs/language-server': 2.12.1(typescript@5.4.5)
+      '@astrojs/language-server': 2.12.1(typescript@5.5.3)
       chokidar: 3.6.0
       fast-glob: 3.3.2
       kleur: 4.1.5
-      typescript: 5.4.5
+      typescript: 5.5.3
       yargs: 17.7.2
     transitivePeerDependencies:
       - prettier
@@ -3427,11 +3427,11 @@ snapshots:
 
   '@astrojs/internal-helpers@0.4.1': {}
 
-  '@astrojs/language-server@2.12.1(typescript@5.4.5)':
+  '@astrojs/language-server@2.12.1(typescript@5.5.3)':
     dependencies:
       '@astrojs/compiler': 2.9.2
       '@jridgewell/sourcemap-codec': 1.4.15
-      '@volar/kit': 2.4.0-alpha.16(typescript@5.4.5)
+      '@volar/kit': 2.4.0-alpha.16(typescript@5.5.3)
       '@volar/language-core': 2.4.0-alpha.16
       '@volar/language-server': 2.4.0-alpha.16
       '@volar/language-service': 2.4.0-alpha.16
@@ -3493,9 +3493,9 @@ snapshots:
       fast-xml-parser: 4.4.0
       kleur: 4.1.5
 
-  '@astrojs/tailwind@5.1.0(astro@4.12.2(@types/node@20.14.11)(typescript@5.4.5))(tailwindcss@3.4.6)':
+  '@astrojs/tailwind@5.1.0(astro@4.12.2(@types/node@20.14.11)(typescript@5.5.3))(tailwindcss@3.4.6)':
     dependencies:
-      astro: 4.12.2(@types/node@20.14.11)(typescript@5.4.5)
+      astro: 4.12.2(@types/node@20.14.11)(typescript@5.5.3)
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
       postcss-load-config: 4.0.2(postcss@8.4.38)
@@ -4432,12 +4432,12 @@ snapshots:
       loupe: 3.1.1
       tinyrainbow: 1.2.0
 
-  '@volar/kit@2.4.0-alpha.16(typescript@5.4.5)':
+  '@volar/kit@2.4.0-alpha.16(typescript@5.5.3)':
     dependencies:
       '@volar/language-service': 2.4.0-alpha.16
       '@volar/typescript': 2.4.0-alpha.16
       typesafe-path: 0.2.2
-      typescript: 5.4.5
+      typescript: 5.5.3
       vscode-languageserver-textdocument: 1.0.11
       vscode-uri: 3.0.8
 
@@ -4541,9 +4541,9 @@ snapshots:
 
   assertion-error@2.0.1: {}
 
-  astro-expressive-code@0.35.3(astro@4.12.2(@types/node@20.14.11)(typescript@5.4.5)):
+  astro-expressive-code@0.35.3(astro@4.12.2(@types/node@20.14.11)(typescript@5.5.3)):
     dependencies:
-      astro: 4.12.2(@types/node@20.14.11)(typescript@5.4.5)
+      astro: 4.12.2(@types/node@20.14.11)(typescript@5.5.3)
       rehype-expressive-code: 0.35.3
 
   astro-icon@1.1.0:
@@ -4554,14 +4554,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro-pagefind@1.5.0(astro@4.12.2(@types/node@20.14.11)(typescript@5.4.5)):
+  astro-pagefind@1.5.0(astro@4.12.2(@types/node@20.14.11)(typescript@5.5.3)):
     dependencies:
       '@pagefind/default-ui': 1.1.0
-      astro: 4.12.2(@types/node@20.14.11)(typescript@5.4.5)
+      astro: 4.12.2(@types/node@20.14.11)(typescript@5.5.3)
       pagefind: 1.1.0
       sirv: 2.0.4
 
-  astro@4.12.2(@types/node@20.14.11)(typescript@5.4.5):
+  astro@4.12.2(@types/node@20.14.11)(typescript@5.5.3):
     dependencies:
       '@astrojs/compiler': 2.9.2
       '@astrojs/internal-helpers': 0.4.1
@@ -4616,7 +4616,7 @@ snapshots:
       shiki: 1.10.3
       string-width: 7.2.0
       strip-ansi: 7.1.0
-      tsconfck: 3.1.1(typescript@5.4.5)
+      tsconfck: 3.1.1(typescript@5.5.3)
       unist-util-visit: 5.0.0
       vfile: 6.0.2
       vite: 5.3.4(@types/node@20.14.11)
@@ -6612,9 +6612,9 @@ snapshots:
 
   ts-interface-checker@0.1.13: {}
 
-  tsconfck@3.1.1(typescript@5.4.5):
+  tsconfck@3.1.1(typescript@5.5.3):
     optionalDependencies:
-      typescript: 5.4.5
+      typescript: 5.5.3
 
   tslib@2.6.3: {}
 
@@ -6626,7 +6626,7 @@ snapshots:
     dependencies:
       semver: 7.6.2
 
-  typescript@5.4.5: {}
+  typescript@5.5.3: {}
 
   ufo@1.5.3: {}
 
