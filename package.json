@@ -17,7 +17,8 @@
     "check:biome": "biome check .",
     "format": "biome format --write .",
     "lint": "biome lint --write .",
-    "test": "vitest",
+    "test": "vitest --exclude e2e",
+    "test:e2e": "playwright test",
     "astro": "astro"
   },
   "dependencies": {
@@ -50,6 +51,7 @@
   "packageManager": "pnpm@9.5.0",
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
+    "@playwright/test": "1.45.2",
     "@tailwindcss/typography": "0.5.13",
     "@types/node": "20.14.11",
     "@types/sanitize-html": "2.11.0",
