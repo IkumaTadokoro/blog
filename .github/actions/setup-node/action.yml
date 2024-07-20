@@ -8,8 +8,8 @@ runs:
       with:
         node-version-file: ".tool-versions"
     - uses: actions/cache@v4
+      id: node_modules_cache_id
       with:
-        id: node_modules_cache_id
         path: node_modules
         key: node-${{ hashFiles('**/.tool-versions') }}-${{ hashFiles('**/pnpm-lock.yaml') }}
     - run: pnpm i --frozen-lockfile
