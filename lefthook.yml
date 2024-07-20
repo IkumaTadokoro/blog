@@ -6,3 +6,7 @@ pre-commit:
       run: pnpm check:astro
     check:biome:
       run: pnpm check:biome
+    test:
+      run: pnpm test run
+    test:e2e:
+      run: pnpm test:e2e
