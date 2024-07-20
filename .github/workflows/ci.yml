@@ -12,6 +12,16 @@ on:
       - "package.json"
       - "src/**"
       - ".github/workflows/ci.yml"
+  workflow_dispatch:
+    inputs:
+      with_timeline:
+        type: boolean
+        required: false
+        default: false
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   lint:
@@ -58,3 +68,9 @@ jobs:
           projectName: blog
           directory: ./dist
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+  actions-timeline:
+    if: ${{ inputs.with_timeline == true }}
+    runs-on: ubuntu-latest
+    needs: [lint, unit-test, build]
+    steps:
+      - uses: Kesin11/actions-timeline@v1
