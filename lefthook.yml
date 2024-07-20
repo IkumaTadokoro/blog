@@ -8,5 +8,8 @@ pre-commit:
       run: pnpm check:biome
     test:
       run: pnpm test run
+pre-push:
+  parallel: true
+  commands:
     test:e2e:
       run: pnpm test:e2e
