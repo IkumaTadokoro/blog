@@ -1,18 +1,20 @@
-import { getCollection, getEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import type { RSSFeedItem } from '@astrojs/rss';
 import { experimental_AstroContainer } from 'astro/container';
 import sanitizeHtml from 'sanitize-html';
 import { SITE } from '../config';
+import { cache } from './cache';
 
 export type Collections = Array<CollectionEntry<'blog'>>;
 
 export async function getBlogs() {
-	const posts = await getCollection('blog', ({ data }) => {
-		return import.meta.env.PROD ? data.draft !== true : true;
+	return cache('blogs', async () => {
+		const posts = await getCollection('blog', ({ data }) => {
+			return import.meta.env.PROD ? data.draft !== true : true;
+		});
+		return sortByDate(posts);
 	});
-
-	return sortByDate(posts);
 }
 
 export function sortByDate(collections: Collections) {
