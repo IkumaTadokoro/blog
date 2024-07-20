@@ -2,6 +2,7 @@ name: Setup Node
 runs:
   using: "composite"
   steps:
+    - uses: Kesin11/actions-timeline@v2
     - run: corepack enable
       shell: bash
     - uses: actions/setup-node@v4
