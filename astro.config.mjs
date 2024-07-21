@@ -9,9 +9,6 @@ import { SITE } from './src/config';
 // https://astro.build/config
 export default defineConfig({
   site: SITE.siteUrl,
-  build: {
-    format: "file",
-  },
   integrations: [tailwind(), react(), icon(), expressiveCodePlugin, pagefind()],
   markdown: {
     rehypePlugins,
