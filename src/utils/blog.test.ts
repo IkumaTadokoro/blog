@@ -1,3 +1,4 @@
+// @vitest-environment node
 import { getEntry } from 'astro:content';
 import { describe, expect, it } from 'vitest';
 import { buildRssItem } from './blog';
