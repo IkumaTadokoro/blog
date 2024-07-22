@@ -7,9 +7,6 @@ tags: [ ファシリテーション,対話 ]
 draft: false
 ---
 
-import Tweet from "@components/Tweet.vue";
-import Youtube from "@components/Youtube.vue";
-
 ## はじめに
 
 ### お通夜会議を脱したい

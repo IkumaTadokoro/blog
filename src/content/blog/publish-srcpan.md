@@ -7,9 +7,6 @@ tags: [vscode, vscode_extensions]
 draft: false
 ---
 
-import Tweet from "@components/Tweet.vue";
-import Youtube from "@components/Youtube.vue";
-
 ## はじめに
 
 ![demo](/blog/publish-srcpan/demo.gif)

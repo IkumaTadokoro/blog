@@ -7,10 +7,6 @@ tags: [Go]
 draft: true
 ---
 
-import Tweet from "@components/Tweet.vue";
-import Youtube from "@components/Youtube.vue";
-import Alert from "@components/Alert.vue";
-
 ## 「初めての Go 言語」を読んで Go を勉強している
 
 一応分類上はフロントエンドエンジニアを名乗っているので、業務では TypeScript が主戦場なのですが、活動できる領域を広げるために、最近はサーバサイドも少しずつ勉強しています。

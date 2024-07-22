@@ -7,9 +7,6 @@ tags: [WebWorker, 読書記録]
 draft: false
 ---
 
-import Tweet from "@components/Tweet.vue";
-import Youtube from "@components/Youtube.vue";
-
 ![picture_large978-4-87311-596-2](/blog/read-web-workers/picture_large978-4-87311-596-2.jpeg)
 
 画像引用元：https://www.oreilly.co.jp/books/9784873115962/
