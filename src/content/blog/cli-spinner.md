@@ -7,9 +7,6 @@ tags: [Node.js, Deno]
 draft: false
 ---
 
-import Tweet from "@components/Tweet.vue";
-import Youtube from "@components/Youtube.vue";
-
 ## はじめに
 
 ちょっとした CLI を作っている時に、ある程度長い処理（最近だと OpenAI の API 呼び出しとか）を実行している際に、ローディング時間が気になります。

@@ -7,13 +7,7 @@ tags: [vscode]
 draft: false
 ---
 
-import Tweet from "@components/Tweet.vue";
-import Youtube from "@components/Youtube.vue";
-
-<Tweet
-  id="https://twitter.com/aethiopicuschan/status/1653747179285262336?t=E-Je2eZU442nq6XQ12ewOA&s=09"
-  client:only
-/>
+<twitter-post tweet-id="1653747179285262336"></twitter-post>
 
 GistPad が便利という Tweet を見かけたので、自分も導入してみました。
 

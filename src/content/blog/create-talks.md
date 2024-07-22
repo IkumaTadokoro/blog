@@ -7,9 +7,6 @@ tags: [blog]
 draft: false
 ---
 
-import Tweet from "@components/Tweet.vue";
-import Youtube from "@components/Youtube.vue";
-
 ## Talks ページを開設した
 
 https://ikuma-t.com/talks

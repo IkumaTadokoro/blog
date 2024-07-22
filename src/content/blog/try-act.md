@@ -7,9 +7,6 @@ tags: [GitHub_Actions]
 draft: false
 ---
 
-import Tweet from "@components/Tweet.vue";
-import Youtube from "@components/Youtube.vue";
-
 最近開発生産性を取得したりで GitHub Actions をよく書いています。最近では GitHub Actions の VSCode 拡張が出てきたことで、構文的なエラーには気が付きやすくなりましたが、やはり実際に動作するかは GitHub に push しなければならず、やや面倒でした。
 
 N 番煎じではありますが、ローカルで GitHub Actions を実行できる[nektos/act](https://github.com/nektos/act)を使って、GitHub Actions のローカル実行を試してみました。

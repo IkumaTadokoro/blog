@@ -7,7 +7,6 @@ tags: [blog, Vue.js, Astro]
 draft: false
 ---
 
-import Tweet from "@components/Tweet.vue";
 import Youtube from "@components/Youtube.vue";
 
 ## 何をやったのか
@@ -20,7 +19,7 @@ Twitter はこういう感じ。
 <Tweet id="1624179076792721412" client:only />
 ```
 
-<Tweet id="1624179076792721412" client:only />
+<twitter-post tweet-id="1624179076792721412"></twitter-post>
 
 Youtube はこういう感じ。
 

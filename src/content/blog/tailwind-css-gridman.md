@@ -7,8 +7,6 @@ tags: [CSS, CSSGrid, TailwindCSS]
 draft: true
 ---
 
-import Tweet from "@components/Tweet.vue";
-import Youtube from "@components/Youtube.vue";
 
 タイトルは出落ち感あるので、これ以上触りません。
 

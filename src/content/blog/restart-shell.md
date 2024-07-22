@@ -7,9 +7,6 @@ tags: [zsh, dotfiles]
 draft: false
 ---
 
-import Tweet from "@components/Tweet.vue";
-import Youtube from "@components/Youtube.vue";
-
 ## 雑に作業しすぎて zshrc は吹っ飛んだし、雑に管理してたので復帰できなかった
 
 昨日 GitHub Copilot for CLI の順番待ちがようやくまわってきたので設定を.zshrc に追加したんですが、雑にやりすぎて完全に上書きしていました（シェルの再起動をしていなかったので、事態を把握するまでに少し時間がかかった）。

@@ -7,9 +7,6 @@ tags: [CSS, GridLayout, Animation]
 draft: false
 ---
 
-import Tweet from "@components/Tweet.vue";
-import Youtube from "@components/Youtube.vue";
-
 ## アイコンが重なってて、ホバーするとニュッとするそれを作ろう
 
 ![dev_to_sample](/blog/avatar-overlap-layout/dev_to_sample.png)
