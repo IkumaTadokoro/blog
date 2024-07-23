@@ -60,7 +60,7 @@ https://github.com/IkumaTadokoro/blog/pull/1/files
 
 RSS自体の仕様がよく分からなくてとりあえずで作ってみたら、リーダーの中でコンテンツが表示されず、[RSS 2\.0 Specification 日本語訳 \- futomi's CGI Cafe](https://www.futomi.com/lecture/japanese/rss20.html)を参考にして値を設定し直しました。
 
-![](/blog/generate-rss-feed/feedly-empty-content.png)
+![](../../assets/images/generate-rss-feed/feedly-empty-content.png)
 
 そのため、Feedlyに一度コンテンツがないRSSフィードが載っかってしまったのですが、どうもFeedlyは一度載っかったフィードはFeedly側でキャッシュされてしまうらしく、今もFeedly上の最初の数本の記事のコンテンツはなくなったままです...。
 どこか別のところで試せばよかった...。

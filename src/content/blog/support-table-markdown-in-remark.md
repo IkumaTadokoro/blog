@@ -12,7 +12,7 @@ draft: false
 
 このブログはremarkを使用してMarkdownをパースしているわけですが、tableを投稿してみたところ原文のまま表示されてしまいました。
 
-![](/blog/support-table-markdown-in-remark/unsupported-table.png)
+![](../../assets/images/support-table-markdown-in-remark/unsupported-table.png)
 
 なんでかな〜と思って調べてみると、[unifiedjsのドキュメント](https://unifiedjs.com/learn/recipe/remark-table/)に
 
@@ -41,7 +41,7 @@ export default async function markdownToHtml(markdown: string) {
 
 ここまでで、tableタグとして解釈されるようになりました。
 
-![](/blog/support-table-markdown-in-remark/suppor-table-by-gfm.png)
+![](../../assets/images/support-table-markdown-in-remark/suppor-table-by-gfm.png)
 
 ## スタイルを適用する
 
@@ -71,4 +71,4 @@ td {
 
 これでいい感じにテーブルが表示されるようになりました。
 
-![](/blog/support-table-markdown-in-remark/styled-table.png)
+![](../../assets/images/support-table-markdown-in-remark/styled-table.png)

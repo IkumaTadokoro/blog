@@ -9,7 +9,7 @@ draft: false
 
 ## はじめに
 
-![demo](/blog/publish-srcpan/demo.gif)
+![demo](../../assets/images/publish-srcpan/demo.gif)
 
 ワークスペースにある画像のパスをそのまま or Markdown 形式で パンッ と簡単にエディタに挿入できる VSCode 拡張、その名も SrcPan をリリースしました。
 
@@ -34,7 +34,7 @@ https://marketplace.visualstudio.com/items?itemName=IkumaTadokoro.srcpan
 
 ### 基本機能
 
-![srcpan-view](/blog/publish-srcpan/srcpan-view.png)
+![srcpan-view](../../assets/images/publish-srcpan/srcpan-view.png)
 
 拡張機能をアクティビティバーで選択すると、2 つのペインが開きます。
 
@@ -61,8 +61,8 @@ https://marketplace.visualstudio.com/items?itemName=IkumaTadokoro.srcpan
 pathRegExp には正規表現を指定することができ、replacement には任意の文字列を指定することができます。pathRegExp にキャプチャグループを指定した場合は、replacement に`$1`のように指定することで、キャプチャされた部分を挿入することができます。
 この設定により以下のように、`/public`から始まるパスでは、`/public`の 1 つ下の階層から始まるパスを挿入できるようになりました。
 
-- 本来のパス： `/public/blog/publish-srcpan/srcpan-view.png`
-- 挿入されるパス： `/blog/publish-srcpan/srcpan-view.png`
+- 本来のパス： `/public../../assets/images/publish-srcpan/srcpan-view.png`
+- 挿入されるパス： `../../assets/images/publish-srcpan/srcpan-view.png`
 
 このルールは配列形式で指定するので、複数のルールを指定することができます。public ディレクトリ、assets ディレクトリでそれぞれ最初の階層を省略したい場合は以下のようにします。
 
@@ -110,7 +110,7 @@ pathRegExp には正規表現を指定することができ、replacement には
 
 一応回避策として、下図のように SrcPan をエクスプローラーに D&D してドッキングすることで一つのサイドバーで完結させることができるのですが、サイドバーの表示領域が窮屈なのでどうにかしたいところです。
 
-![docking](/blog/publish-srcpan/docking.png)
+![docking](../../assets/images/publish-srcpan/docking.png)
 
 ### ディレクトリの絞り込み
 

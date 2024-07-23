@@ -25,7 +25,7 @@ draft: false
 
 何の変哲もないFigmaで作ったスライドをただ流しているだけだったのですが、素材の入手場所が増えたのでそこだけ。
 
-![](/blog/how-to-hold-event/slide.png)
+![](../../assets/images/how-to-hold-event/slide.png)
 
 今回はライトなイベントだったので、アイソメトリックな画像にしようと思ったんですが、そのときに以下のサイトを利用しました。
 
@@ -46,11 +46,11 @@ https://www.manypixels.co/gallery
 
 **1. 環境音を発生させるアイテムを事前に削除**
 
-![](/blog/how-to-hold-event/gather_sound.png)
+![](../../assets/images/how-to-hold-event/gather_sound.png)
 
 Gatherには配置すると音が出るオブジェクトがいくつかあるのですが、開催場所にもこれが置いてあったため削除しました。
 
-![](/blog/how-to-hold-event/gather_sound_setting.png)
+![](../../assets/images/how-to-hold-event/gather_sound_setting.png)
 
 設定から音量をなくすこともできるのですが、Gatherに慣れていないユーザーもいるので根本ブレイクです。  
 （Gatherに慣れていない時に波の音がする場所で打ち合わせしてて、マジで内容聞き取れなかったことあるマン）
@@ -59,7 +59,7 @@ Gatherには配置すると音が出るオブジェクトがいくつかある�
 
 2 ~ 4の全体像を先に示しておきます。
 
-![](/blog/how-to-hold-event/gather_setting.png)
+![](../../assets/images/how-to-hold-event/gather_setting.png)
 
 **2. Privateスペースを拡張**
 
@@ -77,7 +77,7 @@ Gatherは通常ある程度近くにいないと音声が聞こえない仕組�
 
 GatherにはSpawnという場所に対してリンクを貼る機能があり、これを使って案内を省略しました。
 
-![](/blog/how-to-hold-event/gather_spawn.png)
+![](../../assets/images/how-to-hold-event/gather_spawn.png)
 
 あらかじめユーザーを遷移させたい場所にMapMakerの「Tile Effects」からSpawnを設置した上で、通常の画面からイベント作成を開き、このリンクをコピーします。すると、このリンクでGatherに入った場合開始位置がSpawnで設定した場所になります。
 （実際にはここでイベントを作ればいいのですが、今回は別の方に事前にカレンダー登録をしていただいていたので、リンクだけコピーしました）。
@@ -92,7 +92,7 @@ GatherにはSpawnという場所に対してリンクを貼る機能があり、
 
 当日はイベント感を出すためにただ画面を共有するのではなく、ちょっと加工したものを共有していました。
 
-![](/blog/how-to-hold-event/event_image.png)
+![](../../assets/images/how-to-hold-event/event_image.png)
 
 画面切り替えと司会業を同時にやるとタイムマネジメントが難しいので、逆転の発想で時計を画面に配置し、この問題を解消すると共に200%のLIVE感の演出に成功しました（当社比）。
 
@@ -102,7 +102,7 @@ https://obsproject.com/ja/download
 
 **構成**
 
-![](/blog/how-to-hold-event/bloadcast.png)
+![](../../assets/images/how-to-hold-event/bloadcast.png)
 
 各種素材をシーンとしてあらかじめ構成しておき、OBSのスタジオモードで切り替えています。
 
@@ -118,7 +118,7 @@ https://booth.pm/ja/items/2912843
 
 **シーンをあらかじめ作っておく**
 
-![](/blog/how-to-hold-event/scene.png)
+![](../../assets/images/how-to-hold-event/scene.png)
 
 イベントの構成としてゲストトークを3本やる形式だったので、画面構成はほぼほぼ同じです。そのため、シーンは1つでテキストを都度変更するという手段を最初は考えていました。
 
@@ -145,7 +145,7 @@ Background Musicを使うことで、システム側で流れている音声を�
 
 という構成に変更できるわけです。耳ではスピーカーの音声を聞きつつ、OBSには別途Background Musicをソースとして渡すことで、リアルタイムで音声を聞きつつの録音が可能になります。
 
-![](/blog/how-to-hold-event/mixer.png)
+![](../../assets/images/how-to-hold-event/mixer.png)
 
 OBSでは音声ソースを複数指定することができるので、一方を自分のマイク、もう一方をBackground Musicにして対応しました。
 

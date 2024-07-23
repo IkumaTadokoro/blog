@@ -23,7 +23,7 @@ https://marketplace.visualstudio.com/items?itemName=vsls-contrib.gistfs
 2. アクティビティーバーの GistPad をクリック
 3. GitHub にログイン
 
-![](/blog/try-gist-pad/gistpad-preview.png)
+![](../../assets/images/try-gist-pad/gistpad-preview.png)
 
 これで自分が作成した Gist の一覧が見られるようになります（鍵付きのものは Secret Gist。鍵がついているけど別に見られて困るものではないのでそのままスクショ掲載しています）。
 
