@@ -7,7 +7,7 @@ tags: [WebWorker, 読書記録]
 draft: false
 ---
 
-![picture_large978-4-87311-596-2](/blog/read-web-workers/picture_large978-4-87311-596-2.jpeg)
+![picture_large978-4-87311-596-2](../../assets/images/read-web-workers/picture_large978-4-87311-596-2.jpeg)
 
 画像引用元：https://www.oreilly.co.jp/books/9784873115962/
 

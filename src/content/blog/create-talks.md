@@ -13,7 +13,7 @@ https://ikuma-t.com/talks
 
 このブログに登壇資料を一覧できるページを作成してみました（追加が終わってないので、まだ全部の資料はないです。順次追加します）。
 
-![talksページを作った](/blog/create-talks/create-talks.png)
+![talksページを作った](../../assets/images/create-talks/create-talks.png)
 
 ## 作った経緯
 
@@ -28,7 +28,7 @@ LT とか小規模な登壇って、もう資料に載っていることがほ�
 
 ## お気に入りポイント
 
-![talksページの詳細画面](/blog/create-talks/is-this-an-art.png)
+![talksページの詳細画面](../../assets/images/create-talks/is-this-an-art.png)
 
 特にメモを追記していない場合は、でっかい表紙画像と一言だけが表示され、ちょっと美術品ぽいです。
 
@@ -38,4 +38,4 @@ LT とか小規模な登壇って、もう資料に載っていることがほ�
 
 最近 Slidev で高速にいい感じのスライドを作るためにテンプレートを整備していて、一通りできた（つもり）ので、また今年も外部の勉強会で登壇していきたいです。なんかいい感じのフロントエンドの勉強会あったら教えてください 🙏。
 
-![slidevのテンプレート](/blog/create-talks/slidev-template.gif)
+![slidevのテンプレート](../../assets/images/create-talks/slidev-template.gif)

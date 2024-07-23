@@ -58,7 +58,7 @@ Grid Layout 実装のモチベーションについては、[1.1. Background and
 </div>
 ```
 
-![tw_sample_place-content](/blog/tailwind-css-gridman/tw_sample_place-content.png)
+![tw_sample_place-content](../../assets/images/tailwind-css-gridman/tw_sample_place-content.png)
 
 https://play.tailwindcss.com/ogiOO63I1Q
 
@@ -103,7 +103,7 @@ https://play.tailwindcss.com/WirYsVhDmY
 
 devtool で検証すると、Grid Container が形成されていることを確認できると思います。
 
-![tw_grid](/blog/tailwind-css-gridman/tw_grid.png)
+![tw_grid](../../assets/images/tailwind-css-gridman/tw_grid.png)
 
 ### Grid Template Columns ・ Grid Template Rows
 
@@ -130,7 +130,7 @@ Grid Template Columns は列トラックの、Grid Template Rows は行トラッ
 
 サンプルはこちらです。1 つ目のサンプルではユーティリティクラスによって画一の幅に、2 つ目のサンプルでは Arbitrary Values によって 1:2 の比率でトラックが指定されています。
 
-![tw_grid_template](/blog/tailwind-css-gridman/tw_grid_template.png)
+![tw_grid_template](../../assets/images/tailwind-css-gridman/tw_grid_template.png)
 
 https://play.tailwindcss.com/eWZWHXqI1j
 
@@ -182,7 +182,7 @@ Grid Column Start / End は列の、Grid Row Start / End は行の、開始位�
 
 https://play.tailwindcss.com/bT9ztURBnr
 
-![tw_grid_template](/blog/tailwind-css-gridman/tw_grid_template.png)
+![tw_grid_template](../../assets/images/tailwind-css-gridman/tw_grid_template.png)
 
 refs: [8.3. Line-based Placement: the grid-row-start, grid-column-start, grid-row-end, and grid-column-end properties](https://drafts.csswg.org/css-grid/#line-placement)
 
@@ -202,7 +202,7 @@ Tailwind CSS では、`grid-flow-row`、`grid-flow-col`、`grid-flow-row-dense`�
 
 サンプルはこちらです。
 
-![tw_grid_auto_flow](/blog/tailwind-css-gridman/tw_grid_auto_flow.png)
+![tw_grid_auto_flow](../../assets/images/tailwind-css-gridman/tw_grid_auto_flow.png)
 
 https://play.tailwindcss.com/w8JYHPOYOM
 

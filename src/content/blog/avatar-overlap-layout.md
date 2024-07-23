@@ -9,13 +9,13 @@ draft: false
 
 ## アイコンが重なってて、ホバーするとニュッとするそれを作ろう
 
-![dev_to_sample](/blog/avatar-overlap-layout/dev_to_sample.png)
+![dev_to_sample](../../assets/images/avatar-overlap-layout/dev_to_sample.png)
 
 これは dev.to の記事リアクションの表示です。Slack でハドルミーティングが発生している時の参加者の表示にもこういったアイコンを重ねるレイアウトがよく見られます。
 
 よく見かけるけど自分では作ったことがなかったので、[CSS Animated Grid Layouts](https://web.dev/css-animated-grid-layouts/)を参考にしつつ、今回はこちらを少し捻ったもの練習として作ってみました。
 
-![sample](/blog/avatar-overlap-layout/sample.gif)
+![sample](../../assets/images/avatar-overlap-layout/sample.gif)
 
 ## 要件
 

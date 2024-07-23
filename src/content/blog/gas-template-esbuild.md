@@ -23,7 +23,7 @@ GASで業務効率化できるのは良いことなんですが
 
 ### よく使うやつをとりあえず入れる
 
-![](/blog/esbuild-gas-template/esbuild-gas-template.png)
+![](../../assets/images/esbuild-gas-template/esbuild-gas-template.png)
 
 とりあえずいつも使っているESLint、Prettier、TypeScriptは全部突っ込みました。
 

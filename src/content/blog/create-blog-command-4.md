@@ -16,7 +16,7 @@ https://ikuma-t.work/posts/create-blog-command-3
 
 https://github.com/IkumaTadokoro/blog-cli
 
-![](/blog/create-blog-command-5/blog_command.gif)
+![](../../assets/images/create-blog-command-5/blog_command.gif)
 
 もともとRubyで書いていてThor gemで作ろうと思っていたのですが、インタラクティブなものを作るのが大変そうだったのと、2日前くらいから「Denoってなんかいいな」と思い始めたので、途中からDenoに切り替えて実装しました。
 各機能を順番に紹介していきます。
@@ -93,7 +93,7 @@ https://cliffy.io/
 
 ### 補完：`completions`
 
-![](/blog/create-blog-command-5/completions.gif)
+![](../../assets/images/create-blog-command-5/completions.gif)
 
 ```bash
 ❯ blog completions -h
@@ -205,7 +205,7 @@ https://cliffy.io/docs@v0.24.2/table
 
 ### 新規作成: `new`
 
-![](/blog/create-blog-command-5/new.gif)
+![](../../assets/images/create-blog-command-5/new.gif)
 
 ```bash
 ❯ blog new -h
@@ -232,7 +232,7 @@ https://cliffy.io/docs@v0.24.2/prompt/types/input#auto-suggestions
 
 ### 編集: `edit`
 
-![](/blog/create-blog-command-5/edit.gif)
+![](../../assets/images/create-blog-command-5/edit.gif)
 
 
 ```bash

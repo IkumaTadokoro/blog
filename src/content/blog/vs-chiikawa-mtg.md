@@ -26,7 +26,7 @@ draft: false
 
 ### 『問いのデザイン 創造的対話のファシリテーション』を読んだ
 
-![book](/blog/vs-chiikawa-mtg/book.jpg)
+![book](../../assets/images/vs-chiikawa-mtg/book.jpg)
 画像引用元: https://book.gakugei-pub.co.jp/gakugei-book/9784761527433/
 
 前から認識してはいたのですが、課題感が募った今がまさに読み時だろうと思って[問いのデザイン 創造的対話のファシリテーション](https://book.gakugei-pub.co.jp/gakugei-book/9784761527433/)を読んでみたので、この本を読んで得たヒントをまとめてみます。

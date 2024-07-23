@@ -22,7 +22,7 @@ SJIS の文字コードで表されたテキストファイルを UTF-8 とし�
 
 ## ソースコードとデモ
 
-![](/blog/file-reader-with-sjis/demo.gif)
+![](../../assets/images/file-reader-with-sjis/demo.gif)
 
 https://stackblitz.com/edit/react-ts-3kwzkx?file=App.tsx
 
@@ -71,7 +71,7 @@ https://developer.mozilla.org/ja/docs/Web/API/FileReader/readAsText
 
 FileReader.readAsText()はデフォルトでは utf-8 でファイル（Blob）を解釈します。そのため、SJIS のテキストファイルをアップロードすると文字化けが発生します。
 
-![](/blog/file-reader-with-sjis/readAsTextDefault.png)
+![](../../assets/images/file-reader-with-sjis/readAsTextDefault.png)
 
 UTF-8 以外のエンコーディングの文字列を読み込むために、FileReader.readAsText の第二引数にはエンコーディング文字列を指定することができます。
 
@@ -82,7 +82,7 @@ reader.readAsText(file, "sjis"); // エンコーディングにSJISを指定
 
 これで SJIS のファイルでも文字化けせずに表示できるようになりました。
 
-![](/blog/file-reader-with-sjis/readAsTextWithEncoding.png)
+![](../../assets/images/file-reader-with-sjis/readAsTextWithEncoding.png)
 
 ---
 
@@ -90,7 +90,7 @@ reader.readAsText(file, "sjis"); // エンコーディングにSJISを指定
 
 例として先ほど SJIS で読み取るようにした処理を使って、UTF-8 のファイルを読み込んでみると、文字化けが発生します。
 
-![](/blog/file-reader-with-sjis/readUTF8WithSjisEncoding.png)
+![](../../assets/images/file-reader-with-sjis/readUTF8WithSjisEncoding.png)
 
 この時、console 等にも警告は出ておらず、正常終了したことになっています。
 
