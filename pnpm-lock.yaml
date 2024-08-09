@@ -12,14 +12,14 @@ importers:
         specifier: 0.9.2
         version: 0.9.2(typescript@5.5.4)
       '@astrojs/react':
-        specifier: 3.6.1
-        version: 3.6.1(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.3.4(@types/node@20.14.14))
+        specifier: 3.6.2
+        version: 3.6.2(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.3.4(@types/node@20.14.15))
       '@astrojs/rss':
         specifier: 4.0.7
         version: 4.0.7
       '@astrojs/tailwind':
         specifier: 5.1.0
-        version: 5.1.0(astro@4.12.3(@types/node@20.14.14)(typescript@5.5.4))(tailwindcss@3.4.9)
+        version: 5.1.0(astro@4.12.3(@types/node@20.14.15)(typescript@5.5.4))(tailwindcss@3.4.9)
       '@expressive-code/plugin-line-numbers':
         specifier: 0.35.6
         version: 0.35.6
@@ -40,16 +40,16 @@ importers:
         version: 18.3.0
       astro:
         specifier: 4.12.3
-        version: 4.12.3(@types/node@20.14.14)(typescript@5.5.4)
+        version: 4.12.3(@types/node@20.14.15)(typescript@5.5.4)
       astro-expressive-code:
         specifier: 0.35.6
-        version: 0.35.6(astro@4.12.3(@types/node@20.14.14)(typescript@5.5.4))
+        version: 0.35.6(astro@4.12.3(@types/node@20.14.15)(typescript@5.5.4))
       astro-icon:
         specifier: 1.1.0
         version: 1.1.0
       astro-pagefind:
         specifier: 1.6.0
-        version: 1.6.0(astro@4.12.3(@types/node@20.14.14)(typescript@5.5.4))
+        version: 1.6.0(astro@4.12.3(@types/node@20.14.15)(typescript@5.5.4))
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -100,8 +100,8 @@ importers:
         specifier: 6.4.8
         version: 6.4.8
       '@types/node':
-        specifier: 20.14.14
-        version: 20.14.14
+        specifier: 20.14.15
+        version: 20.14.15
       '@types/sanitize-html':
         specifier: 2.11.0
         version: 2.11.0
@@ -122,7 +122,7 @@ importers:
         version: 1.7.12
       vitest:
         specifier: 2.0.5
-        version: 2.0.5(@types/node@20.14.14)(@vitest/browser@2.0.5)(@vitest/ui@2.0.5)(happy-dom@14.12.3)(jsdom@24.1.1)
+        version: 2.0.5(@types/node@20.14.15)(@vitest/browser@2.0.5)(@vitest/ui@2.0.5)(happy-dom@14.12.3)(jsdom@24.1.1)
       wrangler:
         specifier: 3.67.1
         version: 3.67.1
@@ -180,8 +180,8 @@ packages:
     resolution: {integrity: sha512-Z9IYjuXSArkAUx3N6xj6+Bnvx8OdUSHA8YoOgyepp3+zJmtVYJIl/I18GozdJVW1p5u/CNpl3Km7/gwTJK85cw==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
 
-  '@astrojs/react@3.6.1':
-    resolution: {integrity: sha512-Mpgu+GYTba1TEzLMshojeLxi7y/FqrTNtpGTCvI366bRbnCkqtvznRj/xPQOTybwXnYXSgxsELyUvqD51iFeiw==}
+  '@astrojs/react@3.6.2':
+    resolution: {integrity: sha512-fK29lYI7zK/KG4ZBy956x4dmauZcZ18osFkuyGa8r3gmmCQa2NZ9XNu9WaVYEUm0j89f4Gii4tbxLoyM8nk2MA==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
     peerDependencies:
       '@types/react': ^17.0.50 || ^18.0.21
@@ -1141,8 +1141,8 @@ packages:
   '@types/node-forge@1.3.11':
     resolution: {integrity: sha512-FQx220y22OKNTqaByeBGqHWYz4cl94tpcxeFdvBo3wjG6XPBuZ0BNgNZRV5J5TFmmcsJ4IzsLkmGRiQbnYsBEQ==}
 
-  '@types/node@20.14.14':
-    resolution: {integrity: sha512-d64f00982fS9YoOgJkAMolK7MN8Iq3TDdVjchbYHdEmjth/DHowx82GnoA+tVUAN+7vxfYUgAzi+JXbKNd2SDQ==}
+  '@types/node@20.14.15':
+    resolution: {integrity: sha512-Fz1xDMCF/B00/tYSVMlmK7hVeLh7jE5f3B7X1/hmV0MJBwE27KlS7EvD/Yp+z1lm8mVhwV5w+n8jOZG8AfTlKw==}
 
   '@types/prop-types@15.7.12':
     resolution: {integrity: sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==}
@@ -3659,11 +3659,11 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/react@3.6.1(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.3.4(@types/node@20.14.14))':
+  '@astrojs/react@3.6.2(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.3.4(@types/node@20.14.15))':
     dependencies:
       '@types/react': 18.3.3
       '@types/react-dom': 18.3.0
-      '@vitejs/plugin-react': 4.3.1(vite@5.3.4(@types/node@20.14.14))
+      '@vitejs/plugin-react': 4.3.1(vite@5.3.4(@types/node@20.14.15))
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       ultrahtml: 1.5.3
@@ -3676,9 +3676,9 @@ snapshots:
       fast-xml-parser: 4.4.0
       kleur: 4.1.5
 
-  '@astrojs/tailwind@5.1.0(astro@4.12.3(@types/node@20.14.14)(typescript@5.5.4))(tailwindcss@3.4.9)':
+  '@astrojs/tailwind@5.1.0(astro@4.12.3(@types/node@20.14.15)(typescript@5.5.4))(tailwindcss@3.4.9)':
     dependencies:
-      astro: 4.12.3(@types/node@20.14.14)(typescript@5.5.4)
+      astro: 4.12.3(@types/node@20.14.15)(typescript@5.5.4)
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
       postcss-load-config: 4.0.2(postcss@8.4.38)
@@ -4261,7 +4261,7 @@ snapshots:
       '@inquirer/figures': 1.0.4
       '@inquirer/type': 1.5.0
       '@types/mute-stream': 0.0.4
-      '@types/node': 20.14.14
+      '@types/node': 20.14.15
       '@types/wrap-ansi': 3.0.0
       ansi-escapes: 4.3.2
       cli-spinners: 2.9.2
@@ -4480,7 +4480,7 @@ snapshots:
 
   '@types/cheerio@0.22.35':
     dependencies:
-      '@types/node': 20.14.14
+      '@types/node': 20.14.15
 
   '@types/cookie@0.6.0': {}
 
@@ -4502,7 +4502,7 @@ snapshots:
 
   '@types/mute-stream@0.0.4':
     dependencies:
-      '@types/node': 20.14.14
+      '@types/node': 20.14.15
 
   '@types/nlcst@2.0.3':
     dependencies:
@@ -4510,9 +4510,9 @@ snapshots:
 
   '@types/node-forge@1.3.11':
     dependencies:
-      '@types/node': 20.14.14
+      '@types/node': 20.14.15
 
-  '@types/node@20.14.14':
+  '@types/node@20.14.15':
     dependencies:
       undici-types: 5.26.5
 
@@ -4535,7 +4535,7 @@ snapshots:
 
   '@types/tar@6.1.13':
     dependencies:
-      '@types/node': 20.14.14
+      '@types/node': 20.14.15
       minipass: 4.2.8
 
   '@types/unist@3.0.2': {}
@@ -4544,19 +4544,19 @@ snapshots:
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 20.14.14
+      '@types/node': 20.14.15
     optional: true
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-react@4.3.1(vite@5.3.4(@types/node@20.14.14))':
+  '@vitejs/plugin-react@4.3.1(vite@5.3.4(@types/node@20.14.15))':
     dependencies:
       '@babel/core': 7.24.9
       '@babel/plugin-transform-react-jsx-self': 7.24.7(@babel/core@7.24.9)
       '@babel/plugin-transform-react-jsx-source': 7.24.7(@babel/core@7.24.9)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 5.3.4(@types/node@20.14.14)
+      vite: 5.3.4(@types/node@20.14.15)
     transitivePeerDependencies:
       - supports-color
 
@@ -4568,7 +4568,7 @@ snapshots:
       magic-string: 0.30.10
       msw: 2.3.2(typescript@5.5.4)
       sirv: 2.0.4
-      vitest: 2.0.5(@types/node@20.14.14)(@vitest/browser@2.0.5)(@vitest/ui@2.0.5)(happy-dom@14.12.3)(jsdom@24.1.1)
+      vitest: 2.0.5(@types/node@20.14.15)(@vitest/browser@2.0.5)(@vitest/ui@2.0.5)(happy-dom@14.12.3)(jsdom@24.1.1)
       ws: 8.18.0
     optionalDependencies:
       playwright: 1.45.3
@@ -4612,7 +4612,7 @@ snapshots:
       pathe: 1.1.2
       sirv: 2.0.4
       tinyrainbow: 1.2.0
-      vitest: 2.0.5(@types/node@20.14.14)(@vitest/browser@2.0.5)(@vitest/ui@2.0.5)(happy-dom@14.12.3)(jsdom@24.1.1)
+      vitest: 2.0.5(@types/node@20.14.15)(@vitest/browser@2.0.5)(@vitest/ui@2.0.5)(happy-dom@14.12.3)(jsdom@24.1.1)
 
   '@vitest/utils@2.0.5':
     dependencies:
@@ -4740,9 +4740,9 @@ snapshots:
 
   assertion-error@2.0.1: {}
 
-  astro-expressive-code@0.35.6(astro@4.12.3(@types/node@20.14.14)(typescript@5.5.4)):
+  astro-expressive-code@0.35.6(astro@4.12.3(@types/node@20.14.15)(typescript@5.5.4)):
     dependencies:
-      astro: 4.12.3(@types/node@20.14.14)(typescript@5.5.4)
+      astro: 4.12.3(@types/node@20.14.15)(typescript@5.5.4)
       rehype-expressive-code: 0.35.6
 
   astro-icon@1.1.0:
@@ -4753,14 +4753,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro-pagefind@1.6.0(astro@4.12.3(@types/node@20.14.14)(typescript@5.5.4)):
+  astro-pagefind@1.6.0(astro@4.12.3(@types/node@20.14.15)(typescript@5.5.4)):
     dependencies:
       '@pagefind/default-ui': 1.1.0
-      astro: 4.12.3(@types/node@20.14.14)(typescript@5.5.4)
+      astro: 4.12.3(@types/node@20.14.15)(typescript@5.5.4)
       pagefind: 1.1.0
       sirv: 2.0.4
 
-  astro@4.12.3(@types/node@20.14.14)(typescript@5.5.4):
+  astro@4.12.3(@types/node@20.14.15)(typescript@5.5.4):
     dependencies:
       '@astrojs/compiler': 2.9.2
       '@astrojs/internal-helpers': 0.4.1
@@ -4818,8 +4818,8 @@ snapshots:
       tsconfck: 3.1.1(typescript@5.5.4)
       unist-util-visit: 5.0.0
       vfile: 6.0.2
-      vite: 5.3.4(@types/node@20.14.14)
-      vitefu: 0.2.5(vite@5.3.4(@types/node@20.14.14))
+      vite: 5.3.4(@types/node@20.14.15)
+      vitefu: 0.2.5(vite@5.3.4(@types/node@20.14.15))
       which-pm: 3.0.0
       yargs-parser: 21.1.1
       zod: 3.23.8
@@ -7137,13 +7137,13 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite-node@2.0.5(@types/node@20.14.14):
+  vite-node@2.0.5(@types/node@20.14.15):
     dependencies:
       cac: 6.7.14
       debug: 4.3.5
       pathe: 1.1.2
       tinyrainbow: 1.2.0
-      vite: 5.3.4(@types/node@20.14.14)
+      vite: 5.3.4(@types/node@20.14.15)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -7154,20 +7154,20 @@ snapshots:
       - supports-color
       - terser
 
-  vite@5.3.4(@types/node@20.14.14):
+  vite@5.3.4(@types/node@20.14.15):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.39
       rollup: 4.18.0
     optionalDependencies:
-      '@types/node': 20.14.14
+      '@types/node': 20.14.15
       fsevents: 2.3.3
 
-  vitefu@0.2.5(vite@5.3.4(@types/node@20.14.14)):
+  vitefu@0.2.5(vite@5.3.4(@types/node@20.14.15)):
     optionalDependencies:
-      vite: 5.3.4(@types/node@20.14.14)
+      vite: 5.3.4(@types/node@20.14.15)
 
-  vitest@2.0.5(@types/node@20.14.14)(@vitest/browser@2.0.5)(@vitest/ui@2.0.5)(happy-dom@14.12.3)(jsdom@24.1.1):
+  vitest@2.0.5(@types/node@20.14.15)(@vitest/browser@2.0.5)(@vitest/ui@2.0.5)(happy-dom@14.12.3)(jsdom@24.1.1):
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@vitest/expect': 2.0.5
@@ -7185,11 +7185,11 @@ snapshots:
       tinybench: 2.8.0
       tinypool: 1.0.0
       tinyrainbow: 1.2.0
-      vite: 5.3.4(@types/node@20.14.14)
-      vite-node: 2.0.5(@types/node@20.14.14)
+      vite: 5.3.4(@types/node@20.14.15)
+      vite-node: 2.0.5(@types/node@20.14.15)
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@types/node': 20.14.14
+      '@types/node': 20.14.15
       '@vitest/browser': 2.0.5(playwright@1.45.3)(typescript@5.5.4)(vitest@2.0.5)
       '@vitest/ui': 2.0.5(vitest@2.0.5)
       happy-dom: 14.12.3
