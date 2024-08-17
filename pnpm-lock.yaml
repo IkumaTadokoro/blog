@@ -30,8 +30,8 @@ importers:
         specifier: 5.0.19
         version: 5.0.19
       '@iconify-json/lucide':
-        specifier: 1.1.206
-        version: 1.1.206
+        specifier: 1.1.207
+        version: 1.1.207
       '@types/react':
         specifier: 18.3.3
         version: 18.3.3
@@ -755,8 +755,8 @@ packages:
   '@fontsource-variable/montserrat@5.0.19':
     resolution: {integrity: sha512-vOlVjdGock2yBOeBbg5qexPa1TJM/PS8Nx9YlF6DFEtFf/Y5ayDbZRvV/WPj8W2vk7/aDxUEtTAp/Qp8wK9hNQ==}
 
-  '@iconify-json/lucide@1.1.206':
-    resolution: {integrity: sha512-NE8CZ3ZXP0eWDYglm8oBZ+HuFmWsCYfho2HTQb5CefXAzCFZdh6ShQrkrL+ZW6mleRBXlWTrV6WVVj9soTqycw==}
+  '@iconify-json/lucide@1.1.207':
+    resolution: {integrity: sha512-RwzmyFchxiTceKtvVMqfFyUNyxpBKtl6QzD5XPzofr8bqpVgBB/SO0gjI9IbsdQ3bTfSXrEMH+lPm1F0gf2vqQ==}
 
   '@iconify/tools@4.0.5':
     resolution: {integrity: sha512-l8KoA1lxlN/FFjlMd3vjfD7BtcX/QnFWtlBapILMlJSBgM5zhDYak/ldw/LkKG3258q/0YmXa48sO/QpxX7ptg==}
@@ -4164,7 +4164,7 @@ snapshots:
 
   '@fontsource-variable/montserrat@5.0.19': {}
 
-  '@iconify-json/lucide@1.1.206':
+  '@iconify-json/lucide@1.1.207':
     dependencies:
       '@iconify/types': 2.0.0
 
