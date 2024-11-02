@@ -73,7 +73,7 @@ export default {
                 }
 			},
 			fontFamily: {
-				sans: ['Lexend Variable', ...defaultTheme.fontFamily.sans],
+				sans: ['Montserrat Variable', 'Lexend Variable', ...defaultTheme.fontFamily.sans],
 				montserrat: ['Montserrat Variable', ...defaultTheme.fontFamily.sans],
 			},
 		},
