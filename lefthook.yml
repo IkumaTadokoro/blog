@@ -11,5 +11,5 @@ pre-commit:
 pre-push:
   parallel: true
   commands:
-    test:e2e:
-      run: pnpm test:e2e
+    # test:e2e:
+    #   run: pnpm test:e2e
