@@ -6,6 +6,18 @@ type Props = {
 const { date } = Astro.props;
 ---
 
-<time datetime={date.toISOString()} class="tracking-widest">
-  {date.toLocaleDateString("ja-JP")}
+<time
+  datetime={date.toISOString()}
+  class="tracking-widest text-muted-foreground"
+>
+  {
+    date
+      .toLocaleDateString("ja-JP", {
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+      })
+      .split("/")
+      .join("-")
+  }
 </time>

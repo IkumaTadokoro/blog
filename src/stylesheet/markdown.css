@@ -29,22 +29,33 @@
 }
 
 .prose h2 {
-    @apply text-base sm:text-2xl sm:mt-16;
+    @apply text-xl sm:text-2xl mt-20;
 }
 
 .prose h3 {
-    @apply text-sm sm:text-xl sm:mt-12;
+    @apply text-lg sm:text-xl mt-16 mb-4 text-foreground/80;
+}
+
+.prose p + h3 {
+    @apply mt-16;
+}
+
+.prose h2 + h3 {
+    @apply mt-4;
 }
 
 .prose p,
 .prose ol,
 .prose ul,
-.prose blockquote,
 .prose table,
 .prose th,
 .prose td,
 .prose code {
-  @apply !text-foreground font-medium text-sm sm:text-base !leading-6 tracking-wide;
+  @apply !text-foreground text-base !leading-7 sm:!leading-8 tracking-wide;
+}
+
+.prose blockquote {
+  @apply !text-muted-foreground text-base !leading-7 sm:!leading-8 tracking-wide;
 }
 
 .prose li::marker {
@@ -52,11 +63,11 @@
 }
 
 .prose a {
-  @apply underline decoration-primary decoration-2 underline-offset-4 text-muted-foreground;
+  @apply underline decoration-primary/70 decoration-2 underline-offset-[0.35rem] text-foreground/70;
 }
 
 .prose a:hover {
-  @apply opacity-75;
+  @apply no-underline;
 }
 
 .prose img {

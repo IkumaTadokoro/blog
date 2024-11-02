@@ -29,6 +29,9 @@ importers:
       '@fontsource-variable/montserrat':
         specifier: 5.0.21
         version: 5.0.21
+      '@fontsource-variable/noto-sans-jp':
+        specifier: 5.1.0
+        version: 5.1.0
       '@iconify-json/lucide':
         specifier: 1.1.209
         version: 1.1.209
@@ -757,6 +760,9 @@ packages:
 
   '@fontsource-variable/montserrat@5.0.21':
     resolution: {integrity: sha512-MY0mZf5J3X8/Z9jw2nRMcD7peDg5MInz1BvKceiDPiw6IKPJu/lvCD4KhUIvhYzpUP7sPRDm/fg3ojonHLs81g==}
+
+  '@fontsource-variable/noto-sans-jp@5.1.0':
+    resolution: {integrity: sha512-VmEW0dlHsC0tQOlZlzcrUj+9HL73pANKneMrsZD8X6Jg3XhysOYY6R2VRGO4cTYwp5iVznt1crzGUEWM+/xQuA==}
 
   '@iconify-json/lucide@1.1.209':
     resolution: {integrity: sha512-B2w1Lz/03561yki/7x1fHQ+ElRSJ5rDqBd3HySXR5ajRtzPV1H3csd/QjHJlEp0j1/7nixSZHoxfHsBeHnTgcQ==}
@@ -4239,6 +4245,8 @@ snapshots:
   '@fontsource-variable/lexend@5.0.22': {}
 
   '@fontsource-variable/montserrat@5.0.21': {}
+
+  '@fontsource-variable/noto-sans-jp@5.1.0': {}
 
   '@iconify-json/lucide@1.1.209':
     dependencies:

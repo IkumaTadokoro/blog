@@ -4,11 +4,12 @@ import { cn } from "../utils/cn";
 type Props = {
   to: string;
   className?: string;
+  tabindex?: string;
 };
 
 const { to, className } = Astro.props as Props;
 ---
 
-<a href={to} class={cn("hover:opacity-75", className)}>
+<a href={to} class={cn(className)}>
   <slot />
 </a>
