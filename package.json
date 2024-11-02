@@ -62,7 +62,7 @@
     "@vitest/browser": "2.0.5",
     "@vitest/ui": "2.0.5",
     "happy-dom": "15.8.0",
-    "jsdom": "24.1.3",
+    "jsdom": "25.0.1",
     "lefthook": "1.7.22",
     "vitest": "2.0.5",
     "wrangler": "3.67.1"
