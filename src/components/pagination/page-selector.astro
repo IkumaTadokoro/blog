@@ -23,17 +23,17 @@ const isLastPage = page.currentPage === page.lastPage;
 ---
 
 <div
-  class="relative flex items-center justify-between rounded-full border border-border bg-background pl-4 pr-2 py-2 sm:py-1 text-sm text-muted-foreground"
+  class="relative flex items-center justify-between rounded-full border border-border bg-background pl-4 pr-2 py-2 sm:py-1 text-muted-foreground"
 >
   <button
     type="button"
-    class="group/button peer grid grid-flow-col items-center gap-1"
+    class="group/button peer grid grid-flow-col items-center gap-1 hover:opacity-80"
     id="page-selector"
     aria-expanded="false"
     aria-haspopup="true"
     aria-label="ページを選択して移動する"
   >
-    <p class="text-xs sm:text-sm text-foreground">
+    <p class="text-sm sm:text-base text-foreground">
       {browsed}
       <span class="text-muted-foreground text-xs">/</span>
       {page.total} 件
@@ -59,7 +59,7 @@ const isLastPage = page.currentPage === page.lastPage;
       <Link
         to={initialPageUrl}
         className={cn(
-          "block px-4 py-3 text-sm",
+          "block px-4 py-3 text-base",
           isInitialPage
             ? "cursor-not-allowed text-border"
             : "hover:bg-muted focus:outline-4"
@@ -73,7 +73,7 @@ const isLastPage = page.currentPage === page.lastPage;
       <Link
         to={lastPageUrl}
         className={cn(
-          "block px-4 py-3 text-sm",
+          "block px-4 py-3 text-base",
           isLastPage
             ? "cursor-not-allowed text-border"
             : "hover:bg-muted focus:outline-4"

@@ -2,8 +2,6 @@
 import type { CollectionEntry } from "astro:content";
 import { buildUrl } from "../utils/blog";
 import Link from "./link.astro";
-import MiniPost from "./mini-post.astro";
-import Time from "./time.astro";
 
 type Props = {
   blog: CollectionEntry<"blog">;
@@ -22,12 +20,5 @@ const { blog } = Astro.props;
         {blog.data.title}
       </Link>
     </h3>
-
-    <Link
-      className="leading-relaxed text-sm font-semibold text-foreground/70 hover:underline hover:decoration-primary hover:underline-offset-4"
-      to={buildUrl(blog.slug)}
-    >
-      記事を読む
-    </Link>
   </section>
 </article>

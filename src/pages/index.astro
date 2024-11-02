@@ -6,24 +6,26 @@ import Document from "../layouts/document.astro";
 import { getBlogs } from "../utils/blog";
 
 const allBlogs = await getBlogs();
-const blogs = allBlogs.slice(0, 3);
+const blogs = allBlogs.slice(0, 20);
 ---
 
 <Document>
-  <section
-    class="grid grid-cols-2 grid-rows-[max-content_1fr_max-content] h-full gap-8"
-  >
-    <h2 class="text-3xl font-bold text-foreground tracking-wider">BLOG</h2>
-    <Link
-      to="/blog"
-      className="justify-self-end rounded-full border-border border px-4 py-2 text-sm sm:text-base bg-background text-foreground"
+  <section class="grid gap-8 grid-rows-[max_content-1fr_max-content]">
+    <div
+      class="flex justify-between items-center sticky top-0 backdrop-blur-sm z-20 py-4"
     >
-      ほかの記事も見る
-    </Link>
-    <div class="col-span-2 grid place-self-start gap-y-8">
+      <h2 class="text-3xl font-bold text-foreground tracking-wider">blog</h2>
+      <Link
+        to="/blog"
+        className="justify-self-end rounded-full border-border border px-4 py-2 text-sm sm:text-base bg-background text-foreground"
+      >
+        ほかの記事も見る
+      </Link>
+    </div>
+    <div class="grid place-self-start gap-y-8 sm:gap-y-16">
       {blogs.map((blog) => <BlogCard blog={blog} />)}
     </div>
-    <div class="col-span-2">
+    <div class="mt-12">
       <Author />
     </div>
   </section>

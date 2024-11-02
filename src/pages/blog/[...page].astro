@@ -4,11 +4,12 @@ import type { GetStaticPathsOptions, Page } from "astro";
 import BlogCard from "../../components/blog-card.astro";
 import Pagination from "../../components/pagination/pagination.astro";
 
+import Author from "../../components/author.astro";
 import Document from "../../layouts/document.astro";
 import { getBlogs } from "../../utils/blog";
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
-  return paginate(await getBlogs(), { pageSize: 10 });
+  return paginate(await getBlogs(), { pageSize: 50 });
 }
 
 const { page } = Astro.props as {
@@ -18,13 +19,19 @@ const { page } = Astro.props as {
 
 <Document>
   <section class="grid gap-8">
-    <div class="grid items-center sticky top-0 backdrop-blur-sm z-20 py-4">
+    <div
+      class="flex justify-between items-center sticky top-0 backdrop-blur-sm z-20 py-4"
+    >
+      <h2 class="text-3xl font-bold text-foreground tracking-wider">blog</h2>
       <div class="justify-self-end rounded-full">
         <Pagination page={page} collectionKey="blog" />
       </div>
     </div>
     <div class="grid gap-y-8 sm:gap-y-16">
       {page.data.map((blog) => <BlogCard blog={blog} />)}
+    </div>
+    <div class="mt-8">
+      <Author />
     </div>
   </section>
 </Document>

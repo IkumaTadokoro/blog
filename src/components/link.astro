@@ -10,6 +10,6 @@ type Props = {
 const { to, className } = Astro.props as Props;
 ---
 
-<a href={to} class={cn(className)}>
+<a href={to} class={cn("hover:opacity-75", className)}>
   <slot />
 </a>
