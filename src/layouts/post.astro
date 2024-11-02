@@ -15,13 +15,13 @@ const { title, publishDate, type = "normal" } = Astro.props as PostLayoutProps;
 <div class={cn("space-y-8 sm:space-y-16", type === "mini" && "p-14 w-[492px]")}>
   <hgroup class="space-y-4">
     <h2
-      class="text-lg sm:text-3xl font-semibold break-all"
+      class="text-center text-lg sm:text-3xl font-semibold break-all"
       data-pagefind-meta="title"
     >
       {title}
     </h2>
     <div
-      class="flex items-center justify-end gap-2 text-sm text-muted-foreground"
+      class="flex items-center justify-center gap-2 text-md text-muted-foreground"
     >
       <Time date={publishDate} />
       <p>に公開</p>

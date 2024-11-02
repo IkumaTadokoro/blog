@@ -21,7 +21,7 @@
 
   @apply transition duration-300 ease-in-out;
 
-  @apply !text-foreground;
+  @apply !text-primary;
 
   .icon-link:before {
     content: "#";
@@ -44,13 +44,21 @@
 .prose th,
 .prose td,
 .prose code {
-  @apply text-foreground/75 text-sm sm:text-base;
+  @apply !text-foreground font-medium text-sm sm:text-base !leading-6 tracking-wide;
+}
+
+.prose li::marker {
+  @apply text-primary;
 }
 
 .prose a {
-  @apply text-muted-foreground;
+  @apply underline decoration-primary decoration-2 underline-offset-4 text-muted-foreground;
 }
 
 .prose a:hover {
-  @apply text-foreground;
+  @apply opacity-75;
+}
+
+.prose img {
+  @apply !mx-auto rounded-sm;
 }
