@@ -7,7 +7,7 @@ type Props = {
   blog: CollectionEntry<"blog">;
 };
 
-const { blog } = Astro.props;
+const { blog } = Astro.props as Props;
 ---
 
 <article>
@@ -20,5 +20,14 @@ const { blog } = Astro.props;
         {blog.data.title}
       </Link>
     </h3>
+    <p class="text-foreground text-sm">
+      {blog.data.title}
+    </p>
+    <a
+      class="leading-relaxed break-all line-clamp-3 text-base font-semibold text-foreground hover:underline hover:decoration-primary hover:underline-offset-4"
+      href={buildUrl(blog.slug)}
+    >
+      Read more
+    </a>
   </section>
 </article>
