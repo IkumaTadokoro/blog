@@ -49,11 +49,12 @@
 .prose ul,
 .prose table,
 .prose th,
-.prose td{
+.prose td,
+.prose p code{
   @apply !text-foreground text-base !leading-7 sm:!leading-8 tracking-wide;
 }
 
-.prose blockquote {
+.prose blockquote * {
   @apply !text-muted-foreground text-base !leading-7 sm:!leading-8 tracking-wide;
 }
 

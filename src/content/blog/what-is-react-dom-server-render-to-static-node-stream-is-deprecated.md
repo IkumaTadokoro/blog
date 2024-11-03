@@ -2,6 +2,7 @@
 publishDate: 2024-05-01
 title: Astro で Warning ReactDOMServer.renderToStaticNodeStream() is deprecated. が出るようになった原因と対応
 category: tech
+draft: false
 tags:
   - Astro
   - React

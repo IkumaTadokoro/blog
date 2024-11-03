@@ -14,17 +14,17 @@ const { blog } = Astro.props as Props;
   <section class="grid gap-y-4">
     <h3>
       <Link
-        className="leading-relaxed break-all line-clamp-3 text-lg sm:text-xl font-semibold text-foreground hover:underline hover:decoration-primary hover:underline-offset-4"
+        className="leading-relaxed break-all line-clamp-3 text-lg sm:text-xl font-bold text-foreground hover:underline hover:decoration-primary hover:underline-offset-4"
         to={buildUrl(blog.slug)}
       >
         {blog.data.title}
       </Link>
     </h3>
-    <p class="text-foreground text-sm">
-      {blog.data.title}
+    <p class="text-foreground text-sm leading-7 tracking-wide">
+      {blog.data.description ?? "No description"}
     </p>
     <a
-      class="leading-relaxed break-all line-clamp-3 text-base font-semibold text-foreground hover:underline hover:decoration-primary hover:underline-offset-4"
+      class="leading-relaxed break-all line-clamp-3 text-sm font-semibold text-foreground hover:underline hover:decoration-primary hover:underline-offset-4"
       href={buildUrl(blog.slug)}
     >
       Read more
