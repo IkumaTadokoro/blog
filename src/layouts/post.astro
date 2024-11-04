@@ -15,7 +15,7 @@ const { title, publishDate, type = "normal" } = Astro.props as PostLayoutProps;
 <div class={cn("space-y-8 sm:space-y-16", type === "mini" && "p-14 w-[492px]")}>
   <hgroup class="space-y-4">
     <h2
-      class="text-center text-2xl sm:text-3xl font-bold break-all tracking-widest"
+      class="text-center text-2xl sm:text-3xl font-bold break-all tracking-widest !leading-relaxed"
       data-pagefind-meta="title"
     >
       {title}

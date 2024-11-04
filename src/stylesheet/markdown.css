@@ -33,7 +33,7 @@
 }
 
 .prose h3 {
-    @apply text-lg sm:text-xl mt-16 mb-4 text-foreground/80;
+    @apply text-lg sm:text-xl mt-16 mb-4 text-foreground/90;
 }
 
 .prose p + h3 {

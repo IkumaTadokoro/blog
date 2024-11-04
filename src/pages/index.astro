@@ -12,15 +12,19 @@ const blogs = allBlogs.slice(0, 20);
 <Document>
   <section class="grid gap-8 grid-rows-[max_content-1fr_max-content]">
     <div
-      class="flex justify-between items-center sticky top-0 backdrop-blur-sm z-20 py-4"
+      class="mx-[calc(50%-50vw)] sticky top-0 backdrop-blur-[6px] hover:backdrop-blur-md z-20 py-4"
     >
-      <h2 class="text-3xl font-bold text-foreground tracking-wider">blog</h2>
-      <Link
-        to="/blog"
-        className="justify-self-end rounded-full border-border border px-4 py-2 text-sm sm:text-base bg-background text-foreground"
+      <div
+        class="flex justify-between items-center max-w-screen-md mx-auto px-4"
       >
-        ほかの記事も見る
-      </Link>
+        <h2 class="text-3xl font-bold text-foreground tracking-wider">blog</h2>
+        <Link
+          to="/blog"
+          className="justify-self-end rounded-full border-border border px-4 py-2 text-sm sm:text-base bg-background text-foreground"
+        >
+          ほかの記事も見る
+        </Link>
+      </div>
     </div>
     <div class="grid place-self-start gap-y-16">
       {blogs.map((blog) => <BlogCard blog={blog} />)}
