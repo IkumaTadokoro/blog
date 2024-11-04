@@ -50,7 +50,8 @@
 .prose table,
 .prose th,
 .prose td,
-.prose p code{
+.prose p code,
+.prose li code{
   @apply !text-foreground text-base !leading-7 sm:!leading-8 tracking-wide;
 }
 
