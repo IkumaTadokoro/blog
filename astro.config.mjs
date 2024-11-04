@@ -6,10 +6,12 @@ import { expressiveCodePlugin, rehypePlugins } from './src/utils/markdown';
 import pagefind from "astro-pagefind";
 import { SITE } from './src/config';
 
+import mdx from "@astrojs/mdx";
+
 // https://astro.build/config
 export default defineConfig({
   site: SITE.siteUrl,
-  integrations: [tailwind(), react(), icon(), expressiveCodePlugin, pagefind()],
+  integrations: [tailwind(), react(), icon(), expressiveCodePlugin, pagefind(), mdx()],
   markdown: {
     rehypePlugins,
   },
