@@ -1,5 +1,7 @@
+import { loadRenderers } from 'astro:container';
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
+import { getContainerRenderer } from '@astrojs/mdx';
 import type { RSSFeedItem } from '@astrojs/rss';
 import { experimental_AstroContainer } from 'astro/container';
 import sanitizeHtml from 'sanitize-html';
@@ -26,7 +28,9 @@ export function buildUrl(slug: string) {
 }
 
 export async function buildRssItem(post: CollectionEntry<'blog'>): Promise<RSSFeedItem> {
-	const container = await experimental_AstroContainer.create();
+	const container = await experimental_AstroContainer.create({
+		renderers: await loadRenderers([getContainerRenderer()]),
+	});
 	const content = await container.renderToString((await post.render()).Content);
 	const sanitizedContent = sanitizeHtml(content, {
 		allowedTags: [...sanitizeHtml.defaults.allowedTags, 'img'],
