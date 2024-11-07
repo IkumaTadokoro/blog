@@ -50,12 +50,16 @@ draft: false
 はみ出したい子要素に対して、以下のスタイルを適用することで、やりたいことを実現できます。
 
 ```css
+body {
+  container-type: inline-size;
+}
+
 /* ヘッダーをはみださせる */
 header {
   width: 100vw;
-  margin-inline: calc(50% - 50vw);
+  margin-inline: calc(50% - 50cqi);
   /* 親の幅に要素を寄せたい場合 */
-  /* padding-inline: calc(50vw - 50%); */
+  /* padding-inline: calc(50cqi - 50%); */
 }
 
 /* 変更なし */
@@ -81,6 +85,11 @@ HTMLについては、次のようになります。
 2. 親要素の左右それぞれに対して（つまり半分ずつに分割して考える）、画面幅の要素から親要素を引いた値をうめたい。これをネガティブマージンで再現する。
 3. `margin-inline`を利用して、水平方向に対して、2のマージンを適用する。
 
+細かいポイントがコンテナクエリを使っていることです。`50vw`だと、スクロールバーを含めた部分までで横幅を計算するので、横スクロールバーが生じてしまいます。
+
+bodyに対しての純粋な半分が欲しいので、bodyをコンテナに指定した上で、その半分である`50cqi`を指定すればこの問題も解決です（`cqi`はコンテナーのインライン（横書きだと水平方向）の1%をさす単位です）。
+
 ## 参考
 
-[コンテナからの解放。](https://lopan.jp/breaking-out/)
+- [コンテナからの解放。](https://lopan.jp/breaking-out/)
+- [CSS コンテナークエリー - CSS: カスケーディングスタイルシート | MDN](https://developer.mozilla.org/ja/docs/Web/CSS/CSS_containment/Container_queries)
