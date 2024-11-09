@@ -36,8 +36,8 @@ importers:
         specifier: 5.1.0
         version: 5.1.0
       '@iconify-json/lucide':
-        specifier: 1.2.12
-        version: 1.2.12
+        specifier: 1.2.13
+        version: 1.2.13
       '@types/react':
         specifier: 18.3.12
         version: 18.3.12
@@ -832,8 +832,8 @@ packages:
   '@fontsource-variable/noto-sans-jp@5.1.0':
     resolution: {integrity: sha512-VmEW0dlHsC0tQOlZlzcrUj+9HL73pANKneMrsZD8X6Jg3XhysOYY6R2VRGO4cTYwp5iVznt1crzGUEWM+/xQuA==}
 
-  '@iconify-json/lucide@1.2.12':
-    resolution: {integrity: sha512-pzcEQx7LuDoBZWHS1PSdCUBGcUU7/zpu3LINNiEixMz8i1zTWoxnvA2mQMciIn+yTRk4FsjRn/tGC69Rs9mbaA==}
+  '@iconify-json/lucide@1.2.13':
+    resolution: {integrity: sha512-hBRp3kZiy71YtAjKV48p1LRZMQmFKKBkjGWV2v2MWUOuMxIMo0Bp1KPJhCXCYwB0xZLTdi3iED4JjamwMSp3AQ==}
 
   '@iconify/tools@4.0.5':
     resolution: {integrity: sha512-l8KoA1lxlN/FFjlMd3vjfD7BtcX/QnFWtlBapILMlJSBgM5zhDYak/ldw/LkKG3258q/0YmXa48sO/QpxX7ptg==}
@@ -4821,7 +4821,7 @@ snapshots:
 
   '@fontsource-variable/noto-sans-jp@5.1.0': {}
 
-  '@iconify-json/lucide@1.2.12':
+  '@iconify-json/lucide@1.2.13':
     dependencies:
       '@iconify/types': 2.0.0
 
