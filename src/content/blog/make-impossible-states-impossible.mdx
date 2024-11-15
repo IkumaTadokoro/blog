@@ -1,0 +1,295 @@
+---
+publishDate: 2024-11-15
+category: tech
+title: Make Impossible States Impossibleを意識してReactのPropsを設計する
+draft: false
+description: Make Impossible States ImpossibleあるいはMake Illegal States Unrepresentableは「不可能な状態が起こらないように型/インターフェイスを設計しよう」という設計思想です。関数型プログラミングを出自とする思想ですが、API設計に汎用的に使える考え方であり、ReactのProps設計にも適用できます。
+tags:
+  - React
+  - 関数型プログラミング
+  - 設計
+  - 登壇資料
+---
+
+import { Image } from 'astro:assets';
+import button from '../../assets/images/make-impossible-states-impossible/button.png';
+import emptyState1 from '../../assets/images/make-impossible-states-impossible/empty-state-1.png';
+import emptyState2 from '../../assets/images/make-impossible-states-impossible/empty-state-2.png';
+import compositionImage from '../../assets/images/make-impossible-states-impossible/composition-image.png';
+import composition from '../../assets/images/make-impossible-states-impossible/composition.png';
+
+このブログ記事は下記のLT登壇資料を文字起こし（？）したものです。
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/4df3b1efd1814013b1d0f94151adca96" title="Make Impossible States Impossibleを 意識してReactのPropsを設計しよう" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
+
+---
+
+Reactが関数型プログラミングの影響を受けているということをきっかけに、最近 [^1] は関数型プログラミングを少しずつ学んでいます。
+
+[^1]: 2024年の夏前くらい？どこからどこまでが最近なんでしょうね。
+
+関数型プログラミングそのものにももちろん興味はありつつ、日常のプログラミングで使えるエッセンスとしても何か学びはないか、という視点で向き合っています。
+いろいろとやっていく中で、「Make Impossible States Impossible」という考えを知りました 。「不可能な状態が起こらないように型/インターフェイスを設計しよう」という意味です。
+
+考え方自体はAPIの設計において汎用的に使える指針であり、フロントエンドに関連のある領域だと、[Production Ready GraphQL](https://book.productionreadygraphql.com/)や[Kent C. Dodds氏のブログ記事](https://kentcdodds.com/blog/make-impossible-states-impossible)で取り上げられていました。
+
+
+## Make Impossible States Impossible とは
+
+繰り返しになりますが、**Make Impossible States Impossible**、あるいは **Make Illegal States Unrepresentable** は「不可能な状態が起こらないように型/インターフェイスを設計しよう」という設計思想です。
+
+関数型プログラミング言語のコミュニティを出自とする設計思想で、TypeScriptやReactの界隈でも何度か取り上げられているようです。少し前に日本語訳が発売された[関数型ドメインモデリング](https://www.amazon.co.jp/dp/B0DDBPNBVJ)でも「Making Illigal States Unrepresentable In Our Domain」というセクションで紹介されています。
+
+具体的な出典については、[Appendix](/blog/make-impossible-states-impossible#make-impossible-states-impossible--make-illegal-states-unrepresentable-%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E8%A8%80%E5%8F%8A%E3%81%95%E3%82%8C%E3%81%9F%E8%A8%98%E4%BA%8B%E5%8B%95%E7%94%BB)に掲載しましたので、そちらをご参照ください。
+
+## Reactでの実践例
+
+ここからはReactのコードを例に、Make Impossible States Impossibleの適用を見てみます。
+
+### 単一のプロパティでの例はさほど問題にならない
+
+<Image src={button} alt="" />
+
+たとえば`primary`と`secondary`、2つのスタイルを持つボタンコンポーネントを考えます。
+
+実装パターンの1つはそれぞれをスイッチ的なフラグで定義することです（2値しかないと、1つのフラグで管理することが可能ですが、ここではサンプルのためご容赦ください）。
+
+```tsx
+type Props = {
+  primary?: boolean;
+  secondary?: boolean;
+}
+
+<Button primary /> // primary
+<Button secondary /> // secondary
+```
+
+これは一見良さそうですが、少し考えると`primary`と`secondary`を同時に指定することができてしまいます。これは不整合な状態を引き起こします。
+
+```tsx
+<Button primary secondary /> // ??
+```
+
+この例では、`primary`と`secondary`のそれぞれが2つの値を取るため、合計で4つの状態が考えられます。このように、プロパティの数が増えると、「プロパティが取りうる値のパターン」と「プロパティの数」の積だけ状態が増えてしまい、結果として不正な状態が発生しやすくなります。
+
+これを解消するための方法の1つは、Union型を使ってプロパティを排他的に定義することです。
+
+```tsx
+type Props = {
+  variant: 'primary' | 'secondary';
+}
+
+<Button variant="primary" />]
+<Button variant="secondary" />
+```
+
+`variant`[^3]は`primary`か`secondary`のどちらかを取るため、不正な状態が発生しません。また取りうる状態も2つ（取りうる値の組み合わせの数の和）になりました。
+
+この例のように`variant`でスタイルを定義するパターンは多くのUIライブラリが同様に実装していることもあり、割と当たり前になっていると個人的には感じています[^4]。
+
+そのため、単一のプロパティを使った状態についてはMake Impossible States Impossibleも自然に実現されることが多いでしょう。
+
+[^3]: この名前もどこが出典なのかはわかりませんが（意味的に自然にたどり着いている可能性も十二分にある）、関数型プログラミング言語であるOCamlには`variant`という概念があり、ここに影響を受けている部分は少なからずあるかもしれません。
+[^4]: とはいいつつ、Vuetifyの2系とかはもともとスタイルごとにbooleanで指定する形式で、Vuetify3系で`variant`に変更されたので、ここ数年の話なのかもしれません。
+
+### 複数のプロパティでの例
+
+問題となるのは複数のプロパティの例です。コンポーネントの状態に作用するプロパティが複数ある場合、「それぞれのプロパティが取りうる値の数」と「プロパティの数」の積だけ、発生しうる状態が増えてしまいます。
+
+---
+
+ここで実例として、Empty Stateコンポーネントを考えます。Empty Stateコンポーネントは、データが存在しない場合の統一的な見た目を提供するコンポーネントです。次の画像のような見た目をしています。
+
+<Image src={emptyState1} alt="ブログ記事がない場合に表示されるEmpty Stateコンポーネントとその部品の解剖図。白背景に、びっくりマークのアイコン、「まだブログ記事がありません」というtitle、「記事を作成するとここに表示されます」というdescription、「記事を書く」というボタンがある。ボタンの色は青色で、コンポーネントの説明として、ボタンのテキストはbuttonText、イベントハンドラはonClick、ボタンのスタイルはprimary、サイズはmdで表現されるとある。" />
+
+このコンポーネントのPropsは、シンプルに次のように定義できます。
+
+```tsx
+type Props = {
+  title: string;
+  description: string;
+  buttonText: string;
+  onClick: () => void;
+}
+```
+
+初期時点では新規作成ボタンだけが要件としてあり、すべてのプロパティは必須です。この時点では特に問題はありません。
+
+ここで要件として、新たに「アプリ内で新規リソースを作成するわけではない場合、ボタンをリンクのスタイルで表示したい」という要件が追加されたとします。
+
+<Image src={emptyState2} alt="Empty Stateコンポーネントのボタンがリンク仕様になった図。ボタン部分が青枠・白背景のボタンになり、外部リンクを示すアイコンがボタンのテキストの横に表示されている。" />
+
+```diff
+type Props = {
+  title: string;
+  description: string;
+-  buttonText: string;
++  buttonText?: string;
+-  onClick: () => void;
++  onClick+: () => void;
++  /* リンクのテキスト。これを指定するとリンクを示すアイコンが表示されます */
++  linkText?: string;
++  /* 外部リンクかどうか。アイコンが変わるのと別タブで開く挙動が追加されます */
++  isExternalLink?: boolean;
++  /* リンク先URL。これを指定するとリンクが有効になります */
++  href?: string;
+}
+```
+
+追加の変更だけで要件のスタイルを実現できました。しかしここには問題があります。ここまでで述べてきたように、「`linkText`を指定しているが、`href`を指定していない」「`buttonText`と`href`が同時に指定してある」など、不正な状態が発生してしまいます。
+
+### Discriminated Unionによる解決
+
+解決策の1つは、TypeScript の Discriminated Union を用いて、状態を排他的に定義することです。
+
+```tsx
+type AddResourceButtonProps = {
+  type: "button"
+  buttonText: string;
+  onClick: () => void;
+}
+
+type AddResourceLinkProps = {
+  type: "link"
+  linkText: string;
+  href: string;
+  isExternalLink?: boolean;
+}
+
+type Props = {
+  title: string;
+  description: string;
+  addResourceUIProps: AddResourceButtonProps | AddResourceLinkProps;
+}
+```
+
+このサンプルでは、`type`がタグとしての機能を果たしているため、`type="button"`の時には`AddResourceButtonProps`のプロパティが、`type="link"`の時には`AddResourceLinkProps`のプロパティだけが指定できるようになります。
+
+### Compositionによる解決
+
+もう1つの解決策は、Compositionを使うことです。Empty Stateコンポーネントが内包するButtonのスタイルが複数あることがそもそもの複雑さの原因なので、これを分離することで問題を解決します。
+
+<Image src={compositionImage} alt="" />
+
+渡された関数、ここではButtonコンポーネントを呼び出すことだけを任せます。
+
+```tsx
+type Props = PropsWithChildren<{
+  title: string;
+  description: string;
+}>
+```
+
+ボタンのスタイルは`children`に渡す`Button`コンポーネント側で定義します。
+
+```tsx
+/* Buttonのパターン */
+<EmptyStatePanel title="..." description="...">
+  <Button variant="primary" size="md" onClick={createPost}>
+    記事を書く
+  </Button>
+</EmptyStatePanel>
+
+/* Linkのパターン */
+<EmptyStatePanel title="..." description="...">
+  <Button variant="secondary" size="lg" asChild>
+    <Link href={supportPageURL} external>
+      サポートページへ
+    </Link>
+  </Button>
+</EmptyStatePanel>
+
+/* Linkのパターン（LinkButtonをスタイル使い回しのために別途用意する */
+const LinkButton: FC<PropsWithChildren<{ href: string }>> = ({ href, children }) => {
+  return (
+    <Button variant="secondary" size="lg" asChild>
+      <Link href={href} external>
+        {children}
+      </Link>
+    </Button>
+  );
+}
+
+<EmptyStatePanel title="..." description="...">
+  <LinkButton href={supportPageURL}>
+    サポートページへ
+  </LinkButton>
+</EmptyStatePanel>
+
+```
+
+<Image src={composition} alt="" />
+
+Buttonに関する状態はButtonコンポーネント側で管理されるため、EmptyStatePanelコンポーネントでは先ほどのような不整合な状態が発生しません（前提として、Buttonコンポーネントが不正な状態が定義できないようになっている必要がありますが）。
+
+## 既存コンポーネントの変更の際には状態の増加に気をつける
+
+新規でコンポーネントを作成する際には、組み合わせの数が少ないか、組み合わせ自体があっても実装者がすべてのパターンを意識して設計するため、自然とMake Impossible States Impossibleを満たした設計になりやすいと感じます。
+
+反対に既存のコンポーネントに対して変更を加える際には、新しく追加しようとしている状態だけにフォーカスが向いているために、不正な状態が発生しやすいと感じます。
+
+特に既存の汎用コンポーネントを修正する際には、既存の構造に引っ張られることもあり、`isFoo`のようなフラグ的なPropsを生やす引力が働きやすいのもかもしれません。
+
+フラグが1個増えたら、単体で状態が2個増え、最終的に同じ箇所に影響するPropsの数の2倍分、考えうる状態が増えます。そのため、既存のコンポーネントに対して変更を加える際には、状態の増加に気をつけることが重要です。
+
+## まとめ
+
+- Make Impossible States Impossibleは、不正な状態が発生しないように型/インターフェイスを設計する考え方。
+- API 設計においても、React コンポーネントの Props 設計においても適用できる。React では Discriminated Union や Composition を使うことで実現できる。
+- 特に既存コンポーネントを実装する際には、既存実装の引力が働きやすいことと、実装対象にフォーカスしていることが多いので、新しく追加する実装が不正な状態を引き起こさないかを意識することが重要。
+
+React における Make Impossible States Impossible の考え方について、簡単な例を交えて紹介しました。
+
+TypeScriptの文脈だと、最近はTSバックエンドで語られることご多い気がしますが、冒頭で述べた通りAPI設計で汎用的に使える考え方なので、ReactのProps設計にも適用できます。
+実践方法である Discriminated Union や Composition については、React や TypeScript では基本的なものです。重要なのはこれらのテクニックというより、これらを適用するための1つの指針としての Make Impossible States Impossible の考え方を意識することだと感じます。
+
+今回挙げた例では「単一責任の原則」「不要な結合関係を排除する」などさまざまな視点からもアプローチができると思いますので、あくまで設計時に使える1つの視点として参考にしていただければと思います。
+
+## Appendix
+
+### Make Impossible States Impossible / Make Illegal States Unrepresentable について言及された記事・動画
+
+私が調べた範囲で記載します。2011年くらいから言及されていて、2016-2019あたりの記事が多い印象です。
+
+- [Jane Street Tech Blog - Effective ML Revisited](https://blog.janestreet.com/effective-ml-revisited/)
+  - 2011年で調べた中ではもっとも古い出典。
+- [Make Impossible States Impossible](https://kentcdodds.com/blog/make-impossible-states-impossible)
+  - React界隈で有名なKent C. Dodds氏によるブログ記事
+- [David Khourshid - Infinitely Better UIs with Finite Automata - YouTube](https://www.youtube.com/watch?v=VU1NKX6Qkxc)
+  - XStateの作者（[stately.ai](https://stately.ai/)社のファウンダー）であるDavid Khourshid氏による動画
+- ["Making Impossible States Impossible" by Richard Feldman - YouTube](https://www.youtube.com/watch?v=IcgmSRJHu_8)
+  - わりと色々なところで言及されることの多い、Elm Conference 2016でのRichard Feldman氏の講演
+- [関数型ドメインモデリング](https://www.amazon.co.jp/dp/B0DDBPNBVJ)
+  - Part II. Modeling The Domain 6. Integrity and Consistency in the Domain の中で「Making Illigal States Unrepresentable In Our Domain」というセクションがある。
+- [Designing with types: Making illegal states unrepresentable | F# for fun and profit](https://fsharpforfunandprofit.com/posts/designing-with-types-making-illegal-states-unrepresentable/)
+  - 上記の関数型ドメインモデリングの著者のブログ記事
+- [「ADT, 直和・直積, State Machine」 #TypeScript - Qiita](https://qiita.com/ymtszw/items/dff02ad6350032688676)
+  - 上記の著者のブログをベースに解説された日本後の記事
+- [pragmatic-types/posts/making-impossible-states-impossible.md at master · stereobooster/pragmatic-types](https://github.com/stereobooster/pragmatic-types/blob/master/posts/making-impossible-states-impossible.md)
+- [Patrick Stapfer: Making Unreasonable States Impossible - ReasonML Munich Meetup - YouTube](https://www.youtube.com/watch?v=P7dTPoxCg4w)
+- [Make impossible states impossible - Elm Patterns](https://sporto.github.io/elm-patterns/basic/impossible-states.html)
+- [Make Impossible States Impossible](https://elm-radio.com/episode/impossible-states/)
+- [Making Impossible States Impossible with TypeScript](https://moboudra.com/post/making-impossible-states-impossible-in-typescript)
+- [Making impossible states impossible with TypeScript - DEV Community](https://dev.to/lieberkind/making-impossible-states-impossible-with-typescript-3hj)
+- [Making impossible states impossible: data structures in React - Jack Franklin](https://www.jackfranklin.co.uk/blog/avoiding9-impossible-states-react/)
+- [Avoid impossible UI states with React, Typescript and xState](https://whereisthemouse.com/avoid-impossible-ui-states-with-react-typescript-and-xstate)
+- [Making impossible states impossible ft. Zod and Typescript](https://varenya.hashnode.dev/making-impossible-states-impossible-ft-zod-and-typescript)
+- [Avoiding impossible state with TypeScript](https://dorshinar.me/posts/avoid-impossible-state-with-typescript)
+- [Making Impossible States with fp-ts and TypeScript in a React Application by Cristhian Motoche](https://gitnation.com/contents/making-impossible-states-with-fp-ts-and-typescript-in-a-react-application)
+- [rwieruch/react-making-impossible-views-impossible: React UI State: An example to make impossible views impossible.](https://github.com/rwieruch/react-making-impossible-views-impossible)
+- [Making Invalid State Impossible: in TypeScript and React | Steven Solomon](https://soonernotfaster.com/posts/making-invalid-state-impossible-in-typescript-and-react/)
+- [Making Illegal States Unrepresentable - mrsekut-p](https://scrapbox.io/mrsekut-p/Making_Illegal_States_Unrepresentable)
+
+### XState と Zag.js と状態と
+
+上記のリストの中に、状態管理ライブラリの[XState](https://stately.ai/docs/xstate)の作者による動画がありました。
+
+XStateはステートマシンを中心に据えた状態ライブラリで、状態と遷移を明示的に定義することで、不正な状態を排除することができます。
+
+さらにこの XState を内包した Zag.js は Chakra UI によるコンポーネントライブラリ（？）で、状態に応じた data 属性や、アクセシビリティのための属性を付与してくれます。
+
+本記事の中では「状態」についての定義には触れませんでしたが、不正な状態を作らないためには、何が適正な状態かを明確に意識することも当然ながら重要です。
+
+Zag.js ではさまざまなコンポーネントの状態をステートマシンとして定義しているため、UIコンポーネントにおける状態の参考になるかもしれません。
+
+Zag.js のソースの追い方はまた別途記事にしようと思います。
