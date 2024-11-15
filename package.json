@@ -41,7 +41,7 @@
     "astro-icon": "1.1.2",
     "astro-pagefind": "1.6.0",
     "clsx": "2.1.1",
-    "pagefind": "1.1.1",
+    "pagefind": "1.2.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "rehype-autolink-headings": "7.1.0",
@@ -59,14 +59,14 @@
     "@tailwindcss/typography": "0.5.15",
     "@testing-library/dom": "10.4.0",
     "@testing-library/jest-dom": "6.6.3",
-    "@types/node": "22.8.7",
+    "@types/node": "22.9.0",
     "@types/sanitize-html": "2.13.0",
     "@vitest/browser": "2.1.5",
     "@vitest/ui": "2.1.5",
-    "happy-dom": "15.8.3",
+    "happy-dom": "15.11.6",
     "jsdom": "25.0.1",
     "lefthook": "1.8.2",
     "vitest": "2.1.5",
-    "wrangler": "3.84.1"
+    "wrangler": "3.87.0"
   }
 }
