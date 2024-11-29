@@ -1,4 +1,5 @@
 ---
+import { render } from "astro:content";
 import { Icon } from "astro-icon/components";
 import Author from "../../components/author.astro";
 import Document from "../../layouts/document.astro";
@@ -8,13 +9,13 @@ import { getBlogs } from "../../utils/blog";
 export async function getStaticPaths() {
   const blogEntries = await getBlogs();
   return blogEntries.map((entry) => ({
-    params: { slug: entry.slug },
+    params: { id: entry.id },
     props: { entry },
   }));
 }
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 ---
 
 <Document title={entry.data.title}>
