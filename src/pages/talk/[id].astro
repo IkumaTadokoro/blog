@@ -1,0 +1,39 @@
+---
+import { render } from "astro:content";
+import { createMarkdownProcessor } from "@astrojs/markdown-remark";
+import Author from "../../components/author.astro";
+import Document from "../../layouts/document.astro";
+import Post from "../../layouts/post.astro";
+import { getTalkEmbedUrl, getTalkId, getTalks } from "../../utils/talks";
+
+export async function getStaticPaths() {
+  const talksEntries = await getTalks();
+  return talksEntries.map((entry) => {
+    return {
+      params: { id: getTalkId(entry) },
+      props: { entry },
+    };
+  });
+}
+
+const processor = await createMarkdownProcessor();
+const { entry } = Astro.props;
+const iframe = await getTalkEmbedUrl(entry.data.link, entry.data.title ?? "");
+const markdown = await processor.render(entry.data.description ?? "");
+const { Content } = await render({
+  ...entry,
+  rendered: {
+    html: markdown.code,
+  },
+});
+---
+
+<Document title={`${entry.data.title!}`}>
+  <Post title={entry.data.title!} publishDate={entry.data.pubdate}>
+    <Fragment set:html={iframe} />
+    <Content />
+  </Post>
+  <div class="mt-16">
+    <Author />
+  </div>
+</Document>

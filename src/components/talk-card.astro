@@ -1,0 +1,37 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Image from "astro/components/Image.astro";
+import { buildUrl, getTalkId } from "../utils/talks";
+import Time from "./time.astro";
+
+type Props = {
+  talk: CollectionEntry<"talks">;
+};
+
+const { talk } = Astro.props as Props;
+const id = getTalkId(talk);
+const image = talk.data.enclosures.at(0);
+---
+
+<a
+  class="rounded-md grid gap-1 grid-rows-subgrid row-span-3 hover:brightness-90"
+  href={buildUrl(id)}
+>
+  <figure class="aspect-video relative">
+    {
+      image && (
+        <Image
+          src={image.url}
+          alt={talk.data.title}
+          class="rounded-md w-full h-full object-cover border border-border rounded-md absolute object-top"
+          width={1920}
+          height={1080}
+        />
+      )
+    }
+  </figure>
+  <p class="font-semibold mt-2">{talk.data.title}</p>
+  <div class="text-right">
+    <Time size="small" date={talk.data.pubdate!} />
+  </div>
+</a>

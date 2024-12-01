@@ -1,12 +1,21 @@
 ---
 type Props = {
   date: Date;
+  size?: "small" | "medium" | "large";
 };
 
-const { date } = Astro.props;
+const { date, size = "medium" } = Astro.props;
+const sizeClasses = {
+  small: "text-sm",
+  medium: "text-md",
+  large: "text-lg",
+};
 ---
 
-<time datetime={date.toISOString()} class="tracking-widest text-foreground">
+<time
+  datetime={date.toISOString()}
+  class={`tracking-widest text-foreground ${sizeClasses[size]}`}
+>
   {
     date
       .toLocaleDateString("ja-JP", {

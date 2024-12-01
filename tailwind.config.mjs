@@ -80,5 +80,6 @@ export default {
 	},
 	plugins: [
 		require('@tailwindcss/typography'),
+    require("tailwind-gradient-mask-image")
 	],
 }
