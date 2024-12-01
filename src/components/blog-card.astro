@@ -17,7 +17,7 @@ const { blog } = Astro.props as Props;
     <h3>
       <Link
         className="leading-relaxed break-all line-clamp-3 text-lg sm:text-xl font-bold text-foreground hover:underline hover:decoration-primary hover:underline-offset-4"
-        to={buildUrl(blog.slug)}
+        to={buildUrl(blog.id)}
       >
         {blog.data.title}
       </Link>
@@ -27,7 +27,7 @@ const { blog } = Astro.props as Props;
     </p>
     <a
       class="leading-relaxed break-all line-clamp-3 text-sm font-semibold text-foreground hover:underline hover:decoration-primary hover:underline-offset-4"
-      href={buildUrl(blog.slug)}
+      href={buildUrl(blog.id)}
     >
       Read more
     </a>

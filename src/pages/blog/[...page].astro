@@ -20,11 +20,15 @@ const { page } = Astro.props as {
 <Document>
   <section class="grid gap-8">
     <div
-      class="flex justify-between items-center sticky top-0 backdrop-blur-sm z-20 py-4"
+      class="mx-[calc(50%-50cqi)] sticky top-0 backdrop-blur-[6px] hover:backdrop-blur-md z-20 py-4"
     >
-      <h2 class="text-3xl font-bold text-foreground tracking-wider">blog</h2>
-      <div class="justify-self-end rounded-full">
-        <Pagination page={page} collectionKey="blog" />
+      <div
+        class="flex justify-between items-center max-w-screen-md mx-auto px-4"
+      >
+        <h2 class="text-3xl font-bold text-foreground tracking-wider">blog</h2>
+        <div class="justify-self-end rounded-full">
+          <Pagination page={page} collectionKey="blog" />
+        </div>
       </div>
     </div>
     <div class="grid gap-y-16">

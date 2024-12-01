@@ -1,7 +1,9 @@
 import { defineCollection, z } from 'astro:content';
+import { feedLoader } from '@ascorbic/feed-loader';
+import { type Loader, glob } from 'astro/loaders';
 
 const blogCollection = defineCollection({
-	type: 'content',
+	loader: glob({ pattern: '**/*.(md|mdx)', base: './src/data/blog' }),
 	schema: z.object({
 		title: z.string(),
 		description: z.string().optional(),
@@ -12,6 +14,13 @@ const blogCollection = defineCollection({
 	}),
 });
 
+const talks = defineCollection({
+	loader: feedLoader({
+		url: 'https://speakerdeck.com/ikumatadokoro.rss',
+	}),
+});
+
 export const collections = {
 	blog: blogCollection,
+	talks,
 };

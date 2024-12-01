@@ -1,6 +1,7 @@
 import { loadRenderers } from 'astro:container';
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
+import { render } from 'astro:content';
 import { getContainerRenderer } from '@astrojs/mdx';
 import type { RSSFeedItem } from '@astrojs/rss';
 import { experimental_AstroContainer } from 'astro/container';
@@ -23,15 +24,15 @@ export function sortByDate(collections: Collections) {
 	);
 }
 
-export function buildUrl(slug: string) {
-	return `/blog/${slug}`;
+export function buildUrl(id: string) {
+	return `/blog/${id}`;
 }
 
 export async function buildRssItem(post: CollectionEntry<'blog'>): Promise<RSSFeedItem> {
 	const container = await experimental_AstroContainer.create({
 		renderers: await loadRenderers([getContainerRenderer()]),
 	});
-	const content = await container.renderToString((await post.render()).Content);
+	const content = await container.renderToString((await render(post)).Content);
 	const sanitizedContent = sanitizeHtml(content, {
 		allowedTags: [...sanitizeHtml.defaults.allowedTags, 'img'],
 	});
@@ -42,7 +43,7 @@ export async function buildRssItem(post: CollectionEntry<'blog'>): Promise<RSSFe
 	const rssItem: RSSFeedItem = {
 		title: post.data.title,
 		description: summary,
-		link: buildUrl(post.slug),
+		link: buildUrl(post.id),
 		pubDate: post.data.publishDate,
 		content: sanitizedContent,
 		author: SITE.author,
