@@ -6,21 +6,25 @@ import ThemeSelector from "./theme-selector.astro";
 ---
 
 <header>
-  <div class="max-w-screen-md mx-auto my-12 px-4">
+  <div class="max-w-screen-md mx-auto mt-9 sm:my-12 px-4">
     <div
-      class="grid grid-cols-[1fr_auto_auto_auto_auto] gap-4 justify-between items-center"
+      class="grid grid-cols-[1fr_max-content] gap-4 justify-between items-center"
     >
       <SiteLogo />
-      <Link to="/blog">
-        <Icon size={24} title="登壇" name="lucide:file-text" />
-      </Link>
-      <Link to="/talk">
-        <Icon size={24} title="登壇" name="lucide:presentation" />
-      </Link>
-      <Link to="/search">
-        <Icon size={28} title="検索" name="lucide:text-search" />
-      </Link>
-      <ThemeSelector />
+      <div
+        class="flex place-content-center sm:place-content-end gap-2 sm:gap-4"
+      >
+        <Link to="/blog">
+          <Icon size={24} title="登壇" name="lucide:file-text" />
+        </Link>
+        <Link to="/talk">
+          <Icon size={24} title="登壇" name="lucide:presentation" />
+        </Link>
+        <Link to="/search">
+          <Icon size={28} title="検索" name="lucide:text-search" />
+        </Link>
+        <ThemeSelector />
+      </div>
     </div>
   </div>
 </header>
