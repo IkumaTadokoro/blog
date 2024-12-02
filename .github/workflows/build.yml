@@ -32,7 +32,6 @@ jobs:
       - name: build
         run: pnpm build
       - uses: actions/upload-artifact@v4
-        if: ${{ github.ref == 'refs/heads/main' }}
         with:
           name: dist
           path: dist
@@ -42,19 +41,20 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     needs: [build]
-    if: ${{ github.ref == 'refs/heads/main' }}
+    permissions:
+      contents: read
+      deployments: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
           name: dist
           path: dist
-      - uses: cloudflare/pages-action@1
+      - uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: blog
-          directory: ./dist
+          command: pages deploy ./dist --project-name=blog
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
   actions-timeline:
     runs-on: ubuntu-latest

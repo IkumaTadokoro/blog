@@ -44,6 +44,10 @@
     @apply mt-4;
 }
 
+.prose h4 {
+  @apply mt-8;
+}
+
 .prose p,
 .prose ol,
 .prose ul,
