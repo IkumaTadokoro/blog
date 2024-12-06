@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@ascorbic/feed-loader':
         specifier: 1.0.4
-        version: 1.0.4(astro@4.16.16(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2))
+        version: 1.0.4(astro@4.16.17(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2))
       '@astrojs/check':
         specifier: 0.9.4
         version: 0.9.4(typescript@5.7.2)
@@ -19,16 +19,16 @@ importers:
         version: 5.3.0
       '@astrojs/mdx':
         specifier: 3.1.9
-        version: 3.1.9(astro@4.16.16(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2))
+        version: 3.1.9(astro@4.16.17(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2))
       '@astrojs/react':
         specifier: 3.6.3
-        version: 3.6.3(@types/node@22.10.1)(@types/react-dom@18.3.1)(@types/react@18.3.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 3.6.3(@types/node@22.10.1)(@types/react-dom@18.3.2)(@types/react@18.3.14)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@astrojs/rss':
-        specifier: 4.0.9
-        version: 4.0.9
+        specifier: 4.0.10
+        version: 4.0.10
       '@astrojs/tailwind':
         specifier: 5.1.3
-        version: 5.1.3(astro@4.16.16(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2))(tailwindcss@3.4.16)
+        version: 5.1.3(astro@4.16.17(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2))(tailwindcss@3.4.16)
       '@expressive-code/plugin-line-numbers':
         specifier: 0.38.3
         version: 0.38.3
@@ -51,23 +51,23 @@ importers:
         specifier: 1.2.17
         version: 1.2.17
       '@types/react':
-        specifier: 18.3.13
-        version: 18.3.13
+        specifier: 18.3.14
+        version: 18.3.14
       '@types/react-dom':
-        specifier: 18.3.1
-        version: 18.3.1
+        specifier: 18.3.2
+        version: 18.3.2
       astro:
-        specifier: 4.16.16
-        version: 4.16.16(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2)
+        specifier: 4.16.17
+        version: 4.16.17(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2)
       astro-expressive-code:
         specifier: 0.38.3
-        version: 0.38.3(astro@4.16.16(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2))
+        version: 0.38.3(astro@4.16.17(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2))
       astro-icon:
         specifier: 1.1.4
         version: 1.1.4
       astro-pagefind:
         specifier: 1.6.0
-        version: 1.6.0(astro@4.16.16(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2))
+        version: 1.6.0(astro@4.16.17(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2))
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -232,8 +232,8 @@ packages:
       react: ^17.0.2 || ^18.0.0 || ^19.0.0-beta
       react-dom: ^17.0.2 || ^18.0.0 || ^19.0.0-beta
 
-  '@astrojs/rss@4.0.9':
-    resolution: {integrity: sha512-W1qeLc/WP1vMS5xXa+BnaLU0paeSeGjN8RJVAoBaOIkQuKXjIUA9hvPno89heo73in5i67g40gy70oeeHMqp6A==}
+  '@astrojs/rss@4.0.10':
+    resolution: {integrity: sha512-2gFdHM763uUAySkdwPYrpi6dppOBJr9ddg5VbkKXctWze8d1JHgIBBY78zWIYs7KBJT58zxadsObVAVt55RDaw==}
 
   '@astrojs/tailwind@5.1.3':
     resolution: {integrity: sha512-XF7WhXRhqEHGvADqc0kDtF7Yv/g4wAWTaj91jBBTBaYnc4+MQLH94duFfFa4NlTkRG40VQd012eF3MhO3Kk+bg==}
@@ -1257,11 +1257,11 @@ packages:
   '@types/prop-types@15.7.12':
     resolution: {integrity: sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==}
 
-  '@types/react-dom@18.3.1':
-    resolution: {integrity: sha512-qW1Mfv8taImTthu4KoXgDfLuk4bydU6Q/TkADnDWWHwi4NX4BR+LWfTp2sVmTqRrsHvyDDTelgelxJ+SsejKKQ==}
+  '@types/react-dom@18.3.2':
+    resolution: {integrity: sha512-Fqp+rcvem9wEnGr3RY8dYNvSQ8PoLqjZ9HLgaPUOjJJD120uDyOxOjc/39M4Kddp9JQCxpGQbnhVQF0C0ncYVg==}
 
-  '@types/react@18.3.13':
-    resolution: {integrity: sha512-ii/gswMmOievxAJed4PAHT949bpYjPKXvXo1v6cRB/kqc2ZR4n+SgyCyvyc5Fec5ez8VnUumI1Vk7j6fRyRogg==}
+  '@types/react@18.3.14':
+    resolution: {integrity: sha512-NzahNKvjNhVjuPBQ+2G7WlxstQ+47kXZNHlUvFakDViuIEfGY926GqhMueQFZ7woG+sPiQKlF36XfrIUVSUfFg==}
 
   '@types/sanitize-html@2.13.0':
     resolution: {integrity: sha512-X31WxbvW9TjIhZZNyNBZ/p5ax4ti7qsNDBDEnH4zAgmEh35YnFD1UiS6z9Cd34kKm0LslFW0KPmTQzu/oGtsqQ==}
@@ -1476,8 +1476,8 @@ packages:
     peerDependencies:
       astro: ^2.0.4 || ^3.0.0 || ^4.0.0
 
-  astro@4.16.16:
-    resolution: {integrity: sha512-H1CttrV6+JFrDBQx0Mcbq5i5AeLhCbztB786+9wEu3svWL/QPNeCGqF0dgNORAYmP+rODGCPu/y9qKSh87iLuA==}
+  astro@4.16.17:
+    resolution: {integrity: sha512-OuD+BP7U6OqQLKtZ/FJkU2S+TOlifxS/OKUbZOb5p6y+LLBa1J3zHRJrIl7DUSq6eXY+9wSWwbJpD9JS+lqhxA==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -4165,15 +4165,15 @@ snapshots:
 
   '@antfu/utils@0.7.10': {}
 
-  '@ascorbic/feed-loader@1.0.4(astro@4.16.16(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2))':
+  '@ascorbic/feed-loader@1.0.4(astro@4.16.17(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2))':
     dependencies:
-      '@ascorbic/loader-utils': 1.0.2(astro@4.16.16(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2))
-      astro: 4.16.16(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2)
+      '@ascorbic/loader-utils': 1.0.2(astro@4.16.17(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2))
+      astro: 4.16.17(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2)
       feedparser: 2.2.10
 
-  '@ascorbic/loader-utils@1.0.2(astro@4.16.16(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2))':
+  '@ascorbic/loader-utils@1.0.2(astro@4.16.17(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2))':
     dependencies:
-      astro: 4.16.16(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2)
+      astro: 4.16.17(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2)
 
   '@astrojs/check@0.9.4(typescript@5.7.2)':
     dependencies:
@@ -4236,12 +4236,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@3.1.9(astro@4.16.16(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2))':
+  '@astrojs/mdx@3.1.9(astro@4.16.17(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2))':
     dependencies:
       '@astrojs/markdown-remark': 5.3.0
       '@mdx-js/mdx': 3.1.0(acorn@8.14.0)
       acorn: 8.14.0
-      astro: 4.16.16(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2)
+      astro: 4.16.17(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2)
       es-module-lexer: 1.5.4
       estree-util-visit: 2.0.0
       gray-matter: 4.0.3
@@ -4260,10 +4260,10 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/react@3.6.3(@types/node@22.10.1)(@types/react-dom@18.3.1)(@types/react@18.3.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@astrojs/react@3.6.3(@types/node@22.10.1)(@types/react-dom@18.3.2)(@types/react@18.3.14)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@types/react': 18.3.13
-      '@types/react-dom': 18.3.1
+      '@types/react': 18.3.14
+      '@types/react-dom': 18.3.2
       '@vitejs/plugin-react': 4.3.4(vite@5.4.10(@types/node@22.10.1))
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -4280,14 +4280,14 @@ snapshots:
       - supports-color
       - terser
 
-  '@astrojs/rss@4.0.9':
+  '@astrojs/rss@4.0.10':
     dependencies:
       fast-xml-parser: 4.5.0
       kleur: 4.1.5
 
-  '@astrojs/tailwind@5.1.3(astro@4.16.16(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2))(tailwindcss@3.4.16)':
+  '@astrojs/tailwind@5.1.3(astro@4.16.17(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2))(tailwindcss@3.4.16)':
     dependencies:
-      astro: 4.16.16(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2)
+      astro: 4.16.17(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2)
       autoprefixer: 10.4.20(postcss@8.4.49)
       postcss: 8.4.49
       postcss-load-config: 4.0.2(postcss@8.4.49)
@@ -4733,7 +4733,7 @@ snapshots:
   '@expressive-code/plugin-shiki@0.38.3':
     dependencies:
       '@expressive-code/core': 0.38.3
-      shiki: 1.22.2
+      shiki: 1.24.0
 
   '@expressive-code/plugin-text-markers@0.38.3':
     dependencies:
@@ -5240,11 +5240,11 @@ snapshots:
 
   '@types/prop-types@15.7.12': {}
 
-  '@types/react-dom@18.3.1':
+  '@types/react-dom@18.3.2':
     dependencies:
-      '@types/react': 18.3.13
+      '@types/react': 18.3.14
 
-  '@types/react@18.3.13':
+  '@types/react@18.3.14':
     dependencies:
       '@types/prop-types': 15.7.12
       csstype: 3.1.3
@@ -5489,9 +5489,9 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro-expressive-code@0.38.3(astro@4.16.16(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2)):
+  astro-expressive-code@0.38.3(astro@4.16.17(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2)):
     dependencies:
-      astro: 4.16.16(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2)
+      astro: 4.16.17(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2)
       rehype-expressive-code: 0.38.3
 
   astro-icon@1.1.4:
@@ -5503,14 +5503,14 @@ snapshots:
       - debug
       - supports-color
 
-  astro-pagefind@1.6.0(astro@4.16.16(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2)):
+  astro-pagefind@1.6.0(astro@4.16.17(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2)):
     dependencies:
       '@pagefind/default-ui': 1.1.0
-      astro: 4.16.16(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2)
+      astro: 4.16.17(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2)
       pagefind: 1.2.0
       sirv: 2.0.4
 
-  astro@4.16.16(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2):
+  astro@4.16.17(@types/node@22.10.1)(rollup@4.24.3)(typescript@5.7.2):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
