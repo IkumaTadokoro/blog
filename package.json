@@ -39,7 +39,7 @@
     "@fontsource-variable/noto-sans-jp": "5.1.0",
     "@iconify-json/lucide": "1.2.18",
     "@types/react": "18.3.14",
-    "@types/react-dom": "18.3.2",
+    "@types/react-dom": "18.3.3",
     "astro": "4.16.17",
     "astro-expressive-code": "0.38.3",
     "astro-icon": "1.1.4",
