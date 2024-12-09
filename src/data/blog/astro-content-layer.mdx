@@ -21,7 +21,7 @@ import { Image } from 'astro:assets';
 
 Astro や Eleventy、Next.jsなど、各フレームワークによりMarkdownブログは超速で作れるようになりましたが、外部のCMSからデータを取得するとなるとやや面倒です。
 
-現在ベータ版の [Astro v5](https://5-0-0-beta.docs.astro.build/en/guides/upgrade-to/v5/) からは [Content Layer](https://astro.build/blog/future-of-astro-content-layer/)という機能が追加され、外部のコンテンツデータを利用したサイト作成がより簡単になりました。この記事では、Content Layer が何を解決し、どのようにコンテンツサイト構築に使えるのかを紹介します。
+[Astro v5](https://5-0-0-beta.docs.astro.build/en/guides/upgrade-to/v5/) からは [Content Layer](https://astro.build/blog/future-of-astro-content-layer/)という機能が追加され、外部のコンテンツデータを利用したサイト作成がより簡単になりました。この記事では、Content Layer が何を解決し、どのようにコンテンツサイト構築に使えるのかを紹介します。
 
 ## なぜ Content Layer を使うのか
 
@@ -280,13 +280,13 @@ export const renderToString = async (config: AstroConfig, entry: DataEntry) => {
 
 ## おわりに
 
-<iframe title="プレゼンテーション | これで最後にしたい！ Astroと立ち向かう 6度目の個人ブログ再開発" loading="lazy" class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/93a135314f704d6894c2a59e55f2f457" title="これで最後にしたい！ Astroと立ち向かう 6度目の個人ブログ再開発" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
+<iframe title="プレゼンテーション | これで最後にしたい！ Astroと立ち向かう 6度目の個人ブログ再開発" loading="lazy" class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/93a135314f704d6894c2a59e55f2f457" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
 
 2024年は人生初の北海道（生まれてからずっと千葉県民）のカンファレンス[^2]に行き、「個人ブログ、もうリニューアルしないぞ！」という発表をしてきました。
 
 長期休みは個人ブログを作り直しがちで、ちょうど1年前のお正月にブログを作り直しています...。北の大地で交わした約束を反故にするわけにもいきませんので、今年の年末年始は自分ではない誰かのブログをリニューアルさせることを目標にこちらの記事を執筆しました。
 
-冗談はさておき。個人ブログを開発することは、普段扱っているアプリケーションとは異なる視点での開発ができるためおすすめです。今回紹介した Content Layer の登場を使って、より簡単にコンテンツを取得することができるようになりましたので、ぜひ今年の年末年始は個人ブログを作ってみてはいかがでしょうか。
+冗談はさておき。個人ブログを開発することは、普段扱っているアプリケーションとは異なる視点での開発ができるためおすすめです。今回紹介した Content Layer を使って、より簡単にコンテンツを取得することができるようになりましたので、ぜひ今年の年末年始は個人ブログを作ってみてはいかがでしょうか。
 
 [^2]: [Tech RAMEN Conference 2024](https://techramenconf.net/)。旭川で開催されたいろいろと異色のカンファレンス。
 
