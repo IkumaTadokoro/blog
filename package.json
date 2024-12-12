@@ -43,7 +43,7 @@
     "astro": "4.16.17",
     "astro-expressive-code": "0.38.3",
     "astro-icon": "1.1.4",
-    "astro-pagefind": "1.6.0",
+    "astro-pagefind": "1.7.0",
     "clsx": "2.1.1",
     "ofetch": "1.4.1",
     "pagefind": "1.2.0",
@@ -73,8 +73,8 @@
     "@vitest/ui": "2.1.8",
     "happy-dom": "15.11.7",
     "jsdom": "25.0.1",
-    "lefthook": "1.8.5",
+    "lefthook": "1.9.2",
     "vitest": "2.1.8",
-    "wrangler": "3.92.0"
+    "wrangler": "3.95.0"
   }
 }
