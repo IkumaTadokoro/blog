@@ -17,9 +17,5 @@ export default defineConfig({
   },
   image: {
     service: passthroughImageService(),
-  },
-  experimental: {
-    contentIntellisense: true,
-    contentLayer: true
   }
 });

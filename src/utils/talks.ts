@@ -126,13 +126,3 @@ function removeAttributeFromIframe(
 
 	return document.body.innerHTML;
 }
-
-function parseSpeakerdeckInternalId(iframeHtmlString: string) {
-	const {
-		window: { document },
-	} = new JSDOM(iframeHtmlString);
-	const iframe = document.querySelector('iframe');
-	if (iframe) {
-		const src = iframe.getAttribute('src');
-	}
-}
