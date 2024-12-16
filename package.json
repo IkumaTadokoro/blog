@@ -37,7 +37,7 @@
     "@fontsource-variable/lexend": "5.1.1",
     "@fontsource-variable/montserrat": "5.1.0",
     "@fontsource-variable/noto-sans-jp": "5.1.0",
-    "@iconify-json/lucide": "1.2.18",
+    "@iconify-json/lucide": "1.2.19",
     "@types/react": "19.0.1",
     "@types/react-dom": "19.0.2",
     "astro": "4.16.17",
