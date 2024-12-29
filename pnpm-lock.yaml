@@ -39,14 +39,14 @@ importers:
         specifier: 4.0.5
         version: 4.0.5
       '@fontsource-variable/lexend':
+        specifier: 5.1.2
+        version: 5.1.2
+      '@fontsource-variable/montserrat':
         specifier: 5.1.1
         version: 5.1.1
-      '@fontsource-variable/montserrat':
-        specifier: 5.1.0
-        version: 5.1.0
       '@fontsource-variable/noto-sans-jp':
-        specifier: 5.1.0
-        version: 5.1.0
+        specifier: 5.1.1
+        version: 5.1.1
       '@iconify-json/lucide':
         specifier: 1.2.20
         version: 1.2.20
@@ -928,14 +928,14 @@ packages:
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
 
-  '@fontsource-variable/lexend@5.1.1':
-    resolution: {integrity: sha512-ixzYkzPiJRBAxYPsjIUBLBjS1zXBMF75qQwoVyEPWOtt5uyEHdT8jTpbh/b4ibsnQvqEVb/CToifmEXJfvShag==}
+  '@fontsource-variable/lexend@5.1.2':
+    resolution: {integrity: sha512-5gY4aYZXvhCNrpqa7f/JmRnUyRMAPqGdE0IXicbqvusj+jEwuj1JuiLPl61hTbGntQP+sMZsDHECBhlrEY/8iQ==}
 
-  '@fontsource-variable/montserrat@5.1.0':
-    resolution: {integrity: sha512-1bloVBKJx/ABBmF+/VzhJZDLzaDNUxw/8Pt5AOgfKL6N3t1fAhwtJBb1gdqU7ABckSNLsKf572A5Inv9YneRug==}
+  '@fontsource-variable/montserrat@5.1.1':
+    resolution: {integrity: sha512-eHmSruS3B+4wVaHk6ShNUJj1MbWEohOuriwN/oYR2VY8jRS83a5SKQeG1wu4Eku3v3f5cXTIbfd1tHeQ7GXkiA==}
 
-  '@fontsource-variable/noto-sans-jp@5.1.0':
-    resolution: {integrity: sha512-VmEW0dlHsC0tQOlZlzcrUj+9HL73pANKneMrsZD8X6Jg3XhysOYY6R2VRGO4cTYwp5iVznt1crzGUEWM+/xQuA==}
+  '@fontsource-variable/noto-sans-jp@5.1.1':
+    resolution: {integrity: sha512-fOuEtA3b+3M1nJJycPx8JQyKUTz10nTUOQSusC6gBtq6ff22vl59c3NSg3ZM5/QsO3y5AHhn+KKvhpRcDvgyJg==}
 
   '@iconify-json/lucide@1.2.20':
     resolution: {integrity: sha512-m/8rqukvQfsE+MYTwNXCxP/K2iucTCGSQfS0XZhYpkZKGRdiEOdAAnd8Vv+E78xKK94Jza2eTc5ihxbw6+i7EQ==}
@@ -4861,11 +4861,11 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@fontsource-variable/lexend@5.1.1': {}
+  '@fontsource-variable/lexend@5.1.2': {}
 
-  '@fontsource-variable/montserrat@5.1.0': {}
+  '@fontsource-variable/montserrat@5.1.1': {}
 
-  '@fontsource-variable/noto-sans-jp@5.1.0': {}
+  '@fontsource-variable/noto-sans-jp@5.1.1': {}
 
   '@iconify-json/lucide@1.2.20':
     dependencies:
