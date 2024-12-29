@@ -10,7 +10,7 @@ draft: false
 
 Tailwind CSSには`important`という属性を指定できる。
 
-```js:tailwind.config.js
+```js file=tailwind.config.js
 module.exports = {
   important: true,
 }

@@ -6,6 +6,9 @@ import { buildRssItem } from './blog';
 describe('buildRssItem', async () => {
 	const post = await getEntry('blog', 'test');
 	it('should return a valid RSS item', async () => {
+		if (!post) {
+			throw new Error('post not found');
+		}
 		const rssItem = await buildRssItem(post);
 
 		expect(rssItem.title).eq('テスト用のサンプル記事');

@@ -1,7 +1,7 @@
 ---
 import "@fontsource-variable/noto-sans-jp";
 import "../stylesheet/globalStyles.css";
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 import ogImage from "../assets/ogp.png";
 import Footer from "../components/footer.astro";
 import Header from "../components/header.astro";
@@ -42,7 +42,7 @@ const ogp = new URL(ogImage.src, Astro.site?.origin as string);
     <title>{pageTitlePrefixed}</title>
     <link rel="icon" href="/favicon.ico" />
     <link rel="canonical" href={url} />
-    <ViewTransitions />
+    <ClientRouter />
     <ThemeProvider />
   </head>
   <body class="min-h-screen grid grid-rows-[auto_1fr_auto] bg-background">
