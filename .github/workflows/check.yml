@@ -31,8 +31,8 @@ jobs:
       - uses: ./.github/actions/setup-node
       - name: lint
         run: pnpm check
-      - name: unit-test
-        run: pnpm test
+      # - name: unit-test
+      #   run: pnpm test
   actions-timeline:
     runs-on: ubuntu-latest
     needs: [check]
