@@ -37,7 +37,7 @@
     "@fontsource-variable/lexend": "5.1.2",
     "@fontsource-variable/montserrat": "5.1.1",
     "@fontsource-variable/noto-sans-jp": "5.1.1",
-    "@iconify-json/lucide": "1.2.23",
+    "@iconify-json/lucide": "1.2.24",
     "@types/react": "19.0.7",
     "@types/react-dom": "19.0.3",
     "astro": "5.0.5",
@@ -74,7 +74,7 @@
     "happy-dom": "16.2.9",
     "jsdom": "25.0.1",
     "lefthook": "1.9.3",
-    "vitest": "3.0.1",
+    "vitest": "3.0.2",
     "wrangler": "3.96.0"
   }
 }
