@@ -8,17 +8,23 @@ import ThemeSelector from "./theme-selector.astro";
 <header>
   <div class="max-w-screen-md mx-auto mt-9 sm:my-12 px-4">
     <div
-      class="grid grid-cols-[1fr_max-content] gap-4 justify-between items-center"
+      class="grid grid-cols-1 sm:grid-cols-[1fr_max-content] gap-4 justify-between items-center"
     >
       <SiteLogo />
-      <div
-        class="flex place-content-center sm:place-content-end gap-2 sm:gap-4"
-      >
+      <div class="flex sm:place-content-end gap-2 sm:gap-4">
         <Link to="/blog">
           <Icon size={24} title="登壇" name="lucide:file-text" />
         </Link>
         <Link to="/talk">
           <Icon size={24} title="登壇" name="lucide:presentation" />
+        </Link>
+        <Link to="https://ikuma-t.notion.site/1861d7b10b50804ea46ed873c3148423">
+          <Icon
+            size={24}
+            title="スクラップ"
+            name="lucide:leaf"
+            class="text-green-700"
+          />
         </Link>
         <Link to="/search">
           <Icon size={28} title="検索" name="lucide:text-search" />
