@@ -18,8 +18,8 @@ importers:
         specifier: 6.0.2
         version: 6.0.2
       '@astrojs/mdx':
-        specifier: 4.0.7
-        version: 4.0.7(astro@5.0.5(@types/node@22.10.10)(jiti@1.21.6)(rollup@4.24.3)(typescript@5.7.3)(yaml@2.5.0))
+        specifier: 4.0.8
+        version: 4.0.8(astro@5.0.5(@types/node@22.10.10)(jiti@1.21.6)(rollup@4.24.3)(typescript@5.7.3)(yaml@2.5.0))
       '@astrojs/react':
         specifier: 4.1.6
         version: 4.1.6(@types/node@22.10.10)(@types/react-dom@19.0.3(@types/react@19.0.8))(@types/react@19.0.8)(jiti@1.21.6)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(yaml@2.5.0)
@@ -216,8 +216,11 @@ packages:
   '@astrojs/markdown-remark@6.0.2':
     resolution: {integrity: sha512-aAoHGVRK3rebCYbaLjyyR+3VeAuTz4q49syUxJP29Oo5yZHdy4cCAXRqLBdr9mJVlxCUUjZiF0Dau6YBf65SGg==}
 
-  '@astrojs/mdx@4.0.7':
-    resolution: {integrity: sha512-d3PopBTbbCoX3QOmSLYXW6YCZ0dkhNaeP9/Liz9BhEekflMc9IvBjbtNFf1WCEatsl4LLGftyDisfMM3F3LGMA==}
+  '@astrojs/markdown-remark@6.1.0':
+    resolution: {integrity: sha512-emZNNSTPGgPc3V399Cazpp5+snogjaF04ocOSQn9vy3Kw/eIC4vTQjXOrWDEoSEy+AwPDZX9bQ4wd3bxhpmGgQ==}
+
+  '@astrojs/mdx@4.0.8':
+    resolution: {integrity: sha512-/aiLr2yQ55W9AbpyOgfMtFXk7g2t7XoWdC2Avps/NqxAx4aYONDLneX43D79QwgqdjFhin7o3cIPp/vVppMbaA==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0}
     peerDependencies:
       astro: ^5.0.0
@@ -1289,11 +1292,17 @@ packages:
   '@shikijs/core@1.27.2':
     resolution: {integrity: sha512-ns1dokDr0KE1lQ9mWd4rqaBkhSApk0qGCK1+lOqwnkQSkVZ08UGqXj1Ef8dAcTMZNFkN6PSNjkL5TYNX7pyPbQ==}
 
+  '@shikijs/core@1.29.2':
+    resolution: {integrity: sha512-vju0lY9r27jJfOY4Z7+Rt/nIOjzJpZ3y+nYpqtUZInVoXQ/TJZcfGnNOGnKjFdVZb8qexiCuSlZRKcGfhhTTZQ==}
+
   '@shikijs/engine-javascript@1.24.0':
     resolution: {integrity: sha512-ZA6sCeSsF3Mnlxxr+4wGEJ9Tto4RHmfIS7ox8KIAbH0MTVUkw3roHPHZN+LlJMOHJJOVupe6tvuAzRpN8qK1vA==}
 
   '@shikijs/engine-javascript@1.27.2':
     resolution: {integrity: sha512-0JB7U5vJc16NShBdxv9hSSJYSKX79+32O7F4oXIxJLdYfomyFvx4B982ackUI9ftO9T3WwagkiiD3nOxOOLiGA==}
+
+  '@shikijs/engine-javascript@1.29.2':
+    resolution: {integrity: sha512-iNEZv4IrLYPv64Q6k7EPpOCE/nuvGiKl7zxdq0WFuRPF5PAE9PRo2JGq/d8crLusM59BRemJ4eOqrFrC4wiQ+A==}
 
   '@shikijs/engine-oniguruma@1.24.0':
     resolution: {integrity: sha512-Eua0qNOL73Y82lGA4GF5P+G2+VXX9XnuUxkiUuwcxQPH4wom+tE39kZpBFXfUuwNYxHSkrSxpB1p4kyRW0moSg==}
@@ -1301,17 +1310,29 @@ packages:
   '@shikijs/engine-oniguruma@1.27.2':
     resolution: {integrity: sha512-FZYKD1KN7srvpkz4lbGLOYWlyDU4Rd+2RtuKfABTkafAPOFr+J6umfIwY/TzOQqfNtWjL7SAwPAO0dcOraRLaQ==}
 
+  '@shikijs/engine-oniguruma@1.29.2':
+    resolution: {integrity: sha512-7iiOx3SG8+g1MnlzZVDYiaeHe7Ez2Kf2HrJzdmGwkRisT7r4rak0e655AcM/tF9JG/kg5fMNYlLLKglbN7gBqA==}
+
   '@shikijs/langs@1.27.2':
     resolution: {integrity: sha512-MSrknKL0DbeXvhtSigMLIzjPOOQfvK7fsbcRv2NUUB0EvuTTomY8/U+lAkczYrXY2+dygKOapJKk8ScFYbtoNw==}
 
+  '@shikijs/langs@1.29.2':
+    resolution: {integrity: sha512-FIBA7N3LZ+223U7cJDUYd5shmciFQlYkFXlkKVaHsCPgfVLiO+e12FmQE6Tf9vuyEsFe3dIl8qGWKXgEHL9wmQ==}
+
   '@shikijs/themes@1.27.2':
     resolution: {integrity: sha512-Yw/uV7EijjWavIIZLoWneTAohcbBqEKj6XMX1bfMqO3llqTKsyXukPp1evf8qPqzUHY7ibauqEaQchhfi857mg==}
+
+  '@shikijs/themes@1.29.2':
+    resolution: {integrity: sha512-i9TNZlsq4uoyqSbluIcZkmPL9Bfi3djVxRnofUHwvx/h6SRW3cwgBC5SML7vsDcWyukY0eCzVN980rqP6qNl9g==}
 
   '@shikijs/types@1.24.0':
     resolution: {integrity: sha512-aptbEuq1Pk88DMlCe+FzXNnBZ17LCiLIGWAeCWhoFDzia5Q5Krx3DgnULLiouSdd6+LUM39XwXGppqYE0Ghtug==}
 
   '@shikijs/types@1.27.2':
     resolution: {integrity: sha512-DM9OWUyjmdYdnKDpaGB/GEn9XkToyK1tqxuqbmc5PV+5K8WjjwfygL3+cIvbkSw2v1ySwHDgqATq/+98pJ4Kyg==}
+
+  '@shikijs/types@1.29.2':
+    resolution: {integrity: sha512-VJjK0eIijTZf0QSTODEXCqinjBn0joAHQ+aPSBzrv4O2d/QSbsMw+ZeSRx03kV34Hy7NzUvV/7NqfYGRLrASmw==}
 
   '@shikijs/vscode-textmate@10.0.1':
     resolution: {integrity: sha512-fTIQwLF+Qhuws31iw7Ncl1R3HUDtGwIipiJ9iU+UsDUwMhegFcQKQHd51nZjb7CArq0MvON8rbgCGQYWHUKAdg==}
@@ -2354,9 +2375,6 @@ packages:
   hast-util-to-estree@3.1.0:
     resolution: {integrity: sha512-lfX5g6hqVh9kjS/B9E2gSkvHH4SZNiQFiqWS0x9fENzEl+8W12RqdRxX6d/Cwxi30tPQs3bIO+aolQJNp1bIyw==}
 
-  hast-util-to-html@9.0.3:
-    resolution: {integrity: sha512-M17uBDzMJ9RPCqLMO92gNNUDuBSq10a25SDBI08iCCxmorf4Yy6sYHK57n9WAbRAAaU+DuR4W6GN9K4DFZesYg==}
-
   hast-util-to-html@9.0.4:
     resolution: {integrity: sha512-wxQzXtdbhiwGAUKrnQJXlOPmHnEehzphwkK7aluUPQ+lEc1xefC8pblMgpp2w5ldBTEfveRIrADcrhGIWrlTDA==}
 
@@ -3071,6 +3089,9 @@ packages:
   oniguruma-to-es@2.0.0:
     resolution: {integrity: sha512-pE7+9jQgomy10aK6BJKRNHj1Nth0YLOzb3iRuhlz4gRzNSBSd7hga6U8BE6o0SoSuSkqv+PPtt511Msd1Hkl0w==}
 
+  oniguruma-to-es@2.3.0:
+    resolution: {integrity: sha512-bwALDxriqfKGfUufKGGepCzu9x7nJQuoRoAFp4AnwehhC2crqrDIAP/uN2qdlsAvSMpeRC3+Yzhqc7hLmle5+g==}
+
   outvariant@1.4.3:
     resolution: {integrity: sha512-+Sl2UErvtsoajRDKCE5/dBz4DIvHXQQnAxtQTF04OJxY0+DyZXSo5P5Bb7XYWOh81syohlYL24hbDwxedPUJCA==}
 
@@ -3540,6 +3561,9 @@ packages:
   shiki@1.27.2:
     resolution: {integrity: sha512-QtA1C41oEVixKog+V8I3ia7jjGls7oCZ8Yul8vdHrVBga5uPoyTtMvFF4lMMXIyAZo5A5QbXq91bot2vA6Q+eQ==}
 
+  shiki@1.29.2:
+    resolution: {integrity: sha512-njXuliz/cP+67jU2hukkxCNuH1yUi4QfdZZY+sMr5PPrIyXSu5iTb/qYC4BiWWB0vZ+7TbdvYUCeL23zpwCfbg==}
+
   siginfo@2.0.0:
     resolution: {integrity: sha512-ybx0WO1/8bSBLEWXZvEd7gMW3Sn3JFlW3TvX1nREbDLRNQNaeNN8WK0meBwPdAaOI7TtRRRJn/Es1zhrrCHu7g==}
 
@@ -3559,6 +3583,10 @@ packages:
 
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
+
+  smol-toml@1.3.1:
+    resolution: {integrity: sha512-tEYNll18pPKHroYSmLLrksq233j021G0giwW7P3D24jC54pQ5W5BXMsQ/Mvw1OJCmEYDgY+lrzT+3nNUtoNfXQ==}
+    engines: {node: '>= 18'}
 
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
@@ -4417,9 +4445,34 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@4.0.7(astro@5.0.5(@types/node@22.10.10)(jiti@1.21.6)(rollup@4.24.3)(typescript@5.7.3)(yaml@2.5.0))':
+  '@astrojs/markdown-remark@6.1.0':
     dependencies:
-      '@astrojs/markdown-remark': 6.0.2
+      '@astrojs/prism': 3.2.0
+      github-slugger: 2.0.0
+      hast-util-from-html: 2.0.3
+      hast-util-to-text: 4.0.2
+      import-meta-resolve: 4.1.0
+      js-yaml: 4.1.0
+      mdast-util-definitions: 6.0.0
+      rehype-raw: 7.0.0
+      rehype-stringify: 10.0.1
+      remark-gfm: 4.0.0
+      remark-parse: 11.0.0
+      remark-rehype: 11.1.1
+      remark-smartypants: 3.0.2
+      shiki: 1.29.2
+      smol-toml: 1.3.1
+      unified: 11.0.5
+      unist-util-remove-position: 5.0.0
+      unist-util-visit: 5.0.0
+      unist-util-visit-parents: 6.0.1
+      vfile: 6.0.3
+    transitivePeerDependencies:
+      - supports-color
+
+  '@astrojs/mdx@4.0.8(astro@5.0.5(@types/node@22.10.10)(jiti@1.21.6)(rollup@4.24.3)(typescript@5.7.3)(yaml@2.5.0))':
+    dependencies:
+      '@astrojs/markdown-remark': 6.1.0
       '@mdx-js/mdx': 3.1.0(acorn@8.14.0)
       acorn: 8.14.0
       astro: 5.0.5(@types/node@22.10.10)(jiti@1.21.6)(rollup@4.24.3)(typescript@5.7.3)(yaml@2.5.0)
@@ -4966,7 +5019,7 @@ snapshots:
   '@expressive-code/plugin-shiki@0.38.3':
     dependencies:
       '@expressive-code/core': 0.38.3
-      shiki: 1.24.0
+      shiki: 1.27.2
 
   '@expressive-code/plugin-text-markers@0.38.3':
     dependencies:
@@ -5333,6 +5386,15 @@ snapshots:
       '@types/hast': 3.0.4
       hast-util-to-html: 9.0.4
 
+  '@shikijs/core@1.29.2':
+    dependencies:
+      '@shikijs/engine-javascript': 1.29.2
+      '@shikijs/engine-oniguruma': 1.29.2
+      '@shikijs/types': 1.29.2
+      '@shikijs/vscode-textmate': 10.0.1
+      '@types/hast': 3.0.4
+      hast-util-to-html: 9.0.4
+
   '@shikijs/engine-javascript@1.24.0':
     dependencies:
       '@shikijs/types': 1.24.0
@@ -5345,6 +5407,12 @@ snapshots:
       '@shikijs/vscode-textmate': 10.0.1
       oniguruma-to-es: 2.0.0
 
+  '@shikijs/engine-javascript@1.29.2':
+    dependencies:
+      '@shikijs/types': 1.29.2
+      '@shikijs/vscode-textmate': 10.0.1
+      oniguruma-to-es: 2.3.0
+
   '@shikijs/engine-oniguruma@1.24.0':
     dependencies:
       '@shikijs/types': 1.24.0
@@ -5355,13 +5423,26 @@ snapshots:
       '@shikijs/types': 1.27.2
       '@shikijs/vscode-textmate': 10.0.1
 
+  '@shikijs/engine-oniguruma@1.29.2':
+    dependencies:
+      '@shikijs/types': 1.29.2
+      '@shikijs/vscode-textmate': 10.0.1
+
   '@shikijs/langs@1.27.2':
     dependencies:
       '@shikijs/types': 1.27.2
 
+  '@shikijs/langs@1.29.2':
+    dependencies:
+      '@shikijs/types': 1.29.2
+
   '@shikijs/themes@1.27.2':
     dependencies:
       '@shikijs/types': 1.27.2
+
+  '@shikijs/themes@1.29.2':
+    dependencies:
+      '@shikijs/types': 1.29.2
 
   '@shikijs/types@1.24.0':
     dependencies:
@@ -5369,6 +5450,11 @@ snapshots:
       '@types/hast': 3.0.4
 
   '@shikijs/types@1.27.2':
+    dependencies:
+      '@shikijs/vscode-textmate': 10.0.1
+      '@types/hast': 3.0.4
+
+  '@shikijs/types@1.29.2':
     dependencies:
       '@shikijs/vscode-textmate': 10.0.1
       '@types/hast': 3.0.4
@@ -6663,20 +6749,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  hast-util-to-html@9.0.3:
-    dependencies:
-      '@types/hast': 3.0.4
-      '@types/unist': 3.0.2
-      ccount: 2.0.1
-      comma-separated-tokens: 2.0.3
-      hast-util-whitespace: 3.0.0
-      html-void-elements: 3.0.0
-      mdast-util-to-hast: 13.2.0
-      property-information: 6.5.0
-      space-separated-tokens: 2.0.2
-      stringify-entities: 4.0.4
-      zwitch: 2.0.4
-
   hast-util-to-html@9.0.4:
     dependencies:
       '@types/hast': 3.0.4
@@ -7677,6 +7749,12 @@ snapshots:
       regex: 5.1.1
       regex-recursion: 5.1.1
 
+  oniguruma-to-es@2.3.0:
+    dependencies:
+      emoji-regex-xs: 1.0.0
+      regex: 5.1.1
+      regex-recursion: 5.1.1
+
   outvariant@1.4.3: {}
 
   p-limit@2.3.0:
@@ -8059,7 +8137,7 @@ snapshots:
   rehype-stringify@10.0.1:
     dependencies:
       '@types/hast': 3.0.4
-      hast-util-to-html: 9.0.3
+      hast-util-to-html: 9.0.4
       unified: 11.0.5
 
   rehype@13.0.2:
@@ -8292,6 +8370,17 @@ snapshots:
       '@shikijs/vscode-textmate': 10.0.1
       '@types/hast': 3.0.4
 
+  shiki@1.29.2:
+    dependencies:
+      '@shikijs/core': 1.29.2
+      '@shikijs/engine-javascript': 1.29.2
+      '@shikijs/engine-oniguruma': 1.29.2
+      '@shikijs/langs': 1.29.2
+      '@shikijs/themes': 1.29.2
+      '@shikijs/types': 1.29.2
+      '@shikijs/vscode-textmate': 10.0.1
+      '@types/hast': 3.0.4
+
   siginfo@2.0.0: {}
 
   signal-exit@3.0.7: {}
@@ -8310,6 +8399,8 @@ snapshots:
       totalist: 3.0.1
 
   sisteransi@1.0.5: {}
+
+  smol-toml@1.3.1: {}
 
   source-map-js@1.2.1: {}
 
