@@ -25,7 +25,8 @@
 			"matchUpdateTypes": ["minor"],
 			"matchPackagePatterns": ["*"],
 			"matchDepTypes": ["dependencies", "devDependencies", "peerDependencies"],
-			"groupName": "npm minor dependencies"
+			"groupName": "npm minor dependencies",
+			"automerge": true
 		}
 	],
 	"ignoreDeps": []
