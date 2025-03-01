@@ -1,3 +1,6 @@
+@import "tailwindcss";
+@config "../../tailwind.config.mjs";
+
 .prose {
     @apply !max-w-full;
 }

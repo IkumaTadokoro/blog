@@ -1,5 +1,4 @@
 import { defineConfig, passthroughImageService } from 'astro/config';
-import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
 import icon from "astro-icon";
 import { expressiveCodePlugin, rehypePlugins } from './src/utils/markdown';
@@ -8,14 +7,22 @@ import { SITE } from './src/config';
 
 import mdx from "@astrojs/mdx";
 
+import tailwindcss from "@tailwindcss/vite";
+
 // https://astro.build/config
 export default defineConfig({
   site: SITE.siteUrl,
-  integrations: [tailwind(), react(), icon(), expressiveCodePlugin, pagefind(), mdx()],
+  integrations: [react(), icon(), expressiveCodePlugin, pagefind(), mdx()],
+
   markdown: {
     rehypePlugins,
   },
+
   image: {
     service: passthroughImageService(),
+  },
+
+  vite: {
+    plugins: [tailwindcss()]
   }
 });
