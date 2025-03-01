@@ -2,6 +2,8 @@ name: Setup Node
 runs:
   using: "composite"
   steps:
+    - run: npm install -g pnpm
+      shell: bash
     - run: corepack enable
       shell: bash
     - uses: actions/setup-node@v4
