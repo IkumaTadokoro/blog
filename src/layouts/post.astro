@@ -1,35 +1,31 @@
 ---
 import Time from "../components/time.astro";
 import "../stylesheet/markdown.css";
-import { cn } from "../utils/cn";
+import styles from "./post.module.css";
 
-type PostLayoutProps = {
+interface Props {
   title: string;
   publishDate: Date;
-  type?: "normal" | "mini";
-};
+}
 
-const { title, publishDate, type = "normal" } = Astro.props as PostLayoutProps;
+const { title, publishDate } = Astro.props;
 ---
 
-<div class={cn("space-y-8 sm:space-y-16", type === "mini" && "p-14 w-[492px]")}>
-  <hgroup class="space-y-4">
-    <h2
-      class="text-center text-2xl sm:text-3xl font-bold break-all tracking-widest !leading-relaxed"
-      data-pagefind-meta="title"
-    >
-      {title}
-    </h2>
-    <div
-      class="flex items-center justify-center gap-2 text-md text-muted-foreground"
-    >
-      <Time date={publishDate} />
-    </div>
-  </hgroup>
-  <article
-    class={cn("break-all prose", type === "mini" && "text-[10px]")}
-    data-pagefind-body
-  >
-    <slot />
-  </article>
+<div class={styles.container}>
+  <div class:list={styles.post}>
+    <hgroup class={styles.hgroup}>
+      <h2
+        class:list={["text-2xl sm:text-3xl font-bold break-all", styles.title]}
+        data-pagefind-meta="title"
+      >
+        {title}
+      </h2>
+      <div class:list={styles.time}>
+        <Time date={publishDate} />
+      </div>
+    </hgroup>
+    <article class={"break-all prose"} data-pagefind-body>
+      <slot />
+    </article>
+  </div>
 </div>

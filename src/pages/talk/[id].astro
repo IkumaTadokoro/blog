@@ -29,7 +29,7 @@ const { Content } = await render({
 ---
 
 <Document title={`${entry.data.title!}`}>
-  <Post title={entry.data.title!} publishDate={entry.data.pubdate}>
+  <Post title={entry.data.title!} publishDate={entry.data.pubdate!}>
     <Fragment set:html={iframe} />
     <Content />
   </Post>
