@@ -6,5 +6,8 @@
 	"editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.organizeImports.biome": "explicit"
+  },
+  "explorer.fileNesting.patterns": {
+    "*.css": "$(capture).css.d.ts, $(capture).*.css, $(capture).css.d.ts.map",
   }
 }

@@ -26,3 +26,7 @@ pnpm-debug.log*
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+# CSS Modules
+*.module.css.d.ts
+*.module.css.d.ts.map

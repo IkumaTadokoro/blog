@@ -5,7 +5,7 @@
   "scripts": {
     "setup": "npm run corepack",
     "corepack": "corepack enable pnpm",
-    "dev": "astro dev",
+    "dev": "astro dev && generate:watch",
     "start": "astro dev",
     "build": "rm -rf dist && astro build && pnpm build:pagefind",
     "build:pagefind": "pagefind --site dist",
@@ -21,6 +21,8 @@
     "test:ui": "vitest --ui",
     "test:e2e": "playwright test",
     "test:e2e:update": "playwright test --update-snapshots",
+    "generate": "hcm 'src/**/*.module.css'",
+    "generate:watch": "hcm 'src/**/*.module.css' --watch",
     "astro": "astro"
   },
   "dependencies": {
