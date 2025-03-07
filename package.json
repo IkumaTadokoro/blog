@@ -62,7 +62,7 @@
   "packageManager": "pnpm@10.5.2",
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@playwright/test": "1.50.1",
+    "@playwright/test": "1.51.0",
     "@tailwindcss/typography": "0.5.16",
     "@testing-library/dom": "10.4.0",
     "@testing-library/jest-dom": "6.6.3",
@@ -71,10 +71,10 @@
     "@types/sanitize-html": "2.13.0",
     "@vitest/browser": "3.0.8",
     "@vitest/ui": "3.0.8",
-    "happy-dom": "17.2.2",
+    "happy-dom": "17.3.0",
     "jsdom": "26.0.0",
     "lefthook": "1.11.2",
     "vitest": "3.0.8",
-    "wrangler": "3.113.0"
+    "wrangler": "3.114.0"
   }
 }
