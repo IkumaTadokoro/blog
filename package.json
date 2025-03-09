@@ -71,7 +71,7 @@
     "@types/sanitize-html": "2.13.0",
     "@vitest/browser": "3.0.8",
     "@vitest/ui": "3.0.8",
-    "happy-dom": "17.4.1",
+    "happy-dom": "17.4.2",
     "jsdom": "26.0.0",
     "lefthook": "1.11.3",
     "vitest": "3.0.8",
