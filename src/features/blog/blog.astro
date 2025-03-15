@@ -14,7 +14,6 @@ const { title, publishDate } = Astro.props;
   <hgroup class="space-y-4">
     <h2
       class="text-center text-2xl sm:text-3xl font-bold break-all tracking-widest !leading-relaxed"
-      data-pagefind-meta="title"
     >
       {title}
     </h2>
@@ -24,7 +23,7 @@ const { title, publishDate } = Astro.props;
       <Time date={publishDate} />
     </div>
   </hgroup>
-  <article class={"break-all prose"} data-pagefind-body>
+  <article class={"break-all prose"}>
     <slot />
   </article>
 </div>

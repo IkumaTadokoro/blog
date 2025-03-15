@@ -1,36 +1,18 @@
 ---
-import { Icon } from "astro-icon/components";
 import Link from "./link.astro";
 import SiteLogo from "./site-logo/site-logo.astro";
 import ThemeSelector from "./theme-selector.astro";
 ---
 
 <header>
-  <div class="max-w-screen-md mx-auto mt-9 sm:my-12 px-4">
-    <div
-      class="grid grid-cols-1 sm:grid-cols-[1fr_max-content] gap-4 justify-between items-center"
-    >
-      <SiteLogo />
-      <div class="flex sm:place-content-end gap-2 sm:gap-4">
-        <Link to="/blog">
-          <Icon size={24} title="登壇" name="lucide:file-text" />
-        </Link>
-        <Link to="/talk">
-          <Icon size={24} title="登壇" name="lucide:presentation" />
-        </Link>
-        <Link to="https://ikuma-t.notion.site/1861d7b10b50804ea46ed873c3148423">
-          <Icon
-            size={24}
-            title="スクラップ"
-            name="lucide:leaf"
-            class="text-green-700"
-          />
-        </Link>
-        <Link to="/search">
-          <Icon size={28} title="検索" name="lucide:text-search" />
-        </Link>
-        <ThemeSelector />
-      </div>
+  <nav
+    class="flex items-center justify-between max-w-screen-md mx-auto mt-9 sm:my-12 px-4"
+  >
+    <SiteLogo />
+    <div class="flex items-center gap-4">
+      <Link to="/blog" className="font-montserrat font-bold">BLOG</Link>
+      <Link to="/talk" className="font-montserrat font-bold">TALK</Link>
+      <ThemeSelector />
     </div>
-  </div>
+  </nav>
 </header>
