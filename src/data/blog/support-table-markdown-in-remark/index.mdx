@@ -15,7 +15,7 @@ import { Image } from 'astro:assets';
 
 import image from "./unsupported-table.png"
 
-<Image src={image} alt="" />
+<Image src={image} alt="代替テキスト" />
 
 なんでかな〜と思って調べてみると、[unifiedjsのドキュメント](https://unifiedjs.com/learn/recipe/remark-table/)に
 
@@ -46,7 +46,7 @@ export default async function markdownToHtml(markdown: string) {
 
 import image2 from "./suppor-table-by-gfm.png"
 
-<Image src={image2} alt="" />
+<Image src={image2} alt="代替テキスト" />
 
 ## スタイルを適用する
 
@@ -78,4 +78,4 @@ td {
 
 import image3 from "./styled-table.png"
 
-<Image src={image3} alt="" />
+<Image src={image3} alt="代替テキスト" />

@@ -48,7 +48,7 @@ Reactが関数型プログラミングの影響を受けているということ
 
 ### 単一のプロパティでの例はさほど問題にならない
 
-<Image src={button} alt="" />
+<Image src={button} alt="代替テキスト" />
 
 たとえば`primary`と`secondary`、2つのスタイルを持つボタンコンポーネントを考えます。
 
@@ -169,7 +169,7 @@ type Props = {
 
 もう1つの解決策は、Compositionを使うことです。Empty Stateコンポーネントが内包するButtonのスタイルが複数あることがそもそもの複雑さの原因なので、これを分離することで問題を解決します。
 
-<Image src={compositionImage} alt="" />
+<Image src={compositionImage} alt="代替テキスト" />
 
 渡された関数、ここではButtonコンポーネントを呼び出すことだけを任せます。
 
@@ -218,7 +218,7 @@ const LinkButton: FC<PropsWithChildren<{ href: string }>> = ({ href, children })
 
 ```
 
-<Image src={composition} alt="" />
+<Image src={composition} alt="代替テキスト" />
 
 Buttonに関する状態はButtonコンポーネント側で管理されるため、EmptyStatePanelコンポーネントでは先ほどのような不整合な状態が発生しません（前提として、Buttonコンポーネントが不正な状態が定義できないようになっている必要がありますが）。
 

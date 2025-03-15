@@ -76,7 +76,7 @@ FileReader.readAsText()はデフォルトでは utf-8 でファイル（Blob）�
 
 import image from "./readAsTextDefault.png"
 
-<Image src={image} alt="" />
+<Image src={image} alt="代替テキスト" />
 
 UTF-8 以外のエンコーディングの文字列を読み込むために、FileReader.readAsText の第二引数にはエンコーディング文字列を指定することができます。
 
@@ -89,7 +89,7 @@ reader.readAsText(file, "sjis"); // エンコーディングにSJISを指定
 
 import image2 from "./readAsTextWithEncoding.png"
 
-<Image src={image2} alt="" />
+<Image src={image2} alt="代替テキスト" />
 
 ---
 
@@ -99,7 +99,7 @@ import image2 from "./readAsTextWithEncoding.png"
 
 import image3 from "./readUTF8WithSjisEncoding.png"
 
-<Image src={image3} alt="" />
+<Image src={image3} alt="代替テキスト" />
 
 この時、console 等にも警告は出ておらず、正常終了したことになっています。
 

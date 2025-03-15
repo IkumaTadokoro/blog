@@ -77,7 +77,7 @@ Content Collections は便利な機能ですが、ローカルの Markdown フ�
 
 import contentLayer from "./content-layer.png"
 
-<Image src={contentLayer} alt="" />
+<Image src={contentLayer} alt="代替テキスト" />
 
 1. Loader: データソースからデータをフェッチし、DataStore に格納するための関数
 2. Schema: zodにより定義された、コンテンツのメタデータのスキーマ情報
@@ -96,7 +96,7 @@ import contentLayer from "./content-layer.png"
 
 import talkPage from "./talk-page.png"
 
-<Image src={talkPage} alt="" />
+<Image src={talkPage} alt="代替テキスト" />
 
 Content Layer がない場合、次の内容を自前で実装する必要がありました。
 
@@ -157,7 +157,7 @@ Loader は npm パッケージとして公開されており、現在公開さ�
 
 import astroIntegration from "./astro-integration.png"
 
-<Image src={astroIntegration} alt="" />
+<Image src={astroIntegration} alt="代替テキスト" />
 
 
 現在コミュニティで公開されている Loader の例としては、次のようなものがあります。
@@ -237,7 +237,7 @@ const load = async (context: LoaderContext) => {
 
 より詳細を知りたい方は [Astro Content Loader API | Docs](https://5-0-0-beta.docs.astro.build/en/reference/content-loader-reference/#loadercontext) を参照してください。
 
-import Tips from "../../components/tips.astro";
+import Tips from "../../../components/tips.astro";
 
 <Tips title="コラム：Markdownコンテンツのパース">
 
