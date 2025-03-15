@@ -15,7 +15,7 @@ description: "【Todoist→Pixela】Todoistでタスクを完了したら草生�
 
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108111222.jpg
 
- ![f:id:ikmbear:20210108111222j:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108111222.jpg) 
+ ![f:id:ikmbear:20210108111222j:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108111222.jpg)
 
 # Todoistのタスクが完了したら草を生やしたい
 
@@ -67,7 +67,7 @@ IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/2021010
 $ curl -X POST https://pixe.la/v1/users -d '{"token":"{PASSWORD}", "username":"ikuma-t", "agreeTermsOfService":"yes", "notMinor":"yes"}'
 ```
 
-`token`の後ろの`{PASSWORD}`には任意のパスワードを、`username`にはグローバルに一意な自分のユーザIDを設定してください。  
+`token`の後ろの`{PASSWORD}`には任意のパスワードを、`username`にはグローバルに一意な自分のユーザIDを設定してください。
 ※以降も設定した値に置き換えて進めてください。
 
 ### 2. Todoist用のグラフの作成
@@ -76,7 +76,7 @@ $ curl -X POST https://pixe.la/v1/users -d '{"token":"{PASSWORD}", "username":"i
 $ curl -X POST https://pixe.la/v1/users/ikuma-t/graphs -H 'X-USER-TOKEN:{PASSWORD}' -d '{"id":"todoist-graph","name":"todoist-graph","unit":"updates","type":"int","color":"ichou","timezone":"Asia/Tokyo"}'
 ```
 
-指定できるパラメータは[POST - /v1/users//graphs - Pixela API Document](https://docs.pixe.la/entry/post-graph)を参照してください。  
+指定できるパラメータは[POST - /v1/users//graphs - Pixela API Document](https://docs.pixe.la/entry/post-graph)を参照してください。
 Scrapboxの更新頻度で草を生やす際に芝生色を使ったので、今回は`color`に`ichou`を指定しています。
 
 ### 3. Webhookの登録
@@ -91,7 +91,7 @@ $ curl -X POST https://pixe.la/v1/users/ikuma-t/webhooks -H 'X-USER-TOKEN:{PASSW
 {"webhookHash":"xxxxx.....xxxxx","message":"Success.","isSuccess":true}
 ```
 
-こんな感じの値が返ってくるのですが、これをコピーするために`pbcopy`をくっつけています（手動でコピーしてもいいんですけどね）。  
+こんな感じの値が返ってくるのですが、これをコピーするために`pbcopy`をくっつけています（手動でコピーしてもいいんですけどね）。
 実際に使うのは`"webhookHash":"xxxxx.....xxxxx"`の値だけです。
 
 これでPixelaの設定は完了です！Todoistの設定をしましょう！
@@ -105,7 +105,7 @@ Todoistのタスク完了時に草を生やすには2種類の方法がありま
 | 利用可能なTodoistプラン | プレミアム                                                                                                                                                                                                                                                                                                                                                               | 制限なし                                               |
 | 送信可能なタイミング    | タスク（追加、更新、完了、完了解除、削除） <br/>メモ（追加、更新、削除） <br/>プロジェクト（追加、更新、削除、$1、$1解除） <br/>ラベル（追加、更新、削除） <br/>フィルタ（追加、更新、削除） <br/>リマインダー（発火時） | タスク（追加、完了 ※いずれもPJもしくはラベル指定可能） |
 
-今回はタスクを完了したら草生やすだけなので、どちらを使っても変わらないです。  
+今回はタスクを完了したら草生やすだけなので、どちらを使っても変わらないです。
 この記事では両方の方法をご紹介したいと思います。（ちなみにIFTTTを通さない分、少し反映が早い(?)ので私はTodoistAPIを使っています）
 
 ## 方法1：IFTTTを使う
@@ -129,20 +129,20 @@ Todoistのタスク完了時に草を生やすには2種類の方法がありま
 
 ※初めての場合、IFTTTとTodoistの連携が必要です。今回は省略いたします。
 
- ![f:id:ikmbear:20210108114030p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108114030.png) 
+ ![f:id:ikmbear:20210108114030p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108114030.png)
 
 1.If Thisからスタートします。
 
- ![f:id:ikmbear:20210108114113p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108114113.png) 
+ ![f:id:ikmbear:20210108114113p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108114113.png)
 
 2.連携するサービスにTodoistを設定します。
 
- ![f:id:ikmbear:20210108114528p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108114528.png) 
+ ![f:id:ikmbear:20210108114528p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108114528.png)
 
-3.トリガーを設定します。  
+3.トリガーを設定します。
 各トリガーの説明は図の通りです。今回はタスク完了時を想定しているので、「New Completed Task」を設定します
 
- ![f:id:ikmbear:20210108114701p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108114701.png) 
+ ![f:id:ikmbear:20210108114701p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108114701.png)
 
 4.Todoistのどのプロジェクトを監視対象にするか設定します。今回は全部のタスクを監視対象としたいので「Any Project」のままにしておきます。
 
@@ -150,19 +150,19 @@ Todoistのタスク完了時に草を生やすには2種類の方法がありま
 
 ### 2. Then ThatにWebhookを設定する
 
- ![f:id:ikmbear:20210108115007p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108115007.png) 
+ ![f:id:ikmbear:20210108115007p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108115007.png)
 
 1.Then Thatからスタートします。
 
- ![f:id:ikmbear:20210108115047p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108115047.png) 
+ ![f:id:ikmbear:20210108115047p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108115047.png)
 
 2.連携するサービスにWebhooksを設定します。
 
- ![f:id:ikmbear:20210108115137p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108115137.png) 
+ ![f:id:ikmbear:20210108115137p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108115137.png)
 
 3.道なりに進みます。
 
- ![f:id:ikmbear:20210108115452p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108115452.png) 
+ ![f:id:ikmbear:20210108115452p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108115452.png)
 
 4.リク$1トを設定します。
 
@@ -172,10 +172,10 @@ URLには以下の値を設定します。なお`{webhookHashの値}`は、Pixel
 https://pixe.la/v1/users/{ユーザID}/webhooks/{webhookHashの値}
 ```
 
-Pixelaはリク$1トボディを必要としない（セットしても無視される）ので、画像の通り、`Body`は空欄にしておきましょう。  
+Pixelaはリク$1トボディを必要としない（セットしても無視される）ので、画像の通り、`Body`は空欄にしておきましょう。
 [POST - /v1/users//webhooks/ - Pixela API Document](https://docs.pixe.la/entry/invoke-webhook)
 
-ここまできたら、`Create action` \> `continue` \> `finish`と道なりに進んで設定完了です！  
+ここまできたら、`Create action` \> `continue` \> `finish`と道なりに進んで設定完了です！
 試しにtodoistでタスクを完了してみると、草が生えますwwww
 
 ## 方法2：TodoistAPIを使う（※Todoistプレミアムユーザ向け）
@@ -188,30 +188,30 @@ Pixelaはリク$1トボディを必要としない（セットしても無視さ
 
 1.Todoist App Management Consoleにアクセス
 
- ![f:id:ikmbear:20210108120453p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108120453.png) 
+ ![f:id:ikmbear:20210108120453p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108120453.png)
 
 2.`Create a new app`を選択
 
- ![f:id:ikmbear:20210108120733p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108120733.png) 
+ ![f:id:ikmbear:20210108120733p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108120733.png)
 
-3.Pixelaをアプリとして登録する。  
+3.Pixelaをアプリとして登録する。
 `App display name`はなんでもいいです。わかりやすいように今回はPixelaとし、`Create App`を選択します。
 
- ![f:id:ikmbear:20210108120957p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108120957.png) 
+ ![f:id:ikmbear:20210108120957p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108120957.png)
 
-4.Webhookの設定をする下にスクロールすると「Webhooks」の設定欄があるので、以下のように設定し`Activate webhooks`を選択します。  
+4.Webhookの設定をする下にスクロールすると「Webhooks」の設定欄があるので、以下のように設定し`Activate webhooks`を選択します。
 なお`{webhookHashの値}`は、Pixelaの設定「3. Webhookの登録」で取得したwebhookHashの値に読み替えてください。
 
 | 項目                  | 値                                                                                          |
 | --------------------- | ------------------------------------------------------------------------------------------- |
-| Webhooks callback URL | [https://pixe.la/v1/users/](https://pixe.la/v1/users/){ユーザID}/webhooks/{webhookHashの値} |
+| Webhooks callback URL | [https://pixe.la/v1/users/](https://pixe.la/v1/users/)`{ユーザID}/webhooks/{webhookHashの値}` |
 | Webhooks version      | 8（デフォルト）                                                                             |
 | Watched Events        | item:completed                                                                              |
 
- ![f:id:ikmbear:20210108121829p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108121829.png) 5.開発用のアクセス$1ンを発行する  
+ ![f:id:ikmbear:20210108121829p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108121829.png) 5.開発用のアクセス$1ンを発行する
 「Webhooks」の少し上に`create test token`ボタンがあるので、押してください。
 
-ここまでできたら設定完了です！  
+ここまでできたら設定完了です！
 試しにtodoistでタスクを完了してみると、草が生えますwwww
 
 # 草はいいよね
