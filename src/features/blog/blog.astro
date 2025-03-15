@@ -1,0 +1,30 @@
+---
+import Time from "../../components/time.astro";
+import "../../stylesheet/markdown.css";
+
+interface Props {
+  title: string;
+  publishDate: Date;
+}
+
+const { title, publishDate } = Astro.props;
+---
+
+<div class={"space-y-8 sm:space-y-16"}>
+  <hgroup class="space-y-4">
+    <h2
+      class="text-center text-2xl sm:text-3xl font-bold break-all tracking-widest !leading-relaxed"
+      data-pagefind-meta="title"
+    >
+      {title}
+    </h2>
+    <div
+      class="flex items-center justify-center gap-2 text-md text-muted-foreground"
+    >
+      <Time date={publishDate} />
+    </div>
+  </hgroup>
+  <article class={"break-all prose"} data-pagefind-body>
+    <slot />
+  </article>
+</div>

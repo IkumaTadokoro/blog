@@ -1,9 +1,9 @@
 ---
 import Author from "../components/author.astro";
-import BlogCard from "../components/blog-card.astro";
 import Link from "../components/link.astro";
+import { getBlogs } from "../features/blog/blog";
+import BlogCard from "../features/blog/blog-card.astro";
 import Document from "../layouts/document.astro";
-import { getBlogs } from "../utils/blog";
 
 const allBlogs = await getBlogs();
 const blogs = allBlogs.slice(0, 20);
