@@ -3,7 +3,6 @@ author: ikuma-t
 publishDate: 2022-02-09 10:00:00
 modDatetime: 2022-02-09 10:00:00
 title: "Appraisalを使っている状態でもRubyMineのGUIでRSpecを実行する"
-slug: "202202091644368400"
 featured: false
 draft: false
 tags:
@@ -74,7 +73,7 @@ bundle exec appraisal {実行対象の環境} <実行したいコマンド># 上
 
 ### RubyMineでのRSpec実行
 
- ![f:id:ikmbear:20220209071635p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20220209/20220209071635.png) 
+ ![f:id:ikmbear:20220209071635p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20220209/20220209071635.png)
 
 RubyMineではテスティングGUIに関係なく、GUI上でテストの実行ができます。
 
@@ -123,11 +122,11 @@ RubyMineのGUI実行は、それぞれ実行の構成を指定することがで
 
 > [zenn.dev](https://zenn.dev/ikuma/books/how-to-use-redimine/viewer/run-source#実行の構成：edit-configurations)
 
- ![f:id:ikmbear:20220209071725p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20220209/20220209071725.png) 
+ ![f:id:ikmbear:20220209071725p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20220209/20220209071725.png)
 
 複数の構成に対して、まとめて設定を行うためには「Edit configuration templates...」を選択します。
 
- ![f:id:ikmbear:20220209071741p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20220209/20220209071741.png) 
+ ![f:id:ikmbear:20220209071741p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20220209/20220209071741.png)
 
 左側のサイドバーからRSpecを選択し、「Use cutom RSpec runner script」に、1で作成したscriptを設定します。scriptはどこにおいてもいいですが、Appraisalはプロジェクト固有のものだと思うので、私はプロジェクトのbinフォルダにおいています。
 
