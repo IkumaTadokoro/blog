@@ -8,6 +8,8 @@ import mdx from "@astrojs/mdx";
 
 import tailwindcss from "@tailwindcss/vite";
 
+import cloudflare from "@astrojs/cloudflare";
+
 // https://astro.build/config
 export default defineConfig({
   site: SITE.siteUrl,
@@ -23,5 +25,7 @@ export default defineConfig({
 
   vite: {
     plugins: [tailwindcss()]
-  }
+  },
+
+  adapter: cloudflare()
 });
