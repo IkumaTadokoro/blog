@@ -3,10 +3,10 @@ export const prerender = false;
 
 import type { Session } from "@auth/core/types";
 import { Auth, SignIn, SignOut } from "auth-astro/components";
-import Document from "../../layouts/document.astro";
+import Admin from "../../layouts/admin.astro";
 ---
 
-<Document>
+<Admin title="認証ページ">
   <h1>Astro</h1>
   <Auth>
     {
@@ -24,4 +24,4 @@ import Document from "../../layouts/document.astro";
       }
     }
   </Auth>
-</Document>
+</Admin>

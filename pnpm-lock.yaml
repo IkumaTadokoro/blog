@@ -73,7 +73,7 @@ importers:
         version: 1.1.5
       auth-astro:
         specifier: ^4.2.0
-        version: 4.2.0(@auth/core@0.37.4)(astro@5.5.2(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.34.9)(typescript@5.8.2)(yaml@2.5.0))
+        version: 4.2.0(@auth/core@0.37.4)(astro@5.5.4(@types/node@22.13.11)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.34.9)(typescript@5.8.2)(yaml@2.5.0))
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -5688,10 +5688,10 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  auth-astro@4.2.0(@auth/core@0.37.4)(astro@5.5.2(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.34.9)(typescript@5.8.2)(yaml@2.5.0)):
+  auth-astro@4.2.0(@auth/core@0.37.4)(astro@5.5.4(@types/node@22.13.11)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.34.9)(typescript@5.8.2)(yaml@2.5.0)):
     dependencies:
       '@auth/core': 0.37.4
-      astro: 5.5.2(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.34.9)(typescript@5.8.2)(yaml@2.5.0)
+      astro: 5.5.4(@types/node@22.13.11)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.34.9)(typescript@5.8.2)(yaml@2.5.0)
       set-cookie-parser: 2.7.1
 
   axios@1.7.4:
