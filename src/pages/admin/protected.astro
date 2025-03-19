@@ -6,6 +6,18 @@ import Document from "../../layouts/document.astro";
 
 const session = await getSession(Astro.request);
 if (!session) return Astro.redirect("/");
+
+const baseUrl = Astro.site?.origin;
+const cookie = Astro.request.headers.get("cookie");
+const response = await fetch(`${baseUrl}/api/github/read`, {
+  headers: {
+    "Content-Type": "application/json",
+    Cookie: cookie || "",
+  },
+  credentials: "include",
+});
+const data = await response.json();
+console.log(data);
 ---
 
 <Document>
