@@ -1,0 +1,25 @@
+---
+import Document from "../../layouts/document.astro";
+
+export const prerender = false;
+
+const ERROR_REASON = {
+  Configuration:
+    "There is a problem with the server configuration. Check if your options are correct.",
+  AccessDenied:
+    "Usually occurs, when you restricted access through the signIn callback, or redirect callback.",
+  Verification:
+    "Related to the Email provider. The token has expired or has already been used.",
+  Default: "Catch all, will apply, if none of the above matched.",
+} as const;
+
+type ErrorReason = keyof typeof ERROR_REASON;
+
+const search = Astro.url.searchParams;
+const searchParams = new URLSearchParams(search);
+const errorReason = searchParams.get("error") as ErrorReason;
+---
+
+<Document title={`Error: ${errorReason}`}>
+  <h1>{errorReason}</h1>
+</Document>

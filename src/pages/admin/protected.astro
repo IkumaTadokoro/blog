@@ -1,0 +1,14 @@
+---
+export const prerender = false;
+
+import { getSession } from "auth-astro/server";
+import Document from "../../layouts/document.astro";
+
+const session = await getSession(Astro.request);
+if (!session) return Astro.redirect("/");
+---
+
+<Document>
+  <h1>Astro</h1>
+  <p>Only signed in users can see this page.</p>
+</Document>
