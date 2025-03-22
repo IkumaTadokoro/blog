@@ -26,7 +26,14 @@ export default defineConfig({
   },
 
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss()],
+    resolve: {
+      alias: process.env.NODE_ENV === 'production'
+      ? {
+          'react-dom/server': 'react-dom/server.edge',
+        }
+      : undefined,
+    }
   },
 
   adapter: cloudflare(),
