@@ -25,6 +25,12 @@ concurrency:
 
 jobs:
   build:
+    env:
+      ADMIN_GITHUB_CLIENT_ID: ${{ secrets.ADMIN_GITHUB_CLIENT_ID }}
+      ADMIN_GITHUB_CLIENT_SECRET: ${{ secrets.ADMIN_GITHUB_CLIENT_SECRET }}
+      ADMIN_EMAIL: ${{ secrets.ADMIN_EMAIL }}
+      ADMIN_TRUST_HOST: true
+      ADMIN_SECRET: ${{ secrets.AUTH_SECRET }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
