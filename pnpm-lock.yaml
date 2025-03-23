@@ -36,8 +36,8 @@ importers:
         specifier: 4.0.6
         version: 4.0.6
       '@fontsource-variable/lexend':
-        specifier: 5.2.5
-        version: 5.2.5
+        specifier: 5.2.6
+        version: 5.2.6
       '@fontsource-variable/montserrat':
         specifier: 5.2.5
         version: 5.2.5
@@ -825,8 +825,8 @@ packages:
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
 
-  '@fontsource-variable/lexend@5.2.5':
-    resolution: {integrity: sha512-DSu1iT7DAyt6Sebw/0NkrqXBmwo9iGYfvfczfTge52Rxgu3l5zKqnHr9vujOLKw62oGAio4MnMUywaSHqmjAvg==}
+  '@fontsource-variable/lexend@5.2.6':
+    resolution: {integrity: sha512-rDBYVTp0cMaj/UNK2m5EPHMZw3MZcl2CXdZVlv+OQwpg88r5g9prS60mayZ1N+hyH7XRka2YExAFEYBLEv0NRQ==}
 
   '@fontsource-variable/montserrat@5.2.5':
     resolution: {integrity: sha512-Mfg/AiXwhPLAAgLCqzugFUs/PLprbHzXMhPVrf35q5od4/wHjVqtm0bI000tKGUGDZ3gDpId/+cqufcYHAAAEQ==}
@@ -4704,7 +4704,7 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@fontsource-variable/lexend@5.2.5': {}
+  '@fontsource-variable/lexend@5.2.6': {}
 
   '@fontsource-variable/montserrat@5.2.5': {}
 
