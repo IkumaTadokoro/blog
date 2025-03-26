@@ -72,7 +72,6 @@ export default {
                 }
 			},
 			fontFamily: {
-				sans: ['Noto Sans JP Variable', ...defaultTheme.fontFamily.sans],
 				montserrat: ['Montserrat Variable', ...defaultTheme.fontFamily.sans],
 			},
 		},

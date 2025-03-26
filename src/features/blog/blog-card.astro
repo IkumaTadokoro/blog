@@ -16,17 +16,19 @@ const { blog } = Astro.props as Props;
     <Time date={blog.data.publishDate} />
     <h3>
       <Link
-        className="leading-relaxed break-all line-clamp-3 text-lg sm:text-xl font-bold text-foreground hover:underline hover:decoration-primary hover:underline-offset-4"
+        className="leading-relaxed break-all line-clamp-3 text-heading-18 sm:text-heading-20 font-bold text-foreground hover:underline hover:decoration-primary hover:underline-offset-4"
         to={buildUrl(blog.id)}
       >
         {blog.data.title}
       </Link>
     </h3>
-    <p class="text-foreground text-sm leading-7 tracking-wide">
+    <p
+      class="text-foreground text-label-13 sm:text-label-14 leading-7 tracking-wide"
+    >
       {blog.data.description ?? "No description"}
     </p>
     <a
-      class="leading-relaxed break-all line-clamp-3 text-sm font-semibold text-foreground hover:underline hover:decoration-primary hover:underline-offset-4"
+      class="leading-relaxed break-all line-clamp-3 text-copy-14 font-semibold text-foreground hover:underline hover:decoration-primary hover:underline-offset-4"
       href={buildUrl(blog.id)}
     >
       Read more

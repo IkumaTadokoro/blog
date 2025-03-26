@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import authorImage from "../assets/ikuma.svg";
-import Link from "./link.astro";
+import { Badge } from "./badge";
 ---
 
 <div
@@ -13,11 +13,8 @@ import Link from "./link.astro";
     class="row-span-2 col-span-1 justify-self-end w-10 sm:w-12 aspect-square"
   />
   <p class="font-semibold text-xl">ikuma-t</p>
-  <Link
-    to="https://bento.me/ikuma"
-    className="w-fit text-foreground bg-background text-base flex gap-2 items-center row-span-2 border border-border rounded-full px-4 py-2 sm:px-4 sm:py-2"
-  >
-    <span>about</span>
-  </Link>
+  <a href="https://bento.me/ikuma">
+    <Badge size="lg" variant="gray-subtle">about</Badge>
+  </a>
   <p class="text-foreground/80 text-base">9割笑顔、1割 (´・ω・)</p>
 </div>
