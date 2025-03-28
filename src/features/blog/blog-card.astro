@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import { Badge } from "../../components/badge";
 import Link from "../../components/link.astro";
 import Time from "../../components/time.astro";
 import { buildUrl } from "./blog";
@@ -14,21 +15,24 @@ const { blog } = Astro.props as Props;
 <article>
   <section class="grid gap-y-4">
     <Time date={blog.data.publishDate} />
-    <h3>
-      <Link
-        className="leading-relaxed break-all line-clamp-3 text-heading-18 sm:text-heading-20 font-bold text-foreground hover:underline hover:decoration-primary hover:underline-offset-4"
-        to={buildUrl(blog.id)}
+
+    <hgroup class="grid gap-2">
+      <h3>
+        <Link
+          className="leading-relaxed break-all line-clamp-3 text-heading-18 sm:text-heading-20 font-bold text-foreground hover:underline hover:decoration-primary hover:underline-offset-4"
+          to={buildUrl(blog.id)}
+        >
+          {blog.data.title}
+        </Link>
+      </h3>
+      <p
+        class="text-gray-800 text-label-13 sm:text-label-14 leading-7 tracking-wide"
       >
-        {blog.data.title}
-      </Link>
-    </h3>
-    <p
-      class="text-foreground text-label-13 sm:text-label-14 leading-7 tracking-wide"
-    >
-      {blog.data.description ?? "No description"}
-    </p>
+        {blog.data.description ?? "No description"}
+      </p>
+    </hgroup>
     <a
-      class="leading-relaxed break-all line-clamp-3 text-copy-14 font-semibold text-foreground hover:underline hover:decoration-primary hover:underline-offset-4"
+      class="leading-relaxed break-all line-clamp-3 text-copy-14 text-gray-900 hover:underline hover:decoration-primary hover:underline-offset-4 text-right"
       href={buildUrl(blog.id)}
     >
       Read more
