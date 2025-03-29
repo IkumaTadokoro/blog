@@ -12,24 +12,26 @@ const talksByYear = await groupByTalkYear(talks);
   <div class="flex justify-between items-center py-4">
     <h2 class="text-3xl font-bold text-foreground tracking-wider">talk</h2>
   </div>
-  {
-    talksByYear.entries().map(([year, talks]) => (
-      <section class="grid gap-y-4">
-        <div class="mx-[calc(50%-50cqi)] py-4 z-20">
-          <h3 class="text-2xl font-bold text-foreground tracking-wider max-w-screen-md mx-auto px-4">
-            {year}
-          </h3>
-        </div>
-        <ul class="grid gap-16 gap-x-6 gap-y-12 sm:grid-cols-2 z-10">
-          {talks.map((talk) => (
-            <li class="p-2">
-              <TalkCard talk={talk} />
-            </li>
-          ))}
-        </ul>
-      </section>
-    ))
-  }
+  <div class="grid gap-12">
+    {
+      talksByYear.entries().map(([year, talks]) => (
+        <section class="grid gap-y-4">
+          <div class="mx-[calc(50%-50cqi)] py-4 z-20">
+            <h3 class="text-2xl font-bold text-foreground tracking-wider max-w-screen-md mx-auto px-4">
+              {year}
+            </h3>
+          </div>
+          <ul class="grid gap-16 gap-x-6 gap-y-8 sm:grid-cols-2 z-10">
+            {talks.map((talk) => (
+              <li>
+                <TalkCard talk={talk} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </div>
 </Document>
 
 <style is:global>
@@ -41,13 +43,14 @@ const talksByYear = await groupByTalkYear(talks);
     pointer-events: none;
     z-index: -2;
     position-anchor: var(--anchor);
-    inset: anchor(top) anchor(right) anchor(bottom) anchor(left);
+    inset: calc(anchor(top) - 8px) calc(anchor(right) - 8px)
+      calc(anchor(bottom) - 16px) calc(anchor(left) - 8px);
     transition: inset 0.2s;
   }
 
   [data-theme="light"] ul::after {
     z-index: 0;
-    background: var(--ds-gray-100);
+    background: var(--ds-gray-200);
     opacity: 0.2;
   }
 

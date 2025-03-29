@@ -21,7 +21,7 @@ const blogs = allBlogs.slice(0, 20);
         </h2>
       </div>
     </div>
-    <ul class="grid place-self-start gap-y-8 sm:gap-y-1">
+    <ul class="grid place-self-start gap-y-8">
       {
         blogs.map((blog) => (
           <li>
@@ -45,22 +45,21 @@ const blogs = allBlogs.slice(0, 20);
     pointer-events: none;
     z-index: -2;
     position-anchor: var(--anchor);
-    inset: anchor(top) anchor(right) anchor(bottom) anchor(left);
+    inset: calc(anchor(top) - 20px) calc(anchor(right) - 20px)
+      calc(anchor(bottom) - 20px) calc(anchor(left) - 20px);
     transition: inset 0.2s;
   }
 
   [data-theme="light"] ul::after {
     z-index: 0;
-    background: var(--ds-gray-100);
+    background: var(--ds-gray-200);
     opacity: 0.2;
   }
 
   ul:has(li:hover) {
     --anchor: --active;
-    --active: 1;
   }
   li:hover {
     anchor-name: --active;
-    --li-active: 1;
   }
 </style>
