@@ -5,16 +5,18 @@ import { Badge } from "./badge";
 ---
 
 <div
-  class="grid grid-cols-[auto_1fr_max-content] items-center grid-rows-2 gap-x-3 sm:gap-x-6 mx-auto border-t border-border/40 pt-8"
+  class="grid grid-cols-[auto_1fr_max-content] items-center grid-rows-2 gap-x-3 sm:gap-x-6 mx-auto border-t border-muted-foreground pt-8"
 >
   <Image
     src={authorImage}
     alt="ikuma-t"
     class="row-span-2 col-span-1 justify-self-end w-10 sm:w-12 aspect-square"
   />
-  <p class="font-semibold text-xl">ikuma-t</p>
-  <a href="https://bento.me/ikuma">
-    <Badge size="lg" variant="gray-subtle">about</Badge>
+  <p class="text-heading-16 text-foreground">ikuma-t</p>
+  <a href="https://bento.me/ikuma" class="row-span-2">
+    <Badge size="lg" variant="inverted">about</Badge>
   </a>
-  <p class="text-foreground/80 text-base">9割笑顔、1割 (´・ω・)</p>
+  <p class="text-muted tracking-wider text-label-14-mono">
+    フロントエンドエンジニア
+  </p>
 </div>

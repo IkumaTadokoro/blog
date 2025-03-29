@@ -1,6 +1,5 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import { Badge } from "../../components/badge";
 import Link from "../../components/link.astro";
 import Time from "../../components/time.astro";
 import { buildUrl } from "./blog";
@@ -12,30 +11,76 @@ type Props = {
 const { blog } = Astro.props as Props;
 ---
 
-<article>
-  <section class="grid gap-y-4">
-    <Time date={blog.data.publishDate} />
+<article
+  class="card grid gap-4 sm:p-4"
+  aria-labelledby={blog.id}
+  data-href={buildUrl(blog.id)}
+>
+  <Time date={blog.data.publishDate} label="投稿日" />
 
-    <hgroup class="grid gap-2">
-      <h3>
-        <Link
-          className="leading-relaxed break-all line-clamp-3 text-heading-18 sm:text-heading-20 font-bold text-foreground hover:underline hover:decoration-primary hover:underline-offset-4"
-          to={buildUrl(blog.id)}
-        >
-          {blog.data.title}
-        </Link>
-      </h3>
-      <p
-        class="text-gray-800 text-label-13 sm:text-label-14 leading-6 sm:leading-7 tracking-wide"
+  <hgroup id={blog.id} class="grid gap-2">
+    <h3>
+      <a
+        class="leading-relaxed break-all line-clamp-3 text-heading-18 sm:text-heading-20 font-bold text-foreground"
+        href={buildUrl(blog.id)}
       >
-        {blog.data.description ?? "No description"}
-      </p>
-    </hgroup>
-    <a
-      class="leading-relaxed break-all line-clamp-3 text-copy-14 text-gray-900 hover:underline hover:decoration-primary hover:underline-offset-4 text-right"
-      href={buildUrl(blog.id)}
+        {blog.data.title}
+      </a>
+    </h3>
+    <p
+      class="text-gray-800 text-label-13 sm:text-label-14 leading-6 sm:leading-7 tracking-wide"
     >
-      Read more
-    </a>
-  </section>
+      {blog.data.description ?? "No description"}
+    </p>
+  </hgroup>
+  <a
+    class="leading-relaxed break-all line-clamp-3 text-copy-14 text-gray-900 text-right"
+    href={buildUrl(blog.id)}
+    tabindex="-1"
+  >
+    Read more
+    <span class="sr-only"> {blog.data.title}の記事を読む</span>
+  </a>
 </article>
+
+<script>
+  const initializeCard = (card: HTMLElement): void => {
+    card.addEventListener("click", handleCardClick);
+    card.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("mouseover", () => handleLinkHover(card, true));
+      link.addEventListener("mouseout", () => handleLinkHover(card, false));
+    });
+  };
+
+  const handleCardClick = (event: MouseEvent): void => {
+    if ((event.target as HTMLElement).closest("a")) return;
+
+    const card = event.currentTarget as HTMLElement;
+    const href = card.getAttribute("data-href");
+
+    if (href) window.location.href = href;
+  };
+
+  const handleLinkHover = (card: HTMLElement, isHovered: boolean): void => {
+    if (isHovered) {
+      card.setAttribute("data-link-hovered", "true");
+    } else {
+      card.removeAttribute("data-link-hovered");
+    }
+  };
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll<HTMLElement>(".card");
+    if (cards.length === 0) return;
+
+    cards.forEach((card) => {
+      initializeCard(card);
+    });
+  });
+</script>
+
+<style scoped>
+  .card {
+    cursor: pointer;
+  }
+</style>

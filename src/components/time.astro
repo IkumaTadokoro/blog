@@ -2,9 +2,10 @@
 type Props = {
   date: Date;
   size?: "small" | "medium" | "large";
+  label?: string;
 };
 
-const { date, size = "medium" } = Astro.props;
+const { date, size = "medium", label } = Astro.props;
 const sizeClasses = {
   small: "text-sm",
   medium: "text-label-14 sm:text-label-14 text-gray-700",
@@ -12,18 +13,21 @@ const sizeClasses = {
 };
 ---
 
-<time
-  datetime={date.toISOString()}
-  class={`font-mono tracking-widest text-foreground ${sizeClasses[size]}`}
->
-  {
-    date
-      .toLocaleDateString("ja-JP", {
-        year: "numeric",
-        month: "2-digit",
-        day: "2-digit",
-      })
-      .split("/")
-      .join("-")
-  }
-</time>
+<p>
+  {label && <span class="label sr-only">{label}</span>}
+  <time
+    datetime={date.toISOString()}
+    class={`font-mono tracking-widest text-foreground ${sizeClasses[size]}`}
+  >
+    {
+      date
+        .toLocaleDateString("ja-JP", {
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+        })
+        .split("/")
+        .join("-")
+    }
+  </time>
+</p>

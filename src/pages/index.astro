@@ -21,11 +21,42 @@ const blogs = allBlogs.slice(0, 20);
         </h2>
       </div>
     </div>
-    <div class="grid place-self-start gap-y-8">
-      {blogs.map((blog) => <BlogCard blog={blog} />)}
-    </div>
-    <div class="mt-12">
+    <ul class="grid place-self-start gap-y-8 sm:gap-y-1">
+      {
+        blogs.map((blog) => (
+          <li>
+            <BlogCard blog={blog} />
+          </li>
+        ))
+      }
+    </ul>
+    <div>
       <Author />
     </div>
   </section>
 </Document>
+
+<style is:global>
+  ul::after {
+    border-radius: 1rem;
+    content: "";
+    position: absolute;
+    background: hsl(0 0% 10%);
+    pointer-events: none;
+    z-index: -1;
+    position-anchor: var(--anchor);
+    inset: anchor(top) anchor(right) anchor(bottom) anchor(left);
+    transition: inset 0.2s;
+  }
+
+  li:hover article {
+    anchor-name: --active;
+  }
+  ul:has(li:hover) {
+    --anchor: --active;
+    --active: 1;
+  }
+  li:hover {
+    --li-active: 1;
+  }
+</style>

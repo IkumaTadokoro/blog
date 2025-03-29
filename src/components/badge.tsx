@@ -32,7 +32,7 @@ const badgeVariants = cva(
 				'green-subtle': 'bg-green-300 text-green-900',
 				teal: 'bg-teal-700 text-contrast-fg',
 				'teal-subtle': 'bg-teal-300 text-teal-900',
-				inverted: 'bg-gray-1000 text-contrast-fg',
+				inverted: 'bg-gray-1000 text-label-13-mono text-gray-100',
 			},
 		},
 		defaultVariants: {
