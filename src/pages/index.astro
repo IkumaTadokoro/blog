@@ -43,20 +43,24 @@ const blogs = allBlogs.slice(0, 20);
     position: absolute;
     background: hsl(0 0% 10%);
     pointer-events: none;
-    z-index: -1;
+    z-index: -2;
     position-anchor: var(--anchor);
     inset: anchor(top) anchor(right) anchor(bottom) anchor(left);
     transition: inset 0.2s;
   }
 
-  li:hover article {
-    anchor-name: --active;
+  [data-theme="light"] ul::after {
+    z-index: 0;
+    background: var(--ds-gray-100);
+    opacity: 0.2;
   }
+
   ul:has(li:hover) {
     --anchor: --active;
     --active: 1;
   }
   li:hover {
+    anchor-name: --active;
     --li-active: 1;
   }
 </style>
