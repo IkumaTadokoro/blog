@@ -12,22 +12,51 @@ const talksByYear = await groupByTalkYear(talks);
   <div class="flex justify-between items-center py-4">
     <h2 class="text-3xl font-bold text-foreground tracking-wider">talk</h2>
   </div>
-  <div class="grid gap-16">
-    {
-      talksByYear.entries().map(([year, talks]) => (
-        <section class="grid gap-y-4">
-          <div class="mx-[calc(50%-50cqi)] py-4 z-20">
-            <h3 class="text-2xl font-bold text-foreground tracking-wider max-w-screen-md mx-auto px-4">
-              {year}
-            </h3>
-          </div>
-          <div class="grid gap-x-6 gap-y-12 sm:grid-cols-2 z-10">
-            {talks.map((talk) => (
+  {
+    talksByYear.entries().map(([year, talks]) => (
+      <section class="grid gap-y-4">
+        <div class="mx-[calc(50%-50cqi)] py-4 z-20">
+          <h3 class="text-2xl font-bold text-foreground tracking-wider max-w-screen-md mx-auto px-4">
+            {year}
+          </h3>
+        </div>
+        <ul class="grid gap-16 gap-x-6 gap-y-12 sm:grid-cols-2 z-10">
+          {talks.map((talk) => (
+            <li class="p-2">
               <TalkCard talk={talk} />
-            ))}
-          </div>
-        </section>
-      ))
-    }
-  </div>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
 </Document>
+
+<style is:global>
+  ul::after {
+    border-radius: 1rem;
+    content: "";
+    position: absolute;
+    background: hsl(0 0% 10%);
+    pointer-events: none;
+    z-index: -2;
+    position-anchor: var(--anchor);
+    inset: anchor(top) anchor(right) anchor(bottom) anchor(left);
+    transition: inset 0.2s;
+  }
+
+  [data-theme="light"] ul::after {
+    z-index: 0;
+    background: var(--ds-gray-100);
+    opacity: 0.2;
+  }
+
+  ul:has(li:hover) {
+    --anchor: --active;
+    --active: 1;
+  }
+  li:hover {
+    anchor-name: --active;
+    --li-active: 1;
+  }
+</style>
