@@ -63,19 +63,19 @@
 }
 
 .prose blockquote * {
-  @apply !text-muted-foreground text-base !leading-7 sm:!leading-8 tracking-wide;
+  @apply !text-foreground/80 !leading-7 sm:!leading-8 tracking-wide;
 }
 
 .prose li::marker {
-  @apply text-primary;
+  @apply text-muted;
 }
 
 .prose a {
-  @apply text-foreground/70 no-underline text-muted;
+  @apply text-foreground/80 no-underline;
 }
 
 .prose a:hover {
-  @apply no-underline;
+  @apply no-underline text-muted;
 }
 
 .prose img {
