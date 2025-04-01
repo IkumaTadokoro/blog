@@ -59,7 +59,7 @@
     "tailwindcss": "4.0.17",
     "typescript": "5.8.2"
   },
-  "packageManager": "pnpm@10.6.3",
+  "packageManager": "pnpm@10.7.1",
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@playwright/test": "1.51.1",
