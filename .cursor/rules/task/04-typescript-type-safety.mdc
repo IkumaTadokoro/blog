@@ -1,0 +1,44 @@
+---
+description: TypeScriptの型安全性強化とnon-null assertion operatorの排除
+globs: 
+alwaysApply: false
+---
+# TypeScriptの型安全性強化とnon-null assertion operatorの排除
+
+## 背景と課題
+コードベース内の一部で型アノテーションが不十分であり、特にnon-null assertion operator (`!`)の使用が見られます（例: `talk.data.pubdate!.getFullYear()`）。これらは型安全性を損ない、潜在的なランタイムエラーの原因となる可能性があります。
+
+## 目的
+コードベース全体の型安全性を向上させ、特にnon-null assertion operatorを排除し、より堅牢なエラーハンドリングとデフォルト値の設定を実装する。
+
+## アクセプタンス基準
+1. コードベース内のすべてのnon-null assertion operator (`!`)が排除されている
+2. nullableな値には適切なデフォルト値または条件付きロジックが実装されている
+3. TypeScriptの構成（tsconfig.json）で厳格なnullチェックが有効化されている
+4. ビルド時に型エラーが発生しない
+
+## サブタスク
+### 1. 型の問題箇所の特定
+- [ ] コードベース全体でnon-null assertion operator (`!`)を使用している箇所を特定
+- [ ] 型が不明確または不完全な他の箇所を特定（any, unknownの使用など）
+- [ ] 問題箇所の優先度付けと影響度の評価
+
+### 2. TypeScriptの構成強化
+- [ ] tsconfig.jsonで`strictNullChecks`と`noImplicitAny`が有効化されていることを確認
+- [ ] 必要に応じてその他の厳格な型チェックオプションを有効化
+- [ ] ESLintのTypeScript関連ルールの強化検討（no-non-null-assertionなど）
+
+### 3. オプショナルチェーンの導入
+- [ ] `talk.data.pubdate!.getFullYear()`などの箇所をオプショナルチェーン (`?.`)を使用するように修正
+- [ ] nullableな値に対する条件付きロジックの実装
+- [ ] デフォルト値のパターン導入（nullish coalescing operator `??`の活用）
+
+### 4. インターフェイスと型定義の改善
+- [ ] 曖昧さを解消するための明示的な型定義の追加
+- [ ] 共通のインターフェイスや型の一貫した使用
+- [ ] ジェネリック型の適切な活用
+
+### 5. 型安全性のテストと検証
+- [ ] 修正後のコードのビルドテスト
+- [ ] エッジケースのテスト（データが存在しない場合など）
+- [ ] 型エラーが発生するケースの検証
