@@ -1,11 +1,10 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import type { GetStaticPathsOptions, Page } from "astro";
-import Pagination from "../../components/pagination/pagination.astro";
-import BlogCard from "../../features/blog/blog-card.astro";
-
-import Author from "../../components/author.astro";
-import { getBlogs } from "../../features/blog/blog";
+import Author from "../../components/ui/author.astro";
+import Pagination from "../../components/ui/pagination/pagination.astro";
+import { getBlogs } from "../../features/blog/model/blog";
+import BlogCard from "../../features/blog/ui/blog-card.astro";
 import Document from "../../layouts/document.astro";
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {

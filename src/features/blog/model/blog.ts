@@ -6,7 +6,7 @@ import { getContainerRenderer } from '@astrojs/mdx';
 import type { RSSFeedItem } from '@astrojs/rss';
 import { experimental_AstroContainer } from 'astro/container';
 import sanitizeHtml from 'sanitize-html';
-import { SITE } from '../../config';
+import { SITE } from '../../../config';
 
 export type Collections = Array<CollectionEntry<'blog'>>;
 

@@ -1,8 +1,7 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import Link from "../../components/link.astro";
-import Time from "../../components/time.astro";
-import { buildUrl } from "./blog";
+import Time from "../../../components/ui/time.astro";
+import { buildUrl } from "../../blog/model/blog";
 
 type Props = {
   blog: CollectionEntry<"blog">;

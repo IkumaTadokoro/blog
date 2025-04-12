@@ -1,7 +1,7 @@
 import { defineConfig, passthroughImageService } from 'astro/config';
 import react from "@astrojs/react";
 import icon from "astro-icon";
-import { expressiveCodePlugin, rehypePlugins } from './src/utils/markdown';
+import { expressiveCodePlugin, rehypePlugins } from './src/shared/lib/markdown';
 import { SITE } from './src/config';
 
 import mdx from "@astrojs/mdx";

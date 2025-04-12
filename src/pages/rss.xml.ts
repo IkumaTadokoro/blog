@@ -1,7 +1,7 @@
 import rss from '@astrojs/rss';
 import type { APIContext } from 'astro';
 import { SITE } from '../config';
-import { buildRssItem, getBlogs } from '../features/blog/blog';
+import { buildRssItem, getBlogs } from '../features/blog/model/blog';
 
 export async function GET(context: APIContext) {
 	if (!context.site) {

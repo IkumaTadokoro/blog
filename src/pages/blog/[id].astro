@@ -1,9 +1,10 @@
 ---
 import { render } from "astro:content";
-import { Icon } from "astro-icon/components";
-import Author from "../../components/author.astro";
-import { getBlogs } from "../../features/blog/blog";
-import Blog from "../../features/blog/blog.astro";
+// import { Icon } from "astro-icon/components";
+import Author from "../../components/ui/author.astro";
+import { getBlogs } from "../../features/blog/model/blog";
+import DraftBadge from "../../features/blog/ui/DraftBadge.astro";
+import Blog from "../../features/blog/ui/blog.astro";
 import Document from "../../layouts/document.astro";
 
 export async function getStaticPaths() {
@@ -20,14 +21,7 @@ const { Content } = await render(entry);
 
 <Document title={entry.data.title}>
   <Blog title={entry.data.title} publishDate={entry.data.publishDate}>
-    {
-      entry.data.draft && (
-        <div class="mb-8 flex items-center gap-2 border border-border rounded-md p-4 text-foreground bg-background font-semibold">
-          <Icon name="lucide:alert-circle" class="w-4 h-4" />
-          <small>この記事は下書きです。本番環境では表示されません。</small>
-        </div>
-      )
-    }
+    {entry.data.draft && <DraftBadge />}
     <Content />
   </Blog>
   <div class="mt-16">
