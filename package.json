@@ -37,7 +37,7 @@
     "@fontsource-variable/lexend": "5.2.6",
     "@fontsource-variable/montserrat": "5.2.5",
     "@fontsource-variable/noto-sans-jp": "5.2.5",
-    "@iconify-json/lucide": "1.2.37",
+    "@iconify-json/lucide": "1.2.38",
     "@tailwindcss/vite": "4.1.4",
     "@types/react": "19.1.2",
     "@types/react-dom": "19.1.2",
@@ -69,12 +69,12 @@
     "@types/jsdom": "21.1.7",
     "@types/node": "22.14.1",
     "@types/sanitize-html": "2.15.0",
-    "@vitest/browser": "3.1.1",
-    "@vitest/ui": "3.1.1",
+    "@vitest/browser": "3.1.2",
+    "@vitest/ui": "3.1.2",
     "happy-dom": "17.4.4",
     "jsdom": "26.1.0",
-    "lefthook": "1.11.10",
-    "vitest": "3.1.1",
+    "lefthook": "1.11.11",
+    "vitest": "3.1.2",
     "wrangler": "4.12.0"
   }
 }
