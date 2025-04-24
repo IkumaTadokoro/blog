@@ -37,7 +37,7 @@
     "@fontsource-variable/lexend": "5.2.6",
     "@fontsource-variable/montserrat": "5.2.5",
     "@fontsource-variable/noto-sans-jp": "5.2.5",
-    "@iconify-json/lucide": "1.2.38",
+    "@iconify-json/lucide": "1.2.39",
     "@tailwindcss/vite": "4.1.4",
     "@types/react": "19.1.2",
     "@types/react-dom": "19.1.2",
@@ -75,6 +75,6 @@
     "jsdom": "26.1.0",
     "lefthook": "1.11.11",
     "vitest": "3.1.2",
-    "wrangler": "4.13.0"
+    "wrangler": "4.13.1"
   }
 }
