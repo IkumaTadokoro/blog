@@ -51,11 +51,23 @@ jobs:
         with:
           name: dist
           path: dist
-      - uses: cloudflare/wrangler-action@v3
+      # mainブランチの場合はデプロイを実行
+      - if: github.ref == 'refs/heads/main'
+        name: Deploy to Cloudflare Workers
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      # プルリクエスト（main以外）の場合はバージョンアップロードのみ
+      - if: github.ref != 'refs/heads/main'
+        name: Upload version to Cloudflare Workers
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          command: versions upload
   actions-timeline:
     runs-on: ubuntu-latest
     needs: [build]
