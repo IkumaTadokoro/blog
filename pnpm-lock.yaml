@@ -36,14 +36,14 @@ importers:
         specifier: 4.0.7
         version: 4.0.7
       '@fontsource-variable/geist':
-        specifier: 5.2.5
-        version: 5.2.5
-      '@fontsource-variable/geist-mono':
-        specifier: 5.2.5
-        version: 5.2.5
-      '@fontsource-variable/lexend':
         specifier: 5.2.6
         version: 5.2.6
+      '@fontsource-variable/geist-mono':
+        specifier: 5.2.6
+        version: 5.2.6
+      '@fontsource-variable/lexend':
+        specifier: 5.2.7
+        version: 5.2.7
       '@fontsource-variable/montserrat':
         specifier: 5.2.5
         version: 5.2.5
@@ -687,14 +687,14 @@ packages:
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
 
-  '@fontsource-variable/geist-mono@5.2.5':
-    resolution: {integrity: sha512-zyuyDtO00SbmqU4Bo5XWzX2hE5RUxL+h2bv3P8SrmxqfqW66FU/xw5DW3xRQPqQgyEpb/Fh5FEFCpOna78dvCA==}
+  '@fontsource-variable/geist-mono@5.2.6':
+    resolution: {integrity: sha512-vw6T9JGTrYJ980bn7W8iTPhe2jVK5ifunVs7xh9dfTVArjDSkJs03JjeZrH5LKEpGABLXSlSlNU57HRm4tmFMg==}
 
-  '@fontsource-variable/geist@5.2.5':
-    resolution: {integrity: sha512-773ht1maARKCDSxxmyc6cWiSRudk4GU+pW/0PHHnTEISprej9ARfGZVVhW04nmrk1Nlj888MLyuutTx1UnYy0g==}
+  '@fontsource-variable/geist@5.2.6':
+    resolution: {integrity: sha512-Bt9pdD55Fojq4h9yFKQAzh5+Xj4tKFpwbcDzK6t5PPSH2GrjPoPqm6N8y+tK6vzwKZ9hHyaOz/tAbO9cQd9UFQ==}
 
-  '@fontsource-variable/lexend@5.2.6':
-    resolution: {integrity: sha512-rDBYVTp0cMaj/UNK2m5EPHMZw3MZcl2CXdZVlv+OQwpg88r5g9prS60mayZ1N+hyH7XRka2YExAFEYBLEv0NRQ==}
+  '@fontsource-variable/lexend@5.2.7':
+    resolution: {integrity: sha512-TJq4ViNkHIp7DZOCiwzsNI8TToqqdPFPdjJH9jbdCIMH0+hsrM3XqTzVX/KG7/fbh+g5L3/ETrxRb+dS9snKmg==}
 
   '@fontsource-variable/montserrat@5.2.5':
     resolution: {integrity: sha512-Mfg/AiXwhPLAAgLCqzugFUs/PLprbHzXMhPVrf35q5od4/wHjVqtm0bI000tKGUGDZ3gDpId/+cqufcYHAAAEQ==}
@@ -4547,11 +4547,11 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@fontsource-variable/geist-mono@5.2.5': {}
+  '@fontsource-variable/geist-mono@5.2.6': {}
 
-  '@fontsource-variable/geist@5.2.5': {}
+  '@fontsource-variable/geist@5.2.6': {}
 
-  '@fontsource-variable/lexend@5.2.6': {}
+  '@fontsource-variable/lexend@5.2.7': {}
 
   '@fontsource-variable/montserrat@5.2.5': {}
 
