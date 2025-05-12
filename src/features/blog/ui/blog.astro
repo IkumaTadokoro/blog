@@ -1,13 +1,16 @@
 ---
+import type { MarkdownHeading } from "astro";
 import Time from "../../../components/ui/time.astro";
 import "../../../stylesheet/markdown.css";
+import Toc from "./toc.astro";
 
 interface Props {
   title: string;
   publishDate: Date;
+  headings: Array<MarkdownHeading>;
 }
 
-const { title, publishDate } = Astro.props;
+const { title, publishDate, headings } = Astro.props;
 ---
 
 <div class={"space-y-8 sm:space-y-16 my-8 sm:my-16"}>
@@ -23,7 +26,12 @@ const { title, publishDate } = Astro.props;
       <Time date={publishDate} />
     </div>
   </hgroup>
-  <article class={"break-all prose"}>
-    <slot />
-  </article>
+  <div class="grid grid-cols-1 lg:grid-cols-[1fr_16rem] gap-x-8 lg:mx-[-8rem]">
+    <article class={"break-all prose"}>
+      <slot />
+    </article>
+    <aside class="hidden lg:block">
+      <Toc headings={headings} />
+    </aside>
+  </div>
 </div>

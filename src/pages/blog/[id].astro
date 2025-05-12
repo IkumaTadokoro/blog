@@ -16,11 +16,15 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { Content } = await render(entry);
+const { Content, headings } = await render(entry);
 ---
 
 <Document title={entry.data.title}>
-  <Blog title={entry.data.title} publishDate={entry.data.publishDate}>
+  <Blog
+    title={entry.data.title}
+    publishDate={entry.data.publishDate}
+    headings={headings}
+  >
     {entry.data.draft && <DraftBadge />}
     <Content />
   </Blog>

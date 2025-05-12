@@ -1,0 +1,51 @@
+---
+import { scope } from "simple:scope";
+import type { MarkdownHeading } from "astro";
+
+type Props = {
+  headings: Array<MarkdownHeading>;
+};
+
+const titleId = scope("toc");
+
+const { headings } = Astro.props;
+---
+
+<div class="sticky top-4">
+  <div>
+    <nav aria-labelledby={titleId}>
+      <h2
+        id={titleId}
+        class="text-lg font-bold mb-4 border-b border-foreground/10 pb-2 text-foreground"
+      >
+        目次
+      </h2>
+      <ul class="space-y-4">
+        {
+          headings.map((heading) => {
+            return (
+              <li
+                class="text-[0.9rem] text-foreground/80 hover:opacity-80"
+                data-level={heading.depth}
+              >
+                <a href={`#${heading.slug}`}>{heading.text}</a>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<style scoped>
+  li[data-level="2"] {
+    list-style: disc;
+    margin-left: 1.5rem;
+    font-weight: 600;
+  }
+  li[data-level="3"] {
+    list-style: circle;
+    margin-left: 2.5rem;
+  }
+</style>

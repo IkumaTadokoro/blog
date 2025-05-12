@@ -3,6 +3,7 @@ import react from "@astrojs/react";
 import icon from "astro-icon";
 import { expressiveCodePlugin, rehypePlugins } from './src/shared/lib/markdown';
 import { SITE } from './src/config';
+import simpleScope from "vite-plugin-simple-scope";
 
 import mdx from "@astrojs/mdx";
 
@@ -22,6 +23,6 @@ export default defineConfig({
   },
 
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss(), simpleScope()],
   }
 });
