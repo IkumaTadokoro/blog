@@ -2,7 +2,7 @@
 @config "../../tailwind.config.mjs";
 
 .prose {
-    @apply !max-w-full;
+  @apply !max-w-full;
 }
 
 .prose h1,
@@ -31,20 +31,20 @@
   }
 }
 
-.prose h2 {
-    @apply text-xl sm:text-2xl mt-8 sm:mt-20;
+.prose * + h2 {
+  @apply text-xl sm:text-2xl mt-8 sm:mt-20;
 }
 
 .prose h3 {
-    @apply text-base sm:text-xl mt-4 sm:mt-16 mb-4 text-foreground/90;
+  @apply text-base sm:text-xl mt-4 sm:mt-16 mb-4 text-foreground/90;
 }
 
 .prose p + h3 {
-    @apply mt-8 sm:mt-16;
+  @apply mt-8 sm:mt-16;
 }
 
 .prose h2 + h3 {
-    @apply mt-4 sm:mt-8;
+  @apply mt-4 sm:mt-8;
 }
 
 .prose h4 {
@@ -58,7 +58,7 @@
 .prose th,
 .prose td,
 .prose p code,
-.prose li code{
+.prose li code {
   @apply !text-foreground text-sm sm:text-base !leading-7 sm:!leading-8 tracking-wide;
 }
 
