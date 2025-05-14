@@ -4,7 +4,31 @@ import SizuMe from "./icons/SizuMe.svg";
 import SpeakerDeck from "./icons/SpeakerDeck.svg";
 import X from "./icons/X.svg";
 import Zenn from "./icons/Zenn.svg";
-import { type SocialIcon, socials } from "./social-icons";
+
+export type SocialIcon = "Github" | "X" | "Zenn" | "SpeakerDeck" | "SizuMe";
+
+const socials: Record<SocialIcon, { href: string; linkTitle: string }> = {
+  Github: {
+    href: "https://github.com/IkumaTadokoro",
+    linkTitle: "GitHub",
+  },
+  X: {
+    href: "https://x.com/ikumatdkr",
+    linkTitle: "X",
+  },
+  Zenn: {
+    href: "https://zenn.dev/ikuma",
+    linkTitle: "Zenn",
+  },
+  SpeakerDeck: {
+    href: "https://speakerdeck.com/ikumatadokoro",
+    linkTitle: "SpeakerDeck",
+  },
+  SizuMe: {
+    href: "https://sizu.me/ikuma",
+    linkTitle: "しずかなインターネット",
+  },
+};
 
 interface Props {
   icon: SocialIcon;
