@@ -1,12 +1,12 @@
 ---
-import "../stylesheet/globalStyles.css";
-import "../styles/global.css";
+import "./globalStyles.css";
+import "../../../../styles/global.css";
 import { ClientRouter } from "astro:transitions";
-import ogImage from "../assets/ogp.png";
-import Footer from "../components/ui/footer.astro";
-import Header from "../components/ui/header.astro";
-import ThemeProvider from "../components/ui/theme-provider.astro";
-import { SITE } from "../shared/config/site";
+import ogImage from "../../../../assets/ogp.png";
+import Footer from "../../../../components/ui/footer.astro";
+import Header from "../../../../components/ui/header.astro";
+import ThemeProvider from "../../../../components/ui/theme-provider.astro";
+import { SITE } from "../../../config/site";
 
 type Props = {
   title?: string;
