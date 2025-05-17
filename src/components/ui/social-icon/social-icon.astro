@@ -42,20 +42,22 @@ const { icon } = Astro.props;
   class="w-6 aspect-square hover:opacity-70 transition-opacity rounded-md"
   aria-label={socials[icon].linkTitle}
 >
-  {(() => {
-    switch (icon) {
-      case "Github":
-        return <Github class="fill-gray-300 w-full h-full" />;
-      case "X":
-        return <X class="fill-gray-300 w-full h-full" />;
-      case "Zenn":
-        return <Zenn class="fill-gray-300 w-full h-full" />;
-      case "SpeakerDeck":
-        return <SpeakerDeck class="fill-gray-300 w-full h-full" />;
-      case "SizuMe":
-        return <SizuMe class="fill-gray-300 w-full h-full" />;
-      default:
-        return null;
-    }
-  })()}
+  {
+    (() => {
+      switch (icon) {
+        case "Github":
+          return <Github class="fill-gray-300 w-full h-full" />;
+        case "X":
+          return <X class="fill-gray-300 w-full h-full" />;
+        case "Zenn":
+          return <Zenn class="fill-gray-300 w-full h-full" />;
+        case "SpeakerDeck":
+          return <SpeakerDeck class="fill-gray-300 w-full h-full" />;
+        case "SizuMe":
+          return <SizuMe class="fill-gray-300 w-full h-full" />;
+        default:
+          return null;
+      }
+    })()
+  }
 </a>
