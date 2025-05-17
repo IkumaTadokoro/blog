@@ -1,8 +1,8 @@
-import { defineConfig, passthroughImageService } from 'astro/config';
+import { defineConfig, passthroughImageService } from "astro/config";
 import react from "@astrojs/react";
 import icon from "astro-icon";
-import { expressiveCodePlugin, rehypePlugins } from './src/shared/lib/markdown';
-import { SITE } from './src/config';
+import { expressiveCodePlugin, rehypePlugins } from "./src/shared/lib/markdown";
+import { SITE } from "./src/shared/config/site";
 import simpleScope from "vite-plugin-simple-scope";
 
 import mdx from "@astrojs/mdx";
@@ -24,5 +24,5 @@ export default defineConfig({
 
   vite: {
     plugins: [tailwindcss(), simpleScope()],
-  }
+  },
 });

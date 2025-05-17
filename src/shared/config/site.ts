@@ -1,4 +1,10 @@
-import type { Site } from './types';
+type Site = {
+	siteUrl: string;
+	publishedYear: string;
+	author: string;
+	description: string;
+	title: string;
+};
 
 export const SITE = {
 	siteUrl: import.meta.env.PROD ? 'https://ikuma-t.com' : 'http://localhost:4321',
