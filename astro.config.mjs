@@ -9,10 +9,12 @@ import mdx from "@astrojs/mdx";
 
 import tailwindcss from "@tailwindcss/vite";
 
+import og from "astro-og";
+
 // https://astro.build/config
 export default defineConfig({
   site: SITE.siteUrl,
-  integrations: [react(), icon(), expressiveCodePlugin, mdx()],
+  integrations: [react(), icon(), expressiveCodePlugin, mdx(), og()],
 
   markdown: {
     rehypePlugins,
