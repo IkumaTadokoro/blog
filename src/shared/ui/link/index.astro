@@ -1,6 +1,4 @@
 ---
-import { cn } from "../../lib/cn";
-
 type Props = {
   to: string;
   className?: string;
@@ -10,6 +8,6 @@ type Props = {
 const { to, className } = Astro.props as Props;
 ---
 
-<a href={to} class={cn("hover:opacity-75", className)}>
+<a href={to} class:list={["hover:opacity-75", className]}>
   <slot />
 </a>
