@@ -18,6 +18,7 @@ const { blog } = Astro.props as Props;
     to: "/blog/[id]",
     params: { id: blog.id },
   })}
+  transition:persist
 >
   <Time date={blog.data.publishDate} label="投稿日" />
 

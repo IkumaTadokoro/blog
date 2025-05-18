@@ -56,9 +56,9 @@ import Sun from "./sun.svg";
 <script is:inline>
   const button = document.getElementById("toggle-theme");
 
-  function setButtonPresssed() {
+  function setButtonPressed() {
     const bodyThemeIsDark = document.documentElement.dataset.theme === "dark";
     button.setAttribute("aria-pressed", String(bodyThemeIsDark));
   }
-  setButtonPresssed();
+  setButtonPressed();
 </script>

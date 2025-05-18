@@ -23,19 +23,13 @@ const { talks } = Astro.props;
     border-radius: 1rem;
     content: "";
     position: absolute;
-    background: hsl(0 0% 10%);
+    background: hsla(0, 0%, 77%, 0.05);
     pointer-events: none;
-    z-index: -2;
-    position-anchor: var(--anchor);
-    inset: calc(anchor(top) - 8px) calc(anchor(right) - 8px)
-      calc(anchor(bottom) - 16px) calc(anchor(left) - 8px);
-    transition: inset 0.2s;
-  }
-
-  [data-theme="light"] ul::after {
     z-index: 0;
-    background: var(--ds-gray-200);
-    opacity: 0.2;
+    position-anchor: var(--anchor);
+    inset: calc(anchor(top) - 20px) calc(anchor(right) - 20px)
+      calc(anchor(bottom) - 20px) calc(anchor(left) - 20px);
+    transition: inset 0.2s;
   }
 
   ul:has(li:hover) {
