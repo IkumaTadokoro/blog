@@ -1,5 +1,3 @@
-import { SOCIAL_ACCOUNT } from '../../../shared/config/site';
-
 export const Author = {
 	name: 'ikuma-t',
 	bio: 'フロントエンドエンジニア',

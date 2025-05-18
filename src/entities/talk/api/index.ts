@@ -1,4 +1,4 @@
-import { getCollection, render } from 'astro:content';
+import { getCollection } from 'astro:content';
 import { ofetch } from 'ofetch';
 import type { DeepPartial } from '../../../shared/lib/deep-partial';
 import {
