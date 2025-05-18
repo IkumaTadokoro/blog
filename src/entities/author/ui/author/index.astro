@@ -1,12 +1,11 @@
 ---
 import { Image } from "astro:assets";
-import { Badge } from "../../../../shared/ui/badge";
 import { Author } from "../../model/index";
 import AuthorImage from "./ikuma.svg";
 ---
 
 <div
-  class="grid grid-cols-[auto_1fr_max-content] items-center grid-rows-2 gap-x-3 sm:gap-x-6 mx-auto border-t border-muted-foreground pt-8"
+  class="w-full grid grid-cols-[auto_1fr] items-center grid-rows-2 gap-x-3 sm:gap-x-6 mx-auto py-2"
 >
   <Image
     src={AuthorImage}
@@ -14,9 +13,6 @@ import AuthorImage from "./ikuma.svg";
     class="row-span-2 col-span-1 justify-self-end w-10 sm:w-12 aspect-square"
   />
   <p class="text-heading-16 text-foreground">{Author.name}</p>
-  <a href={Author.portalSite} class="row-span-2">
-    <Badge size="lg" variant="inverted">about</Badge>
-  </a>
   <p class="text-muted tracking-wider text-label-14-mono">
     {Author.bio}
   </p>

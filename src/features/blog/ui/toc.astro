@@ -33,6 +33,13 @@ const { headings } = Astro.props;
             );
           })
         }
+        {
+          headings.length === 0 && (
+            <li class="text-[0.9rem] text-foreground/80">
+              この記事にはセクションがありません
+            </li>
+          )
+        }
       </ul>
     </nav>
   </div>

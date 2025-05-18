@@ -1,37 +1,71 @@
 ---
-import type { MarkdownHeading } from "astro";
 import Time from "../../../shared/ui/time/index.astro";
 import "../../../shared/ui/markdown/index.css";
+import { render } from "astro:content";
+import Author from "../../../entities/author/ui/author/index.astro";
+import type { BlogEntry } from "../../../entities/blog/model/schema";
 import Toc from "./toc.astro";
 
 interface Props {
-  title: string;
-  publishDate: Date;
-  headings: Array<MarkdownHeading>;
+  entry: BlogEntry;
 }
 
-const { title, publishDate, headings } = Astro.props;
+const { entry } = Astro.props;
+
+const {
+  data: { title, publishDate, draft },
+} = entry;
+const { Content, headings } = await render(entry);
 ---
 
-<div class={"space-y-8 sm:space-y-16 my-8 sm:my-16"}>
-  <hgroup class="space-y-4">
-    <h2
-      class="text-foreground text-center text-heading-20 sm:text-heading-32 font-bold break-all tracking-widest !leading-relaxed"
-    >
-      {title}
-    </h2>
+<div class="grid grid-rows-[1fr_max-content] gap-x-8 min-h-full">
+  <div class={"space-y-8 sm:space-y-16 my-8 sm:my-16"}>
+    {
+      draft && (
+        <p class="text-center mb-8 p-4 text-foreground font-semibold">
+          !!!この記事は下書きです。本番環境では表示されません。!!!
+        </p>
+      )
+    }
+    <hgroup class="space-y-4">
+      <h2
+        class="text-foreground text-center text-heading-20 sm:text-heading-32 font-bold break-all tracking-widest !leading-relaxed"
+      >
+        {title}
+      </h2>
+      <div
+        class="flex items-center justify-center gap-2 text-md text-muted-foreground"
+      >
+        <Time date={publishDate} />
+      </div>
+    </hgroup>
     <div
-      class="flex items-center justify-center gap-2 text-md text-muted-foreground"
+      class="grid grid-cols-1 lg:grid-cols-[1fr_16rem] gap-x-8 lg:mx-[-8rem]"
     >
-      <Time date={publishDate} />
+      <article class={"break-all prose"}>
+        <Content />
+      </article>
+      <aside class="hidden lg:grid gap-12">
+        <Toc headings={headings} />
+        <section>
+          <h2
+            class="text-lg font-bold mb-4 border-b border-foreground/10 pb-2 text-foreground"
+          >
+            書いた人
+          </h2>
+          <Author />
+        </section>
+      </aside>
     </div>
-  </hgroup>
-  <div class="grid grid-cols-1 lg:grid-cols-[1fr_16rem] gap-x-8 lg:mx-[-8rem]">
-    <article class={"break-all prose"}>
-      <slot />
-    </article>
-    <aside class="hidden lg:block">
-      <Toc headings={headings} />
-    </aside>
   </div>
+  <aside class="block lg:hidden">
+    <section>
+      <h2
+        class="text-lg font-bold mb-4 border-b border-foreground/10 pb-2 text-foreground"
+      >
+        書いた人
+      </h2>
+      <Author />
+    </section>
+  </aside>
 </div>

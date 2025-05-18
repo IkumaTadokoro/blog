@@ -1,8 +1,5 @@
 ---
-import { render } from "astro:content";
-import Author from "../../entities/author/ui/author/index.astro";
 import { getBlogs } from "../../features/blog/model/blog";
-import DraftBadge from "../../features/blog/ui/DraftBadge.astro";
 import Blog from "../../features/blog/ui/blog.astro";
 import Document from "../../widgets/layout/document/index.astro";
 
@@ -15,19 +12,8 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { Content, headings } = await render(entry);
 ---
 
 <Document title={entry.data.title}>
-  <Blog
-    title={entry.data.title}
-    publishDate={entry.data.publishDate}
-    headings={headings}
-  >
-    {entry.data.draft && <DraftBadge />}
-    <Content />
-  </Blog>
-  <div class="mt-16">
-    <Author />
-  </div>
+  <Blog entry={entry} />
 </Document>
