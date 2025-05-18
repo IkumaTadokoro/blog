@@ -1,0 +1,32 @@
+---
+import { Badge } from "../../../shared/ui/badge";
+
+interface Props {
+  tags: Array<string> | undefined;
+}
+const { tags } = Astro.props;
+---
+
+<section>
+  <h2 class="text-md mb-4 border-b border-foreground/10 pb-2 text-foreground">
+    タグ
+  </h2>
+  <ul class="flex flex-wrap gap-2">
+    {
+      tags?.map((tag) => (
+        <li class="text-[0.9rem] text-foreground/80 hover:opacity-80">
+          <Badge variant="inverted" size="sm">
+            {tag}
+          </Badge>
+        </li>
+      ))
+    }
+    {
+      (!tags || tags.length === 0) && (
+        <li class="text-[0.9rem] text-foreground/80 hover:opacity-80">
+          この記事にはタグがありません
+        </li>
+      )
+    }
+  </ul>
+</section>

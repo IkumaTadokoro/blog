@@ -3,6 +3,7 @@ import Time from "../../../shared/ui/time/index.astro";
 import "../../../shared/ui/markdown/index.css";
 import { render } from "astro:content";
 import type { BlogEntry } from "../../../entities/blog/model/schema";
+import Tags from "./tags.astro";
 import Toc from "./toc.astro";
 import Writer from "./writer.astro";
 
@@ -13,7 +14,7 @@ interface Props {
 const { entry } = Astro.props;
 
 const {
-  data: { title, publishDate, draft },
+  data: { title, publishDate, draft, tags },
 } = entry;
 const { Content, headings } = await render(entry);
 ---
@@ -36,7 +37,7 @@ const { Content, headings } = await render(entry);
       <Time date={publishDate} />
     </hgroup>
     <div
-      class="grid grid-cols-1 lg:grid-cols-[1fr_16rem] gap-x-8 lg:mx-[-8rem]"
+      class="grid grid-cols-1 lg:grid-cols-[1fr_16rem] gap-x-8 lg:mr-[-16rem]"
     >
       <article class={"break-all prose"}>
         <Content />
@@ -44,6 +45,7 @@ const { Content, headings } = await render(entry);
       <aside class="hidden lg:grid grid-rows-[max-content_1fr]">
         <div class="sticky top-4 space-y-12">
           <Toc headings={headings} />
+          <Tags tags={tags} />
           <Writer />
         </div>
       </aside>

@@ -11,7 +11,7 @@ const badgeVariants = cva(
 	{
 		variants: {
 			size: {
-				sm: 'text-[11px] h-5 px-[6px] tracking-wide',
+				sm: 'text-[11px] h-5 px-[9px] tracking-wide',
 				md: 'text-label-12 px-[10px] h-6 ',
 				lg: 'text-label-14 h-8 px-3',
 			},

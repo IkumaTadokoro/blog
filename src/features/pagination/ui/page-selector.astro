@@ -15,7 +15,7 @@ const INITIAL_PAGE_NUMBER = 1;
 
 /** 現在参照しているページを含む閲覧件数 */
 const browsed = Math.min(page.currentPage * page.size, page.total);
-const initialPageUrl = `/${collectionKey}`;
+const initialPageUrl = `/${collectionKey}/${INITIAL_PAGE_NUMBER}`;
 const lastPageUrl = `/${collectionKey}/${page.lastPage}`;
 const isInitialPage = page.currentPage === INITIAL_PAGE_NUMBER;
 const isLastPage = page.currentPage === page.lastPage;
