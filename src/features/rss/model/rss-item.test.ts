@@ -1,7 +1,7 @@
 // @vitest-environment node
 import { getEntry } from 'astro:content';
 import { describe, expect, it } from 'vitest';
-import { buildRssItem } from './blog';
+import { buildRssItem } from './rss-item';
 
 describe('buildRssItem', async () => {
 	const post = await getEntry('blog', 'test');

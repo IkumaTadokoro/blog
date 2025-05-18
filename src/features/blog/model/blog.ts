@@ -1,12 +1,5 @@
-import { loadRenderers } from 'astro:container';
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
-import { render } from 'astro:content';
-import { getContainerRenderer } from '@astrojs/mdx';
-import type { RSSFeedItem } from '@astrojs/rss';
-import { experimental_AstroContainer } from 'astro/container';
-import sanitizeHtml from 'sanitize-html';
-import { SITE } from '../../../shared/config/site';
 
 export type Collections = Array<CollectionEntry<'blog'>>;
 
@@ -26,28 +19,4 @@ export function sortByDate(collections: Collections) {
 
 export function buildUrl(id: string) {
 	return `/blog/${id}`;
-}
-
-export async function buildRssItem(post: CollectionEntry<'blog'>): Promise<RSSFeedItem> {
-	const container = await experimental_AstroContainer.create({
-		renderers: await loadRenderers([getContainerRenderer()]),
-	});
-	const content = await container.renderToString((await render(post)).Content);
-	const sanitizedContent = sanitizeHtml(content, {
-		allowedTags: [...sanitizeHtml.defaults.allowedTags, 'img'],
-	});
-	const rawText = sanitizedContent.replace(/<\/?[^>]+(>|$)/g, '');
-	const plainText = rawText.replace(/\s+/g, '').trim();
-	const summary = plainText.slice(0, 100);
-
-	const rssItem: RSSFeedItem = {
-		title: post.data.title,
-		description: summary,
-		link: buildUrl(post.id),
-		pubDate: post.data.publishDate,
-		content: sanitizedContent,
-		author: SITE.author,
-	};
-
-	return rssItem;
 }

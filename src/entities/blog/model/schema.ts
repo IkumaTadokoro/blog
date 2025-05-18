@@ -1,3 +1,4 @@
+import type { CollectionEntry } from 'astro:content';
 import { z } from 'zod';
 
 export const schema = z.object({
@@ -8,3 +9,5 @@ export const schema = z.object({
 	draft: z.boolean().default(true),
 	tags: z.optional(z.array(z.string())),
 });
+
+export type BlogEntry = CollectionEntry<'blog'>;
