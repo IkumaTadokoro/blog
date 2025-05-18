@@ -3,7 +3,7 @@
 @import "@fontsource-variable/noto-sans-jp";
 
 @import "tailwindcss";
-@config "../../../../../tailwind.config.mjs";
+@config "../../../../tailwind.config.mjs";
 @plugin "@tailwindcss/typography";
 
 .dark .invert-theme,
