@@ -45,16 +45,18 @@ const { Content, headings } = await render(entry);
       <article class={"break-all prose"}>
         <Content />
       </article>
-      <aside class="hidden lg:grid gap-12">
-        <Toc headings={headings} />
-        <section>
-          <h2
-            class="text-lg font-bold mb-4 border-b border-foreground/10 pb-2 text-foreground"
-          >
-            書いた人
-          </h2>
-          <Author />
-        </section>
+      <aside class="hidden lg:grid grid-rows-[max-content_1fr]">
+        <div class="sticky top-4 space-y-12">
+          <Toc headings={headings} />
+          <section>
+            <h2
+              class="text-lg font-bold mb-4 border-b border-foreground/10 pb-2 text-foreground"
+            >
+              書いた人
+            </h2>
+            <Author />
+          </section>
+        </div>
       </aside>
     </div>
   </div>
