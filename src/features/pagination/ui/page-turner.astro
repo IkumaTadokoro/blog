@@ -1,7 +1,6 @@
 ---
 import type { Page } from "astro";
 import { Icon } from "astro-icon/components";
-import Link from "../../../shared/ui/link/index.astro";
 
 type Props = Pick<Page, "url">;
 
@@ -12,9 +11,9 @@ const { url } = Astro.props as Props;
   <li>
     {
       url.prev ? (
-        <Link
-          to={url.prev}
-          className="cursor-pointer hover:opacity-70"
+        <a
+          href={url.prev}
+          class="cursor-pointer hover:opacity-70"
           aria-label="前のページへ"
         >
           <Icon
@@ -23,7 +22,7 @@ const { url } = Astro.props as Props;
             title="前のページへ"
             class="text-foreground rounded-full border border-border aspect-square p-1 bg-background"
           />
-        </Link>
+        </a>
       ) : (
         <Icon
           size={32}
@@ -37,9 +36,9 @@ const { url } = Astro.props as Props;
   <li>
     {
       url.next ? (
-        <Link
-          to={url.next}
-          className="cursor-pointer hover:opacity-70"
+        <a
+          href={url.next}
+          class="cursor-pointer hover:opacity-70"
           aria-label="次のページへ"
         >
           <Icon
@@ -48,7 +47,7 @@ const { url } = Astro.props as Props;
             title="次のページへ"
             class="text-foreground rounded-full border border-border aspect-square p-1 bg-background"
           />
-        </Link>
+        </a>
       ) : (
         <Icon
           size={32}

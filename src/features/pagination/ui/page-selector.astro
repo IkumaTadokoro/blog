@@ -3,7 +3,6 @@ import type { CollectionKey } from "astro:content";
 import type { Page } from "astro";
 import { Icon } from "astro-icon/components";
 import { cn } from "../../../shared/lib/cn";
-import Link from "../../../shared/ui/link/index.astro";
 
 type Props = {
   page: Page;
@@ -56,9 +55,9 @@ const isLastPage = page.currentPage === page.lastPage;
     tabindex="-1"
   >
     <li tabindex="-1" role="menuitem" id="initial-page">
-      <Link
-        to={initialPageUrl}
-        className={cn(
+      <a
+        href={initialPageUrl}
+        class={cn(
           "block px-4 py-3 text-base",
           isInitialPage
             ? "cursor-not-allowed text-border"
@@ -66,13 +65,13 @@ const isLastPage = page.currentPage === page.lastPage;
         )}
       >
         最初のページへ移動する
-      </Link>
+      </a>
     </li>
     <div class="border-b border-muted"></div>
     <li tabindex="-1" role="menuitem" id="last-page">
-      <Link
-        to={lastPageUrl}
-        className={cn(
+      <a
+        href={lastPageUrl}
+        class={cn(
           "block px-4 py-3 text-base",
           isLastPage
             ? "cursor-not-allowed text-border"
@@ -80,7 +79,7 @@ const isLastPage = page.currentPage === page.lastPage;
         )}
       >
         最後のページへ移動する
-      </Link>
+      </a>
     </li>
   </ul>
 </div>

@@ -1,8 +1,9 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import Image from "astro/components/Image.astro";
+import Link from "../../shared/ui/link/index.astro";
 import Time from "../../shared/ui/time/index.astro";
-import { buildUrl, getTalkId } from "./talks";
+import { getTalkId } from "./talks";
 
 type Props = {
   talk: CollectionEntry<"talks">;
@@ -13,9 +14,10 @@ const id = getTalkId(talk);
 const image = talk.data.enclosures.at(0);
 ---
 
-<a
+<Link
   class="rounded-md grid gap-1 grid-rows-subgrid row-span-3"
-  href={buildUrl(id)}
+  to="/talk/[id]"
+  params={{ id }}
 >
   <figure class="aspect-video relative">
     {
@@ -34,4 +36,4 @@ const image = talk.data.enclosures.at(0);
   <div class="text-right">
     <Time size="small" date={talk.data.pubdate!} />
   </div>
-</a>
+</Link>

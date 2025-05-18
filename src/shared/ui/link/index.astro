@@ -1,13 +1,27 @@
 ---
-type Props = {
-  to: string;
-  className?: string;
-  tabindex?: string;
-};
+import type { Route, RouteOptions } from "astro-typesafe-routes/path";
+import { $path } from "astro-typesafe-routes/path";
+import type { HTMLAttributes } from "astro/types";
 
-const { to, className } = Astro.props as Props;
+export type Props<T extends Route> = Omit<HTMLAttributes<"a">, "href"> &
+  RouteOptions<T> & {
+    className?: string;
+  };
+
+const {
+  to,
+  params,
+  search,
+  searchParams,
+  hash,
+  trailingSlash,
+  className,
+  ...anchorProps
+} = Astro.props;
+
+const href = $path({ to, params, search, searchParams, hash, trailingSlash });
 ---
 
-<a href={to} class:list={["hover:opacity-75", className]}>
+<a href={href} {...anchorProps} class:list={["hover:opacity-75", className]}>
   <slot />
 </a>

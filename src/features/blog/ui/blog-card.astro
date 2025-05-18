@@ -1,7 +1,8 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import { $path } from "astro-typesafe-routes/path";
+import Link from "../../../shared/ui/link/index.astro";
 import Time from "../../../shared/ui/time/index.astro";
-import { buildUrl } from "../../blog/model/blog";
 
 type Props = {
   blog: CollectionEntry<"blog">;
@@ -13,18 +14,22 @@ const { blog } = Astro.props as Props;
 <article
   class="card grid gap-4"
   aria-labelledby={blog.id}
-  data-href={buildUrl(blog.id)}
+  data-href={$path({
+    to: "/blog/[id]",
+    params: { id: blog.id },
+  })}
 >
   <Time date={blog.data.publishDate} label="投稿日" />
 
   <hgroup id={blog.id} class="grid gap-2">
     <h3>
-      <a
+      <Link
         class="leading-relaxed break-all line-clamp-3 text-heading-18 sm:text-heading-20 font-bold text-foreground"
-        href={buildUrl(blog.id)}
+        to="/blog/[id]"
+        params={{ id: blog.id }}
       >
         {blog.data.title}
-      </a>
+      </Link>
     </h3>
     <p
       class="text-gray-800 text-label-13 sm:text-label-14 leading-6 sm:leading-7 tracking-wide"
@@ -32,14 +37,15 @@ const { blog } = Astro.props as Props;
       {blog.data.description ?? "No description"}
     </p>
   </hgroup>
-  <a
+  <Link
     class="leading-relaxed break-all line-clamp-3 text-copy-14 text-gray-900 text-right"
-    href={buildUrl(blog.id)}
+    to="/blog/[id]"
+    params={{ id: blog.id }}
     tabindex="-1"
   >
     Read more
     <span class="sr-only"> {blog.data.title}の記事を読む</span>
-  </a>
+  </Link>
 </article>
 
 <script>

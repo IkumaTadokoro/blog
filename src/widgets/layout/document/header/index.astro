@@ -10,7 +10,11 @@ import SiteLogo from "./site-logo/site-logo.astro";
   >
     <SiteLogo />
     <div class="flex items-center gap-4">
-      <Link to="/blog" className="text-lg text-foreground font-bold">blog</Link>
+      <Link
+        to="/blog/[page]"
+        params={{ page: 1 }}
+        className="text-lg text-foreground font-bold">blog</Link
+      >
       <Link to="/talk" className="text-lg text-foreground font-bold">talk</Link>
       <ThemeSelector />
     </div>

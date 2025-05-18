@@ -11,10 +11,12 @@ import tailwindcss from "@tailwindcss/vite";
 
 import og from "astro-og";
 
+import typesafeRoutes from "astro-typesafe-routes";
+
 // https://astro.build/config
 export default defineConfig({
   site: SITE.siteUrl,
-  integrations: [react(), icon(), expressiveCodePlugin, mdx(), og()],
+  integrations: [react(), icon(), expressiveCodePlugin, mdx(), og(), typesafeRoutes()],
 
   markdown: {
     rehypePlugins,

@@ -1,7 +1,7 @@
 ---
-import type { CollectionEntry } from "astro:content";
 import type { GetStaticPathsOptions, Page } from "astro";
 import Author from "../../entities/author/ui/author/index.astro";
+import type { BlogEntry } from "../../entities/blog/model/schema";
 import { getBlogs } from "../../features/blog/model/blog";
 import BlogCard from "../../features/blog/ui/blog-card.astro";
 import Pagination from "../../features/pagination/ui/pagination.astro";
@@ -11,9 +11,11 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
   return paginate(await getBlogs(), { pageSize: 50 });
 }
 
-const { page } = Astro.props as {
-  page: Page<CollectionEntry<"blog">>;
-};
+interface Props {
+  page: Page<BlogEntry>;
+}
+
+const { page } = Astro.props;
 ---
 
 <Document>
