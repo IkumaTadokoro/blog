@@ -1,3 +1,16 @@
-<div class="w-6 aspect-square hover:opacity-70 transition-opacity rounded-md">
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<div
+  class:list={[
+    "w-6 aspect-square hover:opacity-70 transition-opacity rounded-md",
+    className,
+  ]}
+>
   <slot />
 </div>

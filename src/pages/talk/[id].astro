@@ -1,6 +1,7 @@
 ---
 import { render } from "astro:content";
 import { createMarkdownProcessor } from "@astrojs/markdown-remark";
+import Document from "../../app/ui/layout/document/index.astro";
 import Author from "../../entities/author/ui/author/index.astro";
 import Talk from "../../features/talk/talk.astro";
 import {
@@ -8,7 +9,6 @@ import {
   getTalkId,
   getTalks,
 } from "../../features/talk/talks";
-import Document from "../../shared/ui/layout/document/index.astro";
 
 export async function getStaticPaths() {
   const talksEntries = await getTalks();

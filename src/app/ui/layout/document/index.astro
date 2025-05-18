@@ -5,8 +5,8 @@ import { ClientRouter } from "astro:transitions";
 import ogImage from "../../../../assets/ogp.png";
 import Footer from "../../../../components/ui/footer.astro";
 import Header from "../../../../components/ui/header.astro";
-import ThemeProvider from "../../../../components/ui/theme-provider.astro";
-import { SITE } from "../../../config/site";
+import { SITE } from "../../../../shared/config/site";
+import ThemeProvider from "../../../../widgets/theme/provider/index.astro";
 
 type Props = {
   title?: string;

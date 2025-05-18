@@ -1,11 +1,11 @@
 ---
 import { render } from "astro:content";
+import Document from "../../app/ui/layout/document/index.astro";
 // import { Icon } from "astro-icon/components";
 import Author from "../../components/ui/author.astro";
 import { getBlogs } from "../../features/blog/model/blog";
 import DraftBadge from "../../features/blog/ui/DraftBadge.astro";
 import Blog from "../../features/blog/ui/blog.astro";
-import Document from "../../shared/ui/layout/document/index.astro";
 
 export async function getStaticPaths() {
   const blogEntries = await getBlogs();
