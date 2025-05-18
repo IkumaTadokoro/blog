@@ -1,8 +1,5 @@
 import { getCollection } from 'astro:content';
-import type { CollectionEntry } from 'astro:content';
-import type { BlogEntry } from '../../../entities/blog/model/schema';
-
-export type Collections = Array<CollectionEntry<'blog'>>;
+import type { BlogEntry } from '../model/schema';
 
 type Filter = (entry: BlogEntry) => boolean;
 
@@ -20,7 +17,7 @@ const sortByDateDesc = (a: BlogEntry, b: BlogEntry) => {
  * @params filter - 取得した記事に対するフィルタ。デフォルト：本番環境ではドラフト記事を除外します。
  * @return ブログ記事の一覧。公開日の降順でソートされています。
  */
-export async function getBlogs(filter: Filter = defaultFilter) {
+export async function listBlog(filter: Filter = defaultFilter) {
 	const post = await getCollection('blog', filter);
 	return post.sort(sortByDateDesc);
 }

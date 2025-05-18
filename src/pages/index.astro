@@ -1,10 +1,10 @@
 ---
 import Author from "../entities/author/ui/author/index.astro";
-import { getBlogs } from "../features/blog/model/blog";
-import BlogCard from "../features/blog/ui/blog-card.astro";
+import { listBlog } from "../entities/blog/api";
+import BlogCard from "../entities/blog/ui/blog-card/index.astro";
 import Document from "../widgets/layout/document/index.astro";
 
-const allBlogs = await getBlogs();
+const allBlogs = await listBlog();
 const blogs = allBlogs.slice(0, 20);
 ---
 

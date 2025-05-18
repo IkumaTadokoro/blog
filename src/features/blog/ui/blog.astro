@@ -2,9 +2,9 @@
 import Time from "../../../shared/ui/time/index.astro";
 import "../../../shared/ui/markdown/index.css";
 import { render } from "astro:content";
-import Author from "../../../entities/author/ui/author/index.astro";
 import type { BlogEntry } from "../../../entities/blog/model/schema";
 import Toc from "./toc.astro";
+import Writer from "./writer.astro";
 
 interface Props {
   entry: BlogEntry;
@@ -27,15 +27,13 @@ const { Content, headings } = await render(entry);
         </p>
       )
     }
-    <hgroup class="space-y-4">
+    <hgroup class="space-y-4 text-center">
       <h2
-        class="text-foreground text-center text-heading-20 sm:text-heading-32 font-bold break-all tracking-widest !leading-relaxed"
+        class="text-foreground text-heading-20 sm:text-heading-32 font-bold break-all tracking-widest !leading-relaxed"
       >
         {title}
       </h2>
-      <div
-        class="flex items-center justify-center gap-2 text-md text-muted-foreground"
-      >
+      <div class="text-md text-muted-foreground">
         <Time date={publishDate} />
       </div>
     </hgroup>
@@ -48,26 +46,12 @@ const { Content, headings } = await render(entry);
       <aside class="hidden lg:grid grid-rows-[max-content_1fr]">
         <div class="sticky top-4 space-y-12">
           <Toc headings={headings} />
-          <section>
-            <h2
-              class="text-lg font-bold mb-4 border-b border-foreground/10 pb-2 text-foreground"
-            >
-              書いた人
-            </h2>
-            <Author />
-          </section>
+          <Writer />
         </div>
       </aside>
     </div>
   </div>
   <aside class="block lg:hidden">
-    <section>
-      <h2
-        class="text-lg font-bold mb-4 border-b border-foreground/10 pb-2 text-foreground"
-      >
-        書いた人
-      </h2>
-      <Author />
-    </section>
+    <Writer />
   </aside>
 </div>
