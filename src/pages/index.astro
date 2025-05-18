@@ -9,7 +9,7 @@ const blogs = allBlogs.slice(0, 20);
 ---
 
 <Document>
-  <section class="grid gap-8 grid-rows-[max_content-1fr_max-content]">
+  <section class="grid gap-12 grid-rows-[max_content-1fr_max-content]">
     <div class="mx-[calc(50%-50cqi)] sticky top-0 py-4">
       <div
         class="flex justify-between items-center max-w-screen-md mx-auto px-4"
@@ -22,8 +22,6 @@ const blogs = allBlogs.slice(0, 20);
       </div>
     </div>
     <BlogList page={blogs} />
-    <div>
-      <Author />
-    </div>
+    <Author />
   </section>
 </Document>
