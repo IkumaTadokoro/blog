@@ -2,10 +2,10 @@
 import "./globalStyles.css";
 import "./global.css";
 import { ClientRouter } from "astro:transitions";
-import Header from "../../../components/ui/header.astro";
 import ThemeProvider from "../../../features/select-theme/ui/theme-provider/index.astro";
 import { SITE } from "../../../shared/config/site";
-import Footer from "../../../widgets/footer/index.astro";
+import Footer from "./footer/index.astro";
+import Header from "./header/index.astro";
 import ogImage from "./ogp.png";
 
 type Props = {
