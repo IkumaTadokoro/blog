@@ -91,7 +91,7 @@ const isLastPage = page.currentPage === page.lastPage;
    * allowing the user to open and navigate the dropdown menu using the keyboard.
    * The function also handles closing the menu when the user clicks outside of it.
    */
-  function menuInitilization() {
+  function menuInitialization() {
     const button = document.getElementById(
       "page-selector"
     ) as HTMLButtonElement;
@@ -184,5 +184,5 @@ const isLastPage = page.currentPage === page.lastPage;
     button?.focus();
     document.documentElement.removeEventListener("click", closeMenu);
   }
-  document.addEventListener("astro:page-load", menuInitilization);
+  document.addEventListener("astro:page-load", menuInitialization);
 </script>
