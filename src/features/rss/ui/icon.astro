@@ -1,0 +1,14 @@
+---
+import RSS from "./rss.svg";
+
+import { SITE } from "../../../shared/config/site";
+import StyledIcon from "../../../shared/ui/styled-icon/index.astro";
+
+const url = `${SITE.siteUrl}/rss.xml`;
+---
+
+<a href={url}>
+  <StyledIcon>
+    <RSS />
+  </StyledIcon>
+</a>

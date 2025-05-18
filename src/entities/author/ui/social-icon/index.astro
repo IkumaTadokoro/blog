@@ -1,0 +1,31 @@
+---
+import GitHub from "./icons/Github.svg";
+import SizuMe from "./icons/SizuMe.svg";
+import SpeakerDeck from "./icons/SpeakerDeck.svg";
+import X from "./icons/X.svg";
+import Zenn from "./icons/Zenn.svg";
+
+import { condition } from "../../../../shared/lib/condition";
+import { Author, type SocialAccount } from "../../model";
+
+import StyledIcon from "../../../../shared/ui/styled-icon/index.astro";
+
+interface Props {
+  serviceName: SocialAccount;
+}
+const { serviceName } = Astro.props;
+const serviceUrl = Author.social[serviceName];
+---
+
+<a href={serviceUrl}>
+  <StyledIcon>
+    {
+      condition(serviceName)
+        .case("GitHub", () => <GitHub />)
+        .case("X", () => <X />)
+        .case("Zenn", () => <Zenn />)
+        .case("SpeakerDeck", () => <SpeakerDeck />)
+        .case("SizuMe", () => <SizuMe />).done
+    }
+  </StyledIcon>
+</a>

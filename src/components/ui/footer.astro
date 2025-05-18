@@ -1,7 +1,7 @@
 ---
+import SocialIcon from "../../entities/author/ui/social-icon/index.astro";
+import RssIcon from "../../features/rss/ui/icon.astro";
 import Copyright from "./copyright.astro";
-import RssIcon from "./rss-icon.astro";
-import SocialIcon from "./social-icon/social-icon.astro";
 ---
 
 <footer class="bg-background border-t border-muted-foreground">
@@ -10,11 +10,11 @@ import SocialIcon from "./social-icon/social-icon.astro";
   >
     <Copyright />
     <div class="flex gap-1.5 sm:gap-3">
-      <SocialIcon icon="Github" />
-      <SocialIcon icon="X" />
-      <SocialIcon icon="Zenn" />
-      <SocialIcon icon="SpeakerDeck" />
-      <SocialIcon icon="SizuMe" />
+      <SocialIcon serviceName="GitHub" />
+      <SocialIcon serviceName="X" />
+      <SocialIcon serviceName="Zenn" />
+      <SocialIcon serviceName="SpeakerDeck" />
+      <SocialIcon serviceName="SizuMe" />
       <RssIcon />
     </div>
   </div>
