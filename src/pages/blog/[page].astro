@@ -1,9 +1,9 @@
 ---
 import type { GetStaticPathsOptions, Page } from "astro";
-import BlogCard from "../..//entities/blog/ui/blog-card/index.astro";
 import Author from "../../entities/author/ui/author/index.astro";
 import { listBlog } from "../../entities/blog/api";
 import type { BlogEntry } from "../../entities/blog/model/schema";
+import BlogList from "../../features/blog/ui/blog-list.astro";
 import Pagination from "../../features/pagination/ui/pagination.astro";
 import Document from "../../widgets/layout/document/index.astro";
 
@@ -34,47 +34,9 @@ const { page } = Astro.props;
         </div>
       </div>
     </div>
-    <ul class="grid place-self-start gap-y-8">
-      {
-        page.data.map((blog) => (
-          <li>
-            <BlogCard blog={blog} />
-          </li>
-        ))
-      }
-    </ul>
+    <BlogList page={page.data} />
     <div>
       <Author />
     </div>
   </section>
 </Document>
-
-<style is:global>
-  ul::after {
-    border-radius: 1rem;
-    content: "";
-    position: absolute;
-    background: hsl(0 0% 10%);
-    pointer-events: none;
-    z-index: -2;
-    position-anchor: var(--anchor);
-    inset: calc(anchor(top) - 20px) calc(anchor(right) - 20px)
-      calc(anchor(bottom) - 20px) calc(anchor(left) - 20px);
-    transition: inset 0.2s;
-  }
-
-  [data-theme="light"] ul::after {
-    z-index: 0;
-    background: var(--ds-gray-200);
-    opacity: 0.2;
-  }
-
-  ul:has(li:hover) {
-    --anchor: --active;
-    --active: 1;
-  }
-  li:hover {
-    anchor-name: --active;
-    --li-active: 1;
-  }
-</style>

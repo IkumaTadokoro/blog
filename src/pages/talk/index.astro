@@ -1,8 +1,8 @@
 ---
-import TalkCard from "../../entities/talk/ui/talk-card/index.astro";
 import Document from "../../widgets/layout/document/index.astro";
 
 import { getTalks, groupByTalkYear } from "../../entities/talk/api";
+import Talks from "../../features/talk/ui/talks.astro";
 
 const talks = await getTalks();
 const talksByYear = await groupByTalkYear(talks);
@@ -21,45 +21,9 @@ const talksByYear = await groupByTalkYear(talks);
               {year}
             </h3>
           </div>
-          <ul class="grid gap-16 gap-x-6 gap-y-8 sm:grid-cols-2 z-10">
-            {talks.map((talk) => (
-              <li>
-                <TalkCard talk={talk} />
-              </li>
-            ))}
-          </ul>
+          <Talks talks={talks} />
         </section>
       ))
     }
   </div>
 </Document>
-
-<style is:global>
-  ul::after {
-    border-radius: 1rem;
-    content: "";
-    position: absolute;
-    background: hsl(0 0% 10%);
-    pointer-events: none;
-    z-index: -2;
-    position-anchor: var(--anchor);
-    inset: calc(anchor(top) - 8px) calc(anchor(right) - 8px)
-      calc(anchor(bottom) - 16px) calc(anchor(left) - 8px);
-    transition: inset 0.2s;
-  }
-
-  [data-theme="light"] ul::after {
-    z-index: 0;
-    background: var(--ds-gray-200);
-    opacity: 0.2;
-  }
-
-  ul:has(li:hover) {
-    --anchor: --active;
-    --active: 1;
-  }
-  li:hover {
-    anchor-name: --active;
-    --li-active: 1;
-  }
-</style>

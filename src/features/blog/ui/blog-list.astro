@@ -1,0 +1,50 @@
+---
+import type { BlogEntry } from "../../../entities/blog/model/schema";
+import BlogCard from "../../../entities/blog/ui/blog-card/index.astro";
+
+interface Props {
+  page: Array<BlogEntry>;
+}
+
+const { page } = Astro.props;
+---
+
+<ul class="grid place-self-start gap-y-8">
+  {
+    page.map((blog) => (
+      <li>
+        <BlogCard blog={blog} />
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  ul::after {
+    border-radius: 1rem;
+    content: "";
+    position: absolute;
+    background: hsl(0 0% 10%);
+    pointer-events: none;
+    z-index: -2;
+    position-anchor: var(--anchor);
+    inset: calc(anchor(top) - 20px) calc(anchor(right) - 20px)
+      calc(anchor(bottom) - 20px) calc(anchor(left) - 20px);
+    transition: inset 0.2s;
+  }
+
+  [data-theme="light"] ul::after {
+    z-index: 0;
+    background: var(--ds-gray-200);
+    opacity: 0.2;
+  }
+
+  ul:has(li:hover) {
+    --anchor: --active;
+    --active: 1;
+  }
+  li:hover {
+    anchor-name: --active;
+    --li-active: 1;
+  }
+</style>
