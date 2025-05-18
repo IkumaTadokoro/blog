@@ -1,6 +1,7 @@
 ---
 import Time from "../../shared/ui/time/index.astro";
 import "../../shared/ui/markdown/index.css";
+import Author from "../../entities/author/ui/author/index.astro";
 
 interface Props {
   title: string;
@@ -10,20 +11,24 @@ interface Props {
 const { title, publishDate } = Astro.props;
 ---
 
-<div class={"space-y-8 sm:space-y-16"}>
-  <hgroup class="space-y-4">
-    <h2
-      class="text-center text-2xl sm:text-3xl font-bold break-all tracking-widest !leading-relaxed"
-    >
-      {title}
-    </h2>
-    <div
-      class="flex items-center justify-center gap-2 text-md text-muted-foreground"
-    >
-      <Time date={publishDate} />
-    </div>
-  </hgroup>
-  <article class={"break-all prose"}>
-    <slot />
-  </article>
+<div class="grid grid-rows-[1fr_max-content] gap-x-8 min-h-full sm:pt-12">
+  <div class={"space-y-8 sm:space-y-16"}>
+    <hgroup class="space-y-4">
+      <h2
+        class="text-center text-2xl sm:text-3xl font-bold break-all tracking-widest !leading-relaxed"
+      >
+        {title}
+      </h2>
+      <div
+        class="flex items-center justify-center gap-2 text-md text-muted-foreground"
+      >
+        <Time date={publishDate} />
+      </div>
+    </hgroup>
+    <article class={"break-all prose"}>
+      <slot name="slide" />
+      <slot name="content" />
+    </article>
+  </div>
+  <Author />
 </div>

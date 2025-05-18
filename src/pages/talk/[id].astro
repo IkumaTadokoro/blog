@@ -1,7 +1,6 @@
 ---
 import { render } from "astro:content";
 import { createMarkdownProcessor } from "@astrojs/markdown-remark";
-import Author from "../../entities/author/ui/author/index.astro";
 import Talk from "../../features/talk/talk.astro";
 import {
   getTalkEmbedUrl,
@@ -34,10 +33,7 @@ const { Content } = await render({
 
 <Document title={`${entry.data.title!}`}>
   <Talk title={entry.data.title!} publishDate={entry.data.pubdate!}>
-    <Fragment set:html={iframe} />
-    <Content />
+    <Fragment set:html={iframe} slot="slide" />
+    <Content slot="content" />
   </Talk>
-  <div class="mt-16">
-    <Author />
-  </div>
 </Document>
