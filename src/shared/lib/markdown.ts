@@ -7,6 +7,7 @@ import rehypeSlugPlugin from 'rehype-slug';
 
 import type { RehypePlugins } from 'astro';
 
+import { createMarkdownProcessor } from '@astrojs/markdown-remark';
 import type { Options as RehypeAutolinkHeadingsOptions } from 'rehype-autolink-headings';
 import type { Options as RehypeExternalLinksOptions } from 'rehype-external-links';
 
@@ -46,3 +47,10 @@ export const rehypePlugins: RehypePlugins = [
 		} satisfies RehypeExternalLinksOptions,
 	],
 ];
+
+export const buildMarkdownContent = async (content: string) => {
+	const processor = await createMarkdownProcessor();
+	const markdownContent = await processor.render(content);
+
+	return markdownContent.code;
+};

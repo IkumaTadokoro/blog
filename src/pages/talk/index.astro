@@ -1,8 +1,8 @@
 ---
-import TalkCard from "../../features/talk/talk-card.astro";
+import TalkCard from "../../entities/talk/ui/talk-card/index.astro";
 import Document from "../../widgets/layout/document/index.astro";
 
-import { getTalks, groupByTalkYear } from "../../features/talk/talks";
+import { getTalks, groupByTalkYear } from "../../entities/talk/api";
 
 const talks = await getTalks();
 const talksByYear = await groupByTalkYear(talks);

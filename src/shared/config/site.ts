@@ -12,4 +12,12 @@ export const SITE = {
 	author: 'ikuma-t',
 	description: 'プログラマikuma-tの個人サイト',
 	title: 'ikuma-t.com',
-} satisfies Site;
+} as const satisfies Site;
+
+export const SOCIAL_ACCOUNT = {
+	GitHub: 'https://github.com/IKumaTadokoro',
+	X: 'https://x.com/ikumatdkr',
+	Zenn: 'https://zenn.dev/ikuma',
+	SpeakerDeck: 'https://speakerdeck.com/ikumatadokoro',
+	SizuMe: 'https://sizu.me/ikuma',
+} as const;

@@ -5,16 +5,18 @@ import SpeakerDeck from "./icons/SpeakerDeck.svg";
 import X from "./icons/X.svg";
 import Zenn from "./icons/Zenn.svg";
 
-import { condition } from "../../../../shared/lib/condition";
-import { Author, type SocialAccount } from "../../model";
+import { SOCIAL_ACCOUNT } from "../../../../../shared/config/site";
+import { condition } from "../../../../../shared/lib/condition";
 
-import StyledIcon from "../../../../shared/ui/styled-icon/index.astro";
+import StyledIcon from "../../../../../shared/ui/styled-icon/index.astro";
+
+type SocialAccount = keyof typeof SOCIAL_ACCOUNT;
 
 interface Props {
   serviceName: SocialAccount;
 }
 const { serviceName } = Astro.props;
-const serviceUrl = Author.social[serviceName];
+const serviceUrl = SOCIAL_ACCOUNT[serviceName];
 ---
 
 <a href={serviceUrl}>

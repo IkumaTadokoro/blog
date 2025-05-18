@@ -1,39 +1,28 @@
 ---
 import { render } from "astro:content";
-import { createMarkdownProcessor } from "@astrojs/markdown-remark";
-import Talk from "../../features/talk/talk.astro";
-import {
-  getTalkEmbedUrl,
-  getTalkId,
-  getTalks,
-} from "../../features/talk/talks";
+import { getTalk, getTalks } from "../../entities/talk/api";
+import { TalkID } from "../../entities/talk/model/schema";
+import Talk from "../../features/talk/ui/talk.astro";
 import Document from "../../widgets/layout/document/index.astro";
 
 export async function getStaticPaths() {
   const talksEntries = await getTalks();
   return talksEntries.map((entry) => {
     return {
-      params: { id: getTalkId(entry) },
+      params: { id: TalkID(entry) },
       props: { entry },
     };
   });
 }
 
-const processor = await createMarkdownProcessor();
-const { entry } = Astro.props;
-const iframe = await getTalkEmbedUrl(entry.data.link, entry.data.title ?? "");
-const markdown = await processor.render(entry.data.description ?? "");
-const { Content } = await render({
-  ...entry,
-  rendered: {
-    html: markdown.code,
-  },
-});
+const { entry: originalEntry } = Astro.props;
+const { slideIframeString, entry } = await getTalk(originalEntry);
+const { Content } = await render(entry);
 ---
 
 <Document title={`${entry.data.title!}`}>
   <Talk title={entry.data.title!} publishDate={entry.data.pubdate!}>
-    <Fragment set:html={iframe} slot="slide" />
+    <Fragment set:html={slideIframeString} slot="slide" />
     <Content slot="content" />
   </Talk>
 </Document>
