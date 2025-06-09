@@ -10,7 +10,8 @@
 			"pnpm-lock.yaml",
 			"package.json",
 			".vscode/",
-			"tsconfig.json"
+			"tsconfig.json",
+			".claude/settings.local.json"
 		]
 	},
 	"formatter": {
@@ -40,8 +41,12 @@
 		"enabled": true,
 		"rules": {
 			"recommended": true,
-			"a11y": { "all": true },
-			"complexity": { "all": true },
+			"a11y": {
+				"all": true
+			},
+			"complexity": {
+				"all": true
+			},
 			"correctness": {},
 			"nursery": {
 				"all": true,
@@ -50,8 +55,12 @@
 				"noSecrets": "off",
 				"noProcessEnv": "off"
 			},
-			"performance": { "all": true },
-			"security": { "all": true },
+			"performance": {
+				"all": true
+			},
+			"security": {
+				"all": true
+			},
 			"style": {
 				"all": true,
 				"noDefaultExport": "off",
