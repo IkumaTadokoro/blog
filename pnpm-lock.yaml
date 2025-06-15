@@ -48,11 +48,11 @@ importers:
         specifier: 5.2.6
         version: 5.2.6
       '@fontsource-variable/noto-sans-jp':
-        specifier: 5.2.5
-        version: 5.2.5
+        specifier: 5.2.6
+        version: 5.2.6
       '@iconify-json/lucide':
-        specifier: 1.2.48
-        version: 1.2.48
+        specifier: 1.2.49
+        version: 1.2.49
       '@tailwindcss/vite':
         specifier: 4.1.10
         version: 4.1.10(vite@6.3.5(@types/node@22.15.31)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.5.0))
@@ -846,11 +846,11 @@ packages:
   '@fontsource-variable/montserrat@5.2.6':
     resolution: {integrity: sha512-1eHefcz9ZXSMjZPckKCWSYd8rLjUpmzQIsNO8DuyU0IdPvsqletPvSIJmztr0sCU6sX4EFKsSHxJWawjmROp2A==}
 
-  '@fontsource-variable/noto-sans-jp@5.2.5':
-    resolution: {integrity: sha512-+ieDlugS+FCva2eLahVgybiaPMs1xLcBYByflzw1WghvFPFNJzsQHw85N+dadXzaqccVTiVDGYW4E0bMv4CHAQ==}
+  '@fontsource-variable/noto-sans-jp@5.2.6':
+    resolution: {integrity: sha512-YjN8UF1hX8ZFkYx95NMz8XeojsCIF5dGPu1htoWkbXyTZj3Z29cxDT8glaT/cOg1BstyOlmtvNC8crPF5Csj/w==}
 
-  '@iconify-json/lucide@1.2.48':
-    resolution: {integrity: sha512-jDVqOHEF7XUwHJzx7fhwVXnx638lL89wOfmBob5UJofSGGIYV544zktmHr4CzKePslDBgl3MPKEpmFU/RfzppQ==}
+  '@iconify-json/lucide@1.2.49':
+    resolution: {integrity: sha512-Z6j8QKE7dcM3jDlstxTONpsw7GSJwzeVcre2xXqCmg+QvLoqmJJEugQ3PcGqpp6dtBIcBOtE6+LUeY5OlXmCuA==}
 
   '@iconify/tools@4.0.5':
     resolution: {integrity: sha512-l8KoA1lxlN/FFjlMd3vjfD7BtcX/QnFWtlBapILMlJSBgM5zhDYak/ldw/LkKG3258q/0YmXa48sO/QpxX7ptg==}
@@ -4846,9 +4846,9 @@ snapshots:
 
   '@fontsource-variable/montserrat@5.2.6': {}
 
-  '@fontsource-variable/noto-sans-jp@5.2.5': {}
+  '@fontsource-variable/noto-sans-jp@5.2.6': {}
 
-  '@iconify-json/lucide@1.2.48':
+  '@iconify-json/lucide@1.2.49':
     dependencies:
       '@iconify/types': 2.0.0
 
