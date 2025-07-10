@@ -65,7 +65,7 @@
   "packageManager": "pnpm@10.12.1",
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@playwright/test": "1.53.2",
+    "@playwright/test": "1.54.0",
     "@tailwindcss/typography": "0.5.16",
     "@testing-library/dom": "10.4.0",
     "@testing-library/jest-dom": "6.6.3",
