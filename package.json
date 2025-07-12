@@ -65,7 +65,7 @@
   "packageManager": "pnpm@10.12.1",
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@playwright/test": "1.54.0",
+    "@playwright/test": "1.54.1",
     "@tailwindcss/typography": "0.5.16",
     "@testing-library/dom": "10.4.0",
     "@testing-library/jest-dom": "6.6.3",
@@ -76,7 +76,7 @@
     "@vitest/ui": "3.2.4",
     "happy-dom": "18.0.1",
     "jsdom": "26.1.0",
-    "lefthook": "1.12.1",
+    "lefthook": "1.12.2",
     "vitest": "3.2.4",
     "wrangler": "4.24.3"
   }
