@@ -25,8 +25,8 @@
   "dependencies": {
     "@ascorbic/feed-loader": "1.0.4",
     "@astrojs/check": "0.9.4",
-    "@astrojs/markdown-remark": "6.3.2",
-    "@astrojs/mdx": "4.3.0",
+    "@astrojs/markdown-remark": "6.3.3",
+    "@astrojs/mdx": "4.3.1",
     "@astrojs/react": "4.3.0",
     "@astrojs/rss": "4.0.12",
     "@expressive-code/plugin-line-numbers": "0.41.3",
