@@ -1,13 +1,11 @@
 ---
 title: "type-challenges 19日目:20-Promise.all"
-description: "過去ブログからの移行記事"
 publishDate: 2022-06-22
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ## 問題 & 解答
 
 https://github.com/type-challenges/type-challenges/blob/main/questions/00020-medium-promise-all/README.md

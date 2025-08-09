@@ -1,18 +1,18 @@
 ---
-author: ikuma-t
-publishDate: 2024-04-22T22:38:00+09:00
-modDatetime: 2024-04-22T22:38:00+09:00
 title: VSCode Conference Japan 2024 で登壇しました！
-slug: vscode-conference-japan-2024
-featured: true
+publishDate: 2024-04-22T22:38:00+09:00
+category: tech
 draft: false
+description: VSCode Conference Japan で登壇しました！
 tags:
   - idea
   - conference
   - vscode
-description: VSCode Conference Japan で登壇しました！
+author: ikuma-t
+modDatetime: 2024-04-22T22:38:00+09:00
+slug: vscode-conference-japan-2024
+featured: true
 ---
-
 ## VSCode Conference Japan 2024 で登壇しました！
 
 先日 4/20 に開催された [VSCode Conference Japan 2024](https://vscodejp.github.io/conference-2024/) に登壇してきました！

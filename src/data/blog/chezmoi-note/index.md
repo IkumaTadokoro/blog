@@ -1,13 +1,11 @@
 ---
 title: "chezmoiの備忘録"
-description: "過去ブログからの移行記事"
 publishDate: 2022-07-18
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ちょっと設定をいじる時にchezmoiの管理方法をいつも忘れるので書いておく。
 
 https://www.chezmoi.io/#considering-using-chezmoi

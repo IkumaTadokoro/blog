@@ -1,13 +1,11 @@
 ---
 title: "Reactのchildrenとはなにか"
-description: "過去ブログからの移行記事"
 publishDate: 2022-06-07
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ## 要約
 
 Reactの`children`は`props`が保持しているプロパティです。親コンポーネントのタグに入れられた要素を参照します。

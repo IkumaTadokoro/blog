@@ -1,16 +1,16 @@
 ---
-author: ikuma-t
-publishDate: 2022-04-18 18:41:03
-modDatetime: 2022-04-18 18:41:03
 title: "Google Meetで相手の画面やプレゼンテーションが見えないときの対処法"
-slug: "202204181650274863"
-featured: false
+publishDate: 2022-04-18 18:41:03
+category: tech
 draft: false
+description: "Google Meetで相手の画面やプレゼンテーションが見えないときの対処法"
 tags:
   - tool
-description: "Google Meetで相手の画面やプレゼンテーションが見えないときの対処法"
+author: ikuma-t
+modDatetime: 2022-04-18 18:41:03
+slug: "202204181650274863"
+featured: false
 ---
-
 - [Table of contents](#table-of-contents)
 - [相手が見えない...](#相手が見えない)
 - [結論](#結論)

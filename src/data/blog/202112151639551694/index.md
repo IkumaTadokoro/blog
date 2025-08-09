@@ -1,16 +1,16 @@
 ---
-author: ikuma-t
-publishDate: 2021-12-15 16:01:34
-modDatetime: 2021-12-15 16:01:34
 title: "【アウトライナー】transnoというアプリがすごくフィットしている"
-slug: "202112151639551694"
-featured: false
+publishDate: 2021-12-15 16:01:34
+category: idea
 draft: false
+description: "【アウトライナー】transnoというアプリがすごくフィットしている"
 tags:
   - ツール・ガジェット
-description: "【アウトライナー】transnoというアプリがすごくフィットしている"
+author: ikuma-t
+modDatetime: 2021-12-15 16:01:34
+slug: "202112151639551694"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20211215/20211215152126.png
 
 ## ア$1をまとめるときには$1を使っている

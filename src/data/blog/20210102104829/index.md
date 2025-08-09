@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2021-01-02 10:48:29
-modDatetime: 2021-01-02 10:48:29
 title: "「$HOME/git/ignore」と 「$GIT_DIR/info/exclude」と「.gitignore」の使い分け"
-slug: "20210102104829"
-featured: false
+publishDate: 2021-01-02 10:48:29
+category: tech
 draft: false
+description: "「$HOME/git/ignore」と 「$GIT_DIR/info/exclude」と「.gitignore」の使い分け"
 tags:
   - PROGRAMMING
   - Git
-description: "「$HOME/git/ignore」と 「$GIT_DIR/info/exclude」と「.gitignore」の使い分け"
+author: ikuma-t
+modDatetime: 2021-01-02 10:48:29
+slug: "20210102104829"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210102/20210102104736.png
 
  ![f:id:ikmbear:20210102104736p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210102/20210102104736.png) 

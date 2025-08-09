@@ -1,16 +1,16 @@
 ---
-author: ikuma-t
-publishDate: 2020-12-18 06:47:03
-modDatetime: 2020-12-18 06:47:03
 title: "アウトプットを阻むプライドと戦う〜スモールアウトプットのすすめ〜"
-slug: "20201218064703"
-featured: false
+publishDate: 2020-12-18 06:47:03
+category: idea
 draft: false
+description: "アウトプットを阻むプライドと戦う〜スモールアウトプットのすすめ〜"
 tags:
   - fjordbootcamp
-description: "アウトプットを阻むプライドと戦う〜スモールアウトプットのすすめ〜"
+author: ikuma-t
+modDatetime: 2020-12-18 06:47:03
+slug: "20201218064703"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20201217/20201217221725.png
 
 ![f:id:ikmbear:20201217221725p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20201217/20201217221725.png)

@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2020-08-06 00:05:14
-modDatetime: 2020-08-06 00:05:14
 title: "今月のフォカッチャ"
-slug: "20200806000514"
-featured: false
+publishDate: 2020-08-06 00:05:14
+category: idea
 draft: false
+description: "今月のフォカッチャ"
 tags:
   - 日常
   - フォカッチャ
-description: "今月のフォカッチャ"
+author: ikuma-t
+modDatetime: 2020-08-06 00:05:14
+slug: "20200806000514"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20200728/20200728164816.png
 
 今月のと言いながら焼いたのは先月（2020/7）

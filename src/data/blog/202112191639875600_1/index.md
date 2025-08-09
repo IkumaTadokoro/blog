@@ -1,18 +1,18 @@
 ---
-author: ikuma-t
-publishDate: 2021-12-19 10:00:00
-modDatetime: 2021-12-19 10:00:00
 title: "⚡️初めてのLT会 Vol.10で登壇しました！！"
-slug: "202112191639875600_1"
-featured: false
+publishDate: 2021-12-19 10:00:00
+category: idea
 draft: false
+description: "⚡️初めてのLT会 Vol.10で登壇しました！！"
 tags:
   - fjordbootcamp
   - ツール・ガジェット
   - 登壇
-description: "⚡️初めてのLT会 Vol.10で登壇しました！！"
+author: ikuma-t
+modDatetime: 2021-12-19 10:00:00
+slug: "202112191639875600_1"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20211218/20211218205648.png
 
  ![f:id:ikmbear:20211218205648p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20211218/20211218205648.png) 

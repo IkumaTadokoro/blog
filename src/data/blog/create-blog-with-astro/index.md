@@ -1,12 +1,11 @@
 ---
 title: "個人サイトをAstroで作り替えました。"
-description: "もともと Next.js で個人サイトというかブログを作って運用していたのですが、これを Astro に置き換えました"
 publishDate: 2023-01-03
-
-tags: [astro]
+category: tech
 draft: false
+description: "もともと Next.js で個人サイトというかブログを作って運用していたのですが、これを Astro に置き換えました"
+tags: [astro]
 ---
-
 ## Astro でリプレイス
 
 もともと Next.js で個人サイトというかブログを作って運用していたのですが、これを Astro に置き換えました。

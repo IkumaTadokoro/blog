@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2021-10-18 12:02:56
-modDatetime: 2021-10-18 12:02:56
 title: "文字列に数値が含まれているか判定する"
-slug: "202110181634526176"
-featured: false
+publishDate: 2021-10-18 12:02:56
+category: tech
 draft: false
+description: "文字列に数値が含まれているか判定する"
 tags:
   - PROGRAMMING
   - Ruby
-description: "文字列に数値が含まれているか判定する"
+author: ikuma-t
+modDatetime: 2021-10-18 12:02:56
+slug: "202110181634526176"
+featured: false
 ---
-
 Rubyである文字列wordに数値が含まれているかどうかをBoolean値で判定するには次のようにする
 
 ```

@@ -1,13 +1,11 @@
 ---
 title: "type-challenge 8日目: 898-Includes"
-description: "過去ブログからの移行記事"
 publishDate: 2022-06-04
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ## 問題 & 解答
 
 https://github.com/type-challenges/type-challenges/blob/main/questions/00898-easy-includes/README.md

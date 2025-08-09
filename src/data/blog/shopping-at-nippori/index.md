@@ -1,13 +1,12 @@
 ---
 title: 日暮里で散策
-draft: false
 publishDate: 2021-08-01
-
+category: life
+draft: false
 tags:
   - 雑記
   - 日暮里
 ---
-
 ## 日暮里で散策
 
 今日は天気も良かったので、日暮里周辺にちょっとお散歩に出かけてきました。

@@ -1,18 +1,18 @@
 ---
-author: ikuma-t
-publishDate: 2021-01-10 19:56:03
-modDatetime: 2021-01-10 19:56:03
 title: "ActiveRecord::PendingMigrationErrorに初遭遇したので、ちゃんと対処する"
-slug: "20210110195603"
-featured: false
+publishDate: 2021-01-10 19:56:03
+category: tech
 draft: false
+description: "ActiveRecord::PendingMigrationErrorに初遭遇したので、ちゃんと対処する"
 tags:
   - PROGRAMMING
   - Ruby on Rails
   - Ruby
-description: "ActiveRecord::PendingMigrationErrorに初遭遇したので、ちゃんと対処する"
+author: ikuma-t
+modDatetime: 2021-01-10 19:56:03
+slug: "20210110195603"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210110/20210110195519.png
 
  ![f:id:ikmbear:20210110195519p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210110/20210110195519.png) 

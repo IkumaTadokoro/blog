@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2021-10-18 11:55:49
-modDatetime: 2021-10-18 11:55:49
 title: "文字列に大文字と小文字が混在していることを判定する"
-slug: "202110181634525749"
-featured: false
+publishDate: 2021-10-18 11:55:49
+category: tech
 draft: false
+description: "文字列に大文字と小文字が混在していることを判定する"
 tags:
   - PROGRAMMING
   - Ruby
-description: "文字列に大文字と小文字が混在していることを判定する"
+author: ikuma-t
+modDatetime: 2021-10-18 11:55:49
+slug: "202110181634525749"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20211018/20211018115513.png
 
  ![f:id:ikmbear:20211018115513p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20211018/20211018115513.png) 小ネタ。Rubyで書いているけど他の言語でも同じ。

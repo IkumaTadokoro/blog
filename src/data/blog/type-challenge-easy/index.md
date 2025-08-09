@@ -1,13 +1,11 @@
 ---
 title: "type-challenges easyを解きおえた"
-description: "過去ブログからの移行記事"
 publishDate: 2022-06-06
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 https://github.com/type-challenges/type-challenges
 
 type-challenges、easy問題の全13問を解き終えたので、一旦振り返りたいと思います。

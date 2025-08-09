@@ -1,18 +1,18 @@
 ---
-author: ikuma-t
-publishDate: 2022-10-22T17:44:00+09:00
-modDatetime: 2022-10-22T17:44:00+09:00
 title: Kaigi on Rails 2022で登壇しました！
-slug: kaigi-on-rails-2022
-featured: false
+publishDate: 2022-10-22T17:44:00+09:00
+category: tech
 draft: false
+description: Kaigi on Rails 2022で登壇しました！
 tags:
   - idea
   - conference
   - kaigi-on-rails
-description: Kaigi on Rails 2022で登壇しました！
+author: ikuma-t
+modDatetime: 2022-10-22T17:44:00+09:00
+slug: kaigi-on-rails-2022
+featured: false
 ---
-
 ## Kaigi on Rails 2022 で登壇しました！
 
 10 月 21 日、22 日に開催された Kaigi on Rails 2022 に Speaker として登壇しました！

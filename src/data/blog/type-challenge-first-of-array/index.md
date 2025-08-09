@@ -1,13 +1,11 @@
 ---
 title: "type-challenges 4日目: 14-First of Array"
-description: "過去ブログからの移行記事"
 publishDate: 2022-05-31
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ## 問題 & 解答
 
 [type\-challenges/README\.md at main · type\-challenges/type\-challenges](https://github.com/type-challenges/type-challenges/blob/main/questions/00014-easy-first/README.md)

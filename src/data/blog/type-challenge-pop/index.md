@@ -1,13 +1,11 @@
 ---
 title: "type-challenges 18日目：16-Pop"
-description: "過去ブログからの移行記事"
 publishDate: 2022-06-21
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ## 問題 & 回答
 
 https://github.com/type-challenges/type-challenges/blob/main/questions/00016-medium-pop/README.md

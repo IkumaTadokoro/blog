@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2021-08-11 15:49:00
-modDatetime: 2021-08-11 15:49:00
 title: "【RubyMine】意図しない拡張子でファイルを開いてしまった時に、開く拡張子を変更する"
-slug: "20210811154900"
-featured: false
+publishDate: 2021-08-11 15:49:00
+category: tech
 draft: false
+description: "【RubyMine】意図しない拡張子でファイルを開いてしまった時に、開く拡張子を変更する"
 tags:
   - ツール・ガジェット
   - RubyMine
-description: "【RubyMine】意図しない拡張子でファイルを開いてしまった時に、開く拡張子を変更する"
+author: ikuma-t
+modDatetime: 2021-08-11 15:49:00
+slug: "20210811154900"
+featured: false
 ---
-
 ## 発端
 
 パーフェクトRailsを読みながらRailsの復習をしており、`rails db:migrate`した結果を、RubyMineのDatabaseウィンドウで確認しようとしたのですが、誤って`db/development.sqlite3`を「テキストファイル」として開いてしまいました。

@@ -1,13 +1,11 @@
 ---
 title: "type-challenges 4日目（その2）: 18-Length of Tuple"
-description: "過去ブログからの移行記事"
 publishDate: 2022-05-31
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ## 問題 & 解答
 
 [type\-challenges/README\.md at main · type\-challenges/type\-challenges](https://github.com/type-challenges/type-challenges/blob/main/questions/00018-easy-tuple-length/README.md)[type\-challenges/README\.md at main · type\-challenges/type\-challenges](https://github.com/type-challenges/type-challenges/blob/main/questions/00018-easy-tuple-length/README.md)

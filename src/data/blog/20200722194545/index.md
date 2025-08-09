@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2020-07-22 19:45:45
-modDatetime: 2020-07-22 19:45:45
 title: "フィヨルドブートキャンプにキャンプインしました"
-slug: "20200722194545"
-featured: false
+publishDate: 2020-07-22 19:45:45
+category: idea
 draft: false
+description: "フィヨルドブートキャンプにキャンプインしました"
 tags:
   - fjordbootcamp
   - PROGRAMMING
-description: "フィヨルドブートキャンプにキャンプインしました"
+author: ikuma-t
+modDatetime: 2020-07-22 19:45:45
+slug: "20200722194545"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20200722/20200722142831.png
 
 - [はじめに](#はじめに)

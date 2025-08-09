@@ -1,13 +1,11 @@
 ---
 title: "ブログ用のコマンド試作その4"
-description: "過去ブログからの移行記事"
 publishDate: 2022-06-05
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 https://ikuma-t.work/posts/create-blog-command-3
 
 前回の時点ではただファイルを生成するシェルスクリプトでしたが、今回思い切って一気に色々機能を追加しました。

@@ -1,18 +1,18 @@
 ---
-author: ikuma-t
-publishDate: 2020-08-10 16:01:01
-modDatetime: 2020-08-10 16:01:01
 title: "zshからの実行時、 Rangeオブジェクトを使った繰り返しで、最後の文字が「%」になって困った"
-slug: "20200810160101"
-featured: false
+publishDate: 2020-08-10 16:01:01
+category: tech
 draft: false
+description: "zshからの実行時、 Rangeオブジェクトを使った繰り返しで、最後の文字が「%」になって困った"
 tags:
   - PROGRAMMING
   - Ruby
   - zsh
-description: "zshからの実行時、 Rangeオブジェクトを使った繰り返しで、最後の文字が「%」になって困った"
+author: ikuma-t
+modDatetime: 2020-08-10 16:01:01
+slug: "20200810160101"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20200810/20200810155847.png
 
  ![f:id:ikmbear:20200810155847p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20200810/20200810155847.png) 

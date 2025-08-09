@@ -1,13 +1,11 @@
 ---
 title: "type-challenges 5日目: 43-Exclude"
-description: "過去ブログからの移行記事"
 publishDate: 2022-06-01
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ## 問題 & 解答
 
 組み込みの`Exclude<T, U>`を自前で実装する

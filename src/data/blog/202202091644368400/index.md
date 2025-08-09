@@ -1,16 +1,16 @@
 ---
-author: ikuma-t
-publishDate: 2022-02-09 10:00:00
-modDatetime: 2022-02-09 10:00:00
 title: "Appraisalを使っている状態でもRubyMineのGUIでRSpecを実行する"
-featured: false
+publishDate: 2022-02-09 10:00:00
+category: tech
 draft: false
+description: "Appraisalを使っている状態でもRubyMineのGUIでRSpecを実行する"
 tags:
   - PROGRAMMING
   - Ruby
-description: "Appraisalを使っている状態でもRubyMineのGUIでRSpecを実行する"
+author: ikuma-t
+modDatetime: 2022-02-09 10:00:00
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20220209/20220209071635.png
 
 - [きっかけ](#きっかけ)

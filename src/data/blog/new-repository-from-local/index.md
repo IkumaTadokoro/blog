@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2024-03-11T21:00:19.000+09:00
-modDatetime: 2024-03-11T21:00:19.000+09:00
 title: 現在のディレクトリから新しいリポジトリを作成する
-featured: false
+publishDate: 2024-03-11T21:00:19.000+09:00
+category: tech
 draft: false
+description: gh repo create --<public|private> $(basename $(pwd)) --push -s .
 tags:
   - GitHub
   - Git
   - GitHub CLI
-description: gh repo create --<public|private> $(basename $(pwd)) --push -s .
+author: ikuma-t
+modDatetime: 2024-03-11T21:00:19.000+09:00
+featured: false
 ---
-
 何度やっても忘れるのでメモ。
 
 private repository

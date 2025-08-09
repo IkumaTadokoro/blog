@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2021-12-06 19:41:25
-modDatetime: 2021-12-06 19:41:25
 title: "AWS SAA試験に合格しました🎉"
-slug: "202112061638787285"
-featured: false
+publishDate: 2021-12-06 19:41:25
+category: tech
 draft: false
+description: "AWS SAA試験に合格しました🎉"
 tags:
   - PROGRAMMING
   - AWS
-description: "AWS SAA試験に合格しました🎉"
+author: ikuma-t
+modDatetime: 2021-12-06 19:41:25
+slug: "202112061638787285"
+featured: false
 ---
-
 本日AWS ソリューションアーキテクト-アソシエイト試験を受験し、合格しました🎉せっかくなので、当日ルポから受けた経緯等々を綴ってみたいと思います。（なおこの記事の95%は試験を受ける前に書かれたものです。合格してよかったね笑）
 
 - [試験当日ルポ](#試験当日ルポ)

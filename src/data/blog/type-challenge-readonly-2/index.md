@@ -1,13 +1,11 @@
 ---
 title: "type-challenges 13日目: 8-Readonly 2"
-description: "過去ブログからの移行記事"
 publishDate: 2022-06-09
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ## 問題 & 解答
 
 https://github.com/type-challenges/type-challenges/blob/main/questions/00008-medium-readonly-2/README.md

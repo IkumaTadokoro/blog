@@ -1,13 +1,11 @@
 ---
 title: "やせた（2022-08）"
-description: "過去ブログからの移行記事"
 publishDate: 2022-08-23
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 自分でもびっくりしたんですけど、ここ3週間で4kg痩せました。
 
 原因は食生活とリングフィットをサボっていることだと推測しています。

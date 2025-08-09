@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2022-03-03 08:53:01
-modDatetime: 2022-03-03 08:53:01
 title: "【Rails】collection_selectで表示するテキストには、Procを指定できる"
-slug: "202203031646265181"
-featured: false
+publishDate: 2022-03-03 08:53:01
+category: tech
 draft: false
+description: "【Rails】collection_selectで表示するテキストには、Procを指定できる"
 tags:
   - PROGRAMMING
   - Ruby on Rails
-description: "【Rails】collection_selectで表示するテキストには、Procを指定できる"
+author: ikuma-t
+modDatetime: 2022-03-03 08:53:01
+slug: "202203031646265181"
+featured: false
 ---
-
 ## 事の発端
 
 自分で作ったGem「jp_local_gov」を使って、自作サービスを実装しています。

@@ -1,13 +1,11 @@
 ---
 title: "type-challenges 17日目: 15-last-of-array"
-description: "過去ブログからの移行記事"
 publishDate: 2022-06-13
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ## 問題 & 解答
 
 https://github.com/type-challenges/type-challenges/blob/main/questions/00015-medium-last/README.md

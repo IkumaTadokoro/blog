@@ -1,13 +1,11 @@
 ---
 title: "ikuma-t.workからikuma-t.comへ移管"
-description: "いま（いま）わ〜かれ〜のとき〜🎵"
 publishDate: 2023-02-04
-
-tags: [blog, domain]
+category: tech
 draft: false
+description: "いま（いま）わ〜かれ〜のとき〜🎵"
+tags: [blog, domain]
 ---
-
-
 ## はじめに
 
 プログラミング勉強し始めて 1 ヶ月くらいの時に初めてお名前.com でドメインを取得し（ikuma-t.work）、それ以降めんどくさくてずっとお名前.com のまま使っていました。

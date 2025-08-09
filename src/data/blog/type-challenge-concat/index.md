@@ -1,13 +1,11 @@
 ---
 title: "type-challenge 7日目（その2）: 533-Concat"
-description: "過去ブログからの移行記事"
 publishDate: 2022-06-03
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ## 問題 & 解答
 
 JavaScriptの`Array.concat`を型システムで構成する。

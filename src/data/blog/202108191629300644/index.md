@@ -1,16 +1,16 @@
 ---
-author: ikuma-t
-publishDate: 2021-08-19 00:30:44
-modDatetime: 2021-08-19 00:30:44
 title: "Node.jsでファイルが直接実行されたときだけ処理を呼び出す方法"
-slug: "202108191629300644"
-featured: false
+publishDate: 2021-08-19 00:30:44
+category: tech
 draft: false
+description: "Node.jsでファイルが直接実行されたときだけ処理を呼び出す方法"
 tags:
   - PROGRAMMING
-description: "Node.jsでファイルが直接実行されたときだけ処理を呼び出す方法"
+author: ikuma-t
+modDatetime: 2021-08-19 00:30:44
+slug: "202108191629300644"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210819/20210819002958.png
 
  ![f:id:ikmbear:20210819002958p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210819/20210819002958.png) 

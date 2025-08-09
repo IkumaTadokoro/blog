@@ -1,18 +1,18 @@
 ---
-author: ikuma-t
-publishDate: 2021-01-16 11:05:46
-modDatetime: 2021-01-16 11:05:46
 title: "RubyMineでライブラリのソースをGrepする方法"
-slug: "20210116110546"
-featured: false
+publishDate: 2021-01-16 11:05:46
+category: tech
 draft: false
+description: "RubyMineでライブラリのソースをGrepする方法"
 tags:
   - RubyMine
   - Ruby on Rails
   - Ruby
-description: "RubyMineでライブラリのソースをGrepする方法"
+author: ikuma-t
+modDatetime: 2021-01-16 11:05:46
+slug: "20210116110546"
+featured: false
 ---
-
 ActiveStorageの`with_attached_#{name}`がどこに定義されているのか確認する過程で、RubyMineでの調べ方を覚えました。
 
 ## 対象バージョン

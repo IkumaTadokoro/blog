@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2021-02-15 15:05:18
-modDatetime: 2021-02-15 15:05:18
 title: "【Excel】社内でExcelのデータ操作機能について勉強会をしました"
-slug: "20210215150518"
-featured: false
+publishDate: 2021-02-15 15:05:18
+category: idea
 draft: false
+description: "【Excel】社内でExcelのデータ操作機能について勉強会をしました"
 tags:
   - PROGRAMMING
   - Excel
-description: "【Excel】社内でExcelのデータ操作機能について勉強会をしました"
+author: ikuma-t
+modDatetime: 2021-02-15 15:05:18
+slug: "20210215150518"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210215/20210215110559.png
 
  ![f:id:ikmbear:20210215110559p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210215/20210215110559.png) 

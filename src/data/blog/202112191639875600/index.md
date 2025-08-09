@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2021-12-19 10:00:00
-modDatetime: 2021-12-19 10:00:00
 title: "最近のScrapboxの使い方（2021/12）"
-slug: "202112191639875600"
-featured: false
+publishDate: 2021-12-19 10:00:00
+category: tech
 draft: false
+description: "最近のScrapboxの使い方（2021/12）"
 tags:
   - ツール・ガジェット
   - Scrapbox
-description: "最近のScrapboxの使い方（2021/12）"
+author: ikuma-t
+modDatetime: 2021-12-19 10:00:00
+slug: "202112191639875600"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20211015/20211015135059.png
 
  ![f:id:ikmbear:20211015135059p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20211015/20211015135059.png) 

@@ -1,12 +1,11 @@
 ---
 title: "scaffdogでブログのテンプレートを作成できるようにした"
-description: "scaffdogのサイトはシンプルで好き。"
 publishDate: 2023-01-03
-
-tags: [scaffdog, blog]
+category: tech
 draft: false
+description: "scaffdogのサイトはシンプルで好き。"
+tags: [scaffdog, blog]
 ---
-
 ## ブログの執筆コストを下げたい
 
 ブログを書くハードルを下げたかったので、scaffdog でフロントマターまで入力した状態で作成できるようにしました。

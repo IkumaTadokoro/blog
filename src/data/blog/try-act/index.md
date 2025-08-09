@@ -1,12 +1,11 @@
 ---
 title: "GitHub Actionsをローカルで試せるactを試してみる"
-description: "act は Docker を利用して、.github/workflows のワークフローを実行するための Go 製のツールです"
 publishDate: 2023-05-10
-
-tags: [GitHub_Actions]
+category: tech
 draft: false
+description: "act は Docker を利用して、.github/workflows のワークフローを実行するための Go 製のツールです"
+tags: [GitHub_Actions]
 ---
-
 最近開発生産性を取得したりで GitHub Actions をよく書いています。最近では GitHub Actions の VSCode 拡張が出てきたことで、構文的なエラーには気が付きやすくなりましたが、やはり実際に動作するかは GitHub に push しなければならず、やや面倒でした。
 
 N 番煎じではありますが、ローカルで GitHub Actions を実行できる[nektos/act](https://github.com/nektos/act)を使って、GitHub Actions のローカル実行を試してみました。

@@ -1,19 +1,19 @@
 ---
-author: ikuma-t
-publishDate: 2020-10-25 13:03:27
-modDatetime: 2020-10-25 13:03:27
 title: "⚡️初めてのLT会 Vol.5でRubyMineの話をしました！"
-slug: "20201025130327"
-featured: false
+publishDate: 2020-10-25 13:03:27
+category: tech
 draft: false
+description: "⚡️初めてのLT会 Vol.5でRubyMineの話をしました！"
 tags:
   - fjordbootcamp
   - ツール・ガジェット
   - RubyMine
   - 登壇
-description: "⚡️初めてのLT会 Vol.5でRubyMineの話をしました！"
+author: ikuma-t
+modDatetime: 2020-10-25 13:03:27
+slug: "20201025130327"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20201025/20201025125820.jpg
 
  ![f:id:ikmbear:20201025125820j:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20201025/20201025125820.jpg) 

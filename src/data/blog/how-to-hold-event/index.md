@@ -1,13 +1,11 @@
 ---
 title: "社内イベント開催を支える技術"
-description: "過去ブログからの移行記事"
 publishDate: 2022-08-19
-
-tags: []
+category: idea
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ## 社内イベントで司会をやった
 
 先日社内のイベントがあり、スタッフの一人として司会をやりました。

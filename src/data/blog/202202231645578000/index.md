@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2022-02-23 10:00:00
-modDatetime: 2022-02-23 10:00:00
 title: "Formオブジェクトのロケールファイルの定義方法（i18n）"
-slug: "202202231645578000"
-featured: false
+publishDate: 2022-02-23 10:00:00
+category: tech
 draft: false
+description: "Formオブジェクトのロケールファイルの定義方法（i18n）"
 tags:
   - PROGRAMMING
   - Ruby on Rails
-description: "Formオブジェクトのロケールファイルの定義方法（i18n）"
+author: ikuma-t
+modDatetime: 2022-02-23 10:00:00
+slug: "202202231645578000"
+featured: false
 ---
-
 - [Formオブジェクトを利用した場合の翻訳キーはどれ？](#Formオブジェクトを利用した場合の翻訳キーはどれ)
 - [要約](#要約)
 - [前提](#前提)

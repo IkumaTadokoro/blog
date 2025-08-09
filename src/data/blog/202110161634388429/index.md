@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2021-10-16 21:47:09
-modDatetime: 2021-10-16 21:47:09
 title: "雑なプログラミング問題（LEET変換プログラム）"
-slug: "202110161634388429"
-featured: false
+publishDate: 2021-10-16 21:47:09
+category: tech
 draft: false
+description: "雑なプログラミング問題（LEET変換プログラム）"
 tags:
   - PROGRAMMING
   - Ruby
-description: "雑なプログラミング問題（LEET変換プログラム）"
+author: ikuma-t
+modDatetime: 2021-10-16 21:47:09
+slug: "202110161634388429"
+featured: false
 ---
-
 ネットで見かけたプログラミング問題をRubyで解いてみました。簡単なテストコードも作ったので、みなさんも是非解いてみてください。
 
 ## 問題

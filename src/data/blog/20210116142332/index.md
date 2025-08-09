@@ -1,16 +1,16 @@
 ---
-author: ikuma-t
-publishDate: 2021-01-16 14:23:32
-modDatetime: 2021-01-16 14:23:32
 title: "わたしのリフレッシュ方法（2021年版）"
-slug: "20210116142332"
-featured: false
+publishDate: 2021-01-16 14:23:32
+category: idea
 draft: false
+description: "わたしのリフレッシュ方法（2021年版）"
 tags:
   - 日常
-description: "わたしのリフレッシュ方法（2021年版）"
+author: ikuma-t
+modDatetime: 2021-01-16 14:23:32
+slug: "20210116142332"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210116/20210116135617.png
 
 最近ふと、「あ、これ疲れた時によくやっているなあ」と思ったので、私のリフレッシュ方法3選をまとめてみました。

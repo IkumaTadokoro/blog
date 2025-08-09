@@ -1,18 +1,18 @@
 ---
-author: ikuma-t
-publishDate: 2023-10-29T17:44:00+09:00
-modDatetime: 2023-10-29T17:44:00+09:00
 title: Kaigi on Rails 2023で登壇しました！
-slug: kaigi-on-rails-2023
-featured: false
+publishDate: 2023-10-29T17:44:00+09:00
+category: tech
 draft: false
+description: Kaigi on Rails 2023で登壇しました！
 tags:
   - idea
   - conference
   - kaigi-on-rails
-description: Kaigi on Rails 2023で登壇しました！
+author: ikuma-t
+modDatetime: 2023-10-29T17:44:00+09:00
+slug: kaigi-on-rails-2023
+featured: false
 ---
-
 ## Kaigi on Rails 2023 で登壇しました！
 
 昨日、一昨日（2023/10/27 - 28）で開催された [Kaigi on Rails 2023](https://kaigionrails.org/2023/) にSpeakerとして登壇してきました！

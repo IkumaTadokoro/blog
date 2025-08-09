@@ -1,13 +1,11 @@
 ---
 title: "remarkでtableのMarkdownを解釈できるようにする"
-description: "過去ブログからの移行記事"
 publishDate: 2022-05-28
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ## tableはCommonMarkdownではない
 
 このブログはremarkを使用してMarkdownをパースしているわけですが、tableを投稿してみたところ原文のまま表示されてしまいました。

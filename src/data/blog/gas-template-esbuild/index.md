@@ -1,13 +1,11 @@
 ---
 title: "esbuildのGASテンプレート"
-description: "過去ブログからの移行記事"
 publishDate: 2022-07-31
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ## GAS作成用のテンプレートを作成した
 
 https://github.com/IkumaTadokoro/esbuild-gas-template

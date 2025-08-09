@@ -1,13 +1,11 @@
 ---
 title: "ブログをNext.jsで作りました"
-description: "過去ブログからの移行記事"
 publishDate: 2022-05-26
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 はてなブログのエディタをわざわざ開いて書いていくのが非常に面倒で、TypeScript→React→Nextの順で学んでNext.jsでブログを作ろうと思っていたけど、
 だいぶ時間がかかるので、ささっとtemplateを使って作りました（レイアウトだけ少し整えた）
 

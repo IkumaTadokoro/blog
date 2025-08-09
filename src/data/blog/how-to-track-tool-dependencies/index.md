@@ -1,16 +1,16 @@
 ---
-author: ikuma-t
-publishDate: 2024-04-30T22:28:33.000+09:00
-modDatetime: 2024-04-30T22:28:33.000+09:00
 title: Go におけるツールの依存関係を追跡できるようにする
-featured: false
+publishDate: 2024-04-30T22:28:33.000+09:00
+category: tech
 draft: false
+description: tools.go ファイルを作成し、そこで依存関係を追跡するツールをインポートすることで、Go におけるツールの依存関係を追跡できるようにします。
 tags:
   - Go
   - Today I Learned
-description: tools.go ファイルを作成し、そこで依存関係を追跡するツールをインポートすることで、Go におけるツールの依存関係を追跡できるようにします。
+author: ikuma-t
+modDatetime: 2024-04-30T22:28:33.000+09:00
+featured: false
 ---
-
 ## 解決したい課題
 
 gqlgen のように、ツールとしては確かにプロジェクトで使用しているけれども、アプリケーションのコードベースに出てこないパッケージを利用するケースがあります。

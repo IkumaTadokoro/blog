@@ -1,13 +1,11 @@
 ---
 title: "type-challenges 15日目: Tuple to Union"
-description: "過去ブログからの移行記事"
 publishDate: 2022-06-11
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ## 問題 & 解答
 
 タプル型を受け取って、その要素からなるユニオン型を返す`TupleToUnion<T>`を実装する。

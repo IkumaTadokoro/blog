@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2021-08-10 10:37:33
-modDatetime: 2021-08-10 10:37:33
 title: "リーダブルコード 第1部を読みました"
-slug: "20210810103733"
-featured: false
+publishDate: 2021-08-10 10:37:33
+category: tech
 draft: false
+description: "リーダブルコード 第1部を読みました"
 tags:
   - PROGRAMMING
   - 書籍
-description: "リーダブルコード 第1部を読みました"
+author: ikuma-t
+modDatetime: 2021-08-10 10:37:33
+slug: "20210810103733"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210810/20210810103304.png
 
 ## リーダブルコード 第1部を読みました

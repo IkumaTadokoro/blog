@@ -1,16 +1,16 @@
 ---
-author: ikuma-t
-publishDate: 2024-01-05T11:22:00+09:00
-modDatetime: 2024-01-05T11:22:00+09:00
 title: 1年の目標は正月に1回失敗しておくくらいがちょうどよい
-slug: first-losing-object-game
-featured: true
+publishDate: 2024-01-05T11:22:00+09:00
+category: idea
 draft: false
+description: 新年の抱負に対する負け惜しみです。
 tags:
   - life
-description: 新年の抱負に対する負け惜しみです。
+author: ikuma-t
+modDatetime: 2024-01-05T11:22:00+09:00
+slug: first-losing-object-game
+featured: true
 ---
-
 ## 1年の目標は正月に1回失敗しておくくらいがちょうどよい
 
 タイトルは今年立てた「日記を毎日書くぞ」が昨日途絶えてしまった自分への言い訳でもあり、毎年考えているものでもある。

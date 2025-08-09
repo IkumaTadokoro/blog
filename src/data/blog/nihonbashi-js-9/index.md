@@ -1,11 +1,11 @@
 ---
 title: "Nihonbashi.js #9に参加してStorybookの話をしてきた"
-description: "オフラインで開催されたNihonbashi.js #9に参加しました。LT枠でStorybookの内部実装の話をしてきました。"
 publishDate: 2024-11-01
-tags: ["勉強会", "JavaScript", "Storybook"]
+category: tech
 draft: false
+description: "オフラインで開催されたNihonbashi.js #9に参加しました。LT枠でStorybookの内部実装の話をしてきました。"
+tags: ["勉強会", "JavaScript", "Storybook"]
 ---
-
 ## Nihonbashi.js #9に参加してきた
 
 [Nihonbashi.js #9 - connpass](https://nihonbashi-js.connpass.com/event/332328/)

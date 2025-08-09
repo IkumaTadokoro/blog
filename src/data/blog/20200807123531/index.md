@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2020-08-07 12:35:31
-modDatetime: 2020-08-07 12:35:31
 title: "VSCodeVimで使えるインデントオブジェクト"
-slug: "20200807123531"
-featured: false
+publishDate: 2020-08-07 12:35:31
+category: tech
 draft: false
+description: "VSCodeVimで使えるインデントオブジェクト"
 tags:
   - ツール・ガジェット
   - vim
-description: "VSCodeVimで使えるインデントオブジェクト"
+author: ikuma-t
+modDatetime: 2020-08-07 12:35:31
+slug: "20200807123531"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20200807/20200807101559.gif
 
 - [Vimではiiコマンドで全選択できる？](#Vimではiiコマンドで全選択できる)

@@ -1,13 +1,11 @@
 ---
 title: "type-challenges 2日目: 7-Readonly"
-description: "過去ブログからの移行記事"
 publishDate: 2022-05-29
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ## 問題 & 回答
 
 [type\-challenges/README\.md at main · type\-challenges/type\-challenges](https://github.com/type-challenges/type-challenges/blob/main/questions/00007-easy-readonly/README.md)

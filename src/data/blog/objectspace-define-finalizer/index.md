@@ -1,13 +1,11 @@
 ---
 title: "ObjectSpace.#define_finalizer"
-description: "過去ブログからの移行記事"
 publishDate: 2022-09-11
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ソースリーディングしているGemの中で、接続開始したタイミングでセッションをkillするスクリプトがあったのをきっかけに調べた。
 
 https://docs.ruby-lang.org/ja/latest/method/ObjectSpace/m/define_finalizer.html

@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2022-01-18 16:25:08
-modDatetime: 2022-01-18 16:25:08
 title: "日本の地方公共団体コードをパースするGemをリリースしました"
-slug: "202201181642490708"
-featured: false
+publishDate: 2022-01-18 16:25:08
+category: tech
 draft: false
+description: "日本の地方公共団体コードをパースするGemをリリースしました"
 tags:
   - PROGRAMMING
   - Ruby
-description: "日本の地方公共団体コードをパースするGemをリリースしました"
+author: ikuma-t
+modDatetime: 2022-01-18 16:25:08
+slug: "202201181642490708"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20220118/20220118162141.png
 
  ![f:id:ikmbear:20220118162141p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20220118/20220118162141.png) 

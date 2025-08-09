@@ -1,18 +1,18 @@
 ---
-author: ikuma-t
-publishDate: 2021-01-04 21:22:08
-modDatetime: 2021-01-04 21:22:08
 title: "【Rails】ActiveRecord::core#==はidを比較する（Rails6.1）"
-slug: "20210104212208"
-featured: false
+publishDate: 2021-01-04 21:22:08
+category: tech
 draft: false
+description: "【Rails】ActiveRecord::core#==はidを比較する（Rails6.1）"
 tags:
   - PROGRAMMING
   - Ruby on Rails
   - Ruby
-description: "【Rails】ActiveRecord::core#==はidを比較する（Rails6.1）"
+author: ikuma-t
+modDatetime: 2021-01-04 21:22:08
+slug: "20210104212208"
+featured: false
 ---
-
 - [きっかけ](#きっかけ)
 - [ソースをみる](#ソースをみる)
 

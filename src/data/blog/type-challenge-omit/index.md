@@ -1,13 +1,11 @@
 ---
 title: "type-challenges 12日目: 3-Omit"
-description: "過去ブログからの移行記事"
 publishDate: 2022-06-08
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ## 問題 & 解答
 
 組み込みの`Omit<T, K>`を実装する。`T`のプロパティから、`K`を除いた型を返す。

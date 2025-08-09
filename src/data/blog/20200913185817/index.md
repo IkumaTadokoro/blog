@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2020-09-13 18:58:17
-modDatetime: 2020-09-13 18:58:17
 title: "今月のフォカッチャ〜ドライトマトのフォカッチャ〜【2020/08】"
-slug: "20200913185817"
-featured: false
+publishDate: 2020-09-13 18:58:17
+category: idea
 draft: false
+description: "今月のフォカッチャ〜ドライトマトのフォカッチャ〜【2020/08】"
 tags:
   - 日常
   - フォカッチャ
-description: "今月のフォカッチャ〜ドライトマトのフォカッチャ〜【2020/08】"
+author: ikuma-t
+modDatetime: 2020-09-13 18:58:17
+slug: "20200913185817"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20200913/20200913185635.jpg
 
 ## 今月のフォカッチャは$1のフォカッチャです

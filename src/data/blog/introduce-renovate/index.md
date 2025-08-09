@@ -1,13 +1,11 @@
 ---
 title: "Renovateを導入してみる"
-description: "改修！改修！改修！"
 publishDate: 2023-01-28
-
-tags: [library, renovate, node.js]
+category: tech
 draft: false
+description: "改修！改修！改修！"
+tags: [library, renovate, node.js]
 ---
-
-
 ## はじめに：継続ライブラリアップデートのために...
 
 脆弱性が検知されたり、ちょっと開発環境を改善したい、となって npm パッケージをいざバージョンアップしようと思っても、日常的にアップデートをしていないと期待するバージョンにアップするまでが茨の道デス（諦めたくなることもしばしば）。

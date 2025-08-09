@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2022-02-05 12:30:00
-modDatetime: 2022-02-05 12:30:00
 title: "スマホ中毒改善のために空き箱でスマホケースを作る"
-slug: "202202051644031800"
-featured: false
+publishDate: 2022-02-05 12:30:00
+category: life
 draft: false
+description: "スマホ中毒改善のために空き箱でスマホケースを作る"
 tags:
   - ツール・ガジェット
   - 日常
-description: "スマホ中毒改善のために空き箱でスマホケースを作る"
+author: ikuma-t
+modDatetime: 2022-02-05 12:30:00
+slug: "202202051644031800"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20220205/20220205090821.jpg
 
 ## $1をついつい触ってしまう...

@@ -1,12 +1,11 @@
 ---
 title: "type-challenges 6日目: 189-Awaited"
 publishDate: 2022-06-02
-
-tags: ["typescript", "type-challenges"]
-description: "わたしま〜つ〜わ〜"
+category: tech
 draft: false
+description: "わたしま〜つ〜わ〜"
+tags: ["typescript", "type-challenges"]
 ---
-
 ## 問題 & 解答
 
 Promise 風な型が持っている型を取得する方法を考える。

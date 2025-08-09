@@ -1,13 +1,11 @@
 ---
 title: "Gemfileにある`require: false`ってなんでしたっけ？"
-description: "過去ブログからの移行記事"
 publishDate: 2022-05-28
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 Gemfileで度々でてくる`require: false`。ざっくり理解はしているけど、ちゃんと公式ドキュメントを読んでいなかったので、思い出しついでに読んでいく。
 
 まず`require: false`のそもそもの意味は[Bundler: gemfile](https://bundler.io/man/gemfile.5.html#REQUIRE-AS)に記載があって、

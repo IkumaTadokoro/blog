@@ -1,15 +1,15 @@
 ---
-author: ikuma-t
-publishDate: 2024-04-27T16:35:32.000+09:00
-modDatetime: 2024-04-27T16:35:32.000+09:00
 title: このブログのパッケージマネージャを pnpm に変更した
-featured: false
+publishDate: 2024-04-27T16:35:32.000+09:00
+category: tech
 draft: false
+description: npm から pnpm に移行しました。実行がかなり早くなったので、大変満足です。
 tags:
   - tools
-description: npm から pnpm に移行しました。実行がかなり早くなったので、大変満足です。
+author: ikuma-t
+modDatetime: 2024-04-27T16:35:32.000+09:00
+featured: false
 ---
-
 ## pnpm へ移行
 
 もともとこのブログのリポジトリでは npm を使っていましたが、他の箇所では pnpm や bun を使っていることもあり、速度に不満があったため pnpm に移行しました。

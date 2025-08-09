@@ -1,12 +1,11 @@
 ---
 title: "[Node/Deno]ちょっとしたCLIで使えるスピナー"
-description: "手作りスピナー、つまりハンドスピナー"
 publishDate: 2023-06-03
-
-tags: [Node.js, Deno]
+category: tech
 draft: false
+description: "手作りスピナー、つまりハンドスピナー"
+tags: [Node.js, Deno]
 ---
-
 ## はじめに
 
 ちょっとした CLI を作っている時に、ある程度長い処理（最近だと OpenAI の API 呼び出しとか）を実行している際に、ローディング時間が気になります。

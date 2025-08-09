@@ -1,13 +1,11 @@
 ---
 title: "type-challenges 20日目: 62-Type Lookup"
-description: "過去ブログからの移行記事"
 publishDate: 2022-06-26
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ## 問題 & 回答
 
 代数的データ型（algebraicdatatypes;ADT）を表現するユニオン型から、その属性を取得するような`LookUp`型を定義する。

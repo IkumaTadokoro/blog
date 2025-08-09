@@ -1,13 +1,11 @@
 ---
 title: "type-challenges 14日目: Deep Readonly"
-description: "過去ブログからの移行記事"
 publishDate: 2022-06-10
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ## 問題 & 解答
 
 https://github.com/type-challenges/type-challenges/blob/main/questions/00009-medium-deep-readonly/README.md

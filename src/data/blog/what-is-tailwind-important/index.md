@@ -1,13 +1,11 @@
 ---
 title: "Tailwind CSSのimportant"
-description: "過去ブログからの移行記事"
 publishDate: 2022-09-04
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 Tailwind CSSには`important`という属性を指定できる。
 
 ```js file=tailwind.config.js

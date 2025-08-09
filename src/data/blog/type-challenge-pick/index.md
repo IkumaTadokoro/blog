@@ -1,13 +1,11 @@
 ---
 title: "type-challenges 1日目: 4-Pick"
-description: "過去ブログからの移行記事"
 publishDate: 2022-05-28
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ## 問題 & 回答
 
 [type\-challenges/README\.ja\.md at main · type\-challenges/type\-challenges](https://github.com/type-challenges/type-challenges/blob/main/questions/00004-easy-pick/README.ja.md)

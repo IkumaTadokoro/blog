@@ -1,12 +1,11 @@
 ---
 title: "type-challenges 16日目: 12-Chainable Options"
 publishDate: 2022-06-12
-
-tags: ["typescript", "type-challenges"]
-description: "見せてやろうか...本当の【ブロックチェーン】をなあ！！"
+category: tech
 draft: false
+description: "見せてやろうか...本当の【ブロックチェーン】をなあ！！"
+tags: ["typescript", "type-challenges"]
 ---
-
 ## 問題 & 解答
 
 https://github.com/type-challenges/type-challenges/blob/main/questions/00012-medium-chainable-options/README.md

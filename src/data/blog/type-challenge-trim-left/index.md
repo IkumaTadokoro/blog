@@ -1,13 +1,11 @@
 ---
 title: "type-challenges 21日目: Trim Left"
-description: "過去ブログからの移行記事"
 publishDate: 2022-09-12
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 久しぶりのチャレンジ
 
 ## 問題

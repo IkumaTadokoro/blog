@@ -1,18 +1,18 @@
 ---
-author: ikuma-t
-publishDate: 2021-01-08 12:28:06
-modDatetime: 2021-01-08 12:28:06
 title: "【Todoist→Pixela】Todoistでタスクを完了したら草生やす"
-slug: "20210108122806"
-featured: false
+publishDate: 2021-01-08 12:28:06
+category: tech
 draft: false
+description: "【Todoist→Pixela】Todoistでタスクを完了したら草生やす"
 tags:
   - ツール・ガジェット
   - Todoist
   - Pixela
-description: "【Todoist→Pixela】Todoistでタスクを完了したら草生やす"
+author: ikuma-t
+modDatetime: 2021-01-08 12:28:06
+slug: "20210108122806"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108111222.jpg
 
  ![f:id:ikmbear:20210108111222j:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108111222.jpg)

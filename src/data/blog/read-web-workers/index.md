@@ -1,14 +1,11 @@
 ---
 title: "書籍「Web Workers」を読んだ"
-description: "何ができるかわ〜からない〜"
 publishDate: 2023-05-21
-
-tags: [WebWorker, 読書記録]
+category: tech
 draft: false
+description: "何ができるかわ〜からない〜"
+tags: [WebWorker, 読書記録]
 ---
-
-
-
 ![代替テキスト](pictureLarge)
 
 画像引用元：https://www.oreilly.co.jp/books/9784873115962/

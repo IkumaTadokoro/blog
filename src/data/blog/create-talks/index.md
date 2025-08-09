@@ -1,12 +1,11 @@
 ---
 title: "登壇資料を掲載するTalksページを作った"
-description: "TO: 登壇資料たち 「ここがお前の死に場所だぁ!! 」 FROM: ブロッコリーぽいやつ"
 publishDate: 2023-02-12
-
-tags: [blog]
+category: tech
 draft: false
+description: "TO: 登壇資料たち 「ここがお前の死に場所だぁ!! 」 FROM: ブロッコリーぽいやつ"
+tags: [blog]
 ---
-
 ## Talks ページを開設した
 
 https://ikuma-t.com/talks

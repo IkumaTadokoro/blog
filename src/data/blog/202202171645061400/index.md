@@ -1,18 +1,18 @@
 ---
-author: ikuma-t
-publishDate: 2022-02-17 10:30:00
-modDatetime: 2022-02-17 10:30:00
 title: "Slapdashを使って、瞬間で Notionにアイデアを追加する"
-slug: "202202171645061400"
-featured: false
+publishDate: 2022-02-17 10:30:00
+category: tech
 draft: false
+description: "Slapdashを使って、瞬間で Notionにアイデアを追加する"
 tags:
   - ツール・ガジェット
   - Notion
   - Slapdash
-description: "Slapdashを使って、瞬間で Notionにアイデアを追加する"
+author: ikuma-t
+modDatetime: 2022-02-17 10:30:00
+slug: "202202171645061400"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20220217/20220217080548.png
 
  ![f:id:ikmbear:20220217080548p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20220217/20220217080548.png) 

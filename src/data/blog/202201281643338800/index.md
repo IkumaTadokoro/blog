@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2022-01-28 12:00:00
-modDatetime: 2022-01-28 12:00:00
 title: "⚡️K-Rubyと銀座Railsで自作Gemの話をしました！⚡️"
-slug: "202201281643338800"
-featured: false
+publishDate: 2022-01-28 12:00:00
+category: tech
 draft: false
+description: "⚡️K-Rubyと銀座Railsで自作Gemの話をしました！⚡️"
 tags:
   - PROGRAMMING
   - 登壇
-description: "⚡️K-Rubyと銀座Railsで自作Gemの話をしました！⚡️"
+author: ikuma-t
+modDatetime: 2022-01-28 12:00:00
+slug: "202201281643338800"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20220128/20220128104136.png
 
 - [自作Gemの話をしてきました！](#自作Gemの話をしてきました)

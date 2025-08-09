@@ -1,12 +1,11 @@
 ---
 title: "Gitでマージをdry-runする"
-description: "dry-runすこ"
 publishDate: 2023-01-13
-
-tags: ["git"]
+category: tech
 draft: false
+description: "dry-runすこ"
+tags: ["git"]
 ---
-
 ## はじめに
 
 大きめの作業内容なのでトピックブランチを作っていたのですが、作業内容の大きさゆえに時間がかかってしまい、実際に main にマージする際に「果たしてこのブランチをマージして、デグレとかしないか？コンフリクト出てないからたぶん大丈夫だけど...」となりました。

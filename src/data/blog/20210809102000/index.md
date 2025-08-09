@@ -1,18 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2021-08-09 10:20:00
-modDatetime: 2021-08-09 10:20:00
 title: "ブログをGatsbyjsに移行.... しかけてやめました"
-slug: "20210809102000"
-featured: false
+publishDate: 2021-08-09 10:20:00
+category: tech
 draft: false
+description: "ブログをGatsbyjsに移行.... しかけてやめました"
 tags:
   - PROGRAMMING
   - GatsbyJS
-description: "ブログをGatsbyjsに移行.... しかけてやめました"
+author: ikuma-t
+modDatetime: 2021-08-09 10:20:00
+slug: "20210809102000"
+featured: false
 ---
-
-
  ![f:id:ikmbear:20210809101914p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210809/20210809101914.png) 
 
 ## Gatsbyjsでブログを作ってみました。

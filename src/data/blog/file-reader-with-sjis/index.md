@@ -1,12 +1,11 @@
 ---
 title: "SJISのファイルをFileReaderで読み込む"
-description: "意外とパッとは出てこないやつ"
 publishDate: 2023-01-27
-
-tags: [TypeScript, FileReader, Blob, TextDecoder]
+category: tech
 draft: false
+description: "意外とパッとは出てこないやつ"
+tags: [TypeScript, FileReader, Blob, TextDecoder]
 ---
-
 ## はじめに
 
 SJIS の文字コードで表されたテキストファイルを UTF-8 として受け取る実装について、ライブラリを使用した実装の記事が多くあります。有名どころだと iconv-lite や Encoding.js あたりでしょうか。

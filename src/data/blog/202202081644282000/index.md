@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2022-02-08 10:00:00
-modDatetime: 2022-02-08 10:00:00
 title: "Conventional CommitでGemのCHANGELOGをコミットから自動作成する"
-slug: "202202081644282000"
-featured: false
+publishDate: 2022-02-08 10:00:00
+category: tech
 draft: false
+description: "Conventional CommitでGemのCHANGELOGをコミットから自動作成する"
 tags:
   - PROGRAMMING
   - Git
-description: "Conventional CommitでGemのCHANGELOGをコミットから自動作成する"
+author: ikuma-t
+modDatetime: 2022-02-08 10:00:00
+slug: "202202081644282000"
+featured: false
 ---
-
 ## Conventional Commitとは
 
 ### 概要

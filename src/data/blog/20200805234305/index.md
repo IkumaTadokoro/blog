@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2020-08-05 23:43:05
-modDatetime: 2020-08-05 23:43:05
 title: "突然ssh接続でDebianに繋がらなくなったときの対処法"
-slug: "20200805234305"
-featured: false
+publishDate: 2020-08-05 23:43:05
+category: idea
 draft: false
+description: "突然ssh接続でDebianに繋がらなくなったときの対処法"
 tags:
   - PROGRAMMING
   - Linux
-description: "突然ssh接続でDebianに繋がらなくなったときの対処法"
+author: ikuma-t
+modDatetime: 2020-08-05 23:43:05
+slug: "20200805234305"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20200805/20200805215246.png
 
 ## 記憶喪失のDebian？

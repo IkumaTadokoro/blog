@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2021-10-17 21:03:13
-modDatetime: 2021-10-17 21:03:13
 title: "spotifyのプレイリストを自動で作るnpm（recommendify）を作った"
-slug: "202110171634472193"
-featured: false
+publishDate: 2021-10-17 21:03:13
+category: tech
 draft: false
+description: "spotifyのプレイリストを自動で作るnpm（recommendify）を作った"
 tags:
   - PROGRAMMING
   - JavaScript
-description: "spotifyのプレイリストを自動で作るnpm（recommendify）を作った"
+author: ikuma-t
+modDatetime: 2021-10-17 21:03:13
+slug: "202110171634472193"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20211017/20211017210157.png
 
  ![f:id:ikmbear:20211017210157p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20211017/20211017210157.png) 少し前にspotifyブートキャンプの課題でspotifyのプレイリストを自動作成してくれるnpm：recommendifyを作ったので、紹介します。

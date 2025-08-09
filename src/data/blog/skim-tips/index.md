@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2024-05-02T20:34:51.000+09:00
-modDatetime: 2024-05-02T20:34:51.000+09:00
 title: skim で移動/コマンド履歴検索をインタラクティブに行う
-featured: false
+publishDate: 2024-05-02T20:34:51.000+09:00
+category: tech
 draft: false
+description: Rust製の Fuzzy Finder である skim で移動/コマンド履歴検索をインタラクティブに行う方法を調べました。
 tags:
   - tools
   - skim
   - Today I Learned
-description: Rust製の Fuzzy Finder である skim で移動/コマンド履歴検索をインタラクティブに行う方法を調べました。
+author: ikuma-t
+modDatetime: 2024-05-02T20:34:51.000+09:00
+featured: false
 ---
-
 ## モチベーション
 
 新しく M3 Macbook Air を購入したので、これを機に色々とツールを乗り換えています。

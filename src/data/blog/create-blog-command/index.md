@@ -1,13 +1,11 @@
 ---
 title: "ブログ用のコマンド試作その1"
-description: "過去ブログからの移行記事"
 publishDate: 2022-05-27
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 雑に投稿するためのコマンドを作ってみた。ファイルがなければmarkdownファイルと画像格納用のディレクトリを作成し、ファイルがあればmarkdownファイルを開く。
 
 ```bash

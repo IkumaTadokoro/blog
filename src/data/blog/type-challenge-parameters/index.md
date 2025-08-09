@@ -1,13 +1,11 @@
 ---
 title: "type-challenge 10日目(その2): 3312-Parameters"
-description: "過去ブログからの移行記事"
 publishDate: 2022-06-06
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ## 問題 & 解答
 
 https://github.com/type-challenges/type-challenges/blob/main/questions/03312-easy-parameters/README.md

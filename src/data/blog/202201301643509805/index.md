@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2022-01-30 11:30:05
-modDatetime: 2022-01-30 11:30:05
 title: "OSS gateにビギナーとして参加しました！"
-slug: "202201301643509805"
-featured: false
+publishDate: 2022-01-30 11:30:05
+category: tech
 draft: false
+description: "OSS gateにビギナーとして参加しました！"
 tags:
   - PROGRAMMING
   - イベント
-description: "OSS gateにビギナーとして参加しました！"
+author: ikuma-t
+modDatetime: 2022-01-30 11:30:05
+slug: "202201301643509805"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20220130/20220130112941.png
 
  ![f:id:ikmbear:20220130112941p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20220130/20220130112941.png) 

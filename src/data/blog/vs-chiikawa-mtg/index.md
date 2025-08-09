@@ -1,12 +1,11 @@
 ---
 title: "『問いのデザイン 創造的対話のファシリテーション』を読んだ"
-description: "リモートだとなおのこと難しい"
 publishDate: 2023-06-03
-
-tags: [ ファシリテーション,対話 ]
+category: idea
 draft: false
+description: "リモートだとなおのこと難しい"
+tags: [ ファシリテーション,対話 ]
 ---
-
 ## はじめに
 
 ### お通夜会議を脱したい

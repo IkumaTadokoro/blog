@@ -1,13 +1,11 @@
 ---
 title: "「今日のesa」という自分用のChrome拡張を作ってみた"
-description: "過去ブログからの移行記事"
 publishDate: 2022-05-28
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 FJORD BOOT CAMPを卒業したことにより日報の提出先がなくなってしまったので、自分でesaに登録するようにしていたのですが、今日の分の日報を作るのが面倒 & 結構頻繁に別のページに飛んでしまって、今日の日報ページに戻るのが面倒だったので、とても雑にChrome拡張を作りました。
 
 

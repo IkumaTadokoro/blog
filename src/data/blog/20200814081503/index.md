@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2020-08-14 08:15:03
-modDatetime: 2020-08-14 08:15:03
 title: "RubyMineのIdeaVimで、jjをEscにマッピングする方法"
-slug: "20200814081503"
-featured: false
+publishDate: 2020-08-14 08:15:03
+category: tech
 draft: false
+description: "RubyMineのIdeaVimで、jjをEscにマッピングする方法"
 tags:
   - ツール・ガジェット
   - RubyMine
-description: "RubyMineのIdeaVimで、jjをEscにマッピングする方法"
+author: ikuma-t
+modDatetime: 2020-08-14 08:15:03
+slug: "20200814081503"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20200814/20200814073502.png
 
 タイトルの通り設定しました。設定の再読み込みが$1からうまく実行できなかったですが（現在も原因はわからぬまま）、とりあえず設定自体はできたので書きます。

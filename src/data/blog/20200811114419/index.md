@@ -1,16 +1,16 @@
 ---
-author: ikuma-t
-publishDate: 2020-08-11 11:44:19
-modDatetime: 2020-08-11 11:44:19
 title: "フィヨルドブートキャンプに入って1ヶ月が経ちました"
-slug: "20200811114419"
-featured: false
+publishDate: 2020-08-11 11:44:19
+category: idea
 draft: false
+description: "フィヨルドブートキャンプに入って1ヶ月が経ちました"
 tags:
   - fjordbootcamp
-description: "フィヨルドブートキャンプに入って1ヶ月が経ちました"
+author: ikuma-t
+modDatetime: 2020-08-11 11:44:19
+slug: "20200811114419"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20200810/20200810130426.png
 
 ![f:id:ikmbear:20200810130426p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20200810/20200810130426.png)$1ブートキャンプに入ってから、1ヶ月が経過しました〜。せっかくなので、この1ヶ月を振り返っていきたいと思います。

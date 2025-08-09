@@ -1,14 +1,11 @@
 ---
 title: キーキャップをマンチェスターシティ色に替えてみた
-draft: false
 publishDate: 2021-08-03
-
+category: tech
+draft: false
 tags:
   - キーボード
 ---
-
-
-
 ![Keyboard After 2021](keyboardAfter2021)
 
 ## キーボードへの情熱の高まり

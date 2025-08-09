@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2021-05-07 18:10:27
-modDatetime: 2021-05-07 18:10:27
 title: "うちNotion"
-slug: "20210223120727"
-featured: false
+publishDate: 2021-05-07 18:10:27
+category: tech
 draft: false
+description: "うちNotion"
 tags:
   - ツール・ガジェット
   - Notion
-description: "うちNotion"
+author: ikuma-t
+modDatetime: 2021-05-07 18:10:27
+slug: "20210223120727"
+featured: false
 ---
-
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210223/20210223123237.png
 
  ![f:id:ikmbear:20210223123237p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210223/20210223123237.png) 

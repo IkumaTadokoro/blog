@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2020-12-28 21:04:12
-modDatetime: 2020-12-28 21:04:12
 title: "Rubocop実行時のparserに関する警告を解消する"
-slug: "20201228210412"
-featured: false
+publishDate: 2020-12-28 21:04:12
+category: tech
 draft: false
+description: "Rubocop実行時のparserに関する警告を解消する"
 tags:
   - PROGRAMMING
   - Ruby
-description: "Rubocop実行時のparserに関する警告を解消する"
+author: ikuma-t
+modDatetime: 2020-12-28 21:04:12
+slug: "20201228210412"
+featured: false
 ---
-
 ## 環境
 
 - macOS:BigSur

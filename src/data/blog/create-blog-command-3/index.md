@@ -1,13 +1,11 @@
 ---
 title: "ブログ用のコマンド試作その3"
-description: "過去ブログからの移行記事"
 publishDate: 2022-05-27
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 初回作成時に2回コマンドを叩くのはめんどいだろうということで、if文を変えた。
 
 ```bash

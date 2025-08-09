@@ -1,12 +1,11 @@
 ---
 title: "ワークスペース内の画像のパスをパンッとはれるVSCode拡張をリリースした"
-description: "ソースを作るの、パンっとね！"
 publishDate: 2023-05-06
-
-tags: [vscode, vscode_extensions]
+category: tech
 draft: false
+description: "ソースを作るの、パンっとね！"
+tags: [vscode, vscode_extensions]
 ---
-
 ## はじめに
 
 

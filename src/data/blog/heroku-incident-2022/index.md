@@ -1,13 +1,11 @@
 ---
 title: "herokuのOAuthトークン流出の行方まとめ"
-description: "過去ブログからの移行記事"
 publishDate: 2022-07-06
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 HerokuのOAuthトークン流出からしばらく経って、「あれ、これって今どういうステータスなんだ？」と思ったので、調べてみました。
 
 ## 要約

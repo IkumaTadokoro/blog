@@ -1,14 +1,13 @@
 ---
 title: O'REILLYのLearning PlatformにLLMを使った質問機能が追加されていた（Beta）
-draft: false
 publishDate: 2023-10-14
-
+category: tech
+draft: false
 tags:
   - O'REILLY
   - Learning Platform
   - LLM
 ---
-
 O'REILLYの書籍読み放題のサブスクリプションLearning Platformを開いたら、サイドバーに「Ask a question」というメニューが追加されていました。
 
 ![新しくサイドバーに追加されたLearning platformのAsk a questionメニュー](https://ikuma.assets.newt.so/v1/1f9d4bb7-1c05-401e-97a0-73a29efe4654/Arcat2023-10-14-14.19.09.png)

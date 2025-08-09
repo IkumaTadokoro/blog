@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2022-02-04 10:04:52
-modDatetime: 2022-02-04 10:04:52
 title: "Steepで使えるコマンドを見てみよう"
-slug: "202202041643936692"
-featured: false
+publishDate: 2022-02-04 10:04:52
+category: tech
 draft: false
+description: "Steepで使えるコマンドを見てみよう"
 tags:
   - PROGRAMMING
   - Ruby
-description: "Steepで使えるコマンドを見てみよう"
+author: ikuma-t
+modDatetime: 2022-02-04 10:04:52
+slug: "202202041643936692"
+featured: false
 ---
-
 資料はこちら
 
 <iframe id="talk_frame_825710" class="speakerdeck-iframe" src="//speakerdeck.com/player/3d79e214214e4630a5d567921650d81d" width="710" height="399" style="aspect-ratio:710/399; border:0; padding:0; margin:0; background:transparent;" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

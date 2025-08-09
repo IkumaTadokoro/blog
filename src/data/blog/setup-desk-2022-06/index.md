@@ -1,13 +1,11 @@
 ---
 title: "デスクを変えたのでモニターアームが使えるようになった"
-description: "過去ブログからの移行記事"
 publishDate: 2022-06-07
-
-tags: []
+category: idea
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ## 月1で「Fika」をやっている
 
 最近「Fika」と称して家族会議的なものを月1でやっています。

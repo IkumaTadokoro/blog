@@ -1,13 +1,11 @@
 ---
 title: "Next.jsで作成したブログにRSS機能を追加する"
-description: "過去ブログからの移行記事"
 publishDate: 2022-05-29
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 このブログにRSS機能を実装したので、メモを残しておきます。
 
 ## RSSについて

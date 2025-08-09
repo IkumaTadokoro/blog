@@ -1,13 +1,11 @@
 ---
 title: "IkumaScriptと37進数"
-description: "過去ブログからの移行記事"
 publishDate: 2022-05-30
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ## ikuma, akuma, xkuma, ukuma...
 
 JSやTSのサンプルコードで、よく自分の名前`ikuma`を一文字変えて使っているのだけれど、毎回入力するのも面倒なので、スニペット化しました。`ikuma`を複製するので、ECMAScriptを文字ってIkumaScriptです。

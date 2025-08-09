@@ -1,13 +1,11 @@
 ---
 title: "ESLintのno-plusplusはなぜ怒られるのか"
-description: "過去ブログからの移行記事"
 publishDate: 2022-06-25
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 どうもCopilot無料にならなかった私です。先日Copilot経由でforループを書いていたら`++`演算子が補完されたのですが、これがESLintルールで怒られました。どうも`no-plusplus`だと。
 
 結局forEachに書き直して（最終的にはそれすらも消え）何事もなかったのですが（そのまま使うとしても`+= 1`にするだけ）、ESLintのルールはどういう意図でこれを設けているのかわからなかったので調べてみました。

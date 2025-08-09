@@ -1,19 +1,19 @@
 ---
-author: ikuma-t
-publishDate: 2021-11-15 20:17:43
-modDatetime: 2021-11-15 20:17:43
 title: "RubyMine2021.2.3でdocker compose環境のRailsを動かしてみる"
-slug: "202111151636975063"
-featured: false
+publishDate: 2021-11-15 20:17:43
+category: tech
 draft: false
+description: "RubyMine2021.2.3でdocker compose環境のRailsを動かしてみる"
 tags:
   - PROGRAMMING
   - Ruby on Rails
   - RubyMine
   - Docker
-description: "RubyMine2021.2.3でdocker compose環境のRailsを動かしてみる"
+author: ikuma-t
+modDatetime: 2021-11-15 20:17:43
+slug: "202111151636975063"
+featured: false
 ---
-
 ## 動機
 
 昨今の開発において、常識になっているDocker。

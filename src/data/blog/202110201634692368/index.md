@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2021-10-20 10:12:48
-modDatetime: 2021-10-20 10:12:48
 title: "git initで作成されるブランチ名を変更する"
-slug: "202110201634692368"
-featured: false
+publishDate: 2021-10-20 10:12:48
+category: tech
 draft: false
+description: "git initで作成されるブランチ名を変更する"
 tags:
   - PROGRAMMING
   - Git
-description: "git initで作成されるブランチ名を変更する"
+author: ikuma-t
+modDatetime: 2021-10-20 10:12:48
+slug: "202110201634692368"
+featured: false
 ---
-
 久しぶりに$1から`git init`したら、以下のようなメッセージが表示されました。
 
 ```

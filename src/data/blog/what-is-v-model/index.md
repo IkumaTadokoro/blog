@@ -1,13 +1,11 @@
 ---
 title: "v-modelとはなにか"
-description: "過去ブログからの移行記事"
 publishDate: 2022-06-21
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 バージョンによる挙動の違いやカスタムコンポーネントで使用する際に、`v-model`の挙動が5秒くらいわからないときがありました。
 
 1秒以内で`v-model`を利用したコードを読めるように、未来の自分に向けて`v-model`を説明しておきます。

@@ -1,13 +1,11 @@
 ---
 title: "type-challenges 3日目: 11-Tuple to Object"
-description: "過去ブログからの移行記事"
 publishDate: 2022-05-30
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ## 問題 & 解答
 
 [type\-challenges/README\.md at main · type\-challenges/type\-challenges](https://github.com/type-challenges/type-challenges/blob/main/questions/00011-easy-tuple-to-object/README.md)

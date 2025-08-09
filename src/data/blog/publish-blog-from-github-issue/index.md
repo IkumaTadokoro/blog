@@ -1,19 +1,18 @@
 ---
-author: ikuma-t
-publishDate: 2024-04-28T17:27:11.000+09:00
-modDatetime: 2024-04-28T17:27:11.000+09:00
 title: GitHub Issue から Markdown ファイルを生成してブログ記事を公開する
-featured: false
+publishDate: 2024-04-28T17:27:11.000+09:00
+category: tech
 draft: false
+description: GitHub Issue の作成をトリガーにブログ記事を公開する方法を紹介します。
 tags:
   - tools
   - GitHub
   - GitHub CLI
   - GitHub Actions
-description: GitHub Issue の作成をトリガーにブログ記事を公開する方法を紹介します。
+author: ikuma-t
+modDatetime: 2024-04-28T17:27:11.000+09:00
+featured: false
 ---
-
-
 ## モチベーション
 
 このブログは Astro を用いて実装されており、記事は Markdown ファイルとして管理されています。基本的に PC で作業しているのでこの形式でも問題はないのですが、たまにスマホから記事を書きたいと思うことがあります。

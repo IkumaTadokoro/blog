@@ -1,17 +1,17 @@
 ---
-author: ikuma-t
-publishDate: 2022-03-15 19:53:53
-modDatetime: 2022-03-15 19:53:53
 title: "Vue3のReactivity TransformをJestでもコンパイルできるようにする"
-slug: "202203151647341633"
-featured: false
+publishDate: 2022-03-15 19:53:53
+category: tech
 draft: false
+description: "Vue3のReactivity TransformをJestでもコンパイルできるようにする"
 tags:
   - PROGRAMMING
   - Vue
-description: "Vue3のReactivity TransformをJestでもコンパイルできるようにする"
+author: ikuma-t
+modDatetime: 2022-03-15 19:53:53
+slug: "202203151647341633"
+featured: false
 ---
-
 ## 要約
 
 Reactivity Transformを使った$1をテストしていて、それが原因でJestが落ちるときは、`@vue/vue-jest@27.0.0-alpha.3`以上を導入しよう！

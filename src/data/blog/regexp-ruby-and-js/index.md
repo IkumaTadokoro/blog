@@ -1,13 +1,11 @@
 ---
 title: "RubyとJavaScriptにおける正規表現"
-description: "過去ブログからの移行記事"
 publishDate: 2022-05-28
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 正規表現系のメソッドがいつもごちゃごちゃになって、その場その場でリファレンスを見ているので、このタイミングでまとめてみます。
 
 ## 正規表現に対するメソッド体系

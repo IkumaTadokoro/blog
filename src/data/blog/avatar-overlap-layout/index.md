@@ -1,13 +1,11 @@
 ---
 title: "アイコンが重なってて、ホバーするとニュッとするそれ"
-description: "ピカチュウのアイコンはiconifyにあった"
 publishDate: 2023-05-28
-
-tags: [CSS, GridLayout, Animation]
+category: tech
 draft: false
+description: "ピカチュウのアイコンはiconifyにあった"
+tags: [CSS, GridLayout, Animation]
 ---
-
-
 ## アイコンが重なってて、ホバーするとニュッとするそれを作ろう
 
 

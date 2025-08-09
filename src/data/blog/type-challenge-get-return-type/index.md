@@ -1,13 +1,11 @@
 ---
 title: "type-challenges 11日目: 2-Get Return Type"
-description: "過去ブログからの移行記事"
 publishDate: 2022-06-07
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ## 問題 & 解答
 
 組み込みの`ReturnType<T>`を実装する。

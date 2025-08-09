@@ -1,13 +1,11 @@
 ---
 title: "ブログ用のコマンド試作その2"
-description: "過去ブログからの移行記事"
 publishDate: 2022-05-27
-
-tags: []
+category: tech
 draft: false
+description: "過去ブログからの移行記事"
+tags: []
 ---
-
-
 ブログ用のコマンド試作の続き。もはや保存した瞬間にデプロイしてしまって良いのではと思ったので、ただただgit pushするまでのコマンドを組み込んだ
 
 
