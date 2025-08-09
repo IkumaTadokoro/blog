@@ -7,11 +7,9 @@ tags:
   - Git
 ---
 
-import { Image } from 'astro:assets';
 
-import image from "./eyecatch-dokusyu-git.png"
 
-<Image src={image} alt="代替テキスト" />
+![代替テキスト](image)
 
 ## GUIに頼りきりでGitコマンドうろ覚え
 

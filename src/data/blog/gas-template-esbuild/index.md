@@ -7,7 +7,6 @@ tags: []
 draft: false
 ---
 
-import { Image } from 'astro:assets';
 
 ## GAS作成用のテンプレートを作成した
 
@@ -24,9 +23,8 @@ GASで業務効率化できるのは良いことなんですが
 
 ### よく使うやつをとりあえず入れる
 
-import image from "./esbuild-gas-template.png"
 
-<Image src={image} alt="代替テキスト" />
+![代替テキスト](image)
 
 とりあえずいつも使っているESLint、Prettier、TypeScriptは全部突っ込みました。
 

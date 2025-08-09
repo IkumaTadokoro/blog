@@ -9,9 +9,7 @@ tags:
   - VSCode
 ---
 
-import { Image } from 'astro:assets';
-import noUnusedVars from "./no-unused-vars.png"
-import changeToWarn from "./change-to-warn.png"
+
 
 
 ## 課題： ESLintルールはそのままに、自分のエディタ上の表示を変更したい
@@ -20,7 +18,7 @@ import changeToWarn from "./change-to-warn.png"
 
 例えば`@typescript-eslint/no-unused-vars`を`error`に指定していると、使用していない変数がある場合にエディタ上で赤く波線が表示されます。
 
-<Image src={noUnusedVars} alt="未使用の変数hogeのVSCode上でホバーしている。Lintエラーであることを示す波線が変数名の下に出ており、エラーであるため赤い色で表示されている。" />
+![未使用の変数hogeのVSCode上でホバーしている。Lintエラーであることを示す波線が変数名の下に出ており、エラーであるため赤い色で表示されている。](noUnusedVars)
 
 使われていない変数があることをチェックするのはルールとして残しておきたいが、エディタ上ではエラーではなく警告を示す黄色の波線として表示したい、という要求です。
 解決策の一つは愚直にルールのSeverityを変更することですが、これは他の開発者にも影響を与えてしまうという問題があります。
@@ -48,7 +46,7 @@ import changeToWarn from "./change-to-warn.png"
   ]
 ```
 
-<Image src={changeToWarn} alt="未使用の変数hogeのVSCode上でホバーしている。警告はエラーの時と同じだが、Lintエラーが出ていることを示す波線が警告の黄色になっている" />
+![未使用の変数hogeのVSCode上でホバーしている。警告はエラーの時と同じだが、Lintエラーが出ていることを示す波線が警告の黄色になっている](changeToWarn)
 
 もともとエラーの赤線だったものが、警告の黄色線に変わり、期待していた挙動を実現できました。
 

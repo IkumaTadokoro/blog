@@ -7,8 +7,6 @@ tags: []
 draft: false
 ---
 
-import { Image } from 'astro:assets';
-
 
 https://ikuma-t.work/posts/create-blog-command-3
 
@@ -18,9 +16,8 @@ https://ikuma-t.work/posts/create-blog-command-3
 
 https://github.com/IkumaTadokoro/blog-cli
 
-import blogCommand from './blog_command.gif';
 
-<Image src={blogCommand} alt="ブログコマンド" />
+![ブログコマンド](blogCommand)
 
 もともとRubyで書いていてThor gemで作ろうと思っていたのですが、インタラクティブなものを作るのが大変そうだったのと、2日前くらいから「Denoってなんかいいな」と思い始めたので、途中からDenoに切り替えて実装しました。
 各機能を順番に紹介していきます。
@@ -97,9 +94,8 @@ https://cliffy.io/
 
 ### 補完：`completions`
 
-import completionsCommand from './completions.gif';
 
-<Image src={completionsCommand} alt="completionsコマンド" />
+![completionsコマンド](completionsCommand)
 
 ```bash
 ❯ blog completions -h
@@ -211,9 +207,8 @@ https://cliffy.io/docs@v0.24.2/table
 
 ### 新規作成: `new`
 
-import newCommand from './new.gif';
 
-<Image src={newCommand} alt="newコマンド" />
+![newコマンド](newCommand)
 
 ```bash
 ❯ blog new -h
@@ -240,9 +235,8 @@ https://cliffy.io/docs@v0.24.2/prompt/types/input#auto-suggestions
 
 ### 編集: `edit`
 
-import editCommand from './edit.gif';
 
-<Image src={editCommand} alt="editコマンド" />
+![editコマンド](editCommand)
 
 
 ```bash

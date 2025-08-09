@@ -7,10 +7,9 @@ tags:
   - キーボード
 ---
 
-import { Image } from 'astro:assets';
-import keyboardAfter2021 from './keyboard-after-2021.jpg';
 
-<Image src={keyboardAfter2021} alt="Keyboard After 2021" />
+
+![Keyboard After 2021](keyboardAfter2021)
 
 ## キーボードへの情熱の高まり
 

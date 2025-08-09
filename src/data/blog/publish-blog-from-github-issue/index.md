@@ -13,7 +13,6 @@ tags:
 description: GitHub Issue の作成をトリガーにブログ記事を公開する方法を紹介します。
 ---
 
-import { Image } from 'astro:assets';
 
 ## モチベーション
 
@@ -125,17 +124,15 @@ Issue テンプレート自体の YAML フロントマターと衝突するた�
 
 ### ショートカットの追加
 
-import image from "./blog-create-button.png"
 
-<Image src={image} alt="代替テキスト" />
+![代替テキスト](image)
 
 MacroDroid を使って、メニュー部分に「ブログを追加」ボタンを設置します。
 
 Issue Template はクエリパラメータで設定できるので、その URL を登録しておきます。
 
-import image2 from "./create-issue.png"
 
-<Image src={image2} alt="代替テキスト" />
+![代替テキスト](image2)
 
 GitHub Mobile がインストール済みであれば、ブラウザではなくこちらで Issue を作成することができます。
 

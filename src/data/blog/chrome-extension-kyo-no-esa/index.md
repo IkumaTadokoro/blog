@@ -7,13 +7,11 @@ tags: []
 draft: false
 ---
 
-import { Image } from 'astro:assets';
 
 FJORD BOOT CAMPを卒業したことにより日報の提出先がなくなってしまったので、自分でesaに登録するようにしていたのですが、今日の分の日報を作るのが面倒 & 結構頻繁に別のページに飛んでしまって、今日の日報ページに戻るのが面倒だったので、とても雑にChrome拡張を作りました。
 
-import kyoNoEsaDemo from './kyo-no-esa-demo.gif';
 
-<Image src={kyoNoEsaDemo} alt="今日のesaデモ" />
+![今日のesaデモ](kyoNoEsaDemo)
 
 [IkumaTadokoro/kyo\-no\-esa: \(Chrome Extension\) Add kyo\-no\-esa button in the sidebar of esa\.io that opens or create today's diary](https://github.com/IkumaTadokoro/kyo-no-esa)
 
@@ -26,9 +24,8 @@ GitHubはREADMEすら治してません...自分用なので。
 3. 「拡張機能のオプション」からオプションページを開き、諸々設定します。
 4. esaのページのサイドバーに「今日のesa」がでてくるのでクリックします。今日の日報があればそれを、なければ新規作成画面に移ります（テンプレートがある前提）
 
-import optionsPage from './options-page.png';
 
-<Image src={optionsPage} alt="オプションページ" />
+![オプションページ](optionsPage)
 
 ## 感想
 

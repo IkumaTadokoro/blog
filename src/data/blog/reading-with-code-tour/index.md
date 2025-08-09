@@ -14,7 +14,6 @@ description:
   VSCode の拡張機能である Code Tour を使うと、コード上にメモを残しながら読み進めることができるので、既存のコードを読む際に便利です。
 ---
 
-import { Image } from 'astro:assets';
 
 ## Code Tour を使ってじっくり確実にコードを読む
 
@@ -29,9 +28,8 @@ https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour
 
 VSCode の拡張機能で、コード上にメモを残しつつ、そのメモをたどることができるツールです。
 
-import image from "./tour-example.png"
 
-<Image src={image} alt="代替テキスト" />
+![代替テキスト](image)
 
 ## 使い方
 
@@ -46,18 +44,16 @@ import image from "./tour-example.png"
 
 ### メモを残す
 
-import image2 from "./tour-basic.png"
 
-<Image src={image2} alt="代替テキスト" />
+![代替テキスト](image2)
 
 ツアー記録モードだと、エディタの行番号横に「+」ボタンが表示されます。単一行または複数行を指定することで、その行にメモを残すことができます。
 メモには、Markdown が使えるので、コードの説明や、参考リンクなどを記述することができます。
 
 シンタックスハイライトも適用されるので、「自分の見慣れない文法だったので、小さいサンプルとともにメモしておきたい」「ライブラリの実装を読んだので、関連部分にメモしておきたい」などの場合にも便利です。
 
-import image3 from "./highlight.png"
 
-<Image src={image3} alt="代替テキスト" />
+![代替テキスト](image3)
 
 ### ツアーの記録を終了する
 
@@ -67,9 +63,8 @@ import image3 from "./highlight.png"
 
 コマンドパレットから「Code Tour: Start Tour」を選択すると、ツアーの再生モードになります。
 
-import image4 from "./start-tour.png"
 
-<Image src={image4} alt="代替テキスト" />
+![代替テキスト](image4)
 
 各ツアーのメモにはページ送りボタンがあるので、これを利用して前後のツアーに移動することができます。
 
@@ -79,9 +74,8 @@ import image4 from "./start-tour.png"
 
 ### 開発中のサービスの特定機能の概観を理解したい
 
-import image5 from "./read-feature.png"
 
-<Image src={image5} alt="代替テキスト" />
+![代替テキスト](image5)
 
 サービスの機能の振る舞いは知っているけど、実際のコードとしてはどういう構成になっているのか実は把握できていない、というケースで Code Tour を利用しています。
 
@@ -103,9 +97,8 @@ import image5 from "./read-feature.png"
 
 ### 特定のライブラリに依存した機能を理解したい
 
-import image6 from "./read-feat-with-library.png"
 
-<Image src={image6} alt="代替テキスト" />
+![代替テキスト](image6)
 
 > [!NOTE]
 > ここでいうライブラリとは管理機能やドキュメント生成ライブラリなど、土台となるフレームワーク（React、Next.js、Rails、Spring Boot など）の上に乗り、特定の機能群を実現するライブラリを意図しています。
@@ -114,15 +107,13 @@ import image6 from "./read-feat-with-library.png"
 
 管理機能系であれば、通常のコードと別ディレクトリ（例： app/admin）に分かれていることが多いので、ツアーを始める際にはディレクトリをエントリポイントにします。
 
-import image7 from "./directory.png"
 
-<Image src={image7} alt="代替テキスト" />
+![代替テキスト](image7)
 
 ディレクトリ を指定して「Add Code Tour Step」を選択することで、ディレクトリに対してメモを取ることができるので、最初に公式ドキュメントや全体像をメモするようにしています。
 
-import image8 from "./directory-example.png"
 
-<Image src={image8} alt="代替テキスト" />
+![代替テキスト](image8)
 
 ディレクトリのツアーに対しても、仮装のファイルが開き、通常のソースファイルと同様にメモを確認することができます。
 

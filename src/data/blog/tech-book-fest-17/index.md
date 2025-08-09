@@ -9,7 +9,6 @@ tags:
   - 技術書典17
   - イベント参加
 ---
-import { Image } from 'astro:assets';
 
 ## 技術書典17 オフライン会場に行ってきました！
 
@@ -23,17 +22,13 @@ import { Image } from 'astro:assets';
 
 今回は現物で10冊、在庫が売切で電子で購入させていただいたのが1冊で、現地では計11冊購入させていただきました！
 
-import koregaSenrihin from './korega-senrihin.jpg';
-
-<Image src={koregaSenrihin} alt="現地で購入できた物理本たちの集合写真。全10冊の書籍が並べて撮影されている" />
+![現地で購入できた物理本たちの集合写真。全10冊の書籍が並べて撮影されている](./korega-senrihin.jpg)
 
 戦利品を書籍の五十音順で簡単に紹介します。
 
 ### あざといLT
 
-import image from "./azaoi-lt.png"
-
-<Image src={image} alt="あざといLTのカバー写真" />
+![あざといLTのカバー写真](./azaoi-lt.png)
 
 [あざといLT：LT同好会](https://techbookfest.org/product/uXNrgrx0ZkWdwM54Xv34XR?productVariantID=hbdFKYmiUtjG2C4xFbeQQ8)
 
@@ -45,9 +40,7 @@ X上で面識のある[kaitou](https://twitter.com/Kaitou1192)さんが書かれ
 
 ### アクセシビリティを考えはじめるための本
 
-import image2 from "./accesiblity-wo-kangeehajimeru-tame-no-hon.png"
-
-<Image src={image2} alt="アクセシビリティを考えはじめるための本のカバー" />
+![アクセシビリティを考えはじめるための本のカバー](./accesiblity-wo-kangeehajimeru-tame-no-hon.png)
 
 [アクセシビリティを考えはじめるための本：20 Hour Exception](https://techbookfest.org/product/2KX3LTZs66Y6v8cZZ62mDW?productVariantID=8PkSFLD4Af6j6qYLaqkzNt)
 
@@ -59,9 +52,7 @@ import image2 from "./accesiblity-wo-kangeehajimeru-tame-no-hon.png"
 
 ### Amazon BedrockとGitHub Actionsで文章自動レビューを実装してみる本
 
-import image3 from "./amazon-bedrock-to-github-actions-de-bunsyou-jidou-review-wo-jissou-sitemiru-hon.png"
-
-<Image src={image3} alt="Amazon BedrockとGitHub Actionsで文章自動レビューを実装してみる本のカバー" />
+![Amazon BedrockとGitHub Actionsで文章自動レビューを実装してみる本のカバー](./amazon-bedrock-to-github-actions-de-bunsyou-jidou-review-wo-jissou-sitemiru-hon.png)
 
 [Amazon BedrockとGitHub Actionsで文章自動レビューを実装してみる本：杜の都の開発室](https://techbookfest.org/product/1hA7SzbSbdMMapEmNdbud0?productVariantID=ps5Ls6e501e4GK3VzYtJWq)
 
@@ -71,15 +62,11 @@ Amazon BedrockはAWS開催のワークショップに参加して試していた
 
 ### 好きなことなら本当に続けられるのか　〜100日連続イラスト投稿してきた日々を振り返る〜 / 鍛錬するとコードレビューがループする　〜へーしゃの技術戦略室室長が語ったコードレビューの在り方〜
 
-import image4 from "./sukinakotonara-hontou-ni-tuzukerarerunoka.png"
-
-<Image src={image4} alt="好きなことなら本当に続けられるのかのカバー" />
+![好きなことなら本当に続けられるのかのカバー](./sukinakotonara-hontou-ni-tuzukerarerunoka.png)
 
 みずりゅさんのサークルの書籍を2冊購入させていただきました。
 
-import image5 from "./sukinakotonara-hontou-ni-tuzukerarerunoka.png"
-
-<Image src={image5} alt="好きなことなら本当に続けられるのかのカバー" />
+![好きなことなら本当に続けられるのかのカバー](./sukinakotonara-hontou-ni-tuzukerarerunoka.png)
 
 [好きなことなら本当に続けられるのか　〜100日連続イラスト投稿してきた日々を振り返る〜：URAMASU](https://techbookfest.org/product/mQQ6NMBRaLdnr13FT8uZPr?productVariantID=sANGE1ru0cgdpxmLCUfpha)
 
@@ -89,9 +76,7 @@ import image5 from "./sukinakotonara-hontou-ni-tuzukerarerunoka.png"
 
 * * *
 
-import image6 from "./tanrensuruto-ko-do-review-ga-ru-pu-suru.png"
-
-<Image src={image6} alt="鍛錬するとコードレビューがループするのカバー" />
+![鍛錬するとコードレビューがループするのカバー](./tanrensuruto-ko-do-review-ga-ru-pu-suru.png)
 
 [鍛錬するとコードレビューがループする　〜へーしゃの技術戦略室室長が語ったコードレビューの在り方〜：URAMASU](https://techbookfest.org/product/a5iJ9TZAiDFHhH8UCTyJYg?productVariantID=9WicsCgcKcph4GXphjRntj)
 
@@ -103,9 +88,7 @@ import image6 from "./tanrensuruto-ko-do-review-ga-ru-pu-suru.png"
 
 ### 店舗を読み解く技術～小売業ドメイン知識入門～
 
-import image7 from "./tenpo-wo-yomitoku-gijyutu.png"
-
-<Image src={image7} alt="店舗を読み解く技術のカバー" />
+![店舗を読み解く技術のカバー](./tenpo-wo-yomitoku-gijyutu.png)
 
 [店舗を読み解く技術～小売業ドメイン知識入門～：株式会社プレーンテキスト](https://techbookfest.org/product/3UL8Czdcm8bnSvWXyB2G7C?productVariantID=s3D8XR1JNNfHFKUr64CVR9)
 
@@ -119,9 +102,7 @@ import image7 from "./tenpo-wo-yomitoku-gijyutu.png"
 
 ### 虎の穴ラボの薄い本。vol.8
 
-import image8 from "./torarabo-8.png"
-
-<Image src={image8} alt="虎の穴ラボの薄い本。vol.8のカバー" />
+![虎の穴ラボの薄い本。vol.8のカバー](./torarabo-8.png)
 
 [虎の穴ラボの薄い本。vol.8：虎の穴ラボ](https://techbookfest.org/product/qVunHzeLL6tr279K8RuEV8?productVariantID=h6LLTMCGwwU6V574j0f2hT)
 
@@ -133,9 +114,7 @@ import image8 from "./torarabo-8.png"
 
 ### 「ポッドキャストをやりたい！」 と思ったらまず読む本
 
-import image9 from "./podcast-wo-yaritai-toomottara-mazu-yomu-hon.png"
-
-<Image src={image9} alt="ポッドキャストをやりたい！と思ったらまず読む本のカバー" />
+![ポッドキャストをやりたい！と思ったらまず読む本のカバー](./podcast-wo-yaritai-toomottara-mazu-yomu-hon.png)
 
 [「ポッドキャストをやりたい！」 と思ったらまず読む本：小沢あや](https://techbookfest.org/product/iTx5CrYj0RWzxASzLYHYzy?productVariantID=fD7GfeKfzSFAwnZTJVybD8)
 
@@ -147,9 +126,7 @@ import image9 from "./podcast-wo-yaritai-toomottara-mazu-yomu-hon.png"
 
 ### まじでめちゃくちゃ分かりやすい棒針編み入門漫画＜1巻＞
 
-import image10 from "./maji-de-metyakutya-wakariyasui-bouhariami-nyumon.png"
-
-<Image src={image10} alt="まじでめちゃくちゃ分かりやすい棒針編み入門漫画＜1巻＞のカバー" />
+![まじでめちゃくちゃ分かりやすい棒針編み入門漫画＜1巻＞のカバー](./maji-de-metyakutya-wakariyasui-bouhariami-nyumon.png)
 
 [まじでめちゃくちゃ分かりやすい棒針編み入門漫画＜1巻＞：オノデラユズカオ制作](https://techbookfest.org/product/wWdEXb0e1b0YwLi4N0Mv17?productVariantID=bXrpUEwbj5NcWvHLNDxSBT)
 
@@ -161,9 +138,7 @@ import image10 from "./maji-de-metyakutya-wakariyasui-bouhariami-nyumon.png"
 
 ### Ruby on Rails8入門！
 
-import image11 from "./rails-8-nyumon.png"
-
-<Image src={image11} alt="Ruby on Rails8入門！のカバー" />
+![Ruby on Rails8入門！のカバー](./rails-8-nyumon.png)
 
 [Ruby on Rails8入門！：def合同会社](https://techbookfest.org/product/41bEtMuRb2xADJH5E0WWVC?productVariantID=2hufyTuCnbtJu8bCHDG6pU)
 
@@ -177,9 +152,7 @@ Rails、初学者のときはアプリを作るのは簡単だけど、デプロ
 
 ### ゆるIETF
 
-import image12 from "./yuru-ietf.png"
-
-<Image src={image12} alt="ゆるIETFのカバー" />
+![ゆるIETFのカバー](./yuru-ietf.png)
 
 [ゆるIETF：asnokaze](https://techbookfest.org/product/aA3CXwXHh9Z3bG4b7B3D8q?productVariantID=TLPGS2DTAnvQEd2FcrGzL)
 
@@ -193,16 +166,12 @@ HTTP/3のマスコットキャラの話や言語缶バッジの話など、お�
 
 ... ... と、ここまで購入してきた書籍は基本的に15分くらいの休憩時間でシュバっと購入して、あとは自身のサークルの販売をやっていました。
 
-import omise from './omise.jpg';
-
-<Image src={omise} alt="サークル出展の様子。長机の上に、はじめよう！Gleamの見本や購入のための決済バーコード、販売促進ポスターなどを飾っています" />
+![サークル出展の様子。長机の上に、はじめよう！Gleamの見本や購入のための決済バーコード、販売促進ポスターなどを飾っています](./omise.jpg)
 
 まだマイナーな言語なので、正直数冊売れてくれれば十分だと思っていたのですが、思いの外多くの方にご購入いただけて嬉しかったです！
 
 オンラインマーケットではまだ電子版および電子+紙版が購入できるので、ぜひチェックしていただければと思います！
 
-import hon from './hon.jpg';
-
-<Image src={hon} alt="書籍「はじめよう！Gleam」が積み重なっている。" />
+![書籍「はじめよう！Gleam」が積み重なっている。](./hon.jpg)
 
 [はじめよう！Gleam：ikuma-t - 技術書典オンラインマーケット](https://techbookfest.org/product/fULZb6u3f2Lq84BkTCU0hC?productVariantID=4fdAqQ0V0RLFRwYFUnaUHb)

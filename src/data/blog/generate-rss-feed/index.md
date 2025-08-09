@@ -7,7 +7,6 @@ tags: []
 draft: false
 ---
 
-import { Image } from 'astro:assets';
 
 このブログにRSS機能を実装したので、メモを残しておきます。
 
@@ -61,9 +60,8 @@ https://github.com/IkumaTadokoro/blog/pull/1/files
 
 RSS自体の仕様がよく分からなくてとりあえずで作ってみたら、リーダーの中でコンテンツが表示されず、[RSS 2\.0 Specification 日本語訳 \- futomi's CGI Cafe](https://www.futomi.com/lecture/japanese/rss20.html)を参考にして値を設定し直しました。
 
-import image from "./feedly-empty-content.png"
 
-<Image src={image} alt="代替テキスト" />
+![代替テキスト](image)
 
 そのため、Feedlyに一度コンテンツがないRSSフィードが載っかってしまったのですが、どうもFeedlyは一度載っかったフィードはFeedly側でキャッシュされてしまうらしく、今もFeedly上の最初の数本の記事のコンテンツはなくなったままです...。
 どこか別のところで試せばよかった...。
