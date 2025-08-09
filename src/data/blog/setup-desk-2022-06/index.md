@@ -7,7 +7,6 @@ tags: []
 draft: false
 ---
 
-import { Image } from 'astro:assets';
 
 ## 月1で「Fika」をやっている
 
@@ -22,9 +21,8 @@ https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A3%E3%83%BC%E3%82%AB
 
 一応議事録の役割と話のフレームみたいなものがあった方が課題を見つけやすいので、Transnoを利用して1枚のマインドマップを毎回その場で更新しながら話をしています。
 
-import image from "./fika_mindmap.png"
 
-<Image src={image} alt="代替テキスト" />
+![代替テキスト](image)
 *transnoで作成しているマインドマップ*
 
 Transnoについてはこちらの記事で紹介しています。
@@ -37,9 +35,8 @@ https://ikmbear.hatenablog.com/entry/20211215/1639551694
 
 もともと横長のそこそこ大きいデスクを使っていたんですが、机の各辺に12cmくらいの返しがあったため、モニターアームを購入しておきながら使えていませんでした（2年くらい倉庫に眠っていた）。
 
-import desk from './desk.jpg';
 
-<Image src={desk} alt="デスク" />
+![デスク](desk)
 
 もともとの机は写真のデスクの2倍の長さがあったので、「モニターアームが使えるようになるのはいいけど、メモリが狭くなるのはいたしかたなしか〜」とややネガティブに捉えていたのですが、入れ替えてみると全然問題なし。
 

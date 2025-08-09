@@ -10,12 +10,9 @@ tags:
   - データフェッチ
 ---
 
-<Tips>
+:::tip
 この記事は [株式会社エス・エム・エス Advent Calendar 2024](https://qiita.com/advent-calendar/2024/bm-sms) 12月10日 分の記事です。
-</Tips>
-
-
-import { Image } from 'astro:assets';
+:::
 
 もうそろそろ冬休みですね。「冬休みは個人ブログを作って（あるいはリニューアルして）、来年はアウトプットを頑張るぞ！」という方も多いのではないでしょうか。
 
@@ -75,9 +72,7 @@ Content Collections は便利な機能ですが、ローカルの Markdown フ�
 
 コンテンツを取得するためのAPI（Content Collections）はそのままに、次の概念が追加されています。
 
-import contentLayer from "./content-layer.png"
-
-<Image src={contentLayer} alt="代替テキスト" />
+![代替テキスト](./content-layer.png)
 
 1. Loader: データソースからデータをフェッチし、DataStore に格納するための関数
 2. Schema: zodにより定義された、コンテンツのメタデータのスキーマ情報
@@ -94,9 +89,7 @@ import contentLayer from "./content-layer.png"
 
 実例として、[このサイトの登壇ページ](/talk)は Speakerdeck の RSS と Content Layer を組み合わせて実現されています。
 
-import talkPage from "./talk-page.png"
-
-<Image src={talkPage} alt="代替テキスト" />
+![代替テキスト](./talk-page.png)
 
 Content Layer がない場合、次の内容を自前で実装する必要がありました。
 
@@ -155,9 +148,7 @@ Content Layer を利用する際には、コミュニティで公開されてい
 
 Loader は npm パッケージとして公開されており、現在公開されている Loader は [Astro公式のIntegration](https://astro.build/integrations/?search=&categories%5B%5D=loaders) ページから確認することができます。
 
-import astroIntegration from "./astro-integration.png"
-
-<Image src={astroIntegration} alt="代替テキスト" />
+![代替テキスト](./astro-integration.png)
 
 
 現在コミュニティで公開されている Loader の例としては、次のようなものがあります。
@@ -237,9 +228,7 @@ const load = async (context: LoaderContext) => {
 
 より詳細を知りたい方は [Astro Content Loader API | Docs](https://5-0-0-beta.docs.astro.build/en/reference/content-loader-reference/#loadercontext) を参照してください。
 
-import Tips from "../../../features/blog/ui/tips.astro";
-
-<Tips title="コラム：Markdownコンテンツのパース">
+:::tip[コラム：Markdownコンテンツのパース]
 
 実際にLoaderを実装しようとすると、MarkdownコンテンツをHTMLとして扱えるようにしたいケースが多いと思います。
 
@@ -275,7 +264,7 @@ export const renderToString = async (config: AstroConfig, entry: DataEntry) => {
 };
 ```
 
-</Tips>
+:::
 
 
 ## おわりに

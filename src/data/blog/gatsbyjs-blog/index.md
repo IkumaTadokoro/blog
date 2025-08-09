@@ -8,11 +8,9 @@ tags:
   - Blog
 ---
 
-import { Image } from 'astro:assets';
 
-import image from "./gatsby-blog.png"
 
-<Image src={image} alt="Gatsbyjsのブログのトップページ" />
+![Gatsbyjsのブログのトップページ](image)
 
 ## はてなブログから乗り換えました
 

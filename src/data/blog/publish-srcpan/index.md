@@ -6,13 +6,11 @@ publishDate: 2023-05-06
 tags: [vscode, vscode_extensions]
 draft: false
 ---
-import { Image } from 'astro:assets';
 
 ## はじめに
 
-import demo from './demo.gif';
 
-<Image src={demo} alt="デモ" />
+![デモ](demo)
 
 ワークスペースにある画像のパスをそのまま or Markdown 形式で パンッ と簡単にエディタに挿入できる VSCode 拡張、その名も SrcPan をリリースしました。
 
@@ -37,9 +35,8 @@ https://marketplace.visualstudio.com/items?itemName=IkumaTadokoro.srcpan
 
 ### 基本機能
 
-import image from "./srcpan-view.png"
 
-<Image src={image} alt="代替テキスト" />
+![代替テキスト](image)
 
 拡張機能をアクティビティバーで選択すると、2 つのペインが開きます。
 
@@ -115,9 +112,8 @@ pathRegExp には正規表現を指定することができ、replacement には
 
 一応回避策として、下図のように SrcPan をエクスプローラーに D&D してドッキングすることで一つのサイドバーで完結させることができるのですが、サイドバーの表示領域が窮屈なのでどうにかしたいところです。
 
-import image2 from "./docking.png"
 
-<Image src={image2} alt="代替テキスト" />
+![代替テキスト](image2)
 
 ### ディレクトリの絞り込み
 

@@ -11,12 +11,11 @@ tags:
   - 登壇資料
 ---
 
-import { Image } from 'astro:assets';
-import button from './button.png';
-import emptyState1 from './empty-state-1.png';
-import emptyState2 from './empty-state-2.png';
-import compositionImage from './composition-image.png';
-import composition from './composition.png';
+
+
+
+
+
 
 このブログ記事は下記のLT登壇資料を文字起こし（？）したものです。
 
@@ -48,7 +47,7 @@ Reactが関数型プログラミングの影響を受けているということ
 
 ### 単一のプロパティでの例はさほど問題にならない
 
-<Image src={button} alt="代替テキスト" />
+![代替テキスト](button)
 
 たとえば`primary`と`secondary`、2つのスタイルを持つボタンコンポーネントを考えます。
 
@@ -100,7 +99,7 @@ type Props = {
 
 ここで実例として、Empty Stateコンポーネントを考えます。Empty Stateコンポーネントは、データが存在しない場合の統一的な見た目を提供するコンポーネントです。次の画像のような見た目をしています。
 
-<Image src={emptyState1} alt="ブログ記事がない場合に表示されるEmpty Stateコンポーネントとその部品の解剖図。白背景に、びっくりマークのアイコン、「まだブログ記事がありません」というtitle、「記事を作成するとここに表示されます」というdescription、「記事を書く」というボタンがある。ボタンの色は青色で、コンポーネントの説明として、ボタンのテキストはbuttonText、イベントハンドラはonClick、ボタンのスタイルはprimary、サイズはmdで表現されるとある。" />
+![ブログ記事がない場合に表示されるEmpty Stateコンポーネントとその部品の解剖図。白背景に、びっくりマークのアイコン、「まだブログ記事がありません」というtitle、「記事を作成するとここに表示されます」というdescription、「記事を書く」というボタンがある。ボタンの色は青色で、コンポーネントの説明として、ボタンのテキストはbuttonText、イベントハンドラはonClick、ボタンのスタイルはprimary、サイズはmdで表現されるとある。](emptyState1)
 
 このコンポーネントのPropsは、シンプルに次のように定義できます。
 
@@ -117,7 +116,7 @@ type Props = {
 
 ここで要件として、新たに「アプリ内で新規リソースを作成するわけではない場合、ボタンをリンクのスタイルで表示したい」という要件が追加されたとします。
 
-<Image src={emptyState2} alt="Empty Stateコンポーネントのボタンがリンク仕様になった図。ボタン部分が青枠・白背景のボタンになり、外部リンクを示すアイコンがボタンのテキストの横に表示されている。" />
+![Empty Stateコンポーネントのボタンがリンク仕様になった図。ボタン部分が青枠・白背景のボタンになり、外部リンクを示すアイコンがボタンのテキストの横に表示されている。](emptyState2)
 
 ```diff
 type Props = {
@@ -169,7 +168,7 @@ type Props = {
 
 もう1つの解決策は、Compositionを使うことです。Empty Stateコンポーネントが内包するButtonのスタイルが複数あることがそもそもの複雑さの原因なので、これを分離することで問題を解決します。
 
-<Image src={compositionImage} alt="代替テキスト" />
+![代替テキスト](compositionImage)
 
 渡された関数、ここではButtonコンポーネントを呼び出すことだけを任せます。
 
@@ -218,7 +217,7 @@ const LinkButton: FC<PropsWithChildren<{ href: string }>> = ({ href, children })
 
 ```
 
-<Image src={composition} alt="代替テキスト" />
+![代替テキスト](composition)
 
 Buttonに関する状態はButtonコンポーネント側で管理されるため、EmptyStatePanelコンポーネントでは先ほどのような不整合な状態が発生しません（前提として、Buttonコンポーネントが不正な状態が定義できないようになっている必要がありますが）。
 

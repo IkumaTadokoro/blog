@@ -3,11 +3,12 @@ import react from "@astrojs/react";
 import icon from "astro-icon";
 import {
   expressiveCodePlugin,
+  remarkPlugins,
   rehypePlugins,
 } from "./src/shared/config/markdown";
 import { SITE } from "./src/shared/config/site";
 import simpleScope from "vite-plugin-simple-scope";
-import mdx from "@astrojs/mdx";
+// import mdx from "@astrojs/mdx"; // MDXサポートを削除
 import tailwindcss from "@tailwindcss/vite";
 import og from "astro-og";
 import typesafeRoutes from "astro-typesafe-routes";
@@ -19,11 +20,12 @@ export default defineConfig({
     react(),
     icon(),
     expressiveCodePlugin,
-    mdx(),
+    // mdx(), // MDXサポートを削除
     og(),
     typesafeRoutes(),
   ],
   markdown: {
+    remarkPlugins,
     rehypePlugins,
   },
   image: {

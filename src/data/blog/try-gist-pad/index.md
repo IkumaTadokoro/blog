@@ -7,7 +7,6 @@ tags: [vscode]
 draft: false
 ---
 
-import { Image } from 'astro:assets';
 
 <twitter-post tweet-id="1653747179285262336"></twitter-post>
 
@@ -25,9 +24,8 @@ https://marketplace.visualstudio.com/items?itemName=vsls-contrib.gistfs
 2. アクティビティーバーの GistPad をクリック
 3. GitHub にログイン
 
-import image from "./gistpad-preview.png"
 
-<Image src={image} alt="代替テキスト" />
+![代替テキスト](image)
 
 これで自分が作成した Gist の一覧が見られるようになります（鍵付きのものは Secret Gist。鍵がついているけど別に見られて困るものではないのでそのままスクショ掲載しています）。
 

@@ -7,7 +7,6 @@ tags: [library, renovate, node.js]
 draft: false
 ---
 
-import { Image } from 'astro:assets';
 
 ## はじめに：継続ライブラリアップデートのために...
 
@@ -23,21 +22,17 @@ GitHub Apps として公開されているので、以下のリンクから Inst
 
 https://github.com/marketplace/renovate
 
-import image from "./renovate-install-1.png"
 
-<Image src={image} alt="代替テキスト" />
+![代替テキスト](image)
 
-import image2 from "./renovate-install-2.png"
 
-<Image src={image2} alt="代替テキスト" />
+![代替テキスト](image2)
 
 必要な項目を入力して、Save。
 
-import image3 from "./renovate-install-3.png"
 
-<Image src={image3} alt="代替テキスト" />
+![代替テキスト](image3)
 
-import image4 from "./renovate-install-4.png"
 
 Complete order and begin installation とかあるので、クリックして進みます。スクショ忘れましたが、このあと導入先のリポジトリの選択が求められるので、対象のリポジトリを指定します。
 
@@ -45,9 +40,8 @@ Complete order and begin installation とかあるので、クリックして進
 
 Renovate をインストールしたリポジトリに対して、自動で Renovate 設定のための PR が立ち上がります。
 
-import image5 from "./renovate-install-5.png"
 
-<Image src={image5} alt="代替テキスト" />
+![代替テキスト](image5)
 
 これをマージすると、renovate.json という設定ファイルが作成され、Renovate によるライブラリアップデートが開始されます（PR が作成されるようになる）。
 
@@ -132,9 +126,8 @@ Presets は先ほどの config:base のようなもので、よく使用され�
 
 と記載があります。ESLint でもできるだけ個別適用は避け、既存のルールを利用するのが良いように、**設定の簡易化のために Presets を使用するのが良い**と感じました。
 
-import image6 from "./prefer-presets.png"
 
-<Image src={image6} alt="代替テキスト" />
+![代替テキスト](image6)
 
 具体的には個別のプロパティが表示されている「Configuration > Repository」から設定が必要な値を探すのではなく、「Included Presets」の中から、自分がやりたいことをセットで提供しているルールを適用するのが良さそうです。
 

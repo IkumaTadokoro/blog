@@ -8,11 +8,9 @@ tags:
   - TwitterCard
 ---
 
-import { Image } from 'astro:assets';
 
-import image from "./Gatsbyjs_TwitterCard.png"
 
-<Image src={image} alt="代替テキスト" />
+![代替テキスト](image)
 
 ## 問題:TwitterCardが表示されない
 

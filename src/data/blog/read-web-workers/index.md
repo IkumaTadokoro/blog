@@ -7,11 +7,9 @@ tags: [WebWorker, 読書記録]
 draft: false
 ---
 
-import { Image } from 'astro:assets';
 
-import pictureLarge from './picture_large978-4-87311-596-2.jpeg';
 
-<Image src={pictureLarge} alt="代替テキスト" />
+![代替テキスト](pictureLarge)
 
 画像引用元：https://www.oreilly.co.jp/books/9784873115962/
 

@@ -6,7 +6,6 @@ publishDate: 2023-01-27
 tags: [TypeScript, FileReader, Blob, TextDecoder]
 draft: false
 ---
-import { Image } from 'astro:assets';
 
 ## はじめに
 
@@ -23,9 +22,8 @@ SJIS の文字コードで表されたテキストファイルを UTF-8 とし�
 
 ## ソースコードとデモ
 
-import demo from './demo.gif';
 
-<Image src={demo} alt="デモ" />
+![デモ](demo)
 
 https://stackblitz.com/edit/react-ts-3kwzkx?file=App.tsx
 
@@ -74,9 +72,8 @@ https://developer.mozilla.org/ja/docs/Web/API/FileReader/readAsText
 
 FileReader.readAsText()はデフォルトでは utf-8 でファイル（Blob）を解釈します。そのため、SJIS のテキストファイルをアップロードすると文字化けが発生します。
 
-import image from "./readAsTextDefault.png"
 
-<Image src={image} alt="代替テキスト" />
+![代替テキスト](image)
 
 UTF-8 以外のエンコーディングの文字列を読み込むために、FileReader.readAsText の第二引数にはエンコーディング文字列を指定することができます。
 
@@ -87,9 +84,8 @@ reader.readAsText(file, "sjis"); // エンコーディングにSJISを指定
 
 これで SJIS のファイルでも文字化けせずに表示できるようになりました。
 
-import image2 from "./readAsTextWithEncoding.png"
 
-<Image src={image2} alt="代替テキスト" />
+![代替テキスト](image2)
 
 ---
 
@@ -97,9 +93,8 @@ import image2 from "./readAsTextWithEncoding.png"
 
 例として先ほど SJIS で読み取るようにした処理を使って、UTF-8 のファイルを読み込んでみると、文字化けが発生します。
 
-import image3 from "./readUTF8WithSjisEncoding.png"
 
-<Image src={image3} alt="代替テキスト" />
+![代替テキスト](image3)
 
 この時、console 等にも警告は出ておらず、正常終了したことになっています。
 

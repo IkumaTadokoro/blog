@@ -4,8 +4,10 @@ import expressiveCode from 'astro-expressive-code';
 import rehypeAutolinkHeadingsPlugin from 'rehype-autolink-headings';
 import rehypeExternalLinksPlugin from 'rehype-external-links';
 import rehypeSlugPlugin from 'rehype-slug';
+import remarkDirective from 'remark-directive';
+import { remarkTips } from './remark-tips';
 
-import type { RehypePlugins } from 'astro';
+import type { RehypePlugins, RemarkPlugins } from 'astro';
 
 import type { Options as RehypeAutolinkHeadingsOptions } from 'rehype-autolink-headings';
 import type { Options as RehypeExternalLinksOptions } from 'rehype-external-links';
@@ -31,6 +33,8 @@ const expressiveCodeOptions = {
 } satisfies Parameters<typeof expressiveCode>[0];
 
 export const expressiveCodePlugin = expressiveCode(expressiveCodeOptions);
+
+export const remarkPlugins: RemarkPlugins = [remarkDirective, remarkTips];
 
 export const rehypePlugins: RehypePlugins = [
 	rehypeSlugPlugin,

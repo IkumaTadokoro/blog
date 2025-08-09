@@ -6,7 +6,6 @@ publishDate: 2023-06-03
 tags: [ ファシリテーション,対話 ]
 draft: false
 ---
-import { Image } from 'astro:assets';
 
 ## はじめに
 
@@ -27,9 +26,8 @@ import { Image } from 'astro:assets';
 
 ### 『問いのデザイン 創造的対話のファシリテーション』を読んだ
 
-import book from './book.jpg';
 
-<Image src={book} alt="問いのデザイン 創造的対話のファシリテーション" />
+![問いのデザイン 創造的対話のファシリテーション](book)
 画像引用元: https://book.gakugei-pub.co.jp/gakugei-book/9784761527433/
 
 前から認識してはいたのですが、課題感が募った今がまさに読み時だろうと思って[問いのデザイン 創造的対話のファシリテーション](https://book.gakugei-pub.co.jp/gakugei-book/9784761527433/)を読んでみたので、この本を読んで得たヒントをまとめてみます。

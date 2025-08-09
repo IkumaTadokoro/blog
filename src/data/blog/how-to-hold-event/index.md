@@ -7,7 +7,6 @@ tags: []
 draft: false
 ---
 
-import { Image } from 'astro:assets';
 
 ## 社内イベントで司会をやった
 
@@ -26,9 +25,8 @@ import { Image } from 'astro:assets';
 
 何の変哲もないFigmaで作ったスライドをただ流しているだけだったのですが、素材の入手場所が増えたのでそこだけ。
 
-import image from "./slide.png"
 
-<Image src={image} alt="代替テキスト" />
+![代替テキスト](image)
 
 今回はライトなイベントだったので、アイソメトリックな画像にしようと思ったんですが、そのときに以下のサイトを利用しました。
 
@@ -49,15 +47,13 @@ https://www.manypixels.co/gallery
 
 **1. 環境音を発生させるアイテムを事前に削除**
 
-import image2 from "./gather_sound.png"
 
-<Image src={image2} alt="代替テキスト" />
+![代替テキスト](image2)
 
 Gatherには配置すると音が出るオブジェクトがいくつかあるのですが、開催場所にもこれが置いてあったため削除しました。
 
-import image3 from "./gather_sound_setting.png"
 
-<Image src={image3} alt="代替テキスト" />
+![代替テキスト](image3)
 
 設定から音量をなくすこともできるのですが、Gatherに慣れていないユーザーもいるので根本ブレイクです。
 （Gatherに慣れていない時に波の音がする場所で打ち合わせしてて、マジで内容聞き取れなかったことあるマン）
@@ -66,9 +62,8 @@ import image3 from "./gather_sound_setting.png"
 
 2 ~ 4の全体像を先に示しておきます。
 
-import image4 from "./gather_setting.png"
 
-<Image src={image4} alt="代替テキスト" />
+![代替テキスト](image4)
 
 **2. Privateスペースを拡張**
 
@@ -86,9 +81,8 @@ Gatherは通常ある程度近くにいないと音声が聞こえない仕組�
 
 GatherにはSpawnという場所に対してリンクを貼る機能があり、これを使って案内を省略しました。
 
-import image5 from "./gather_spawn.png"
 
-<Image src={image5} alt="代替テキスト" />
+![代替テキスト](image5)
 
 あらかじめユーザーを遷移させたい場所にMapMakerの「Tile Effects」からSpawnを設置した上で、通常の画面からイベント作成を開き、このリンクをコピーします。すると、このリンクでGatherに入った場合開始位置がSpawnで設定した場所になります。
 （実際にはここでイベントを作ればいいのですが、今回は別の方に事前にカレンダー登録をしていただいていたので、リンクだけコピーしました）。
@@ -103,9 +97,8 @@ import image5 from "./gather_spawn.png"
 
 当日はイベント感を出すためにただ画面を共有するのではなく、ちょっと加工したものを共有していました。
 
-import image6 from "./event_image.png"
 
-<Image src={image6} alt="代替テキスト" />
+![代替テキスト](image6)
 
 画面切り替えと司会業を同時にやるとタイムマネジメントが難しいので、逆転の発想で時計を画面に配置し、この問題を解消すると共に200%のLIVE感の演出に成功しました（当社比）。
 
@@ -115,9 +108,8 @@ https://obsproject.com/ja/download
 
 **構成**
 
-import image7 from "./bloadcast.png"
 
-<Image src={image7} alt="代替テキスト" />
+![代替テキスト](image7)
 
 各種素材をシーンとしてあらかじめ構成しておき、OBSのスタジオモードで切り替えています。
 
@@ -133,9 +125,8 @@ https://booth.pm/ja/items/2912843
 
 **シーンをあらかじめ作っておく**
 
-import image8 from "./scene.png"
 
-<Image src={image8} alt="代替テキスト" />
+![代替テキスト](image8)
 
 イベントの構成としてゲストトークを3本やる形式だったので、画面構成はほぼほぼ同じです。そのため、シーンは1つでテキストを都度変更するという手段を最初は考えていました。
 
@@ -162,9 +153,8 @@ Background Musicを使うことで、システム側で流れている音声を�
 
 という構成に変更できるわけです。耳ではスピーカーの音声を聞きつつ、OBSには別途Background Musicをソースとして渡すことで、リアルタイムで音声を聞きつつの録音が可能になります。
 
-import image9 from "./mixer.png"
 
-<Image src={image9} alt="代替テキスト" />
+![代替テキスト](image9)
 
 OBSでは音声ソースを複数指定することができるので、一方を自分のマイク、もう一方をBackground Musicにして対応しました。
 

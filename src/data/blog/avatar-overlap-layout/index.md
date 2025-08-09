@@ -7,21 +7,18 @@ tags: [CSS, GridLayout, Animation]
 draft: false
 ---
 
-import { Image } from 'astro:assets';
 
 ## アイコンが重なってて、ホバーするとニュッとするそれを作ろう
 
-import devToSample from './dev_to_sample.png';
 
-<Image src={devToSample} alt="dev.toサンプル" />
+![dev.toサンプル](devToSample)
 
 これは dev.to の記事リアクションの表示です。Slack でハドルミーティングが発生している時の参加者の表示にもこういったアイコンを重ねるレイアウトがよく見られます。
 
 よく見かけるけど自分では作ったことがなかったので、[CSS Animated Grid Layouts](https://web.dev/css-animated-grid-layouts/)を参考にしつつ、今回はこちらを少し捻ったもの練習として作ってみました。
 
-import sample from './sample.gif';
 
-<Image src={sample} alt="サンプル画像" />
+![サンプル画像](sample)
 
 ## 要件
 

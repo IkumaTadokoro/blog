@@ -6,7 +6,6 @@ publishDate: 2023-02-12
 tags: [blog]
 draft: false
 ---
-import { Image } from 'astro:assets';
 
 ## Talks ページを開設した
 
@@ -14,9 +13,8 @@ https://ikuma-t.com/talks
 
 このブログに登壇資料を一覧できるページを作成してみました（追加が終わってないので、まだ全部の資料はないです。順次追加します）。
 
-import image from "./create-talks.png"
 
-<Image src={image} alt="代替テキスト" />
+![代替テキスト](image)
 
 ## 作った経緯
 
@@ -31,9 +29,8 @@ LT とか小規模な登壇って、もう資料に載っていることがほ�
 
 ## お気に入りポイント
 
-import image2 from "./is-this-an-art.png"
 
-<Image src={image2} alt="代替テキスト" />
+![代替テキスト](image2)
 
 特にメモを追記していない場合は、でっかい表紙画像と一言だけが表示され、ちょっと美術品ぽいです。
 
@@ -43,6 +40,5 @@ import image2 from "./is-this-an-art.png"
 
 最近 Slidev で高速にいい感じのスライドを作るためにテンプレートを整備していて、一通りできた（つもり）ので、また今年も外部の勉強会で登壇していきたいです。なんかいい感じのフロントエンドの勉強会あったら教えてください 🙏。
 
-import slidevTemplate from './slidev-template.gif';
 
-<Image src={slidevTemplate} alt="slidevのテンプレート" />
+![slidevのテンプレート](slidevTemplate)

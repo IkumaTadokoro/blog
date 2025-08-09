@@ -7,15 +7,13 @@ tags: []
 draft: false
 ---
 
-import { Image } from 'astro:assets';
 
 ## tableはCommonMarkdownではない
 
 このブログはremarkを使用してMarkdownをパースしているわけですが、tableを投稿してみたところ原文のまま表示されてしまいました。
 
-import image from "./unsupported-table.png"
 
-<Image src={image} alt="代替テキスト" />
+![代替テキスト](image)
 
 なんでかな〜と思って調べてみると、[unifiedjsのドキュメント](https://unifiedjs.com/learn/recipe/remark-table/)に
 
@@ -44,9 +42,8 @@ export default async function markdownToHtml(markdown: string) {
 
 ここまでで、tableタグとして解釈されるようになりました。
 
-import image2 from "./suppor-table-by-gfm.png"
 
-<Image src={image2} alt="代替テキスト" />
+![代替テキスト](image2)
 
 ## スタイルを適用する
 
@@ -76,6 +73,5 @@ td {
 
 これでいい感じにテーブルが表示されるようになりました。
 
-import image3 from "./styled-table.png"
 
-<Image src={image3} alt="代替テキスト" />
+![代替テキスト](image3)

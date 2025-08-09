@@ -6,12 +6,9 @@ category: tech
 tags:
   - RubyMine
 ---
-import { Image } from 'astro:assets';
 
 
-import rubyMineEssentialShortcut from './rubymine-essential-shortcut.png';
-
-<Image src={rubyMineEssentialShortcut} alt="RubyMineのショートカット" />
+![RubyMineのショートカット](rubyMineEssentialShortcut)
 
 ## だめだ...RubyMineのことが思い出せない
 

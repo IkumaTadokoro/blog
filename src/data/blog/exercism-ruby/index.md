@@ -8,11 +8,9 @@ tags:
   - Ruby
 ---
 
-import { Image } from 'astro:assets';
 
-import image from "./exercism-ruby.png"
 
-<Image src={image} alt="代替テキスト" />
+![代替テキスト](image)
 
 ## Exercismとは
 
