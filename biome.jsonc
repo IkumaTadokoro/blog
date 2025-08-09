@@ -11,7 +11,9 @@
 			"package.json",
 			".vscode/",
 			"tsconfig.json",
-			".claude/settings.local.json"
+			".claude/settings.local.json",
+			"src/data/blog/_admin/*.base",
+			"src/data/blog/.obsidian"
 		]
 	},
 	"formatter": {
