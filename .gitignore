@@ -31,4 +31,4 @@ pnpm-debug.log*
 .claude/settings.local.json
 
 # obsidian
-src/data/blog/_admin/*.base
+src/data/blog/_admin/*
