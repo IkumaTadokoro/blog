@@ -8,7 +8,6 @@ tags:
   - PROGRAMMING
   - Ruby on Rails
 author: ikuma-t
-modDatetime: 2022-03-03 08:53:01
 slug: "202203031646265181"
 ---
 ## 事の発端

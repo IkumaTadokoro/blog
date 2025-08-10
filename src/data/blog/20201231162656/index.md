@@ -8,7 +8,6 @@ tags:
   - 日常
   - CSS
 author: ikuma-t
-modDatetime: 2020-12-31 16:26:56
 slug: "20201231162656"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20201231/20201231150902.png

@@ -7,7 +7,6 @@ description: "Google Meetで相手の画面やプレゼンテーションが見�
 tags:
   - tool
 author: ikuma-t
-modDatetime: 2022-04-18 18:41:03
 slug: "202204181650274863"
 ---
 - [Table of contents](#table-of-contents)

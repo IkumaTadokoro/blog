@@ -8,7 +8,6 @@ tags:
   - PROGRAMMING
   - 登壇
 author: ikuma-t
-modDatetime: 2022-01-28 12:00:00
 slug: "202201281643338800"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20220128/20220128104136.png

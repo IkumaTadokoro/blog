@@ -8,7 +8,6 @@ tags:
   - PROGRAMMING
   - Git
 author: ikuma-t
-modDatetime: 2022-02-08 10:00:00
 slug: "202202081644282000"
 ---
 ## Conventional Commitとは

@@ -8,7 +8,6 @@ tags:
   - PROGRAMMING
   - Git
 author: ikuma-t
-modDatetime: 2021-10-20 10:12:48
 slug: "202110201634692368"
 ---
 久しぶりに$1から`git init`したら、以下のようなメッセージが表示されました。

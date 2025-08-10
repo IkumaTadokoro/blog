@@ -8,7 +8,6 @@ tags:
   - PROGRAMMING
   - Git
 author: ikuma-t
-modDatetime: 2021-01-02 10:48:29
 slug: "20210102104829"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210102/20210102104736.png

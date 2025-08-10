@@ -8,7 +8,6 @@ tags:
   - PROGRAMMING
   - Ruby
 author: ikuma-t
-modDatetime: 2021-10-18 12:02:56
 slug: "202110181634526176"
 ---
 Rubyである文字列wordに数値が含まれているかどうかをBoolean値で判定するには次のようにする

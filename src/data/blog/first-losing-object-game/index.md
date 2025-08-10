@@ -7,7 +7,6 @@ description: 新年の抱負に対する負け惜しみです。
 tags:
   - life
 author: ikuma-t
-modDatetime: 2024-01-05T11:22:00+09:00
 slug: first-losing-object-game
 ---
 ## 1年の目標は正月に1回失敗しておくくらいがちょうどよい

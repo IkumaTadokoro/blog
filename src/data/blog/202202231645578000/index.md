@@ -8,7 +8,6 @@ tags:
   - PROGRAMMING
   - Ruby on Rails
 author: ikuma-t
-modDatetime: 2022-02-23 10:00:00
 slug: "202202231645578000"
 ---
 - [Formオブジェクトを利用した場合の翻訳キーはどれ？](#Formオブジェクトを利用した場合の翻訳キーはどれ)

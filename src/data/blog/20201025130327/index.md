@@ -10,7 +10,6 @@ tags:
   - RubyMine
   - 登壇
 author: ikuma-t
-modDatetime: 2020-10-25 13:03:27
 slug: "20201025130327"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20201025/20201025125820.jpg

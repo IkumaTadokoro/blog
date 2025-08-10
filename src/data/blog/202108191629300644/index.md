@@ -7,7 +7,6 @@ description: "Node.jsでファイルが直接実行されたときだけ処理�
 tags:
   - PROGRAMMING
 author: ikuma-t
-modDatetime: 2021-08-19 00:30:44
 slug: "202108191629300644"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210819/20210819002958.png

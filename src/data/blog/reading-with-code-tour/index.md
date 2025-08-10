@@ -8,7 +8,6 @@ tags:
   - VSCode
   - VSCode Extension
   - Idea
-modDatetime: 2024-03-10T19:28:45.000+09:00
 ---
 ## Code Tour を使ってじっくり確実にコードを読む
 

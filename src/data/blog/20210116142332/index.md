@@ -7,7 +7,6 @@ description: "わたしのリフレッシュ方法（2021年版）"
 tags:
   - 日常
 author: ikuma-t
-modDatetime: 2021-01-16 14:23:32
 slug: "20210116142332"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210116/20210116135617.png

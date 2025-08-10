@@ -9,7 +9,6 @@ tags:
   - Ruby on Rails
   - Ruby
 author: ikuma-t
-modDatetime: 2021-01-10 19:56:03
 slug: "20210110195603"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210110/20210110195519.png

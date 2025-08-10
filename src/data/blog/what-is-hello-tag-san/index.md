@@ -8,7 +8,6 @@ tags:
   - W3C
   - Today I Learned
 author: ikuma-t
-modDatetime: 2024-05-04T15:50:06.000+09:00
 ---
 ## こんにちは TAG-さん!
 

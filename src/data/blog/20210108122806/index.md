@@ -9,7 +9,6 @@ tags:
   - Todoist
   - Pixela
 author: ikuma-t
-modDatetime: 2021-01-08 12:28:06
 slug: "20210108122806"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108111222.jpg

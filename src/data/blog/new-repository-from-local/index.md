@@ -9,7 +9,6 @@ tags:
   - Git
   - GitHub CLI
 author: ikuma-t
-modDatetime: 2024-03-11T21:00:19.000+09:00
 ---
 何度やっても忘れるのでメモ。
 

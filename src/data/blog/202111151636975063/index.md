@@ -10,7 +10,6 @@ tags:
   - RubyMine
   - Docker
 author: ikuma-t
-modDatetime: 2021-11-15 20:17:43
 slug: "202111151636975063"
 ---
 ## 動機

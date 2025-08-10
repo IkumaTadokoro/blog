@@ -9,7 +9,6 @@ tags:
   - Ruby on Rails
   - Ruby
 author: ikuma-t
-modDatetime: 2021-01-04 21:22:08
 slug: "20210104212208"
 ---
 - [きっかけ](#きっかけ)

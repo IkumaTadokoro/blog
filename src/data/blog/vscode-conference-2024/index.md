@@ -9,7 +9,6 @@ tags:
   - conference
   - vscode
 author: ikuma-t
-modDatetime: 2024-04-22T22:38:00+09:00
 slug: vscode-conference-japan-2024
 ---
 ## VSCode Conference Japan 2024 で登壇しました！

@@ -9,7 +9,6 @@ tags:
   - skim
   - Today I Learned
 author: ikuma-t
-modDatetime: 2024-05-02T20:34:51.000+09:00
 ---
 ## モチベーション
 

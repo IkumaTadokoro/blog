@@ -9,7 +9,6 @@ tags:
   - conference
   - kaigi-on-rails
 author: ikuma-t
-modDatetime: 2022-10-22T17:44:00+09:00
 slug: kaigi-on-rails-2022
 ---
 ## Kaigi on Rails 2022 で登壇しました！

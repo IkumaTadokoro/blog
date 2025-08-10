@@ -8,7 +8,6 @@ tags:
   - PROGRAMMING
   - 書籍
 author: ikuma-t
-modDatetime: 2021-08-10 10:37:33
 slug: "20210810103733"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210810/20210810103304.png

@@ -8,7 +8,6 @@ tags:
   - 日常
   - フォカッチャ
 author: ikuma-t
-modDatetime: 2020-08-06 00:05:14
 slug: "20200806000514"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20200728/20200728164816.png

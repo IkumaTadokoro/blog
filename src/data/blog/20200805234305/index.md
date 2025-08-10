@@ -8,7 +8,6 @@ tags:
   - PROGRAMMING
   - Linux
 author: ikuma-t
-modDatetime: 2020-08-05 23:43:05
 slug: "20200805234305"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20200805/20200805215246.png
