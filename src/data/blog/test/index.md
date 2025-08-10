@@ -1,6 +1,7 @@
 ---
-title: "テスト用のサンプル記事"
-publishDate: 2024-01-01
+title: テスト用のサンプル記事
+description: test
+publishDate: 9999-01-01
 category: tech
 tags:
     - test

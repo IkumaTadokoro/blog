@@ -16,7 +16,7 @@ describe('buildRssItem', async () => {
 			'この記事はテスト用に作成した物です。削除しないでください。見出し1',
 		);
 		expect(rssItem.link).eq('/blog/test');
-		expect(rssItem.pubDate).toEqual(new Date('2024-01-01T00:00:00.000Z'));
+		expect(rssItem.pubDate).toEqual(new Date('9999-01-01T00:00:00.000Z'));
 		expect(rssItem.content).toContain(
 			'<p>この記事はテスト用に作成した物です。削除しないでください。</p>',
 		);
