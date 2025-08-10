@@ -7,7 +7,6 @@ description: "リーダブルコード 第1部を読みました"
 tags:
   - PROGRAMMING
   - 書籍
-author: ikuma-t
 slug: "20210810103733"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210810/20210810103304.png

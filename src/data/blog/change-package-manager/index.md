@@ -6,7 +6,6 @@ draft: false
 description: npm から pnpm に移行しました。実行がかなり早くなったので、大変満足です。
 tags:
   - tools
-author: ikuma-t
 ---
 ## pnpm へ移行
 

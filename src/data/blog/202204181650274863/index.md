@@ -6,7 +6,6 @@ draft: false
 description: "Google Meetで相手の画面やプレゼンテーションが見えないときの対処法"
 tags:
   - tool
-author: ikuma-t
 slug: "202204181650274863"
 ---
 - [Table of contents](#table-of-contents)

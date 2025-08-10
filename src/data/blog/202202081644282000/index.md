@@ -7,7 +7,6 @@ description: "Conventional CommitでGemのCHANGELOGをコミットから自動�
 tags:
   - PROGRAMMING
   - Git
-author: ikuma-t
 slug: "202202081644282000"
 ---
 ## Conventional Commitとは

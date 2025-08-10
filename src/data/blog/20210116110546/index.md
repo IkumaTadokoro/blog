@@ -8,7 +8,6 @@ tags:
   - RubyMine
   - Ruby on Rails
   - Ruby
-author: ikuma-t
 slug: "20210116110546"
 ---
 ActiveStorageの`with_attached_#{name}`がどこに定義されているのか確認する過程で、RubyMineでの調べ方を覚えました。

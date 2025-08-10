@@ -6,7 +6,6 @@ draft: false
 description: "フィヨルドブートキャンプに入って1ヶ月が経ちました"
 tags:
   - fjordbootcamp
-author: ikuma-t
 slug: "20200811114419"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20200810/20200810130426.png

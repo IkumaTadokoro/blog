@@ -7,7 +7,6 @@ description: "文字列に大文字と小文字が混在していることを判
 tags:
   - PROGRAMMING
   - Ruby
-author: ikuma-t
 slug: "202110181634525749"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20211018/20211018115513.png

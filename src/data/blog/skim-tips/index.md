@@ -8,7 +8,6 @@ tags:
   - tools
   - skim
   - Today I Learned
-author: ikuma-t
 ---
 ## モチベーション
 

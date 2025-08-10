@@ -7,7 +7,6 @@ description: tools.go ファイルを作成し、そこで依存関係を追跡�
 tags:
   - Go
   - Today I Learned
-author: ikuma-t
 ---
 ## 解決したい課題
 

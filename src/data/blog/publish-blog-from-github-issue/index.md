@@ -9,7 +9,6 @@ tags:
   - GitHub
   - GitHub CLI
   - GitHub Actions
-author: ikuma-t
 ---
 ## モチベーション
 

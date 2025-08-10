@@ -7,7 +7,6 @@ description: "【RubyMine】デバッグ時、requireで怒られたときの対
 tags:
   - ツール・ガジェット
   - RubyMine
-author: ikuma-t
 slug: "20200815155129"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20200815/20200815154953.png

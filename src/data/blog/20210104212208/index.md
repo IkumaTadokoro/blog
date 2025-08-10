@@ -8,7 +8,6 @@ tags:
   - PROGRAMMING
   - Ruby on Rails
   - Ruby
-author: ikuma-t
 slug: "20210104212208"
 ---
 - [きっかけ](#きっかけ)

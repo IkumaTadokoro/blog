@@ -8,7 +8,6 @@ tags:
   - PROGRAMMING
   - Ruby on Rails
   - Ruby
-author: ikuma-t
 slug: "20210110195603"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210110/20210110195519.png

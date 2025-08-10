@@ -7,7 +7,6 @@ description: "ブログをGatsbyjsに移行.... しかけてやめました"
 tags:
   - PROGRAMMING
   - GatsbyJS
-author: ikuma-t
 slug: "20210809102000"
 ---
  ![f:id:ikmbear:20210809101914p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210809/20210809101914.png) 

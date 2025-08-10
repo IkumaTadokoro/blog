@@ -8,7 +8,6 @@ tags:
   - PROGRAMMING
   - Ruby
   - zsh
-author: ikuma-t
 slug: "20200810160101"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20200810/20200810155847.png

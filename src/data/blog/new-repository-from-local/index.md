@@ -8,7 +8,6 @@ tags:
   - GitHub
   - Git
   - GitHub CLI
-author: ikuma-t
 ---
 何度やっても忘れるのでメモ。
 

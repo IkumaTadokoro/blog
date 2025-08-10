@@ -7,7 +7,6 @@ description: "【Excel】社内でExcelのデータ操作機能について勉�
 tags:
   - PROGRAMMING
   - Excel
-author: ikuma-t
 slug: "20210215150518"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210215/20210215110559.png

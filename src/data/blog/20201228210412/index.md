@@ -7,7 +7,6 @@ description: "Rubocop実行時のparserに関する警告を解消する"
 tags:
   - PROGRAMMING
   - Ruby
-author: ikuma-t
 slug: "20201228210412"
 ---
 ## 環境

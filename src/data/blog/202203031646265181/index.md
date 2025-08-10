@@ -7,7 +7,6 @@ description: "【Rails】collection_selectで表示するテキストには、Pr
 tags:
   - PROGRAMMING
   - Ruby on Rails
-author: ikuma-t
 slug: "202203031646265181"
 ---
 ## 事の発端

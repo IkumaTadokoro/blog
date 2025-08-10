@@ -7,7 +7,6 @@ description: "RubyMineのIdeaVimで、jjをEscにマッピングする方法"
 tags:
   - ツール・ガジェット
   - RubyMine
-author: ikuma-t
 slug: "20200814081503"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20200814/20200814073502.png

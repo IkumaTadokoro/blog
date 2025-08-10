@@ -7,7 +7,6 @@ description: "Steepで使えるコマンドを見てみよう"
 tags:
   - PROGRAMMING
   - Ruby
-author: ikuma-t
 slug: "202202041643936692"
 ---
 資料はこちら

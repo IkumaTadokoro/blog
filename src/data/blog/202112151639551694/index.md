@@ -6,7 +6,6 @@ draft: false
 description: "【アウトライナー】transnoというアプリがすごくフィットしている"
 tags:
   - ツール・ガジェット
-author: ikuma-t
 slug: "202112151639551694"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20211215/20211215152126.png

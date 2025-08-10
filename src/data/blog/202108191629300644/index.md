@@ -6,7 +6,6 @@ draft: false
 description: "Node.jsでファイルが直接実行されたときだけ処理を呼び出す方法"
 tags:
   - PROGRAMMING
-author: ikuma-t
 slug: "202108191629300644"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210819/20210819002958.png

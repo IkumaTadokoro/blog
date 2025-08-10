@@ -8,7 +8,6 @@ tags:
   - ツール・ガジェット
   - Todoist
   - Pixela
-author: ikuma-t
 slug: "20210108122806"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210108/20210108111222.jpg

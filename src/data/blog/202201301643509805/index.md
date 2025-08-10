@@ -7,7 +7,6 @@ description: "OSS gateにビギナーとして参加しました！"
 tags:
   - PROGRAMMING
   - イベント
-author: ikuma-t
 slug: "202201301643509805"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20220130/20220130112941.png

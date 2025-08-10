@@ -7,7 +7,6 @@ description: "突然ssh接続でDebianに繋がらなくなったときの対処
 tags:
   - PROGRAMMING
   - Linux
-author: ikuma-t
 slug: "20200805234305"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20200805/20200805215246.png

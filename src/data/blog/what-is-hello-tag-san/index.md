@@ -7,7 +7,6 @@ description: W3C TAG の ISSUE TEMPLATE を眺めていると、なぜか「こ�
 tags:
   - W3C
   - Today I Learned
-author: ikuma-t
 ---
 ## こんにちは TAG-さん!
 

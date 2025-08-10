@@ -8,7 +8,6 @@ tags:
   - ツール・ガジェット
   - Alfred
   - ドット絵
-author: ikuma-t
 slug: "202112121639280723"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20211212/20211212124414.png

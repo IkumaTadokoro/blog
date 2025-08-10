@@ -7,7 +7,6 @@ description: "Appraisalを使っている状態でもRubyMineのGUIでRSpecを�
 tags:
   - PROGRAMMING
   - Ruby
-author: ikuma-t
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20220209/20220209071635.png
 
