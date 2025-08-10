@@ -7,7 +7,6 @@ description: "「$HOME/git/ignore」と 「$GIT_DIR/info/exclude」と「.gitign
 tags:
   - PROGRAMMING
   - Git
-slug: "20210102104829"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210102/20210102104736.png
 

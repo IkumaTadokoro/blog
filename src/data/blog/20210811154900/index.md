@@ -7,7 +7,6 @@ description: "【RubyMine】意図しない拡張子でファイルを開いて�
 tags:
   - ツール・ガジェット
   - RubyMine
-slug: "20210811154900"
 ---
 ## 発端
 

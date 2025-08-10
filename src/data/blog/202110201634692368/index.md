@@ -7,7 +7,6 @@ description: "git initで作成されるブランチ名を変更する"
 tags:
   - PROGRAMMING
   - Git
-slug: "202110201634692368"
 ---
 久しぶりに$1から`git init`したら、以下のようなメッセージが表示されました。
 

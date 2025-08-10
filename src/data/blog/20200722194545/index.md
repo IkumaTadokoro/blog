@@ -7,7 +7,6 @@ description: "フィヨルドブートキャンプにキャンプインしまし
 tags:
   - fjordbootcamp
   - PROGRAMMING
-slug: "20200722194545"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20200722/20200722142831.png
 

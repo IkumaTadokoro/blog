@@ -7,7 +7,6 @@ description: "わたしがRubyMineを使う理由"
 tags:
   - ツール・ガジェット
   - RubyMine
-slug: "202202031643850000"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20220203/20220203082003.png
 

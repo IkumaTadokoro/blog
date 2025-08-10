@@ -6,7 +6,6 @@ draft: false
 description: "わたしのリフレッシュ方法（2021年版）"
 tags:
   - 日常
-slug: "20210116142332"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210116/20210116135617.png
 

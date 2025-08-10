@@ -7,7 +7,6 @@ description: "スマホ中毒改善のために空き箱でスマホケースを
 tags:
   - ツール・ガジェット
   - 日常
-slug: "202202051644031800"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20220205/20220205090821.jpg
 

@@ -7,7 +7,6 @@ description: "うちNotion"
 tags:
   - ツール・ガジェット
   - Notion
-slug: "20210223120727"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20210223/20210223123237.png
 

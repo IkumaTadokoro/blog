@@ -8,7 +8,6 @@ tags:
   - idea
   - conference
   - kaigi-on-rails
-slug: kaigi-on-rails-2022
 ---
 ## Kaigi on Rails 2022 で登壇しました！
 

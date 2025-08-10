@@ -7,7 +7,6 @@ description: "VSCodeVimで使えるインデントオブジェクト"
 tags:
   - ツール・ガジェット
   - vim
-slug: "20200807123531"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20200807/20200807101559.gif
 

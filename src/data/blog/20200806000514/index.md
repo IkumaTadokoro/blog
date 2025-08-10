@@ -7,7 +7,6 @@ description: "今月のフォカッチャ"
 tags:
   - 日常
   - フォカッチャ
-slug: "20200806000514"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20200728/20200728164816.png
 

@@ -9,7 +9,6 @@ tags:
   - Ruby on Rails
   - RubyMine
   - Docker
-slug: "202111151636975063"
 ---
 ## 動機
 

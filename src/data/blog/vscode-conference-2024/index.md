@@ -8,7 +8,6 @@ tags:
   - idea
   - conference
   - vscode
-slug: vscode-conference-japan-2024
 ---
 ## VSCode Conference Japan 2024 で登壇しました！
 

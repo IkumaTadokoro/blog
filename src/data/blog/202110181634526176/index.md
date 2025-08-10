@@ -7,7 +7,6 @@ description: "文字列に数値が含まれているか判定する"
 tags:
   - PROGRAMMING
   - Ruby
-slug: "202110181634526176"
 ---
 Rubyである文字列wordに数値が含まれているかどうかをBoolean値で判定するには次のようにする
 

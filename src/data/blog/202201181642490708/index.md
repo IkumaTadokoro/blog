@@ -7,7 +7,6 @@ description: "日本の地方公共団体コードをパースするGemをリリ
 tags:
   - PROGRAMMING
   - Ruby
-slug: "202201181642490708"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20220118/20220118162141.png
 

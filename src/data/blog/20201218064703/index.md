@@ -6,7 +6,6 @@ draft: false
 description: "アウトプットを阻むプライドと戦う〜スモールアウトプットのすすめ〜"
 tags:
   - fjordbootcamp
-slug: "20201218064703"
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20201217/20201217221725.png
 

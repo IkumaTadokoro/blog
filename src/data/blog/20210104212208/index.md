@@ -8,7 +8,6 @@ tags:
   - PROGRAMMING
   - Ruby on Rails
   - Ruby
-slug: "20210104212208"
 ---
 - [きっかけ](#きっかけ)
 - [ソースをみる](#ソースをみる)

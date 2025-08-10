@@ -2,7 +2,6 @@
 title: "テスト用のサンプル記事"
 publishDate: 2024-01-01
 category: tech
-slug: test
 tags:
     - test
     - テスト
