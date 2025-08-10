@@ -87,3 +87,12 @@
     @apply mt-4 sm:mt-8;
   }
 }
+
+code {
+  @apply bg-foreground/10 py-0.5 px-1.5 rounded-sm text-sm!;
+
+  &::before,
+  &::after {
+    display: none;
+  }
+}
