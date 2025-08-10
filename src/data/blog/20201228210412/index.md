@@ -10,7 +10,6 @@ tags:
 author: ikuma-t
 modDatetime: 2020-12-28 21:04:12
 slug: "20201228210412"
-featured: false
 ---
 ## 環境
 

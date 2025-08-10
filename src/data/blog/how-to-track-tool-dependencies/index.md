@@ -9,7 +9,6 @@ tags:
   - Today I Learned
 author: ikuma-t
 modDatetime: 2024-04-30T22:28:33.000+09:00
-featured: false
 ---
 ## 解決したい課題
 

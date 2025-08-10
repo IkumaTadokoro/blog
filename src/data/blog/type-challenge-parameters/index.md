@@ -25,5 +25,3 @@ type MyParameters<T extends (...args: any[]) => any> = T extends (...args: infer
 https://www.typescriptlang.org/docs/handbook/utility-types.html#parameterstype
 
 `Parametes<T>`の形式で、関数`T`の引数の型のタプル型を生成する。
-
-

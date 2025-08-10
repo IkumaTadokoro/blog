@@ -10,7 +10,6 @@ tags:
 author: ikuma-t
 modDatetime: 2022-02-04 10:04:52
 slug: "202202041643936692"
-featured: false
 ---
 資料はこちら
 

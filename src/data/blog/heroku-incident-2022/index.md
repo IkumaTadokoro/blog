@@ -162,4 +162,4 @@ https://blog.aquasec.com/travis-ci-security
 - [Security alert: Attack campaign involving stolen OAuth user tokens issued to two third\-party integrators \| The GitHub Blog](https://github.blog/2022-04-15-security-alert-stolen-oauth-user-tokens/)
 - [The Travis CI Blog: SECURITY BULLETIN; Customer repositories have NOT been accessed](https://blog.travis-ci.com/2022-04-17-securitybulletin)
 - [Unpatched Travis CI API Bug Exposes Thousands of Secret User Access Tokens](https://thehackernews.com/2022/06/unpatched-travis-ci-api-bug-exposes.html)
-- [Public Travis CI Logs \(Still\) Expose Users to Cyber Attacks](https://blog.aquasec.com/travis-ci-security) 
+- [Public Travis CI Logs \(Still\) Expose Users to Cyber Attacks](https://blog.aquasec.com/travis-ci-security)

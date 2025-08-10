@@ -41,4 +41,3 @@ type Length<T extends readonly any[]> = T['length']
 
 最初にPickを解いた時は「これでeasyかよ！」と思ったりしていましたが、だんだん妥当に感じるようになってきました。
 でもeasyで高度な型がでているってことは、mediumはえげつないのかな。
-

@@ -28,5 +28,3 @@ Template Literal TypesはJSのテンプレートリテラルと同じ記法で�
 type space = ' ' | '\n' | '\t'
 type TrimLeft<S extends string> = S extends `${space}${infer L}` ? TrimLeft<L> : S
 ```
-
-

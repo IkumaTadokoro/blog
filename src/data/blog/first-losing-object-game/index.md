@@ -9,7 +9,6 @@ tags:
 author: ikuma-t
 modDatetime: 2024-01-05T11:22:00+09:00
 slug: first-losing-object-game
-featured: true
 ---
 ## 1年の目標は正月に1回失敗しておくくらいがちょうどよい
 

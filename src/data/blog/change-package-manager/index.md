@@ -8,7 +8,6 @@ tags:
   - tools
 author: ikuma-t
 modDatetime: 2024-04-27T16:35:32.000+09:00
-featured: false
 ---
 ## pnpm へ移行
 

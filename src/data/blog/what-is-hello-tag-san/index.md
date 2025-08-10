@@ -9,7 +9,6 @@ tags:
   - Today I Learned
 author: ikuma-t
 modDatetime: 2024-05-04T15:50:06.000+09:00
-featured: false
 ---
 ## こんにちは TAG-さん!
 

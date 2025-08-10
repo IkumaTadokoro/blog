@@ -9,7 +9,6 @@ tags:
 author: ikuma-t
 modDatetime: 2022-04-18 18:41:03
 slug: "202204181650274863"
-featured: false
 ---
 - [Table of contents](#table-of-contents)
 - [相手が見えない...](#相手が見えない)

@@ -11,7 +11,6 @@ tags:
 author: ikuma-t
 modDatetime: 2023-10-29T17:44:00+09:00
 slug: kaigi-on-rails-2023
-featured: false
 ---
 ## Kaigi on Rails 2023 で登壇しました！
 

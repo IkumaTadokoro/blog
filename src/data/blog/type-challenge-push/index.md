@@ -27,4 +27,3 @@ https://ikuma-t.work/posts/type-challenge-concat
 この回でも書いたのですが「`...`で展開される型は`extends readonly any[]`ようです。
 
 `any[]`はまあいいんですけど、ただの配列だったら`readonly`はいらないのかな〜。
-

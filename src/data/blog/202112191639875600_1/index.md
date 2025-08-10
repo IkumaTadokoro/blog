@@ -11,7 +11,6 @@ tags:
 author: ikuma-t
 modDatetime: 2021-12-19 10:00:00
 slug: "202112191639875600_1"
-featured: false
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20211218/20211218205648.png
 

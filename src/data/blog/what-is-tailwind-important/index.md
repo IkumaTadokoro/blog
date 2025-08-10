@@ -27,4 +27,3 @@ Tailwind CSSの型定義を参照すると、値としては公式ドキュメ�
 これも公式ドキュメントに記載があるが、`important: true`とすると、MUIのようなインラインスタイルを要素に追加するライブラリとTailwindが競合する可能性がある。そこで`important: #app`のように、ID Selectorを値として指定することで、importantの適用範囲を限定することができるのだそう。
 
 https://tailwindcss.com/docs/configuration#selector-strategy
-

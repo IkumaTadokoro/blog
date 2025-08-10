@@ -10,7 +10,6 @@ tags:
 author: ikuma-t
 modDatetime: 2021-10-20 10:12:48
 slug: "202110201634692368"
-featured: false
 ---
 久しぶりに$1から`git init`したら、以下のようなメッセージが表示されました。
 
@@ -24,4 +23,4 @@ featured: false
 % git config --global init.defaultBranch main
 ```
 
-この状態で、`git init`をしてみると、ブランチが`main`で作成されていました。 ![f:id:ikmbear:20211020101207p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20211020/20211020101207.png) 
+この状態で、`git init`をしてみると、ブランチが`main`で作成されていました。 ![f:id:ikmbear:20211020101207p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20211020/20211020101207.png)

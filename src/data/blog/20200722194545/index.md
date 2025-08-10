@@ -10,7 +10,6 @@ tags:
 author: ikuma-t
 modDatetime: 2020-07-22 19:45:45
 slug: "20200722194545"
-featured: false
 ---
 IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20200722/20200722142831.png
 

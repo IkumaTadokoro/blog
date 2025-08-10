@@ -11,7 +11,6 @@ tags:
   - GitHub Actions
 author: ikuma-t
 modDatetime: 2024-04-28T17:27:11.000+09:00
-featured: false
 ---
 ## モチベーション
 

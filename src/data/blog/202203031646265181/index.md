@@ -10,7 +10,6 @@ tags:
 author: ikuma-t
 modDatetime: 2022-03-03 08:53:01
 slug: "202203031646265181"
-featured: false
 ---
 ## 事の発端
 
@@ -60,4 +59,4 @@ f.collection_select :local_gov_code, JpLocalGov.all, :code, ->(lg) { "#{lg.prefe
 
 こんな感じにProcを渡してあげると、`JpLocaGov.all`で取得されたすべての市区町村がイテレーションされて`lg`にわたり、それぞれの「都道府県名 市区町村名」として表示できるわけです。
 
- ![f:id:ikmbear:20220303085115p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20220303/20220303085115.png) 
+ ![f:id:ikmbear:20220303085115p:plain](https://cdn-ak.f.st-hatena.com/images/fotolife/i/ikmbear/20220303/20220303085115.png)

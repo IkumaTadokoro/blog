@@ -11,7 +11,6 @@ tags:
 author: ikuma-t
 modDatetime: 2021-01-16 11:05:46
 slug: "20210116110546"
-featured: false
 ---
 ActiveStorageの`with_attached_#{name}`がどこに定義されているのか確認する過程で、RubyMineでの調べ方を覚えました。
 
