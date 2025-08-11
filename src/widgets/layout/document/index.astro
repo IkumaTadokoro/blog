@@ -10,9 +10,10 @@ import ogImage from "./ogp.png";
 type Props = {
   title?: string;
   description?: string;
+  dot?: boolean;
 };
 
-const { title, description } = Astro.props as Props;
+const { title, description, dot } = Astro.props as Props;
 
 const pageTitle = title ?? Astro.url.pathname.replace(/^\/|\/$/g, "");
 const pageDescription = description ?? SITE.description;
@@ -43,7 +44,7 @@ const ogp = new URL(ogImage.src, Astro.site?.origin as string);
     <link rel="canonical" href={url} />
     <ThemeProvider />
   </head>
-  <body class="min-h-screen grid grid-rows-[auto_1fr_auto] bg-background">
+  <body class="min-h-screen grid grid-rows-[auto_1fr_auto] bg-background" data-dot={dot}>
     <Header />
     <main>
       <div class="h-full max-w-screen-md mx-auto p-4 mb-8">
@@ -53,3 +54,9 @@ const ogp = new URL(ogImage.src, Astro.site?.origin as string);
     <Footer />
   </body>
 </html>
+
+<style scoped>
+body[data-dot="true"] {
+  @apply bg-[radial-gradient(circle,#8585851a_1px,transparent_1px)] bg-[size:10px_10px]
+}
+</style>
