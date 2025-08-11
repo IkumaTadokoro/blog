@@ -11,48 +11,72 @@ const titleId = scope("toc");
 const { headings } = Astro.props;
 ---
 
-<div>
-  <div>
-    <nav aria-labelledby={titleId}>
-      <h2
-        id={titleId}
-        class="mb-4 border-b border-foreground/10 pb-2 text-foreground"
-      >
-        目次
-      </h2>
-      <ul class="space-y-4">
-        {
-          headings.map((heading) => {
+{
+  headings.length > 0 && (
+    <div class="table-of-contents">
+      <nav aria-labelledby={titleId}>
+        <h2
+          id={titleId}
+          class="mb-4 border-b border-foreground/10 pb-2 text-foreground sr-only"
+        >
+          目次
+        </h2>
+        <ul class="space-y-4 ps-1">
+          {headings.map((heading) => {
             return (
-              <li
-                class="text-[0.9rem] text-foreground/80 hover:opacity-80"
-                data-level={heading.depth}
-              >
+              <li data-level={heading.depth} class="truncate">
                 <a href={`#${heading.slug}`}>{heading.text}</a>
               </li>
             );
-          })
-        }
-        {
-          headings.length === 0 && (
-            <li class="text-[0.9rem] text-foreground/80">
-              この記事にはセクションがありません
-            </li>
-          )
-        }
-      </ul>
-    </nav>
-  </div>
-</div>
+          })}
+        </ul>
+      </nav>
+    </div>
+  )
+}
 
 <style scoped>
-  li[data-level="2"] {
-    list-style: disc;
-    margin-left: 1.5rem;
-    font-weight: 600;
+  .table-of-contents {
+    font-size: 0.875em;
+  }
+
+  .table-of-contents > ul {
+    text-overflow: ellipsis;
+    height: 100%;
+    overflow-y: auto;
+    padding-inline-start: 0;
+  }
+
+  .table-of-contents ul > li::before {
+    display: none;
+  }
+
+  .table-of-contents ul > li {
+    padding-left: 0.8rem;
+    line-height: 1.5em;
+    margin-top: 0.6em;
+    padding-inline-start: 0;
+  }
+
+  .table-of-contents ul > li > a {
+    opacity: 0.3;
+    border-bottom: 1px solid rgba(125, 125, 125, 0.3);
+  }
+
+  .table-of-contents ul > li > a:hover {
+    transition: cubic-bezier(0.47, 0, 0.745, 0.715) 0.2s;
+    opacity: 100%;
   }
   li[data-level="3"] {
-    list-style: circle;
-    margin-left: 2.5rem;
+    margin-left: 0.5rem;
+  }
+  li[data-level="4"] {
+    margin-left: 1rem;
+  }
+  li[data-level="5"] {
+    margin-left: 1.5rem;
+  }
+  li[data-level="6"] {
+    margin-left: 2rem;
   }
 </style>

@@ -1,7 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import { $path } from "astro-typesafe-routes/path";
-import Link from "../../../../shared/ui/link/index.astro";
 import Time from "../../../../shared/ui/time/index.astro";
 
 type Props = {
@@ -12,81 +11,21 @@ const { blog } = Astro.props as Props;
 ---
 
 <article
-  class="card grid gap-4"
+  class="flex overflow-hidden gap-3 items-center prose"
   aria-labelledby={blog.id}
   data-href={$path({
     to: "/blog/[id]",
     params: { id: blog.id },
   })}
-  transition:persist
 >
-  <Time date={blog.data.publishDate} label="投稿日" />
-
-  <hgroup id={blog.id} class="grid gap-2">
-    <h3>
-      <Link
-        class="leading-relaxed break-all line-clamp-3 text-heading-18 sm:text-heading-20 font-bold text-foreground"
-        to="/blog/[id]"
-        params={{ id: blog.id }}
-      >
-        {blog.data.title}
-      </Link>
-    </h3>
-    <p
-      class="text-gray-800 text-label-13 sm:text-label-14 leading-6 sm:leading-7 tracking-wide"
-    >
-      {blog.data.description ?? "No description"}
-    </p>
-  </hgroup>
-  <Link
-    class="leading-relaxed break-all line-clamp-3 text-copy-14 text-gray-900 text-right"
-    to="/blog/[id]"
-    params={{ id: blog.id }}
-    tabindex="-1"
+  <div
+    class=`min-w-2 aspect-square rounded-full ${blog.data.category === 'tech' ? 'bg-blue-600' : blog.data.category === 'idea' ? 'bg-yellow-300' : 'bg-green-700'}`
   >
-    Read more
-    <span class="sr-only"> {blog.data.title}の記事を読む</span>
-  </Link>
+  </div>
+  <a class="truncate opacity-75 hover:opacity-100" href={`/blog/${blog.id}`}>
+    {blog.data.title}
+  </a>
+  <div>
+    <Time date={blog.data.publishDate} label="投稿日" size="small" />
+  </div>
 </article>
-
-<script>
-  const initializeCard = (card: HTMLElement): void => {
-    card.addEventListener("click", handleCardClick);
-    card.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("mouseover", () => handleLinkHover(card, true));
-      link.addEventListener("mouseout", () => handleLinkHover(card, false));
-    });
-  };
-
-  const handleCardClick = (event: MouseEvent): void => {
-    if ((event.target as HTMLElement).closest("a")) return;
-
-    const card = event.currentTarget as HTMLElement;
-    const href = card.getAttribute("data-href");
-
-    if (href) window.location.href = href;
-  };
-
-  const handleLinkHover = (card: HTMLElement, isHovered: boolean): void => {
-    if (isHovered) {
-      card.setAttribute("data-link-hovered", "true");
-    } else {
-      card.removeAttribute("data-link-hovered");
-    }
-  };
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const cards = document.querySelectorAll<HTMLElement>(".card");
-    if (cards.length === 0) return;
-
-    cards.forEach((card) => {
-      initializeCard(card);
-    });
-  });
-</script>
-
-<style scoped>
-  .card {
-    cursor: pointer;
-  }
-</style>

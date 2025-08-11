@@ -4,7 +4,7 @@ import Moon from "./moon.svg";
 import Sun from "./sun.svg";
 ---
 
-<theme-toggle class="relative h-6 w-6">
+<theme-toggle class="relative w-4 aspect-square">
   <button
     id="toggle-theme"
     type="button"
@@ -13,12 +13,12 @@ import Sun from "./sun.svg";
     transition:persist
   >
     <StyledIcon class="absolute inset-0 hidden group-aria-[pressed=true]:block">
-      <Sun aria-label="ダークテーマに切り替える" class="text-muted" />
+      <Sun aria-label="ダークテーマに切り替える" />
     </StyledIcon>
     <StyledIcon
       class="absolute inset-0 hidden group-aria-[pressed=false]:block"
     >
-      <Moon aria-label="ライトテーマに切り替える" class="text-muted" />
+      <Moon aria-label="ライトテーマに切り替える" />
     </StyledIcon>
   </button>
 </theme-toggle>

@@ -1,27 +1,56 @@
 ---
-import Author from "../entities/author/ui/author/index.astro";
 import { listBlog } from "../entities/blog/api";
 import BlogList from "../features/blog/ui/blog-list.astro";
 import Document from "../widgets/layout/document/index.astro";
+import "../shared/ui/markdown/index.css";
 
-const allBlogs = await listBlog();
-const blogs = allBlogs.slice(0, 20);
+const blogs = (await listBlog()).slice(0, 5); // Fetching only the first 10 blogs for the homepage
 ---
 
 <Document>
-  <section class="grid gap-12 grid-rows-[max_content-1fr_max-content]">
-    <div class="mx-[calc(50%-50cqi)] sticky top-0 py-4">
-      <div
-        class="flex justify-between items-center max-w-screen-md mx-auto px-4"
-      >
-        <h2
-          class="text-3xl font-bold text-foreground tracking-wider bg-background/80"
-        >
-          blog
-        </h2>
+  <div class="prose space-y-6">
+    <section class="space-y-4">
+      <h1 class="font-bold text-foreground tracking-wider bg-background/80">
+        ikuma-t
+      </h1>
+      <p>プログラマ ikuma-t の個人サイトです。</p>
+    </section>
+    <section>
+      <h2>About</h2>
+      <p>
+        普段はWebフロントエンドをメインに開発しています。デザインシステムにも興味があり、共通コンポーネントの開発やガイドラインの整備などにも関心があります。
+      </p>
+      <p>趣味の開発では、小さく問題を解決するDevtoolを開発するのが好きです。</p>
+      <p>
+        得意な言語は TypeScript で、好きな言語は <a
+          target="_blank"
+          href="https://gleam.run/">Gleam</a
+        > です。
+      </p>
+    </section>
+    <section>
+      <h2>Find me on</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/IkumaTadokoro">GitHub</a>
+        </li>
+        <li>
+          <a href="https://x.com/ikumatdkr">X</a>
+        </li>
+        <li>
+          <a href="https://bento.me/ikuma">bento</a>
+        </li>
+        <li>
+          <a href="https://zenn.dev/ikuma">Zenn</a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <div class="flex justify-between items-baseline">
+        <h2>Recent Posts</h2>
+        <a href="/blog" class="text-right"> blog → </a>
       </div>
-    </div>
-    <BlogList page={blogs} />
-    <Author />
-  </section>
+      <BlogList page={blogs} />
+    </section>
+  </div>
 </Document>

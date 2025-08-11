@@ -1,11 +1,10 @@
 ---
-import Time from "../../../shared/ui/time/index.astro";
 import "../../../shared/ui/markdown/index.css";
 import { render } from "astro:content";
 import type { BlogEntry } from "../../../entities/blog/model/schema";
-import Tags from "./tags.astro";
+import Link from "../../../shared/ui/link/index.astro";
+import Time from "../../../shared/ui/time/index.astro";
 import Toc from "./toc.astro";
-import Writer from "./writer.astro";
 
 interface Props {
   entry: BlogEntry;
@@ -13,45 +12,60 @@ interface Props {
 
 const { entry } = Astro.props;
 
-const {
-  data: { title, publishDate, draft, tags },
-} = entry;
 const { Content, headings } = await render(entry);
 ---
 
-<div class="grid grid-rows-[1fr_max-content] gap-x-8 min-h-full">
-  <div class={"space-y-8 sm:space-y-16 my-8 sm:my-16"}>
-    {
-      draft && (
-        <p class="text-center mb-8 p-4 text-foreground font-semibold">
-          !!!この記事は下書きです。本番環境では表示されません。!!!
-        </p>
-      )
-    }
-    <hgroup class="space-y-4 text-center">
-      <h2
-        class="text-foreground text-heading-20 sm:text-heading-32 font-bold break-all tracking-widest !leading-relaxed"
-      >
-        {title}
-      </h2>
-      <Time date={publishDate} />
-    </hgroup>
-    <div
-      class="grid grid-cols-1 lg:grid-cols-[1fr_16rem] gap-x-8 lg:mr-[-16rem]"
-    >
-      <article class={"break-all prose"}>
-        <Content />
-      </article>
-      <aside class="hidden lg:grid grid-rows-[max-content_1fr]">
-        <div class="sticky top-4 space-y-12">
-          <Toc headings={headings} />
-          <Tags tags={tags} />
-          <Writer />
-        </div>
-      </aside>
-    </div>
+<article class="prose mx-auto break-all">
+  <div class="my-6">
+    <Link to="/blog">
+      <span class="text-muted">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          ><path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m12 19l-7-7l7-7m7 7H5"></path></svg
+        >
+      </span>
+    </Link>
   </div>
-  <aside class="block lg:hidden">
-    <Writer />
+  <hgroup class="space-y-1">
+    <h1
+      class="!text-2xl text-foreground text-heading-20 sm:text-heading-32 font-bold break-all tracking-widest !leading-relaxed my-0!"
+    >
+      {entry.data.title}
+    </h1>
+    <Time date={entry.data.publishDate} align="left" />
+  </hgroup>
+  <aside
+    class="hidden lg:block lg:w-[200px] fixed top-[100px] right-[20px] z-[200] overflow-hidden pl-2"
+  >
+    <Toc headings={headings} />
   </aside>
-</div>
+  <Content />
+  <div class="my-6 flex justify-end">
+    <a href="#" class="">
+      <span class="text-muted">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          ><path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m18 9l-6-6l-6 6m6-6v14m-7 4h14"></path></svg
+        >
+      </span>
+    </a>
+  </div>
+</article>

@@ -9,36 +9,6 @@ interface Props {
 const { page } = Astro.props;
 ---
 
-<ul class="grid place-self-start gap-y-8 lg:gap-y-20 w-full">
-  {
-    page.map((blog) => (
-      <li>
-        <BlogCard blog={blog} />
-      </li>
-    ))
-  }
-</ul>
-
-<style>
-  ul::after {
-    border-radius: 1rem;
-    content: "";
-    position: absolute;
-    background: hsla(0, 0%, 77%, 0.05);
-    pointer-events: none;
-    z-index: 0;
-    position-anchor: var(--anchor);
-    inset: calc(anchor(top) - 20px) calc(anchor(right) - 20px)
-      calc(anchor(bottom) - 20px) calc(anchor(left) - 20px);
-    transition: inset 0.2s;
-  }
-
-  ul:has(li:hover) {
-    --anchor: --active;
-    --active: 1;
-  }
-  li:hover {
-    anchor-name: --active;
-    --li-active: 1;
-  }
-</style>
+<div class="grid place-self-start gap-y-3 w-full">
+  {page.map((blog) => <BlogCard blog={blog} />)}
+</div>

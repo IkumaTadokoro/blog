@@ -1,0 +1,27 @@
+---
+import Author from "../../entities/author/ui/author/index.astro";
+import { listBlog } from "../../entities/blog/api";
+import Document from "../../widgets/layout/document/index.astro";
+import "../../shared/ui/markdown/index.css";
+import BlogCard from "../../entities/blog/ui/blog-card/index.astro";
+import CategoryLegend from "../../features/blog/ui/category-legend.astro";
+
+const blog = await listBlog();
+---
+
+<Document>
+  <div class="flex justify-between items-center mb-8">
+    <h2
+      class="text-3xl font-bold text-foreground tracking-wider bg-background/80"
+    >
+      blog
+    </h2>
+    <CategoryLegend />
+  </div>
+  <div class="grid place-self-start gap-y-3 w-full prose">
+    {blog.map((blog) => <BlogCard blog={blog} />)}
+  </div>
+  <div class="pt-12">
+    <Author />
+  </div>
+</Document>

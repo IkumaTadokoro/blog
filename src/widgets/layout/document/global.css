@@ -457,7 +457,7 @@
 }
 
 @theme {
-  --font-sans: "Noto Sans JP Variable", "Geist Variable", sans-serif;
+  --font-sans: "Inter", sans-serif;
   --font-mono: "Geist Mono Variable", monospace;
 
   --text-heading-72: 72px;

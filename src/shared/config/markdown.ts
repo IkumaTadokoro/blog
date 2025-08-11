@@ -21,7 +21,7 @@ const expressiveCodeOptions = {
 		wrap: true,
 		showLineNumbers: false,
 	},
-	themes: ['github-light', 'github-dark-dimmed'],
+	themes: ['vitesse-light', 'vitesse-dark'],
 	themeCssSelector: (theme) => {
 		if (theme.type === 'light') {
 			return `[data-theme='light']`;
@@ -30,6 +30,9 @@ const expressiveCodeOptions = {
 		return `[data-theme='dark']`;
 	},
 	plugins: [pluginLineNumbers()],
+	styleOverrides: {
+		uiPaddingBlock: '0.75em',
+	},
 } satisfies Parameters<typeof expressiveCode>[0];
 
 export const expressiveCodePlugin = expressiveCode(expressiveCodeOptions);

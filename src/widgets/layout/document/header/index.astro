@@ -4,18 +4,44 @@ import Link from "../../../../shared/ui/link/index.astro";
 import SiteLogo from "./site-logo/site-logo.astro";
 ---
 
-<header class="border-b border-muted-foreground pb-4 sm:pb-0">
-  <nav
-    class="flex items-center justify-between max-w-screen-md mx-auto mt-4 sm:my-4 px-4"
-  >
+<header class="pb-4 sm:pb-0 sm:sticky sm:top-0">
+  <nav class="flex items-center justify-between mx-auto mt-4 sm:my-4 px-4">
     <SiteLogo />
     <div class="flex items-center gap-4">
-      <Link
-        to="/blog/[page]"
-        params={{ page: 1 }}
-        className="text-lg text-foreground font-bold">blog</Link
-      >
-      <Link to="/talk" className="text-lg text-foreground font-bold">talk</Link>
+      <Link to="/blog" className="text-lg text-foreground font-bold">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          ><g
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            ><path
+              d="M15 18h-5m8-4h-8m-6 8h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-4 0v-9a2 2 0 0 1 2-2h2"
+            ></path><rect width="8" height="4" x="10" y="6" rx="1"></rect></g
+          ></svg
+        >
+      </Link>
+      <Link to="/talk" className="text-lg text-foreground font-bold">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          ><path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M2 3h20m-1 0v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3m4 18l5-5l5 5"
+          ></path></svg
+        >
+      </Link>
       <ThemeSelector />
     </div>
   </nav>

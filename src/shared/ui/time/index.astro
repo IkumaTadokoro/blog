@@ -1,23 +1,26 @@
 ---
-type Props = {
+interface Props {
   date: Date;
   size?: "small" | "medium" | "large";
   label?: string;
-};
+  align?: "left" | "right";
+}
 
-const { date, size = "medium", label } = Astro.props;
+const { date, size = "medium", label, align = "left" } = Astro.props;
 const sizeClasses = {
-  small: "text-sm",
+  small: "text-xs",
   medium: "text-label-14 sm:text-label-14",
   large: "text-lg",
 };
 ---
 
-<p>
+<p
+  class={`min-w-[max-content] !my-0 ${align === "right" ? "text-right" : "text-left"}`}
+>
   {label && <span class="label sr-only">{label}</span>}
   <time
     datetime={date.toISOString()}
-    class={`font-mono tracking-widest text-foreground ${sizeClasses[size]}`}
+    class={`font-mono tracking-widest text-foreground/50 ${sizeClasses[size]}`}
   >
     {
       date

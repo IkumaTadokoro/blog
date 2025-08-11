@@ -6,11 +6,11 @@ const today = new Date();
 const currentYear = today.getFullYear().toString();
 ---
 
-<p class="font-semibold text-xs text-muted">
+<p class="text-xs text-muted font-mono">
   © {
     publishedYear >= currentYear
       ? publishedYear
-      : `${publishedYear}-${currentYear}`
+      : `${publishedYear} - ${currentYear}`
   }
   {author}
 </p>

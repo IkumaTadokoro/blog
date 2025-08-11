@@ -1,7 +1,7 @@
 ---
 import { listBlog } from "../../entities/blog/api";
 import Blog from "../../features/blog/ui/blog.astro";
-import Document from "../../widgets/layout/document/index.astro";
+import Document from "../../widgets/layout/document/without-main.astro";
 
 export async function getStaticPaths() {
   const blogEntries = await listBlog();
