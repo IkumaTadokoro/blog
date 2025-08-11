@@ -1,9 +1,9 @@
 ---
-title: "Google Meetで相手の画面やプレゼンテーションが見えないときの対処法"
+title: Google Meetで相手の画面やプレゼンテーションが見えないときの対処法
 publishDate: 2022-04-18 18:41:03
-category: tech
+category: idea
 draft: false
-description: "Google Meetで相手の画面やプレゼンテーションが見えないときの対処法"
+description: Google Meetで相手の画面やプレゼンテーションが見えないときの対処法
 tags:
   - tool
 ---

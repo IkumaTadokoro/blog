@@ -1,9 +1,9 @@
 ---
-title: "⚡️K-Rubyと銀座Railsで自作Gemの話をしました！⚡️"
+title: ⚡️K-Rubyと銀座Railsで自作Gemの話をしました！⚡️
 publishDate: 2022-01-28 12:00:00
-category: tech
+category: idea
 draft: false
-description: "⚡️K-Rubyと銀座Railsで自作Gemの話をしました！⚡️"
+description: ⚡️K-Rubyと銀座Railsで自作Gemの話をしました！⚡️
 tags:
   - PROGRAMMING
   - 登壇

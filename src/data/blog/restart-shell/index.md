@@ -1,10 +1,12 @@
 ---
-title: "zshrcが吹き飛んだので、修復ついでについでに色々整理する"
+title: zshrcが吹き飛んだので、修復ついでに色々整理する
 publishDate: 2023-04-15
 category: tech
 draft: false
-description: "けしてぇ〜！リライトしてぇ〜！"
-tags: [zsh, dotfiles]
+description: けしてぇ〜！リライトしてぇ〜！
+tags:
+  - zsh
+  - dotfiles
 ---
 ## 雑に作業しすぎて zshrc は吹っ飛んだし、雑に管理してたので復帰できなかった
 

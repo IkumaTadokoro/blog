@@ -1,9 +1,9 @@
 ---
-title: "⚡️初めてのLT会 Vol.5でRubyMineの話をしました！"
+title: ⚡️初めてのLT会 Vol.5でRubyMineの話をしました！
 publishDate: 2020-10-25 13:03:27
-category: tech
+category: idea
 draft: false
-description: "⚡️初めてのLT会 Vol.5でRubyMineの話をしました！"
+description: ⚡️初めてのLT会 Vol.5でRubyMineの話をしました！
 tags:
   - fjordbootcamp
   - ツール・ガジェット

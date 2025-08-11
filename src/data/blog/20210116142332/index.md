@@ -1,9 +1,9 @@
 ---
-title: "わたしのリフレッシュ方法（2021年版）"
+title: わたしのリフレッシュ方法（2021年版）
 publishDate: 2021-01-16 14:23:32
-category: idea
+category: life
 draft: false
-description: "わたしのリフレッシュ方法（2021年版）"
+description: わたしのリフレッシュ方法（2021年版）
 tags:
   - 日常
 ---

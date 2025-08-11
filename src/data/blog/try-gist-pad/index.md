@@ -1,10 +1,11 @@
 ---
-title: "VSCode拡張、GistPadを試してみた"
+title: VSCode拡張、GistPadを試してみた
 publishDate: 2023-05-04
-category: tech
+category: idea
 draft: false
-description: "スニペット管理には便利そう"
-tags: [vscode]
+description: スニペット管理には便利そう
+tags:
+  - vscode
 ---
 <twitter-post tweet-id="1653747179285262336"></twitter-post>
 

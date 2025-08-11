@@ -1,10 +1,13 @@
 ---
 title: "Nihonbashi.js #9に参加してStorybookの話をしてきた"
 publishDate: 2024-11-01
-category: tech
+category: idea
 draft: false
 description: "オフラインで開催されたNihonbashi.js #9に参加しました。LT枠でStorybookの内部実装の話をしてきました。"
-tags: ["勉強会", "JavaScript", "Storybook"]
+tags:
+  - 勉強会
+  - JavaScript
+  - Storybook
 ---
 ## Nihonbashi.js #9に参加してきた
 

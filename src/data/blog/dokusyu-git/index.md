@@ -2,7 +2,7 @@
 title: 独習Gitを読んでみた
 draft: false
 publishDate: 2021-08-01
-category: tech
+category: idea
 tags:
   - Git
 ---

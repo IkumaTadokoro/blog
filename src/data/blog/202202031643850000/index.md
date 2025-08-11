@@ -1,9 +1,9 @@
 ---
-title: "わたしがRubyMineを使う理由"
+title: わたしがRubyMineを使う理由
 publishDate: 2022-02-03 10:00:00
-category: tech
+category: idea
 draft: false
-description: "わたしがRubyMineを使う理由"
+description: わたしがRubyMineを使う理由
 tags:
   - ツール・ガジェット
   - RubyMine

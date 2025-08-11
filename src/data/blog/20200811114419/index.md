@@ -1,9 +1,9 @@
 ---
-title: "フィヨルドブートキャンプに入って1ヶ月が経ちました"
+title: フィヨルドブートキャンプに入って1ヶ月が経ちました
 publishDate: 2020-08-11 11:44:19
-category: idea
+category: life
 draft: false
-description: "フィヨルドブートキャンプに入って1ヶ月が経ちました"
+description: フィヨルドブートキャンプに入って1ヶ月が経ちました
 tags:
   - fjordbootcamp
 ---

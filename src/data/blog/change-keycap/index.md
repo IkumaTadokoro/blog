@@ -1,7 +1,7 @@
 ---
 title: キーキャップをマンチェスターシティ色に替えてみた
 publishDate: 2021-08-03
-category: tech
+category: life
 draft: false
 tags:
   - キーボード

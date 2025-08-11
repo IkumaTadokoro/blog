@@ -1,9 +1,9 @@
 ---
-title: "最近のScrapboxの使い方（2021/12）"
+title: 最近のScrapboxの使い方（2021/12）
 publishDate: 2021-12-19 10:00:00
-category: tech
+category: idea
 draft: false
-description: "最近のScrapboxの使い方（2021/12）"
+description: 最近のScrapboxの使い方（2021/12）
 tags:
   - ツール・ガジェット
   - Scrapbox

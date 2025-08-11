@@ -1,9 +1,9 @@
 ---
-title: "うちNotion"
+title: うちNotion
 publishDate: 2021-05-07 18:10:27
-category: tech
+category: idea
 draft: false
-description: "うちNotion"
+description: うちNotion
 tags:
   - ツール・ガジェット
   - Notion

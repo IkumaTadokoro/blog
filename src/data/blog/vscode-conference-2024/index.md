@@ -1,7 +1,7 @@
 ---
 title: VSCode Conference Japan 2024 で登壇しました！
 publishDate: 2024-04-22T22:38:00+09:00
-category: tech
+category: idea
 draft: false
 description: VSCode Conference Japan で登壇しました！
 tags:

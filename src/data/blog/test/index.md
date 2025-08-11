@@ -2,10 +2,10 @@
 title: テスト用のサンプル記事
 description: test
 publishDate: 9999-01-01
-category: tech
+category: idea
 tags:
-    - test
-    - テスト
+  - test
+  - テスト
 draft: true
 ---
 

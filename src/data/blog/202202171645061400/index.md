@@ -1,9 +1,9 @@
 ---
-title: "Slapdashを使って、瞬間で Notionにアイデアを追加する"
+title: Slapdashを使って、瞬間で Notionにアイデアを追加する
 publishDate: 2022-02-17 10:30:00
-category: tech
+category: idea
 draft: false
-description: "Slapdashを使って、瞬間で Notionにアイデアを追加する"
+description: Slapdashを使って、瞬間で Notionにアイデアを追加する
 tags:
   - ツール・ガジェット
   - Notion

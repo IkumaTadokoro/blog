@@ -1,9 +1,9 @@
 ---
-title: "今月のフォカッチャ"
+title: 今月のフォカッチャ
 publishDate: 2020-08-06 00:05:14
-category: idea
+category: life
 draft: false
-description: "今月のフォカッチャ"
+description: 今月のフォカッチャ
 tags:
   - 日常
   - フォカッチャ

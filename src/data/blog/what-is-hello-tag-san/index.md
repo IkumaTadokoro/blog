@@ -1,7 +1,7 @@
 ---
 title: 「こんにちは TAG-さん!」とは何か
 publishDate: 2024-05-04T15:50:06.000+09:00
-category: tech
+category: idea
 draft: false
 description: W3C TAG の ISSUE TEMPLATE を眺めていると、なぜか「こんにちは TAG-さん!」という文字列が出てきます。なぜここで突然日本語が出てくるのか。今回はその原因をテンプレートの変更履歴から調査しました。
 tags:

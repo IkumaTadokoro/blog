@@ -1,9 +1,9 @@
 ---
-title: "リーダブルコード 第1部を読みました"
+title: リーダブルコード 第1部を読みました
 publishDate: 2021-08-10 10:37:33
-category: tech
+category: idea
 draft: false
-description: "リーダブルコード 第1部を読みました"
+description: リーダブルコード 第1部を読みました
 tags:
   - PROGRAMMING
   - 書籍

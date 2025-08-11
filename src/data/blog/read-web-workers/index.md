@@ -1,10 +1,12 @@
 ---
-title: "書籍「Web Workers」を読んだ"
+title: 書籍「Web Workers」を読んだ
 publishDate: 2023-05-21
-category: tech
+category: idea
 draft: false
-description: "何ができるかわ〜からない〜"
-tags: [WebWorker, 読書記録]
+description: 何ができるかわ〜からない〜
+tags:
+  - WebWorker
+  - 読書記録
 ---
 ![代替テキスト](pictureLarge)
 

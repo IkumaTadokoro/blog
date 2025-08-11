@@ -1,7 +1,7 @@
 ---
 title: Kaigi on Rails 2022で登壇しました！
 publishDate: 2022-10-22T17:44:00+09:00
-category: tech
+category: idea
 draft: false
 description: Kaigi on Rails 2022で登壇しました！
 tags:

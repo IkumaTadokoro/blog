@@ -2,7 +2,7 @@
 title: Exercism(Ruby)で学んだこと
 draft: false
 publishDate: 2021-08-01
-category: tech
+category: idea
 tags:
   - Exercism
   - Ruby

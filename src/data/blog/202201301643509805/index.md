@@ -1,9 +1,9 @@
 ---
-title: "OSS gateにビギナーとして参加しました！"
+title: OSS gateにビギナーとして参加しました！
 publishDate: 2022-01-30 11:30:05
-category: tech
+category: idea
 draft: false
-description: "OSS gateにビギナーとして参加しました！"
+description: OSS gateにビギナーとして参加しました！
 tags:
   - PROGRAMMING
   - イベント

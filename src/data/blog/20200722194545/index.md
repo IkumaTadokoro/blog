@@ -1,9 +1,9 @@
 ---
-title: "フィヨルドブートキャンプにキャンプインしました"
+title: フィヨルドブートキャンプにキャンプインしました
 publishDate: 2020-07-22 19:45:45
-category: idea
+category: life
 draft: false
-description: "フィヨルドブートキャンプにキャンプインしました"
+description: フィヨルドブートキャンプにキャンプインしました
 tags:
   - fjordbootcamp
   - PROGRAMMING

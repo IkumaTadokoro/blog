@@ -1,9 +1,9 @@
 ---
-title: "やせた（2022-08）"
+title: やせた（2022-08）
 publishDate: 2022-08-23
-category: tech
+category: life
 draft: false
-description: "過去ブログからの移行記事"
+description: 過去ブログからの移行記事
 tags: []
 ---
 自分でもびっくりしたんですけど、ここ3週間で4kg痩せました。

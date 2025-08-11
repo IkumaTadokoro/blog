@@ -1,9 +1,9 @@
 ---
-title: "AWS SAA試験に合格しました🎉"
+title: AWS SAA試験に合格しました🎉
 publishDate: 2021-12-06 19:41:25
-category: tech
+category: idea
 draft: false
-description: "AWS SAA試験に合格しました🎉"
+description: AWS SAA試験に合格しました🎉
 tags:
   - PROGRAMMING
   - AWS
