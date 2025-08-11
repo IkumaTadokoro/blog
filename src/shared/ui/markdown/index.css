@@ -527,10 +527,6 @@ html[data-theme="dark"] .prose {
   + .expressive-code {
     @apply mt-4 sm:mt-8;
   }
-
-  figure {
-    box-shadow: none !important;
-  }
 }
 
 code {

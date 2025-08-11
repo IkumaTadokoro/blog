@@ -21,7 +21,7 @@ const expressiveCodeOptions = {
 		wrap: true,
 		showLineNumbers: false,
 	},
-	themes: ['vitesse-light', 'vitesse-dark'],
+	themes: ['min-light', 'min-dark'],
 	themeCssSelector: (theme) => {
 		if (theme.type === 'light') {
 			return `[data-theme='light']`;
