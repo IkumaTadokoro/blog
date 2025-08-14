@@ -42,7 +42,7 @@
     "@types/mdast": "4.0.4",
     "@types/react": "19.1.10",
     "@types/react-dom": "19.1.7",
-    "astro": "5.12.9",
+    "astro": "5.13.0",
     "astro-expressive-code": "0.41.3",
     "astro-icon": "1.1.5",
     "astro-og": "0.3.0",
