@@ -41,7 +41,7 @@
     "@tailwindcss/vite": "4.1.12",
     "@types/mdast": "4.0.4",
     "@types/react": "19.1.11",
-    "@types/react-dom": "19.1.7",
+    "@types/react-dom": "19.1.8",
     "astro": "5.13.3",
     "astro-expressive-code": "0.41.3",
     "astro-icon": "1.1.5",
