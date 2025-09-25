@@ -48,8 +48,8 @@ importers:
         specifier: 5.2.8
         version: 5.2.8
       '@fontsource-variable/noto-sans-jp':
-        specifier: 5.2.8
-        version: 5.2.8
+        specifier: 5.2.9
+        version: 5.2.9
       '@iconify-json/lucide':
         specifier: 1.2.68
         version: 1.2.68
@@ -860,8 +860,8 @@ packages:
   '@fontsource-variable/montserrat@5.2.8':
     resolution: {integrity: sha512-d8wykq7GCKhEOlLwEuQIOK3w3qsXNxwDlH0meru4AZZzQ4/+rZyvHWKL6BBtHdmbovSHEEQDkwkD8qYUKlcFtQ==}
 
-  '@fontsource-variable/noto-sans-jp@5.2.8':
-    resolution: {integrity: sha512-oGjExI1HZqwXlGU9Xf8EacsF5F4H7Lq9ZKGgoem3dvA+Jt3dloHHHVzPGSxRzbkmu0bZEJRDGyadgW7Rkaremg==}
+  '@fontsource-variable/noto-sans-jp@5.2.9':
+    resolution: {integrity: sha512-osPL5f7dvGDjuMuFwDTGPLG37030D8X5zk+3BWea6txAVDFeE/ZIrKW0DY0uSDfRn9+NiKbiFn/2QvZveKXTog==}
 
   '@iconify-json/lucide@1.2.68':
     resolution: {integrity: sha512-lR5xNJdn2CT0iR7lM25G4SewBO4G2hbr3fTWOc3AE9BspflEcneh02E3l9TBaCU/JOHozTJevWLrxBGypD7Tng==}
@@ -5017,7 +5017,7 @@ snapshots:
 
   '@fontsource-variable/montserrat@5.2.8': {}
 
-  '@fontsource-variable/noto-sans-jp@5.2.8': {}
+  '@fontsource-variable/noto-sans-jp@5.2.9': {}
 
   '@iconify-json/lucide@1.2.68':
     dependencies:
