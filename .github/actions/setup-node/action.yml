@@ -6,7 +6,7 @@ runs:
       shell: bash
     - run: corepack enable
       shell: bash
-    - uses: actions/setup-node@v4
+    - uses: actions/setup-node@v5
       with:
         node-version-file: ".tool-versions"
     - uses: actions/cache@v4
