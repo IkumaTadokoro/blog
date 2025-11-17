@@ -70,7 +70,7 @@ LT の機会をいただけたので、今年は PreEvent@Google 渋谷オフィ
 - [Sponsor LT x 12 | JSConf JP 2025](https://jsconf.jp/2025/en/talks/sponsor-lt-session)
 - [技術的福祉の受容、および Web 開発との「出会い直し」 | JSConf JP 2025](https://jsconf.jp/2025/en/talks/embracing-technical-welfare-and-rediscovering-web-development)
 
-午後のセッション聞いているうちに「CommonJS...」という感想を持ちました😇
+午後のセッション聞いているうちに「CommonJS...」という気持ちになりました😇
 
 どのセッションも DeepDive していて面白かったのですが、個人的には Technical Discussion with TC39 がすごい良かったですね。今出ている Proposal から話をしているので当たり前といえばそうなんですが、 そこまでのトークで出ていた Composites、Module Harmony、using、ES2015 など全部繋がっていてとても良いセッションでした。
 
