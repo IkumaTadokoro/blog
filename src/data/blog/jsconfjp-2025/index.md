@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: JSConf JP 2025に参加した
 description: 2025年11月16日に開催されたJSConf.jpに参加してきました
 publishDate: 2025-11-17
