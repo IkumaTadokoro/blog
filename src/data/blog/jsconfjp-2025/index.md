@@ -25,7 +25,7 @@ LT の機会をいただけたので、今年は PreEvent@Google 渋谷オフィ
 
 発表中でも触れましたが、今回の内容に近いところを GitHub の人も言っているので、気になる方は見てみてください。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lryIVrpwwWw?si=fGeJQy743xAoxDTV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" src="https://www.youtube.com/embed/lryIVrpwwWw?si=fGeJQy743xAoxDTV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
