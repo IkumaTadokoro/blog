@@ -2,7 +2,7 @@
 title: "ページ内検索を活かすために仮想スクロールを採用しないという選択"
 publishDate: 2025-12-15
 category: tech
-draft: true
+draft: false
 description: ""
 tags: ['content-visibility', 'アドベントカレンダー']
 ---
