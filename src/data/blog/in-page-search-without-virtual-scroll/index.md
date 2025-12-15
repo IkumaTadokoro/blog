@@ -148,83 +148,139 @@ false になっている要素は DOM として存在しますが、描画処理
 
 そのためいくらかの件数ごとにバッチ処理にした上で、Viewport の中央から放射線状に開閉が行われていく実装としました。単純なバッチ処理としていないのは、上から順にバッチで開閉していくと、リスト下部にいた際にボタンを押したタイミングと開閉が行われるタイミングがズレるためです。
 
-```ts
-// TODO: あとでここのコードはリファクタリング版に差し替えます
-const BATCH_SIZE = 1000;
 
-const findViewportCenter = (details: HTMLDetailsElement[]): number => {
-  const viewportCenter = window.innerHeight / 2;
-  let closestIndex = 0;
+```ts
+const DEFAULT_BATCH_SIZE = 100;
+
+// 全details要素の取得（実態はSet）
+const items = Array.from(getItems());
+
+// ビューポートの中央の要素を取得
+const centerIndex = findCenterElement(items);
+// 要素の中央から順にインデックスを配置
+const indices = centerOutIndices(items.length, centerIndex);
+// バッチサイズごとに分割して処理を実施する
+const batches = batchIterate(indices, DEFAULT_BATCH_SIZE);
+
+await new Promise<void>((resolve) => {
+  const processBatch = () => {
+    const { value: batch, done } = batches.next();
+
+    if (done) {
+      resolve();
+      return;
+    }
+
+    for (const idx of batch) {
+      // callbackでdetailsのトグルを開閉
+      callback(items[idx]);
+    }
+
+    requestAnimationFrame(processBatch);
+  };
+
+  requestAnimationFrame(processBatch);
+});
+```
+
+<details>
+
+<summary>省略した関数部分</summary>
+
+```ts
+const findCenterElement = <E extends HTMLElement>(
+  items: E[]
+): number => {
+  const target = window.innerHeight / 2;
+  let low = 0;
+  let high = items.length - 1;
+
+  while (low < high) {
+    // biome-ignore lint/suspicious/noBitwiseOperators: perf
+    const mid = (low + high) >>> 1;
+    const rect = items[mid].getBoundingClientRect();
+    const pos = rect.top + rect.height / 2;
+
+    if (pos < target) {
+      low = mid + 1;
+    } else {
+      high = mid;
+    }
+  }
+
+  const candidates = [low - 1, low, low + 1].filter(
+    (i) => i >= 0 && i < items.length
+  );
+
+  let closestIndex = candidates[0];
   let closestDistance = Number.POSITIVE_INFINITY;
 
-  for (let i = 0; i < details.length; i++) {
-    const rect = details[i].getBoundingClientRect();
-    const elementCenter = rect.top + rect.height / 2;
-    const distance = Math.abs(elementCenter - viewportCenter);
-
+  for (const i of candidates) {
+    const rect = items[i].getBoundingClientRect();
+    const pos = rect.top + rect.height / 2;
+    const distance = Math.abs(pos - target);
     if (distance < closestDistance) {
       closestDistance = distance;
       closestIndex = i;
-    }
-
-    if (rect.top > window.innerHeight) {
-      break;
     }
   }
 
   return closestIndex;
 };
 
-const [isProcessing, setIsProcessing] = createSignal(false);
-  const toggleAll = (open: boolean) => {
-    const details = Array.from(
-      document.querySelectorAll<HTMLDetailsElement>(
-        `details[data-group="${groupId}"]`
-      )
-    );
+function* centerOutIndices(
+  totalCount: number,
+  centerIndex: number
+): Generator<number> {
+  if (totalCount === 0) {
+    return;
+  }
 
-    if (details.length === 0) {
-      return;
+  const center = clamp(centerIndex, 0, totalCount - 1);
+  let upper = center;
+  let lower = center + 1;
+
+  while (upper >= 0 || lower < totalCount) {
+    if (upper >= 0) {
+      yield upper;
+      upper -= 1;
     }
+    if (lower < totalCount) {
+      yield lower;
+      lower += 1;
+    }
+  }
+}
 
-    setIsProcessing(true);
+export function* batchIterate<T>(
+  items: Iterable<T>,
+  batchSize: number
+): Generator<T[]> {
+  let batch: T[] = [];
 
-    const centerIndex = findViewportCenter(details);
+  for (const item of items) {
+    batch.push(item);
+    if (batch.length >= batchSize) {
+      yield batch;
+      batch = [];
+    }
+  }
 
-    let upperIndex = centerIndex;
-    let lowerIndex = centerIndex + 1;
-
-    const processBatch = () => {
-      let processed = 0;
-
-      while (
-        processed < BATCH_SIZE &&
-        (upperIndex >= 0 || lowerIndex < details.length)
-      ) {
-        if (upperIndex >= 0) {
-          details[upperIndex].open = open;
-          upperIndex -= 1;
-          processed += 1;
-        }
-
-        if (processed < BATCH_SIZE && lowerIndex < details.length) {
-          details[lowerIndex].open = open;
-          lowerIndex += 1;
-          processed += 1;
-        }
-      }
-
-      if (upperIndex >= 0 || lowerIndex < details.length) {
-        requestAnimationFrame(processBatch);
-      } else {
-        setIsProcessing(false);
-      }
-    };
-
-    requestAnimationFrame(processBatch);
-  };
-
+  if (batch.length > 0) {
+    yield batch;
+  }
+}
 ```
+
+</details>
+
+開閉ではないですが、イメージとしては以下の動画のように中央から徐々に処理を適用します。
+
+<video controls width="100%">
+  <source src="/videos/in-page-search-without-virtual-scroll/animation.mp4" type="video/mp4" />
+</video>
+
+これを実際にツールに適用したものが次の動画です。
 
 <video controls width="100%">
   <source src="/videos/in-page-search-without-virtual-scroll/open-details-batch.mp4" type="video/mp4" />
