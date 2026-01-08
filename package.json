@@ -64,7 +64,7 @@
     "tailwindcss": "4.1.18",
     "typescript": "5.9.3",
     "unist-util-visit": "5.0.0",
-    "vite-plugin-simple-scope": "2.0.3"
+    "vite-plugin-simple-scope": "3.0.0"
   },
   "packageManager": "pnpm@10.27.0",
   "devDependencies": {
