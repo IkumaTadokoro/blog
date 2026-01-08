@@ -5,6 +5,7 @@
   "scripts": {
     "setup": "npm run corepack",
     "corepack": "corepack enable pnpm",
+    "post:new": "node scripts/create-post.ts",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "rm -rf dist && astro build",

@@ -13,7 +13,8 @@
 			"tsconfig.json",
 			".claude/settings.local.json",
 			"src/data/blog/_admin/*.base",
-			"src/data/blog/.obsidian"
+			"src/data/blog/.obsidian",
+			"scripts/"
 		]
 	},
 	"formatter": {
