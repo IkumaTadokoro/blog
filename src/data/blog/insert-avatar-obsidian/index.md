@@ -3,7 +3,7 @@ title: "Obsidianでアバターアイコンを挿入できるようにする"
 publishDate: 2026-01-09
 category: idea
 tags: ['obsidian']
-draft: true
+draft: false
 description: "esaやscrapboxのように文中に自分のアイコンを入れられるようにする仕組み"
 ---
 
