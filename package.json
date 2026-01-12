@@ -43,7 +43,7 @@
     "@types/mdast": "4.0.4",
     "@types/react": "19.2.8",
     "@types/react-dom": "19.2.3",
-    "astro": "5.16.8",
+    "astro": "5.16.9",
     "astro-expressive-code": "0.41.5",
     "astro-icon": "1.1.5",
     "astro-og": "0.3.1",
@@ -76,12 +76,12 @@
     "@types/jsdom": "27.0.0",
     "@types/node": "24.10.7",
     "@types/sanitize-html": "2.16.0",
-    "@vitest/browser": "4.0.16",
-    "@vitest/ui": "4.0.16",
+    "@vitest/browser": "4.0.17",
+    "@vitest/ui": "4.0.17",
     "happy-dom": "20.1.0",
     "jsdom": "27.4.0",
-    "lefthook": "2.0.13",
-    "vitest": "4.0.16",
+    "lefthook": "2.0.14",
+    "vitest": "4.0.17",
     "wrangler": "4.58.0"
   }
 }
