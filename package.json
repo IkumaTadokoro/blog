@@ -41,7 +41,7 @@
     "@iconify-json/lucide": "1.2.86",
     "@tailwindcss/vite": "4.1.18",
     "@types/mdast": "4.0.4",
-    "@types/react": "19.2.8",
+    "@types/react": "19.2.9",
     "@types/react-dom": "19.2.3",
     "astro": "5.16.11",
     "astro-expressive-code": "0.41.6",
@@ -82,6 +82,6 @@
     "jsdom": "27.4.0",
     "lefthook": "2.0.15",
     "vitest": "4.0.17",
-    "wrangler": "4.59.2"
+    "wrangler": "4.59.3"
   }
 }
