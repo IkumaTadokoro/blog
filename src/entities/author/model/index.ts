@@ -1,5 +1,5 @@
 export const Author = {
 	name: 'ikuma-t',
 	bio: 'フロントエンドエンジニア',
-	portalSite: 'https://bento.me/ikuma',
+	portalSite: 'https://ikuma-t.com',
 } as const;
