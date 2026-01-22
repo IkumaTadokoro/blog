@@ -1,33 +1,30 @@
 {
-	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": [
-		"config:base",
-		":semanticCommitTypeAll(chore)",
-		":enableVulnerabilityAlerts",
-		":separateMajorReleases",
-		"group:definitelyTyped",
-		"group:monorepos",
-		"group:test"
-	],
-	"rangeStrategy": "pin",
-	"labels": ["deps"],
-	"packageRules": [
-		{
-			"matchManagers": ["npm"],
-			"matchUpdateTypes": ["patch"],
-			"matchPackagePatterns": ["*"],
-			"matchDepTypes": ["dependencies", "devDependencies", "peerDependencies"],
-			"groupName": "npm patch dependencies",
-			"automerge": true
-		},
-		{
-			"matchManagers": ["npm"],
-			"matchUpdateTypes": ["minor"],
-			"matchPackagePatterns": ["*"],
-			"matchDepTypes": ["dependencies", "devDependencies", "peerDependencies"],
-			"groupName": "npm minor dependencies",
-			"automerge": true
-		}
-	],
-	"ignoreDeps": []
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "minimumReleaseAge": "3 days",
+  "platformAutomerge": true,
+  "packageRules": [
+    {
+      "description": "Automerge patch and minor updates",
+      "matchUpdateTypes": ["patch", "minor"],
+      "automerge": true
+    },
+    {
+      "description": "Major updates require manual review",
+      "matchUpdateTypes": ["major"],
+      "automerge": false,
+      "labels": ["major-update"]
+    },
+    {
+      "description": "Automerge GitHub Actions patch and minor updates",
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "automerge": true
+    },
+    {
+      "description": "Automerge lockfile maintenance",
+      "matchUpdateTypes": ["lockFileMaintenance"],
+      "automerge": true
+    }
+  ]
 }
