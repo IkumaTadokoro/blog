@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@ascorbic/feed-loader':
         specifier: 1.0.4
-        version: 1.0.4(astro@5.16.15(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1))
+        version: 1.0.4(astro@5.16.16(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1))
       '@astrojs/check':
         specifier: 0.9.6
         version: 0.9.6(prettier@3.7.4)(typescript@5.9.3)
@@ -19,7 +19,7 @@ importers:
         version: 6.3.10
       '@astrojs/mdx':
         specifier: 4.3.13
-        version: 4.3.13(astro@5.16.15(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1))
+        version: 4.3.13(astro@5.16.16(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1))
       '@astrojs/react':
         specifier: 4.4.2
         version: 4.4.2(@types/node@24.10.9)(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(jiti@2.6.1)(lightningcss@1.30.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(yaml@2.7.1)
@@ -66,20 +66,20 @@ importers:
         specifier: 19.2.3
         version: 19.2.3(@types/react@19.2.10)
       astro:
-        specifier: 5.16.15
-        version: 5.16.15(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1)
+        specifier: 5.16.16
+        version: 5.16.16(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1)
       astro-expressive-code:
         specifier: 0.41.6
-        version: 0.41.6(astro@5.16.15(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1))
+        version: 0.41.6(astro@5.16.16(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1))
       astro-icon:
         specifier: 1.1.5
         version: 1.1.5
       astro-og:
         specifier: 0.3.2
-        version: 0.3.2(astro@5.16.15(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1))
+        version: 0.3.2(astro@5.16.16(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1))
       astro-typesafe-routes:
         specifier: 4.2.6
-        version: 4.2.6(astro@5.16.15(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1))(react@19.2.4)(typescript@5.9.3)
+        version: 4.2.6(astro@5.16.16(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1))(react@19.2.4)(typescript@5.9.3)
       class-variance-authority:
         specifier: 0.7.1
         version: 0.7.1
@@ -1694,8 +1694,8 @@ packages:
       typescript:
         optional: true
 
-  astro@5.16.15:
-    resolution: {integrity: sha512-+X1Z0NTi2pa5a0Te6h77Dgc44fYj63j1yx6+39Nvg05lExajxSq7b1Uj/gtY45zoum8fD0+h0nak+DnHighs3A==}
+  astro@5.16.16:
+    resolution: {integrity: sha512-MFlFvQ84ixaHyqB3uGwMhNHdBLZ3vHawyq3PqzQS2TNWiNfQrxp5ag6S3lX+Cvnh0MUcXX+UnJBPMBHjP1/1ZQ==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -4155,15 +4155,15 @@ snapshots:
 
   '@asamuzakjp/nwsapi@2.3.9': {}
 
-  '@ascorbic/feed-loader@1.0.4(astro@5.16.15(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1))':
+  '@ascorbic/feed-loader@1.0.4(astro@5.16.16(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1))':
     dependencies:
-      '@ascorbic/loader-utils': 1.0.2(astro@5.16.15(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1))
-      astro: 5.16.15(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1)
+      '@ascorbic/loader-utils': 1.0.2(astro@5.16.16(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1))
+      astro: 5.16.16(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1)
       feedparser: 2.2.10
 
-  '@ascorbic/loader-utils@1.0.2(astro@5.16.15(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1))':
+  '@ascorbic/loader-utils@1.0.2(astro@5.16.16(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1))':
     dependencies:
-      astro: 5.16.15(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1)
+      astro: 5.16.16(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1)
 
   '@astrojs/check@0.9.6(prettier@3.7.4)(typescript@5.9.3)':
     dependencies:
@@ -4231,12 +4231,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@4.3.13(astro@5.16.15(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1))':
+  '@astrojs/mdx@4.3.13(astro@5.16.16(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1))':
     dependencies:
       '@astrojs/markdown-remark': 6.3.10
       '@mdx-js/mdx': 3.1.1
       acorn: 8.15.0
-      astro: 5.16.15(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1)
+      astro: 5.16.16(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1)
       es-module-lexer: 1.7.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -4734,7 +4734,7 @@ snapshots:
   '@expressive-code/plugin-shiki@0.41.6':
     dependencies:
       '@expressive-code/core': 0.41.6
-      shiki: 3.20.0
+      shiki: 3.21.0
 
   '@expressive-code/plugin-text-markers@0.41.6':
     dependencies:
@@ -5572,9 +5572,9 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro-expressive-code@0.41.6(astro@5.16.15(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1)):
+  astro-expressive-code@0.41.6(astro@5.16.16(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1)):
     dependencies:
-      astro: 5.16.15(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1)
+      astro: 5.16.16(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1)
       rehype-expressive-code: 0.41.6
 
   astro-icon@1.1.5:
@@ -5586,21 +5586,21 @@ snapshots:
       - debug
       - supports-color
 
-  astro-og@0.3.2(astro@5.16.15(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1)):
+  astro-og@0.3.2(astro@5.16.16(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1)):
     dependencies:
-      astro: 5.16.15(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1)
+      astro: 5.16.16(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1)
       preact: 10.28.2
 
-  astro-typesafe-routes@4.2.6(astro@5.16.15(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1))(react@19.2.4)(typescript@5.9.3):
+  astro-typesafe-routes@4.2.6(astro@5.16.16(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1))(react@19.2.4)(typescript@5.9.3):
     dependencies:
-      astro: 5.16.15(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1)
+      astro: 5.16.16(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1)
       fast-glob: 3.3.2
       semver: 7.7.1
     optionalDependencies:
       react: 19.2.4
       typescript: 5.9.3
 
-  astro@5.16.15(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1):
+  astro@5.16.16(@types/node@24.10.9)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.34.9)(typescript@5.9.3)(yaml@2.7.1):
     dependencies:
       '@astrojs/compiler': 2.13.0
       '@astrojs/internal-helpers': 0.7.5
@@ -7301,14 +7301,14 @@ snapshots:
       acorn: 8.15.0
       pathe: 1.1.2
       pkg-types: 1.1.3
-      ufo: 1.6.1
+      ufo: 1.6.3
 
   mlly@1.7.4:
     dependencies:
       acorn: 8.15.0
       pathe: 2.0.3
       pkg-types: 1.3.1
-      ufo: 1.6.1
+      ufo: 1.6.3
 
   mri@1.2.0: {}
 
