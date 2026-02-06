@@ -80,7 +80,7 @@
     "@vitest/ui": "4.0.18",
     "happy-dom": "20.5.0",
     "jsdom": "27.4.0",
-    "lefthook": "2.0.16",
+    "lefthook": "2.1.0",
     "vitest": "4.0.18",
     "wrangler": "4.61.1"
   }
