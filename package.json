@@ -38,7 +38,7 @@
     "@fontsource-variable/lexend": "5.2.11",
     "@fontsource-variable/montserrat": "5.2.8",
     "@fontsource-variable/noto-sans-jp": "5.2.10",
-    "@iconify-json/lucide": "1.2.89",
+    "@iconify-json/lucide": "1.2.90",
     "@tailwindcss/vite": "4.1.18",
     "@types/mdast": "4.0.4",
     "@types/react": "19.2.13",
