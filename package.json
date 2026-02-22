@@ -58,7 +58,7 @@
     "rehype-slug": "6.0.0",
     "remark-directive": "4.0.0",
     "rss-parser": "3.13.0",
-    "sanitize-html": "2.17.0",
+    "sanitize-html": "2.17.1",
     "tailwind-gradient-mask-image": "1.2.0",
     "tailwind-merge": "3.4.1",
     "tailwindcss": "4.2.0",
