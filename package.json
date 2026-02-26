@@ -39,7 +39,7 @@
     "@fontsource-variable/montserrat": "5.2.8",
     "@fontsource-variable/noto-sans-jp": "5.2.10",
     "@iconify-json/lucide": "1.2.93",
-    "@tailwindcss/vite": "4.2.0",
+    "@tailwindcss/vite": "4.2.1",
     "@types/mdast": "4.0.4",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
@@ -61,7 +61,7 @@
     "sanitize-html": "2.17.1",
     "tailwind-gradient-mask-image": "1.2.0",
     "tailwind-merge": "3.5.0",
-    "tailwindcss": "4.2.0",
+    "tailwindcss": "4.2.1",
     "typescript": "5.9.3",
     "unist-util-visit": "5.1.0",
     "vite-plugin-simple-scope": "3.0.0"
