@@ -44,7 +44,7 @@
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "astro": "5.18.0",
-    "astro-expressive-code": "0.41.6",
+    "astro-expressive-code": "0.41.7",
     "astro-icon": "1.1.5",
     "astro-og": "0.3.2",
     "astro-typesafe-routes": "4.2.6",
