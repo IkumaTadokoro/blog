@@ -30,7 +30,7 @@
     "@astrojs/mdx": "4.3.13",
     "@astrojs/react": "4.4.2",
     "@astrojs/rss": "4.0.15",
-    "@expressive-code/plugin-line-numbers": "0.41.6",
+    "@expressive-code/plugin-line-numbers": "0.41.7",
     "@extractus/feed-extractor": "7.1.7",
     "@extractus/oembed-extractor": "4.0.9",
     "@fontsource-variable/geist": "5.2.8",
