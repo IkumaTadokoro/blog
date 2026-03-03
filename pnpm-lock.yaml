@@ -51,8 +51,8 @@ importers:
         specifier: 5.2.10
         version: 5.2.10
       '@iconify-json/lucide':
-        specifier: 1.2.94
-        version: 1.2.94
+        specifier: 1.2.95
+        version: 1.2.95
       '@tailwindcss/vite':
         specifier: 4.2.1
         version: 4.2.1(vite@6.4.1(@types/node@24.11.0)(jiti@2.6.1)(lightningcss@1.31.1)(yaml@2.7.1))
@@ -892,8 +892,8 @@ packages:
   '@fontsource-variable/noto-sans-jp@5.2.10':
     resolution: {integrity: sha512-m0XfZ38rZtCaGAuAQL0cBPQ6fc/RguYEOqw66zvuLOV9vNRUBf9MFqyoazTu2JVCRIcnkrxbwF29UUaHHgTKdg==}
 
-  '@iconify-json/lucide@1.2.94':
-    resolution: {integrity: sha512-P54R7gqZs3t1GZQmzW2WkXIkGb9RPCq77iCb7IDU94IIsVegzuSQg52hSTjhvDKRXGUDc1HdwOBIuqg3iLIluw==}
+  '@iconify-json/lucide@1.2.95':
+    resolution: {integrity: sha512-SxDM/NEJtcGGAiLAnaZ7rcmVxkJI8esswTZLCm5BfNcoPf/yawIImb4nNfsu4dtFzP/Cl6KRg+vZq521zOUOnQ==}
 
   '@iconify/tools@4.0.5':
     resolution: {integrity: sha512-l8KoA1lxlN/FFjlMd3vjfD7BtcX/QnFWtlBapILMlJSBgM5zhDYak/ldw/LkKG3258q/0YmXa48sO/QpxX7ptg==}
@@ -4768,7 +4768,7 @@ snapshots:
 
   '@fontsource-variable/noto-sans-jp@5.2.10': {}
 
-  '@iconify-json/lucide@1.2.94':
+  '@iconify-json/lucide@1.2.95':
     dependencies:
       '@iconify/types': 2.0.0
 
