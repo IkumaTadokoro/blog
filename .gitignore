@@ -32,3 +32,8 @@ pnpm-debug.log*
 
 # obsidian
 src/data/blog/_admin/*
+
+# Beads / Dolt files (added by bd init)
+.dolt/
+*.db
+.beads-credential-key
