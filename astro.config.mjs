@@ -1,3 +1,4 @@
+import { unified } from "@astrojs/markdown-remark";
 import { defineConfig, passthroughImageService } from "astro/config";
 import react from "@astrojs/react";
 import icon from "astro-icon";
@@ -23,8 +24,7 @@ export default defineConfig({
     og(),
   ],
   markdown: {
-    remarkPlugins,
-    rehypePlugins,
+    processor: unified({ remarkPlugins, rehypePlugins }),
   },
   image: {
     service: passthroughImageService(),

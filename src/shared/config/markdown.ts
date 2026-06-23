@@ -7,7 +7,7 @@ import rehypeSlugPlugin from 'rehype-slug';
 import remarkDirective from 'remark-directive';
 import { remarkTips } from './remark-tips';
 
-import type { RehypePlugins, RemarkPlugins } from 'astro';
+import type { RehypePlugins, RemarkPlugins } from '@astrojs/markdown-remark';
 
 import type { Options as RehypeAutolinkHeadingsOptions } from 'rehype-autolink-headings';
 import type { Options as RehypeExternalLinksOptions } from 'rehype-external-links';
