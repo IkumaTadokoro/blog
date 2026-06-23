@@ -1,3 +1,4 @@
+import { unified } from "@astrojs/markdown-remark";
 import { defineConfig, passthroughImageService } from "astro/config";
 import react from "@astrojs/react";
 import icon from "astro-icon";
@@ -11,7 +12,6 @@ import simpleScope from "vite-plugin-simple-scope";
 // import mdx from "@astrojs/mdx"; // MDXサポートを削除
 import tailwindcss from "@tailwindcss/vite";
 import og from "astro-og";
-import typesafeRoutes from "astro-typesafe-routes";
 
 // https://astro.build/config
 export default defineConfig({
@@ -22,11 +22,9 @@ export default defineConfig({
     expressiveCodePlugin,
     // mdx(), // MDXサポートを削除
     og(),
-    typesafeRoutes(),
   ],
   markdown: {
-    remarkPlugins,
-    rehypePlugins,
+    processor: unified({ remarkPlugins, rehypePlugins }),
   },
   image: {
     service: passthroughImageService(),

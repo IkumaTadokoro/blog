@@ -6,8 +6,6 @@ import X from "./icons/X.svg";
 import Zenn from "./icons/Zenn.svg";
 
 import { SOCIAL_ACCOUNT } from "../../../../../shared/config/site";
-import { condition } from "../../../../../shared/lib/condition";
-
 import StyledIcon from "../../../../../shared/ui/styled-icon/index.astro";
 
 type SocialAccount = keyof typeof SOCIAL_ACCOUNT;
@@ -17,17 +15,18 @@ interface Props {
 }
 const { serviceName } = Astro.props;
 const serviceUrl = SOCIAL_ACCOUNT[serviceName];
+
+const IconComponent = {
+  GitHub,
+  X,
+  Zenn,
+  SpeakerDeck,
+  SizuMe,
+}[serviceName];
 ---
 
 <a href={serviceUrl}>
   <StyledIcon>
-    {
-      condition(serviceName)
-        .case("GitHub", () => <GitHub />)
-        .case("X", () => <X />)
-        .case("Zenn", () => <Zenn />)
-        .case("SpeakerDeck", () => <SpeakerDeck />)
-        .case("SizuMe", () => <SizuMe />).done
-    }
+    <IconComponent />
   </StyledIcon>
 </a>

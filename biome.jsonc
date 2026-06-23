@@ -4,6 +4,7 @@
 		"include": ["./**/*.astro", "./**/*.ts", "./**/*.tsx", "./**/*.json"],
 		"ignore": [
 			".astro/",
+			".beads/",
 			"dist/",
 			"node_modules/",
 			"package-lock.json",

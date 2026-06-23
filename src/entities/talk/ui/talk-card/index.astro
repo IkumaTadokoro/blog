@@ -16,8 +16,7 @@ const image = talk.data.enclosures.at(0);
 
 <Link
   class="rounded-md grid gap-1 grid-rows-subgrid row-span-3"
-  to="/talk/[id]"
-  params={{ id }}
+  href={`/talk/${id}`}
 >
   <figure class="aspect-video relative">
     {
