@@ -11,7 +11,6 @@ import simpleScope from "vite-plugin-simple-scope";
 // import mdx from "@astrojs/mdx"; // MDXサポートを削除
 import tailwindcss from "@tailwindcss/vite";
 import og from "astro-og";
-import typesafeRoutes from "astro-typesafe-routes";
 
 // https://astro.build/config
 export default defineConfig({
@@ -22,7 +21,6 @@ export default defineConfig({
     expressiveCodePlugin,
     // mdx(), // MDXサポートを削除
     og(),
-    typesafeRoutes(),
   ],
   markdown: {
     remarkPlugins,

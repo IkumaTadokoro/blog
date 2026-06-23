@@ -1,6 +1,5 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import { $path } from "astro-typesafe-routes/path";
 import Time from "../../../../shared/ui/time/index.astro";
 
 type Props = {
@@ -13,10 +12,7 @@ const { blog } = Astro.props as Props;
 <article
   class="flex overflow-hidden gap-3 items-center prose"
   aria-labelledby={blog.id}
-  data-href={$path({
-    to: "/blog/[id]",
-    params: { id: blog.id },
-  })}
+  data-href={`/blog/${blog.id}`}
 >
   <div
     class=`min-w-2 aspect-square rounded-full ${blog.data.category === 'tech' ? 'bg-blue-600' : blog.data.category === 'idea' ? 'bg-yellow-300' : 'bg-green-700'}`
