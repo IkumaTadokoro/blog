@@ -36,11 +36,11 @@ importers:
         specifier: 4.0.9
         version: 4.0.9
       '@fontsource-variable/geist':
+        specifier: 5.2.9
+        version: 5.2.9
+      '@fontsource-variable/geist-mono':
         specifier: 5.2.8
         version: 5.2.8
-      '@fontsource-variable/geist-mono':
-        specifier: 5.2.7
-        version: 5.2.7
       '@fontsource-variable/lexend':
         specifier: 5.2.11
         version: 5.2.11
@@ -1170,11 +1170,11 @@ packages:
     resolution: {integrity: sha512-oeTMsCkaOf0BvSW/Nphh6FpfUJAHEEbH6EwC0bjDi6kt6aTvXbInIT74Q0qvzZGaP2koE/64wrhUFQ2BMx6Jew==}
     engines: {node: '>= 18'}
 
-  '@fontsource-variable/geist-mono@5.2.7':
-    resolution: {integrity: sha512-ZKlZ5sjtalb2TwXKs400mAGDlt/+2ENLNySPx0wTz3bP3mWARCsUW+rpxzZc7e05d2qGch70pItt3K4qttbIYA==}
+  '@fontsource-variable/geist-mono@5.2.8':
+    resolution: {integrity: sha512-KI5bj+hkkRiHttYHmccotUZ80ZuZyai+RwI1d7UId0clkx/jXxlo8qYK8j54WzmpBjtMoEMPyllV7faDcj+6RA==}
 
-  '@fontsource-variable/geist@5.2.8':
-    resolution: {integrity: sha512-cJ6m9e+8MQ5dCYJsLylfZrgBh6KkG4bOLckB35Tr9J/EqdkEM6QllH5PxqP1dhTvFup+HtMRPuz9xOjxXJggxw==}
+  '@fontsource-variable/geist@5.2.9':
+    resolution: {integrity: sha512-TP+QSBG3wxKGPE33CbMy/L0Nu3qvJ6Fy81Yc4LnQ95xH+i+cfEp8fyU8/kfV14YwszxIFPhnoMTbjL71waVpyQ==}
 
   '@fontsource-variable/lexend@5.2.11':
     resolution: {integrity: sha512-0hgEQ4O7Nh8fxL/WWmspJf0BErbocRkZwtLRGey/V4mUUqxfF7QUwqhcdzwpjom3NYCniY4uzQ5wYD7r9/92tQ==}
@@ -5455,9 +5455,9 @@ snapshots:
       - canvas
       - encoding
 
-  '@fontsource-variable/geist-mono@5.2.7': {}
+  '@fontsource-variable/geist-mono@5.2.8': {}
 
-  '@fontsource-variable/geist@5.2.8': {}
+  '@fontsource-variable/geist@5.2.9': {}
 
   '@fontsource-variable/lexend@5.2.11': {}
 
