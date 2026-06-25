@@ -31,7 +31,7 @@
     "@astrojs/react": "6.0.0",
     "@astrojs/rss": "4.0.18",
     "@expressive-code/plugin-line-numbers": "0.41.6",
-    "@extractus/feed-extractor": "7.1.7",
+    "@extractus/feed-extractor": "7.2.1",
     "@extractus/oembed-extractor": "4.0.9",
     "@fontsource-variable/geist": "5.2.9",
     "@fontsource-variable/geist-mono": "5.2.8",
