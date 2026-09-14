@@ -81,6 +81,6 @@
     "jsdom": "27.4.0",
     "lefthook": "2.1.12",
     "vitest": "4.1.11",
-    "wrangler": "4.120.1"
+    "wrangler": "4.131.0"
   }
 }
