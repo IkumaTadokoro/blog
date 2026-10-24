@@ -16,7 +16,7 @@ export const getTalks = async () => {
 
 export const groupByTalkYear = async (talks: Array<TalkEntry>) => {
 	// biome-ignore lint/style/noNonNullAssertion: <explanation>
-	return Map.groupBy(talks, (talk) => talk.data.pubdate!.getFullYear());
+	return Map.groupBy(talks, (talk) => talk.data.published!.getFullYear());
 };
 
 type GetTalkResult = {
@@ -25,7 +25,7 @@ type GetTalkResult = {
 };
 
 export const getTalk = async (entry: TalkEntry): Promise<GetTalkResult> => {
-	const iframe = await getTalkEmbedUrl(entry.data.link, entry.data.title ?? '');
+	const iframe = await getTalkEmbedUrl(entry.data.url, entry.data.title ?? '');
 	const markdownContent = sanitizeTalkDescription(
 		await buildMarkdownContent(entry.data.description ?? ''),
 	);
@@ -44,7 +44,7 @@ export const getTalk = async (entry: TalkEntry): Promise<GetTalkResult> => {
  * SpeakerDeckのURLから埋め込み用のURLを取得する
  */
 const getTalkEmbedUrl = async (
-	talkUrl: TalkEntry['data']['link'],
+	talkUrl: TalkEntry['data']['url'],
 	slideTitle: string,
 	loading: 'lazy' | 'eager' = 'eager',
 ) => {

@@ -11,7 +11,7 @@ type Props = {
 
 const { talk } = Astro.props as Props;
 const id = TalkID(talk);
-const image = talk.data.enclosures.at(0);
+const image = talk.data.media.at(0);
 ---
 
 <Link
@@ -33,6 +33,6 @@ const image = talk.data.enclosures.at(0);
   </figure>
   <p class="font-semibold mt-2">{talk.data.title}</p>
   <div class="text-right">
-    <Time size="small" date={talk.data.pubdate!} />
+    <Time size="small" date={talk.data.published!} />
   </div>
 </Link>

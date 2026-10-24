@@ -21,7 +21,7 @@ const { Content } = await render(entry);
 ---
 
 <Document title={`${entry.data.title!}`}>
-  <Talk title={entry.data.title!} publishDate={entry.data.pubdate!}>
+  <Talk title={entry.data.title!} publishDate={entry.data.published!}>
     <Fragment set:html={slideIframeString} slot="slide" />
     <Content slot="content" />
   </Talk>
