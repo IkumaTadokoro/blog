@@ -80,7 +80,7 @@
     "@types/sanitize-html": "2.16.2",
     "@vitest/browser": "4.1.11",
     "@vitest/ui": "4.1.11",
-    "happy-dom": "20.14.3",
+    "happy-dom": "20.14.6",
     "jsdom": "27.4.0",
     "lefthook": "2.1.12",
     "vitest": "4.1.11",
