@@ -1,8 +1,7 @@
 ---
-import Document from "../../widgets/layout/document/index.astro";
-
 import { getTalks, groupByTalkYear } from "../../entities/talk/api";
 import Talks from "../../features/talk/ui/talks.astro";
+import Document from "../../widgets/layout/document/index.astro";
 
 const talks = await getTalks();
 const talksByYear = await groupByTalkYear(talks);

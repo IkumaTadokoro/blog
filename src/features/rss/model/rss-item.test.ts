@@ -6,7 +6,6 @@ import { buildRssItem } from './rss-item';
 describe('buildRssItem', async () => {
 	const post = await getEntry('blog', 'test');
 	// Astro 7 では vitest 上で `getEntry` / `render` が動作しないため一時スキップ
-	// biome-ignore lint/suspicious/noSkippedTests: Astro 7 移行後に統合テスト化する
 	it.skip('should return a valid RSS item', async () => {
 		if (!post) {
 			throw new Error('post not found');

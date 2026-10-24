@@ -2,7 +2,7 @@
 import { getViteConfig } from 'astro/config';
 
 export default getViteConfig({
-	// @ts-ignore
+	// @ts-expect-error
 	test: {
 		globals: true,
 		environment: 'happy-dom',

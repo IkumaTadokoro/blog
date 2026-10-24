@@ -1,16 +1,13 @@
+import type { RehypePlugins, RemarkPlugins } from '@astrojs/markdown-remark';
 import { pluginLineNumbers } from '@expressive-code/plugin-line-numbers';
 import expressiveCode from 'astro-expressive-code';
-
+import type { Options as RehypeAutolinkHeadingsOptions } from 'rehype-autolink-headings';
 import rehypeAutolinkHeadingsPlugin from 'rehype-autolink-headings';
+import type { Options as RehypeExternalLinksOptions } from 'rehype-external-links';
 import rehypeExternalLinksPlugin from 'rehype-external-links';
 import rehypeSlugPlugin from 'rehype-slug';
 import remarkDirective from 'remark-directive';
 import { remarkTips } from './remark-tips';
-
-import type { RehypePlugins, RemarkPlugins } from '@astrojs/markdown-remark';
-
-import type { Options as RehypeAutolinkHeadingsOptions } from 'rehype-autolink-headings';
-import type { Options as RehypeExternalLinksOptions } from 'rehype-external-links';
 
 /*
  * @see https://expressive-code.com/
