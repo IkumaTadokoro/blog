@@ -15,7 +15,7 @@ export const getTalks = async () => {
 };
 
 export const groupByTalkYear = async (talks: Array<TalkEntry>) => {
-	// biome-ignore lint/style/noNonNullAssertion: <explanation>
+	// biome-ignore lint/style/noNonNullAssertion: published talks always have published
 	return Map.groupBy(talks, (talk) => talk.data.published!.getFullYear());
 };
 

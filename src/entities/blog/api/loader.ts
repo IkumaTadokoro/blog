@@ -1,4 +1,4 @@
-import { type Loader, glob } from 'astro/loaders';
+import { glob, type Loader } from 'astro/loaders';
 
 export const loader: Loader = glob({
 	pattern: '**/*.(md|mdx)',
