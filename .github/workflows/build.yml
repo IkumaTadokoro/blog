@@ -4,14 +4,20 @@ on:
     branches: [main]
     paths:
       - "package.json"
+      - "pnpm-lock.yaml"
       - "src/**"
-      - ".github/workflows/ci.yml"
+      - "wrangler.jsonc"
+      - ".github/workflows/*.yml"
+      - ".github/actions/**"
   push:
     branches: [main]
     paths:
       - "package.json"
+      - "pnpm-lock.yaml"
       - "src/**"
-      - ".github/workflows/ci.yml"
+      - "wrangler.jsonc"
+      - ".github/workflows/*.yml"
+      - ".github/actions/**"
   workflow_dispatch:
     inputs:
       with_timeline:
@@ -23,15 +29,20 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
       - uses: ./.github/actions/setup-node
       - name: build
         run: pnpm build
-      - uses: actions/upload-artifact@v6
+      - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
         with:
           name: dist
           path: dist
@@ -45,16 +56,18 @@ jobs:
       contents: read
       deployments: write
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
       - uses: ./.github/actions/setup-node
-      - uses: actions/download-artifact@v7
+      - uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131 # v7.0.0
         with:
           name: dist
           path: dist
       # mainブランチの場合はデプロイを実行
       - if: github.ref == 'refs/heads/main'
         name: Deploy to Cloudflare Workers
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@9acf94ace14e7dc412b076f2c5c20b8ce93c79cd # v3.15.0
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -62,7 +75,7 @@ jobs:
       # プルリクエスト（main以外）の場合はバージョンアップロードのみ
       - if: github.ref != 'refs/heads/main'
         name: Upload version to Cloudflare Workers
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@9acf94ace14e7dc412b076f2c5c20b8ce93c79cd # v3.15.0
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -71,5 +84,7 @@ jobs:
   actions-timeline:
     runs-on: ubuntu-latest
     needs: [build]
+    permissions:
+      actions: read
     steps:
-      - uses: Kesin11/actions-timeline@v2
+      - uses: Kesin11/actions-timeline@7c7e0821d38f27460f4a71ef874a1c8cf23602e4 # v2.2.6

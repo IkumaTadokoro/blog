@@ -4,14 +4,20 @@ on:
     branches: [main]
     paths:
       - "package.json"
+      - "pnpm-lock.yaml"
       - "src/**"
-      - ".github/workflows/ci.yml"
+      - "wrangler.jsonc"
+      - ".github/workflows/*.yml"
+      - ".github/actions/**"
   push:
     branches: [main]
     paths:
       - "package.json"
+      - "pnpm-lock.yaml"
       - "src/**"
-      - ".github/workflows/ci.yml"
+      - "wrangler.jsonc"
+      - ".github/workflows/*.yml"
+      - ".github/actions/**"
   workflow_dispatch:
     inputs:
       with_timeline:
@@ -23,11 +29,16 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+permissions:
+  contents: read
+
 jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
       - uses: ./.github/actions/setup-node
       - name: lint
         run: pnpm check
@@ -36,5 +47,7 @@ jobs:
   actions-timeline:
     runs-on: ubuntu-latest
     needs: [check]
+    permissions:
+      actions: read
     steps:
-      - uses: Kesin11/actions-timeline@v2
+      - uses: Kesin11/actions-timeline@7c7e0821d38f27460f4a71ef874a1c8cf23602e4 # v2.2.6
