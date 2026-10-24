@@ -7,6 +7,7 @@ import {
 } from '../../../shared/lib/iframe';
 import { buildMarkdownContent } from '../../../shared/lib/markdown';
 import type { TalkEntry } from '../model/schema';
+import { sanitizeSpeakerDeckIframe, sanitizeTalkDescription } from './sanitize';
 
 export const getTalks = async () => {
 	const talks = await getCollection('talks');
@@ -25,7 +26,9 @@ type GetTalkResult = {
 
 export const getTalk = async (entry: TalkEntry): Promise<GetTalkResult> => {
 	const iframe = await getTalkEmbedUrl(entry.data.link, entry.data.title ?? '');
-	const markdownContent = await buildMarkdownContent(entry.data.description ?? '');
+	const markdownContent = sanitizeTalkDescription(
+		await buildMarkdownContent(entry.data.description ?? ''),
+	);
 	return {
 		slideIframeString: iframe,
 		entry: {
@@ -63,11 +66,10 @@ const getTalkEmbedUrl = async (
 		},
 	});
 	const title = `プレゼンテーションスライド：${slideTitle}`;
-	const noWidthHeightIframe = removeAttributeFromIframe(data.html, [
-		'width',
-		'height',
-		'style',
-	]);
+	const noWidthHeightIframe = removeAttributeFromIframe(
+		sanitizeSpeakerDeckIframe(data.html),
+		['width', 'height', 'style'],
+	);
 	const iframe = appendAttributeToIframe(noWidthHeightIframe, {
 		title,
 		style: talkIframeStyle,
