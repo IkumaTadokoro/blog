@@ -25,7 +25,9 @@ const { headings } = Astro.props;
           {headings.map((heading) => {
             return (
               <li data-level={heading.depth} class="truncate">
-                <a href={`#${heading.slug}`}>{heading.text}</a>
+                <a class="font-en" href={`#${heading.slug}`}>
+                  {heading.text}
+                </a>
               </li>
             );
           })}

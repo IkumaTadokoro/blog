@@ -38,21 +38,15 @@ importers:
       '@extractus/oembed-extractor':
         specifier: 4.1.0
         version: 4.1.0
-      '@fontsource-variable/geist':
-        specifier: 5.2.9
-        version: 5.2.9
       '@fontsource-variable/geist-mono':
-        specifier: 5.2.8
-        version: 5.2.8
-      '@fontsource-variable/lexend':
-        specifier: 5.2.11
-        version: 5.2.11
-      '@fontsource-variable/montserrat':
         specifier: 5.2.8
         version: 5.2.8
       '@fontsource-variable/noto-sans-jp':
         specifier: 5.2.10
         version: 5.2.10
+      '@fontsource/poppins':
+        specifier: 5.3.0
+        version: 5.3.0
       '@iconify-json/lucide':
         specifier: 1.2.131
         version: 1.2.131
@@ -892,17 +886,11 @@ packages:
   '@fontsource-variable/geist-mono@5.2.8':
     resolution: {integrity: sha512-KI5bj+hkkRiHttYHmccotUZ80ZuZyai+RwI1d7UId0clkx/jXxlo8qYK8j54WzmpBjtMoEMPyllV7faDcj+6RA==}
 
-  '@fontsource-variable/geist@5.2.9':
-    resolution: {integrity: sha512-TP+QSBG3wxKGPE33CbMy/L0Nu3qvJ6Fy81Yc4LnQ95xH+i+cfEp8fyU8/kfV14YwszxIFPhnoMTbjL71waVpyQ==}
-
-  '@fontsource-variable/lexend@5.2.11':
-    resolution: {integrity: sha512-0hgEQ4O7Nh8fxL/WWmspJf0BErbocRkZwtLRGey/V4mUUqxfF7QUwqhcdzwpjom3NYCniY4uzQ5wYD7r9/92tQ==}
-
-  '@fontsource-variable/montserrat@5.2.8':
-    resolution: {integrity: sha512-d8wykq7GCKhEOlLwEuQIOK3w3qsXNxwDlH0meru4AZZzQ4/+rZyvHWKL6BBtHdmbovSHEEQDkwkD8qYUKlcFtQ==}
-
   '@fontsource-variable/noto-sans-jp@5.2.10':
     resolution: {integrity: sha512-m0XfZ38rZtCaGAuAQL0cBPQ6fc/RguYEOqw66zvuLOV9vNRUBf9MFqyoazTu2JVCRIcnkrxbwF29UUaHHgTKdg==}
+
+  '@fontsource/poppins@5.3.0':
+    resolution: {integrity: sha512-cms1nM7U6SN8epIV1WMVOV8VsA645aSm3wHfzIQnkk188U341ThbJGSl2Sv54V29gnDbT2arMPfLzvVIIVCceQ==}
 
   '@iconify-json/lucide@1.2.131':
     resolution: {integrity: sha512-2h0kGA4utt2OIqTdDHPs7+ft0lK8fRRNx1ItsvUaIlkTKaNc/ADT3F9j2F18Qevm9sWfKlAghOUmxmP32inTPg==}
@@ -4915,13 +4903,9 @@ snapshots:
 
   '@fontsource-variable/geist-mono@5.2.8': {}
 
-  '@fontsource-variable/geist@5.2.9': {}
-
-  '@fontsource-variable/lexend@5.2.11': {}
-
-  '@fontsource-variable/montserrat@5.2.8': {}
-
   '@fontsource-variable/noto-sans-jp@5.2.10': {}
+
+  '@fontsource/poppins@5.3.0': {}
 
   '@iconify-json/lucide@1.2.131':
     dependencies:

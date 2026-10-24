@@ -1,6 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-import defaultTheme from "tailwindcss/defaultTheme";
-
 export default {
   theme: {
     extend: {
@@ -72,8 +70,22 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
-        montserrat: ["Montserrat Variable", ...defaultTheme.fontFamily.sans],
+        sans: [
+          "Noto Sans JP Variable",
+          "Hiragino Kaku Gothic ProN",
+          "Hiragino Sans",
+          "Yu Gothic",
+          "Meiryo",
+          "sans-serif",
+        ],
+        en: [
+          "Poppins",
+          "Noto Sans JP Variable",
+          "Helvetica Neue",
+          "Arial",
+          "sans-serif",
+        ],
+        mono: ["Geist Mono Variable", "monospace"],
       },
     },
   },
