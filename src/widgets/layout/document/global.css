@@ -1,6 +1,10 @@
-@import "@fontsource-variable/geist";
 @import "@fontsource-variable/geist-mono";
 @import "@fontsource-variable/noto-sans-jp";
+@import "@fontsource/poppins/latin-400.css";
+@import "@fontsource/poppins/latin-500.css";
+@import "@fontsource/poppins/latin-600.css";
+@import "@fontsource/poppins/latin-700.css";
+@import "@fontsource/poppins/latin-800.css";
 
 @import "tailwindcss";
 @config "../../../../tailwind.config.mjs";
@@ -457,7 +461,8 @@
 }
 
 @theme {
-  --font-sans: "Inter", sans-serif;
+  --font-sans: "Noto Sans JP Variable", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+  --font-en: "Poppins", "Noto Sans JP Variable", "Helvetica Neue", Arial, sans-serif;
   --font-mono: "Geist Mono Variable", monospace;
 
   --text-heading-72: 72px;
@@ -856,5 +861,20 @@
   .material-fullscreen {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.02),
       0 8px 16px -4px rgba(0, 0, 0, 0.04), 0 24px 32px -8px rgba(0, 0, 0, 0.06);
+  }
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-en);
   }
 }
