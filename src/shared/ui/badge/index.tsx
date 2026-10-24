@@ -1,6 +1,5 @@
+import { cva, type VariantProps } from 'class-variance-authority';
 import type { FC } from 'react';
-
-import { type VariantProps, cva } from 'class-variance-authority';
 
 export interface BadgeProps
 	extends React.HTMLAttributes<HTMLDivElement>,

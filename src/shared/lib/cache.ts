@@ -1,4 +1,4 @@
-// biome-ignore lint/suspicious/noExplicitAny: <explanation>
+// biome-ignore lint/suspicious/noExplicitAny: cache holds heterogeneous async results
 const cachedData: Record<string, any> = {};
 
 export async function cache<T>(key: string, handler: () => Promise<T>): Promise<T> {
