@@ -78,12 +78,12 @@
     "@types/jsdom": "27.0.0",
     "@types/node": "24.13.4",
     "@types/sanitize-html": "2.16.2",
-    "@vitest/browser": "4.1.11",
-    "@vitest/ui": "4.1.11",
+    "@vitest/browser": "4.1.12",
+    "@vitest/ui": "4.1.12",
     "happy-dom": "20.14.6",
     "jsdom": "27.4.0",
     "lefthook": "2.1.12",
-    "vitest": "4.1.11",
+    "vitest": "4.1.12",
     "wrangler": "4.131.0"
   }
 }
