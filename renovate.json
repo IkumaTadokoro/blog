@@ -2,6 +2,11 @@
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": ["config:recommended", "helpers:pinGitHubActionDigests"],
 	"minimumReleaseAge": "3 days",
+	"timezone": "Asia/Tokyo",
+	"lockFileMaintenance": {
+		"enabled": true,
+		"schedule": ["before 6am on monday"]
+	},
 	"platformAutomerge": true,
 	"packageRules": [
 		{

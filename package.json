@@ -66,7 +66,8 @@
   "packageManager": "pnpm@10.34.8",
   "pnpm": {
     "overrides": {
-      "zod": "4.6.7"
+      "zod": "4.6.7",
+      "@tailwindcss/typography>postcss-selector-parser": "6.1.5"
     }
   },
   "devDependencies": {
@@ -80,10 +81,10 @@
     "@types/sanitize-html": "2.16.2",
     "@vitest/browser": "4.1.12",
     "@vitest/ui": "4.1.12",
-    "happy-dom": "20.14.6",
+    "happy-dom": "21.0.4",
     "jsdom": "27.4.0",
     "lefthook": "2.2.2",
     "vitest": "4.1.12",
-    "wrangler": "4.152.0"
+    "wrangler": "4.153.0"
   }
 }
