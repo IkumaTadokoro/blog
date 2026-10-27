@@ -34,8 +34,8 @@ importers:
         specifier: 0.44.2
         version: 0.44.2
       '@extractus/feed-extractor':
-        specifier: 7.2.1
-        version: 7.2.1
+        specifier: 8.0.3
+        version: 8.0.3
       '@extractus/oembed-extractor':
         specifier: 4.1.0
         version: 4.1.0
@@ -876,9 +876,8 @@ packages:
   '@expressive-code/plugin-text-markers@0.44.3':
     resolution: {integrity: sha512-4Ae2xRSDV5kdWPsi40xWbOtoihbzM0zLVjQKkDAnD5KzFXl+6/kd+VhuWOlTRVaJ5cqGk++vCbAaf0MR1XbZlw==}
 
-  '@extractus/feed-extractor@7.2.1':
-    resolution: {integrity: sha512-vc84NZST31wLDTesAkmHL8GBxSB2zw2/h9ZKiQMB71az13sC65EeAcDeLJ2z3atsIhtxESnCMaKmQdOrFiFLcg==}
-    engines: {node: '>= 20'}
+  '@extractus/feed-extractor@8.0.3':
+    resolution: {integrity: sha512-T6kdUtm3JbHTtFSKM4MXPAOw83imGq2i77fzeUwVraZy8rY/1ka6ngHeSno8Jh8QkEbFVeM3WG3RUXCxscs1fA==}
 
   '@extractus/oembed-extractor@4.1.0':
     resolution: {integrity: sha512-HV6NinmcMESWPRLWz7BwGfjo+6/Nk4C03abncW2x9juIawWhE+frSiz86/XXdkOnYOg2sXfVH3pkyi0eh6jNsw==}
@@ -1176,10 +1175,6 @@ packages:
 
   '@poppinss/exception@1.2.2':
     resolution: {integrity: sha512-m7bpKCD4QMlFCjA/nKTs23fuvoVFoA83brRKmObCUNmi/9tVu8Ve3w4YQAnJu4q3Tjf5fr685HYIC/IA2zHRSg==}
-
-  '@pwshub/bellajs@13.0.2':
-    resolution: {integrity: sha512-OWOaE7Ieufo7VMv957iahOzv/w5oXyyXO28Jh2x6rLU96ZLqC508kAKTgdMJRXgVjda2s+/0C6Kno+k16OmJsQ==}
-    engines: {bun: '>=1.0.0', node: '>=20.0.0'}
 
   '@rolldown/binding-android-arm-eabi@1.2.15':
     resolution: {integrity: sha512-aLcgK9gIJ3YRvrrtfSBbRa27F5WrpiTaPulnFpsHPxpUHgFlSgnU4854MHwoRGEBhfRJDWCS2WQ7lIjskE9Olw==}
@@ -4588,11 +4583,9 @@ snapshots:
     dependencies:
       '@expressive-code/core': 0.44.3
 
-  '@extractus/feed-extractor@7.2.1':
+  '@extractus/feed-extractor@8.0.3':
     dependencies:
-      '@pwshub/bellajs': 13.0.2
       fast-xml-parser: 5.11.2
-      html-entities: 2.6.0
 
   '@extractus/oembed-extractor@4.1.0':
     dependencies:
@@ -4886,8 +4879,6 @@ snapshots:
       supports-color: 10.0.0
 
   '@poppinss/exception@1.2.2': {}
-
-  '@pwshub/bellajs@13.0.2': {}
 
   '@rolldown/binding-android-arm-eabi@1.2.15':
     optional: true
